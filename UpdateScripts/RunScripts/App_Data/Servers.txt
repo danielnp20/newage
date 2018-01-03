@@ -1,0 +1,8 @@
+﻿ Server=192.168.0.20\SQLEXPRESS;Database=NewAge;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Apoyos;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Apoyos_Test;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Cooermar;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Tecnicas;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Vacia;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Quantum;User Id=sa;Password=Mentor!2012
+ Server=192.168.0.20\SQLEXPRESS;Database=NewAge_QuantumTyS;User Id=sa;Password=Mentor!2012

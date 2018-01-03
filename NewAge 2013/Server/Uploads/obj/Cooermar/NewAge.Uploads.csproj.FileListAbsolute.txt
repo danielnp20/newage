@@ -1,0 +1,3 @@
+C:\Projects\NewAge 2013\Server\Uploads\bin\NewAge.Server.Uploads.dll.config
+C:\Projects\NewAge 2013\Server\Uploads\bin\NewAge.Server.Uploads.dll
+C:\Projects\NewAge 2013\Server\Uploads\obj\Cooermar\NewAge.Server.Uploads.dll

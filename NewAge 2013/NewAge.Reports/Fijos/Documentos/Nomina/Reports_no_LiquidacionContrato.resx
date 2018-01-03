@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="DataSourceLiquidaContrato.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>--Declara variables  glcontrol
+DECLARE @_empresaNumCtrl		AS VARCHAR(10)	-- Trae el Numero de control de la empresa
+DECLARE @_codigoCartera			AS VARCHAR(10)	-- Trae el Codigo de cartera para la empresa actual	
+--Declara las variables del concepto
+DECLARE @_primaServicios		AS VARCHAR(10)	-- Concepto de Prima de Servicios
+DECLARE @_vacaciones			AS VARCHAR(10)	-- Concepto Vacaciones en dinero
+DECLARE @_cesantias			AS VARCHAR(10)	-- Concepto de Cesantias
+DECLARE @_interesCesantias		AS VARCHAR(10)	-- Concepto de Intereses de Cesantias
+
+--Trae los consecutivos de la empresa
+SELECT @_empresaNumCtrl = NumeroControl FROM glEmpresa WITH(NOLOCK) WHERE EmpresaID = @EmpresaID
+SET @_codigoCartera = @_empresaNumCtrl + '11'	-- Modulo	(11)Nomina
+
+--Carga los datos de glControl
+SELECT @_primaServicios		= Data FROM glControl WHERE glControlId = CAST(@_codigoCartera + '401' AS INT) 
+SELECT @_vacaciones		= Data FROM glControl WHERE glControlId = CAST(@_codigoCartera + '405' AS INT) 
+SELECT @_cesantias		= Data FROM glControl WHERE glControlId = CAST(@_codigoCartera + '406' AS INT) 
+SELECT @_interesCesantias	= Data FROM glControl WHERE glControlId = CAST(@_codigoCartera + '408' AS INT) 
+
+SELECT 
+	DISTINCT
+	DET.NumeroDoc,
+	DET.EmpresaID,
+	EPL.Descriptivo AS Nombre,	
+	EPL.TerceroID AS Cédula,
+	EPL.FechaIngreso,
+	EPL.FechaRetiro,
+	DATEDIFF (DAY,EPL.FechaIngreso,EPL.FechaRetiro) AS DiasLaborados,
+	(DOC.SueldoML + DOC.SueldoME) AS Sueldo,
+	RTRIM(carg.CargoEmpID) + '-'+carg.Descriptivo as Cargo,
+	RTRIM(pry.ProyectoID) + '-'+pry.Descriptivo as Proyecto, 	
+	CASE	
+		WHEN DOC.TipoContrato = 1 THEN 'Ley 50'
+		WHEN DOC.TipoContrato = 2 THEN 'Ley Anterior'
+		WHEN DOC.TipoContrato = 3 THEN 'Salario Integral'
+		WHEN DOC.TipoContrato = 4 THEN 'Sena Productivo'
+		WHEN DOC.TipoContrato = 5 THEN 'Sena Lectivo'
+		WHEN DOC.TipoContrato = 6 THEN 'Pensión'
+		WHEN DOC.TipoContrato = 7 THEN 'Sustitución Pensional' ELSE '' END AS TipoContrato,
+	CASE	
+		WHEN DOC.TerminoContrato = 1 THEN 'Termino Indefinido'
+		WHEN DOC.TerminoContrato = 2 THEN 'Termino Fijo'
+		WHEN DOC.TerminoContrato = 3 THEN 'Termino de Obra'	ELSE '' END TerminoContrato,
+	CASE
+		WHEN DOC.CausaLiquida = 1 THEN 'Renuncia'
+		WHEN DOC.CausaLiquida = 2 THEN 'Despido Unilateral'
+		WHEN DOC.CausaLiquida = 3 THEN 'Despido Justa Causa'
+		WHEN DOC.CausaLiquida = 4 THEN 'Terminación Contrato'
+		WHEN DOC.CausaLiquida = 5 THEN 'Muerte trabajador'
+		WHEN DOC.CausaLiquida = 6 THEN 'Jubilación'
+		WHEN DOC.CausaLiquida = 7 THEN 'Sustitución Patronal'
+		WHEN DOC.CausaLiquida = 8 THEN 'Cambio Salario Integral' ELSE '' END AS MotivoRetiro,
+	NOM.ConceptoNOGrupoID AS Codigo,
+	NOM.Descriptivo AS Concepto,
+	DET.Dias, DET.Base,
+	CASE
+		WHEN NOM.ConceptoNOID = @_primaServicios THEN DET.Valor
+		WHEN NOM.ConceptoNOID = @_vacaciones THEN DET.Valor
+		WHEN NOM.ConceptoNOID = @_cesantias THEN DET.Valor
+		WHEN NOM.ConceptoNOID = @_interesCesantias THEN DET.Valor	ELSE 0 END AS APORTES,
+	CASE 
+		WHEN DET.Valor &gt; 0 
+			AND NOM.ConceptoNOID != @_primaServicios 
+			AND NOM.ConceptoNOID != @_vacaciones 
+			AND NOM.ConceptoNOID != @_cesantias 
+			AND NOM.ConceptoNOID != @_interesCesantias THEN DET.Valor * -1 ELSE 0 END AS DEVENGOS,
+	CASE 
+		WHEN DET.Valor &lt; 0 
+			AND NOM.ConceptoNOID != @_primaServicios 
+			AND NOM.ConceptoNOID != @_vacaciones 
+			AND NOM.ConceptoNOID != @_cesantias 
+			AND NOM.ConceptoNOID != @_interesCesantias THEN DET.Valor * -1 ELSE 0 END AS DEDUCCIONES,	
+	CASE	
+		WHEN	NOM.ConceptoNOID = @_primaServicios 
+					OR NOM.ConceptoNOID = @_vacaciones 
+					OR NOM.ConceptoNOID = @_cesantias 
+					OR NOM.ConceptoNOID = @_interesCesantias  THEN 1
+		WHEN	DET.Valor &gt; 0  THEN 2
+		WHEN	DET.Valor &lt; 0 THEN 3	ELSE 0 END AS Tipo,	
+	CASE	
+		WHEN	NOM.ConceptoNOID = @_primaServicios 
+					OR NOM.ConceptoNOID = @_vacaciones 
+					OR NOM.ConceptoNOID = @_cesantias 
+					OR NOM.ConceptoNOID = @_interesCesantias  THEN 'PRESTACIONES SOCIALES'
+		WHEN	DET.Valor &gt; 0  THEN 'DEVENGOS'
+		WHEN	DET.Valor &lt; 0 THEN 'DEDUCCIONES'	ELSE '' END AS NombreTipo,	
+	CASE WHEN DET.Valor &lt; 0 THEN DET.Valor * (-1) ELSE DET.Valor END AS VALOR
+FROM	noLiquidacionesDetalle		DET WITH (NOLOCK)
+INNER JOIN noLiquidacionesDocu		DOC WITH (NOLOCK) ON DOC.NumeroDoc = DET.NumeroDoc 
+INNER JOIN glDocumentoControl		CTL WITH (NOLOCK) ON CTL.NumeroDoc = DOC.NumeroDoc 									
+INNER JOIN noEmpleado				EPL WITH (NOLOCK) ON EPL.TerceroID = CTL.TerceroID AND EPL.eg_coTercero = CTL.EmpresaID 
+INNER JOIN noConceptoNOM			NOM WITH (NOLOCK) ON NOM.ConceptoNOID = DET.ConceptoNOID	AND NOM.EmpresaGrupoID= DET.eg_noConceptoNOM 
+INNER JOIN noConceptoGrupoNOM		GRP WITH (NOLOCK) ON NOM.ConceptoNOGrupoID = GRP.ConceptoNOGrupoID AND GRP.EmpresaGrupoID = NOM.eg_noConceptoGrupoNOM 
+INNER JOIN coProyecto			PRY WITH (NOLOCK) ON PRY.ProyectoID = CTL.ProyectoID AND PRY.EmpresaGrupoID = CTL.eg_coProyecto 
+INNER JOIN rhCargos			CARG WITH (NOLOCK) ON CARG.CargoEmpID = DOC.CargoEmpID AND CARG.EmpresaGrupoID = DOC.eg_rhCargos 
+WHERE   CTL.EmpresaID = @EmpresaID
+		AND CTL.DocumentoID = @DocumentoID
+		AND EPL.TerceroID = CASE WHEN @_empleadoID = '' THEN EPL.TerceroID ELSE @_empleadoID END 
+		AND DOC.Fecha1 = CASE WHEN @fechaFiltro is null or @fechaFiltro = '' THEN DOC.Fecha1 ELSE @fechaFiltro END 
+ORDER BY 
+	DET.NumeroDoc, 
+	EPL.TerceroID</value>
+  </data>
+  <data name="DataSourceLiquidaContrato.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iRGF0YVNvdXJjZUxpcXVpZGFDb250cmF0byI+PFZpZXcgTmFtZT0iQ3VzdG9tU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJOdW1lcm9Eb2MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFbXByZXNhSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTm9tYnJlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkPDqWR1bGEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVjaGFJbmdyZXNvIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRmVjaGFSZXRpcm8iIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJEaWFzTGFib3JhZG9zIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3VlbGRvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJDYXJnbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm95ZWN0byIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUaXBvQ29udHJhdG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGVybWlub0NvbnRyYXRvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1vdGl2b1JldGlybyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2RpZ28iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29uY2VwdG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGlhcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJhc2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkFQT1JURVMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRFVkVOR09TIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJERURVQ0NJT05FUyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVGlwbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZVRpcG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVkFMT1IiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+</root>

@@ -1,0 +1,1509 @@
+
+<Menus>
+  <Menu module="ac" numOfMenus="7">
+    <MainItem value="mnu_ac_parametros" numOfSubItem="7" level="0">
+      <SubItem value="mnu_ac_acGrupo"    level="1" father="0"  node="Reter" nodeId="ac" event="OpenForm_clicked" form="acGrupo"                    formId="23001"/>
+      <SubItem value="mnu_ac_acClase"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acClase"                    formId="23002"/>
+      <SubItem value="mnu_ac_acMovimientoTipo"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acMovimientoTipo"  formId="23003"/>
+      <SubItem value="mnu_ac_acEstado"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acEstado"                  formId="23004"/>
+      <SubItem value="mnu_ac_acContabiliza"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acContabiliza"        formId="23006"/>
+      <SubItem value="mnu_ac_acTipo"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acTipo"                      formId="23007"/>
+      <SubItem value="mnu_ac_acDotacion"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acDotacion"              formId="23008"/>
+      <SubItem value="mnu_ac_acComponenteActivo"    level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="acComponenteActivo"  formId="23009"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_ac_acControlActivos" level="1" father="0"  node="master" nodeId="ac" event="OpenForm_clicked" form="ControlActivos"  formId="23000"/>
+    </MainItem>
+    <MainItem value="mnu_ac_documents" numOfSubItem="5" level="0">
+      <SubItem value="mnu_ac_altaActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="AltaActivos" formId="61"/>
+      <SubItem value="mnu_ac_AltaInvActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="AltaInvActivos" formId="67"/>
+      <SubItem value="mnu_ac_activosPlaqueta"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="ActivosPlaqueta" formId="26501"/>
+      <SubItem value="mnu_ac_movimientosActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="MovimientosActivos" formId="65"/>
+      <SubItem value="mnu_ac_transaccionActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="TransaccionActivos" formId="64"/>
+      <SubItem value="mnu_ac_retiroActivosFijos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="RetiroActivos" formId="62"/>
+      <SubItem value="mnu_ac_adicionActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="AdicionActivos" formId="66"/>
+      <SubItem value="mnu_ac_adicionInvActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="AdicionInvActivos" formId="68"/>
+      <SubItem value="mnu_ac_deterioroActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="DeterioroActivos" formId="69"/>
+      <SubItem value="mnu_ac_contenedoresActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="Contenedores" formId="101"/>
+      <SubItem value="mnu_ac_migracionSaldos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="MigracionSaldos" formId="102"/>
+      <SubItem value="mnu_ac_capitalizacionActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="CapitalizacionActivos" formId="103"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_ac_revertirActivos"  level="1" father="1" node="document" nodeId="ac" event="OpenForm_clicked" form="RevertirActivos" formId="26502"/>
+    </MainItem>
+    <MainItem value="mnu_ac_process" numOfSubItem="2" level="0">
+      <SubItem value="mnu_ac_depreciacionMensual"  level="1" father="2" node="process" nodeId="ac" event="OpenFormModal_clicked" form="DepreciacionMensual" formId="1132"/>
+      <SubItem value="mnu_ac_reprocesoDepreciacion"  level="1" father="2" node="process" nodeId="ac" event="OpenFormModal_clicked" form="ReprocesoDepreciacion" formId="1134"/>
+      <SubItem value="mnu_ac_migrarActivoGarantia"  level="1" father="2" node="process" nodeId="ac" event="OpenFormModal_clicked" form="MigrarActivoGarantia" formId="1152"/>
+    </MainItem>
+    <MainItem value="mnu_ac_querys" numOfSubItem="1" level="0">
+      <SubItem value="mnu_ac_queryActivos" level="1" father="3" node="query" nodeId="ac" event="OpenFormModal_clicked" form="QueryActivos" formId="23311"/>
+    </MainItem>
+    <MainItem value="mnu_ac_reports" numOfSubItem="2" level="0">
+      <SubItem value="mnu_ac_parametersReporteActivosSaldos"  level="1" father="4" node="report" nodeId="ac" event="OpenFormModal_clicked" form="ParametersReporteActivosSaldos" formId="35087"/>
+      <SubItem value="mnu_ac_parametersReporteRelacionActivos"  level="1" father="4" node="report" nodeId="ac" event="OpenFormModal_clicked" form="ParametersReporteRelacionActivos" formId="35089"/>
+      <SubItem value="mnu_ac_acEquiposArrendados"  level="1" father="4" node="report" nodeId="ac" event="OpenFormModal_clicked" form="acEquiposArrendados" formId="35035"/>
+      <SubItem value="mnu_ac_acImportacionesTemporales"  level="1" father="4" node="report" nodeId="ac" event="OpenFormModal_clicked" form="acImportacionesTemporales" formId="35041"/>
+    </MainItem>
+    <MainItem value="mnu_ac_tools" numOfSubItem="6" level="0">
+      <SubItem value="mnu_ac_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_searchDocument"   level="1" father="5"  nodeId="ac" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+      <SubItem value="mnu_busquedaacControlForm"   level="1" father="5"  nodeId="ac" event="OpenFormModal_clicked" form="BusquedaacControlForm" formId="1018"/>
+    </MainItem>
+    <MainItem value="mnu_ac_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_ac_help" level="1" father="6" event="OpenHelp_clicked" nodeId="ac" />
+    </MainItem>
+    <MainItem value="mnu_ac_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_ac_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+  
+  <Menu module="apl" numOfMenus="1">
+    <MainItem value="mnu_apl_archivo" numOfSubItem="3" level="0">
+      <SubItem value="mnu_apl_ayuda" level="1"  father="0" event="OpenHelp_clicked" nodeId="apl"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_apl_salir" level="1" father="0" event="Exit_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="cc" numOfMenus="8">
+    <MainItem value="mnu_cc_parametros" numOfSubItem="13" level="0">
+      <SubItem value="mnu_cc_clientes"  level="1" father="0" numOfSubItem="4">
+        <Item value="mnu_cc_ccCliente"            level="2" father="0" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCliente"  formId="32006"/>
+        <Item value="mnu_cc_cccProfesion"         level="2" father="0" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccProfesion"  formId="32031"/>
+        <Item value="mnu_gl_controlGarantias"     level="2" father="0" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="GarantiaControl" formId="2"/>
+        <Item value="mnu_gl_glTerceroReferencia"  level="2" father="0" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glTerceroReferencia" formId="11040"/>        
+       </SubItem>
+      <SubItem value="mnu_cc_pagaduria"  level="1" father="0"  numOfSubItem="6">
+          <Item value="mnu_cc_ccConsecionario"      level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccConsecionario"  formId="32040"/>
+          <Item value="mnu_cc_ccPagaduria"          level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccPagaduria"  formId="32002"/>
+          <Item value="mnu_cc_ccPagaduriaAnexos"    level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccPagaduriaAnexos"  formId="32015"/>
+          <Item value="mnu_cc_ccCentroPagoPAG"      level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCentroPagoPAG"  formId="32027"/>
+          <Item value="mnu_cc_ccTipoNomina"         level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccTipoNomina"  formId="32032"/>
+          <Item value="mnu_cc_ccPagaduriaPrograma"  level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccPagaduriaPrograma"  formId="32051"/>
+          <Item value="mnu_cc_IncorporacionNovedad" level="2" father="1" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccIncorporacionNovedad"  formId="32056"/>
+        </SubItem>
+      <SubItem value="mnu_cc_datosLiquidacion"  level="1" father="0"  numOfSubItem="11">
+        <Item value="mnu_cc_ccLineaCredito" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccLineaCredito"  formId="32007"/>
+        <Item value="mnu_cc_ccCarteraComponente" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCarteraComponente"  formId="32011"/>
+        <Item value="mnu_cc_ccLineaComponente" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccLineaComponente"  formId="32013"/>
+        <Item value="mnu_cc_ccLineaComponenteMonto" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccLineaComponenteMonto"  formId="32022"/>
+        <Item value="mnu_cc_ccLineaComponentePlazo" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccLineaComponentePlazo"  formId="32014"/>
+        <Item value="mnu_cc_ccComponenteCuenta" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccComponenteCuenta"  formId="32024"/>
+        <Item value="mnu_cc_ccComponenteEdad" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccComponenteEdad"  formId="32033"/>
+        <Item value="mnu_cc_ccChequeoLista" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccChequeoLista"  formId="32019"/>
+        <Item value="mnu_cc_ccValorAutorizado" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccValorAutorizado"  formId="32020"/>
+        <Item value="mnu_cc_ccValorAmparado" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccValorAmparado"  formId="32021"/>
+        <Item value="mnu_cc_ccAnexosLista" level="2" father="2" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccAnexosLista"  formId="32003"/>
+        <Item value="mnu_cc_ccFinanciera" level="2" father="2" grantfather="0"  node="master" nodeId="cc" event="OpenForm_clicked" form="ccFinanciera"  formId="32018"/>
+      </SubItem>
+      <SubItem value="mnu_cc_datosCartera"  level="1" father="0"  numOfSubItem="10">
+        <Item value="mnu_cc_ccAsesor"         level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccAsesor"  formId="32004"/>
+        <Item value="mnu_cc_ccTipoCredito"         level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccTipoCredito"  formId="32012"/>
+        <Item value="mnu_cc_ccDevolucionCausal"  level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccDevolucionCausal"  formId="32052"/>
+        <Item value="mnu_cc_ccDevolucionCausalGrupo"  level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccDevolucionCausalGrupo"  formId="32055"/>
+        <Item value="mnu_cc_ccNominaINC" level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccNominaINC"  formId="32026"/>
+        <Item value="mnu_cc_ccReintegroSaldo" level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccReintegroSaldo"  formId="32054"/>
+        <Item value="mnu_cc_ccAseguradora" level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccAseguradora"  formId="32035"/>
+        <Item value="mnu_cc_ccCooperativa" level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCooperativa"  formId="32039"/>
+        <Item value="mnu_cc_ccSiniestroEstado" level="2" father="3" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccSiniestroEstado"  formId="32045"/>
+      </SubItem>
+      <SubItem value="mnu_cc_datosCompraCartera"  level="1" father="0"  numOfSubItem="8">
+        <Item value="mnu_cc_ccCompradorCartera"   level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCompradorCartera"  formId="32008"/>
+        <Item value="mnu_cc_ccCompradorGrupo"     level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCompradorGrupo"  formId="32023"/>
+        <Item value="mnu_cc_ccCompradorAnexos"     level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCompradorAnexos"  formId="32025"/>
+        <Item value="mnu_cc_ccCompradorPagaduria"     level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCompradorPagaduria"  formId="32028"/>
+        <Item value="mnu_cc_ccCompradorPortafilio"     level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCompradorPortafilio"  formId="32029"/>
+        <Item value="mnu_cc_ccCompradorMonto"     level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCompradorMonto"  formId="32030"/>
+        <Item value="mnu_cc_ccVendedorCartera" level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccVendedorCartera"  formId="32034"/>
+        <Item value="mnu_cc_ccConceptoECCesionario" level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccConceptoECCesionario"  formId="32009"/>
+        <Item value="mnu_cc_ccEstadoCuentaCesionarioTabla" level="2" father="4" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccEstadoCuentaCesionarioTabla"  formId="32046"/>
+      </SubItem>
+      <SubItem value="mnu_cc_comisiones"  level="1" father="0"  numOfSubItem="2">
+        <Item value="mnu_cc_ccComisionDescAsesor" level="2" father="5" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccComisionDescAsesor"  formId="32016"/>
+        <Item value="mnu_cc_ccComisionDescuento"  level="2" father="5" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccComisionDescuento"  formId="32005"/>
+        <Item value="mnu_cc_ccComisionTabla" level="2" father="5" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccComisionTabla"  formId="32050"/>
+      </SubItem>
+      <SubItem value="mnu_cc_carteraVencida"  level="1" father="0"  numOfSubItem="7">
+        <Item value="mnu_cc_ccClasificacionCredito" level="2" father="6" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccClasificacionCredito"  formId="32036"/>
+        <Item value="mnu_cc_ccClasificacionxRiesgo" level="2" father="6" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccClasificacionxRiesgo"  formId="32037"/>
+        <Item value="mnu_cc_ccAbogado"              level="2" father="6" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccAbogado"  formId="32043"/>
+        <Item value="mnu_cc_ccCobranzaEstado"       level="2" father="6" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCobranzaEstado"  formId="32048"/>
+        <Item value="mnu_cc_ccCJTipoMovimiento"     level="2" father="6" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCJTipoMovimiento"  formId="32047"/>
+        <Item value="mnu_cc_ccCobranzaGestion"      level="2" father="6" grantfather="0" node="master" nodeId="cc" event="OpenForm_clicked" form="ccCobranzaGestion"  formId="32049"/>
+        <Item value="mnu_gl_glIncumplimientoEtapa"  level="2" father="6" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glIncumplimientoEtapa" formId="11045"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_cc_ccControlCartera" level="1" father="0"  node="master" nodeId="cc" event="OpenForm_clicked" form="ControlCartera"  formId="32000"/>
+    </MainItem>
+    <MainItem value="mnu_cc_documents" numOfSubItem="11" level="0">
+      <SubItem value="mnu_cc_solicitud"  level="1" father="1"  numOfSubItem="9">
+        <Item value="mnu_cc_solicitudLibranza" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="SolicitudLibranza" formId="160"/>
+        <Item value="mnu_cc_envioSolicitudLibranza" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="EnvioSolicitudLibranza" formId="32553"/>
+        <Item value="mnu_cc_verificacion" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="VerificacionPreliminar" formId="32552"/>
+        <Item value="mnu_cc_analisisRiesgo" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AnalisisRiesgo" formId="32554"/>
+        <Item value="mnu_cc_digitacionCredito" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="DigitacionCredito" formId="32555"/>
+        <Item value="mnu_cc_referenciacionCartera" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="Referenciacion" formId="32556"/>
+        <Item value="mnu_cc_aprobacionLibranzas" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionSolicitudLibranza" formId="32558"/>
+        <Item value="-" level="2" father="0" grantfather="1" />
+        <Item value="mnu_cc_solicitudAnticipos" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="SolicitudAnticipos" formId="32563"/>
+        <Item value="mnu_cc_devolucionSolicitudes" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="DevolucionSolicitud" formId="32507"/>
+      </SubItem>
+      <SubItem value="mnu_cc_credito"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cc_aprobacionGiro"       level="2" father="1" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionGiro"  formId="32561"/>
+        <Item value="mnu_cc_entregaLibranza"      level="2" father="1" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="EntregaLibranza"  formId="32562"/>
+      </SubItem>
+      <SubItem value="mnu_cc_cartera"  level="1" father="1"  numOfSubItem="7">
+        <Item value="mnu_cc_recaudosManuales" level="2" father="2" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="RecaudosManuales"  formId="167"/>
+        <Item value="mnu_cc_estadoCuenta" level="2" father="2"  grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="EstadoCuentaFin"  formId="162"/>
+        <Item value="mnu_cc_pagosTotales" level="2" father="2" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="PagosTotales"  formId="168"/>
+        <Item value="mnu_cc_rechazoCredito"      level="2" father="2" grantfather="1" node="process" nodeId="cc" event="OpenFormModal_clicked" form="RechazoCredito"  formId="181"/>
+        <Item value="mnu_cc_desistimiento"      level="2" father="2" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="Desistimiento"  formId="182"/>
+        <Item value="mnu_cc_aprobacionGiroRechazo"       level="2" father="2" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionGiroRechazo"  formId="32561"/>
+        <Item value="mnu_cc_cambioDatosCredito"       level="2" father="2" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="CambioDatosCredito"  formId="32506"/>
+      </SubItem>
+      <SubItem value="mnu_cc_incorporaciones"  level="1" father="1"  numOfSubItem="5">
+        <Item value="mnu_cc_incorporacion"     level="2" father="3" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="Incorporacion"  formId="163"/>
+        <Item value="mnu_cc_migracionVerif"     level="2" father="3" grantfather="1" node="document" nodeId="cc" event="OpenFormModal_clicked" form="MigracionVerificacion"  formId="1149"/>
+        <Item value="mnu_cc_desIncorporacion"  level="2" father="3" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="DesIncorporacion"  formId="171"/>
+        <Item value="mnu_cc_reIncorporacion"  level="2" father="3" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="Reincorporacion"  formId="173"/>
+        <Item value="mnu_cc_archivoIncorporaciones"  level="2" father="3" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="ArchivoIncorporaciones"  formId="32314"/>
+      </SubItem>
+      <SubItem value="mnu_cc_ventaCartera"  level="1" father="1"  numOfSubItem="8">
+        <Item value="mnu_cc_preventaCartera"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="PreventaCartera"  formId="32566"/>
+        <Item value="mnu_cc_ventaCartera"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="VentaCartera"  formId="164"/>
+        <Item value="mnu_cc_endosoLibranzasVendidas"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="EndosoLibranzasVendidas"  formId="32567"/>
+        <Item value="mnu_cc_cierreOferta"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="CierreOferta"  formId="32568"/>
+        <Item value="-" level="2" father="4"  grantfather="1" />
+        <Item value="mnu_cc_pagoFlujo"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="PagoFlujos"  formId="169"/>
+        <Item value="mnu_cc_recompraCartera"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="RecompraCartera"  formId="165"/>
+        <Item value="mnu_cc_reasignaCompradorFinal"  level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="ReasignaCompradorFinal"  formId="170"/>
+        <Item value="-" level="2" father="4"  grantfather="1" />
+        <Item value="mnu_cc_fondeoCartera" level="2" father="4" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="FondeoCartera"  formId="174"/>
+      </SubItem>
+      <SubItem value="mnu_cc_reintegro"  level="1" father="1"  numOfSubItem="3">
+        <Item value="mnu_cc_pagosespeciales" level="2" father="5" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="PagosEspeciales"  formId="172"/>
+        <Item value="mnu_cc_reintegroClientes" level="2" father="5" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="ReintegroClientes"  formId="172"/>
+        <Item value="mnu_cc_aprobacionReintegroClientes" level="2" father="5" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionReintegroClientes"  formId="32571"/>
+      </SubItem>
+      <SubItem value="mnu_cc_liquidacionComisiones"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cc_liquidacionComisiones" level="2" father="6" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="LiquidacionComisiones"  formId="176"/>
+        <Item value="mnu_cc_aprobacionLiquidacionComisiones" level="2" father="6" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionLiquidacionComisiones"  formId="32570"/>
+      </SubItem>
+      <SubItem value="mnu_cc_actividadesUsuario"  level="1" father="1"  numOfSubItem="1">
+        <Item value="mnu_cc_ccactChequeo"         level="2" father="7" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="SolicitudCreditoChequeo"  formId="32801"/>
+      </SubItem>
+      <SubItem value="mnu_cc_ccCambioFechaPlanPagos" level="1" father="1"  node="document" nodeId="cc" event="OpenForm_clicked" form="CambioFechaPlanPagos"  formId="32569"/>
+      <SubItem value="mnu_cc_GestionCobranza"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cf_GestionCobranza" level="2" father="9" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="GestionCobranza"  formId="32502"/>
+        <Item value="mnu_cf_GestionDiaria" level="2" father="9" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="GestionDiaria" formId="1154"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_cc_ReversionCartera" level="1" father="1"  node="document" nodeId="cc" event="OpenForm_clicked" form="RevertirCartera"  formId="32501"/>
+      <SubItem value="mnu_cc_AnularCartera"  level="1" father="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AnularCartera" formId="32508"/>
+    </MainItem>
+    <MainItem value="mnu_cc_process" numOfSubItem="7" level="0">
+      <SubItem value="mnu_cc_RecaudosMasivos" level="1" father="2" node="process" nodeId="cc" event="OpenFormModal_clicked" form="RecaudosMasivos"  formId="1123"/>
+      <SubItem value="mnu_cc_cierreDiaCartera" level="1" father="2" node="process" nodeId="cc" event="OpenFormModal_clicked" form="CierreDiaCartera"  formId="1143"/>
+      <SubItem value="mnu_cc_cierreCartera" level="1" father="2" node="process" nodeId="cc" event="OpenFormModal_clicked" form="CierreCartera"  formId="1131"/>
+      <SubItem value="mnu_cc_SustitucionCreditos" level="1" father="2" node="process" nodeId="cc" event="OpenFormModal_clicked" form="SustitucionCreditos"  formId="1148"/>
+      <SubItem value="-" level="1" father="2"/>
+      <SubItem value="mnu_cc_migracionCartera" level="1" father="2" node="process" nodeId="cc" event="OpenFormModal_clicked" form="MigracionCartera"  formId="1125"/>
+      <SubItem value="mnu_cc_migracionEstadoCartera" level="1" father="2" node="process" nodeId="cc" event="OpenFormModal_clicked" form="MigracionEstadoCartera"  formId="1147"/>
+    </MainItem>
+    <MainItem value="mnu_cc_querys" numOfSubItem="7" level="0">
+      <SubItem value="mnu_cc_liquidador" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="Liquidador" formId="32310"/>
+      <SubItem value="mnu_cc_querySolicitud" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="Solicitudes" formId="32317"/>
+      <SubItem value="mnu_cc_queryLibranza" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="QueryLibranza" formId="32311"/>
+      <SubItem value="mnu_cc_queryVentaCartera" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="QueryVentaCartera" formId="32315"/>
+      <SubItem value="mnu_cc_queryMovimiento" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="Movimiento" formId="32316"/>
+      <SubItem value="mnu_cc_SaldosLibranza" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="SaldosLibranza" formId="32321"/>
+      <SubItem value="-" level="1" father="3"/>
+      <SubItem value="mnu_cc_estadisticasDiarias" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="EstadisticasDiariasCartera" formId="32312"/>
+      <SubItem value="mnu_cc_estadisticasMensuales" level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="EstadisticasMensualesCartera" formId="32313"/>
+      <SubItem value="-" level="1" father="3"/>
+      <SubItem value="mnu_cc_generalQueries"  level="1" father="3" node="query" nodeId="cc" event="OpenForm_clicked" form="ConsultasGeneralesCartera" formId="20318"/>
+    </MainItem>
+    <MainItem value="mnu_cc_reports" numOfSubItem="2" level="0">
+      <SubItem value="mnu_cc_reportesCartera"                 level="1" father="4" node="report" nodeId="cc" event="OpenFormModal_clicked" form="Reports_Cartera" formId="35068"/>
+      <SubItem value="mnu_cc_reportSaldosAFavor"              level="1" father="4" node="report" nodeId="cc" event="OpenFormModal_clicked" form="Reports_SaldosAFavor" formId="35123"/>
+      <SubItem value="mnu_cc_reportAportesCartera"            level="1" father="4" node="report" nodeId="cc" event="OpenFormModal_clicked" form="Reports_Aportes_Cartera" formId="35069"/>
+      <SubItem value="mnu_cc_reportAportes"                   level="1" father="4" node="report" nodeId="cc" event="OpenFormModal_clicked" form="Reports_Aportes" formId="35066"/>
+      <SubItem value="mnu_cc_reports_Certificados"            level="1" father="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_Certificados" formId="35086"/>
+      
+      <SubItem value="mnu_cc_reports_VentaCartera"            level="1" father="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_VentaCartera" formId="35097"/>
+      <SubItem value="mnu_cc_creditos"                        level="1" father="4"  numOfSubItem="2">
+        <Item value="mnu_cc_reports_Referenciacion"             level="2" father="7" grantfather="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_Referenciacion" formId="35100"/>
+        <Item value="mnu_cc_reports_Libranzas"                   level="2" father="7" grantfather="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_Libranzas" formId="35029"/>
+        <Item value="mnu_cc_ccRepExcelLibranzas"                 level="2" father="7" grantfather="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="ExportLibranzas" formId="35085"/>
+        <Item value="mnu_cc_ccReportCredito"                     level="2" father="7" grantfather="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_Credito" formId="35112"/>
+      </SubItem>
+      <SubItem value="mnu_cc_reports_PagaduriaIncorporacion"  level="1" father="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_PagaduriaIncorporacion" formId="35101"/>
+      <SubItem value="mnu_cc_parametersInformeSIGCOOP"        level="1" father="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_InformeSIGCOOP" formId="35032"/>
+      <SubItem value="mnu_cc_recudosMasivos"                  level="1" father="4" node="report" nodeId="cc" event="OpenFormDialog_clicked" form="Reports_RecaudosNominaDeta" formId="35118"/>
+      <SubItem value="mnu_cc_datacredito"                     level="1" father="4" node="report" nodeId="cc" event="OpenForm_clicked" form="Reports_DataCredito" formId="32319"/>
+    </MainItem>
+    <MainItem value="mnu_cc_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_cc_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_cc_searchDocument"   level="1" father="5"  nodeId="cc" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+      <SubItem value="mnu_cc_envioCorreos"   level="1" father="5"  nodeId="cc" event="OpenForm_clicked" form="EnvioCorreoCliente" formId="1048"/>
+    </MainItem>
+    <MainItem value="mnu_cc_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cc_help" level="1" father="6" event="OpenHelp_clicked" nodeId="cc" />
+    </MainItem>
+    <MainItem value="mnu_cc_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cc_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="cf" numOfMenus="8">
+    <MainItem value="mnu_cc_parametros" numOfSubItem="11" level="0">
+      <SubItem value="mnu_cc_clientes"  level="1" father="0" numOfSubItem="1">
+        <Item value="mnu_cc_ccCliente"            level="2" father="0" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCliente"  formId="32006"/>
+        <Item value="mnu_gl_glTerceroReferencia"  level="2" father="0" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glTerceroReferencia" formId="11040"/>
+        <Item value="mnu_cc_ccProfesion"          level="2" father="0" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccProfesion"  formId="32031"/>
+        <Item value="mnu_cc_ccReintegroSaldo"     level="2" father="0" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccReintegroSaldo"  formId="32054"/>
+        <Item value="mnu_cc_CambioDatosCliente"   level="2" father="0" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="CambioDatosCliente"  formId="32059"/>
+      </SubItem>
+      <SubItem value="mnu_cc_garantias"  level="1" father="0"  numOfSubItem="5">
+        <Item value="mnu_cc_ccFasecolda"        level="2" father="1" grantfather="0"   node="master" nodeId="cf" event="OpenForm_clicked" form="ccFasecolda"  formId="32041"/>
+        <Item value="mnu_cc_ccFasecoldaModelo"  level="2" father="1" grantfather="0"  node="master" nodeId="cf" event="OpenForm_clicked" form="ccFasecoldaModelo"  formId="32042"/>
+        <Item value="mnu_cc_ccAseguradora"      level="2" father="1" grantfather="0"  node="master" nodeId="cf" event="OpenForm_clicked" form="ccAseguradora"  formId="32035"/>
+        <Item value="mnu_cc_ccSegurosAsesor"    level="2" father="1" grantfather="0"  node="master" nodeId="cf" event="OpenForm_clicked" form="ccSegurosAsesor"  formId="32057"/>
+        <Item value="mnu_gl_glGarantia"         level="2" father="1" grantfather="0"  node="master" nodeId="gl" event="OpenForm_clicked" form="glGarantia" formId="11020"/>
+      </SubItem>
+      <SubItem value="mnu_cc_datosLiquidacion"  level="1" father="0"  numOfSubItem="13">
+        <Item value="mnu_cc_ccLineaCredito"           level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccLineaCredito"  formId="32007"/>
+        <Item value="mnu_cc_ccCarteraComponente"      level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCarteraComponente"  formId="32011"/>        
+        <Item value="mnu_cc_ccClasificacionCredito"   level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccClasificacionCredito"  formId="32036"/>
+        <Item value="mnu_cc_ccTipoCredito"            level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccTipoCredito"  formId="32012"/>
+        <Item value="-"                               level="2" father="2" grantfather="0"/>        
+        <Item value="mnu_cc_ccLineaComponente"        level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccLineaComponente"  formId="32013"/>
+        <Item value="mnu_cc_ccComponenteCuenta"       level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccComponenteCuenta"  formId="32024"/>        
+        <Item value="mnu_cc_ccLineaComponenteMonto"   level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccLineaComponenteMonto"  formId="32022"/>
+        <Item value="mnu_cc_ccLineaComponentePlazo"   level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccLineaComponentePlazo"  formId="32014"/>
+        <Item value="-"                               level="2" father="2" grantfather="0"/>                
+        <Item value="mnu_cc_ccChequeoLista"           level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccChequeoLista"  formId="32019"/>
+        <Item value="mnu_cc_ccAnexosLista"            level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccAnexosLista"  formId="32003"/>
+        <Item value="-"                               level="2" father="2" grantfather="0"/>        
+        <Item value="mnu_cc_ccValorAutorizado"        level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccValorAutorizado"  formId="32020"/>
+        <Item value="mnu_cc_ccValorAmparado"          level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccValorAmparado"  formId="32021"/>
+        <Item value="mnu_cc_ccFinanciera"             level="2" father="2" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccFinanciera"  formId="32018"/>
+      </SubItem>      
+      <SubItem value="mnu_cc_datosCompraCartera"  level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_cc_ccCompradorCartera"    level="2" father="3" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCompradorCartera"  formId="32008"/>
+        <Item value="mnu_cc_ccCompradorGrupo"      level="2" father="3" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCompradorGrupo"  formId="32023"/>
+        <Item value="mnu_cc_ccCompradorPagaduria"  level="2" father="3" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCompradorPagaduria"  formId="32028"/>
+        <Item value="mnu_cc_ccCompradorPortafilio" level="2" father="3" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCompradorPortafilio"  formId="32029"/>
+      </SubItem>
+      <SubItem value="mnu_cc_carteraVencida"  level="1" father="0"  numOfSubItem="4">          
+          <Item value="mnu_cc_ccClasificacionxRiesgo" level="2" father="4" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccClasificacionxRiesgo"  formId="32037"/>
+          <Item value="mnu_cc_ccAbogado"              level="2" father="4" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccAbogado"  formId="32043"/>
+          <Item value="mnu_cc_ccCobranzaEstado"       level="2" father="4" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCobranzaEstado"  formId="32048"/>
+          <Item value="mnu_cc_ccCobranzaGestion"      level="2" father="4" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCobranzaGestion"  formId="32049"/>
+          <Item value="mnu_gl_glIncumplimientoEtapa"  level="2" father="4" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glIncumplimientoEtapa" formId="11045"/>
+          <Item value="mnu_cc_ccSiniestroEstado" level="2" father="4" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccSiniestroEstado"  formId="32045"/>
+      </SubItem>
+      <SubItem value="mnu_cc_comercial"  level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_cc_ccAsesor"             level="2" father="5" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccAsesor"  formId="32004"/>
+        <Item value="mnu_cc_ccConsecionario"      level="2" father="5" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccConsecionario"  formId="32040"/>
+        <Item value="mnu_gl_glZona"               level="2" father="5" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="glZona" formId="11038"/>
+        <Item value="mnu_cc_ccDevolucionCausal"  level="2" father="5" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccDevolucionCausal"  formId="32052"/>
+        <Item value="mnu_cc_ccDevolucionCausalGrupo"  level="2" father="5" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccDevolucionCausalGrupo"  formId="32055"/>
+        <Item value="mnu_cc_ccCooperativa"        level="2" father="5" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccCooperativa"  formId="32039"/>
+      </SubItem>
+      <SubItem value="mnu_cc_pagaduria"  level="1" father="0"  numOfSubItem="6">
+        <Item value="mnu_cc_ccPagaduria"          level="2" father="6" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccPagaduria"  formId="32002"/>
+        <Item value="mnu_cc_ccPagaduriaAnexos"    level="2" father="6" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccPagaduriaAnexos"  formId="32015"/>
+        <Item value="mnu_cc_IncorporacionNovedad" level="2" father="6" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccIncorporacionNovedad"  formId="32056"/>
+        <Item value="mnu_cc_PagaduriaSector"      level="2" father="6" grantfather="0" node="master" nodeId="cf" event="OpenForm_clicked" form="ccPagaduriaSector"  formId="32058"/>    
+      </SubItem>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_cc_ccControlCartera" level="1" father="0"  node="master" nodeId="cf" event="OpenForm_clicked" form="ControlCarteraFin"  formId="34000"/>
+    </MainItem>
+    <MainItem value="mnu_cc_documents" numOfSubItem="7" level="0">
+      <SubItem value="mnu_cc_solicitud"  level="1" father="1"  numOfSubItem="5">
+        <Item value="mnu_cf_solicitudLibranza"    level="2" father="0" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="SolicitudLibranza" formId="160"/>
+        <Item value="mnu_cf_SolicitudGestion"    level="2" father="0" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="SolicitudGestion" formId="32323"/>    
+        <Item value="mnu_cf_aprobacionGiro"       level="2" father="0" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="AprobacionGiro"  formId="32561"/>
+        <Item value="mnu_cf_devolucionSolicitudes" level="2" father="0" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="DevolucionSolicitud" formId="32507"/>
+        <Item value="mnu_cf_reestructuracionSinCambioCred" level="2" father="0" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="ReestructuraSinCambio" formId="32586"/>
+        <Item value="-" level="2" father="0" grantfather="1" /> 
+        <Item value="mnu_cf_solicitudAnticipos" level="2" father="0" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="SolicitudAnticipos" formId="32563"/>
+      </SubItem>
+      <SubItem value="mnu_cc_cartera"  level="1" father="1"  numOfSubItem="7">
+        <Item value="mnu_cf_recaudosManuales"       level="2" father="1" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="RecaudosManuales"  formId="167"/>
+        <Item value="mnu_cf_estadoCuenta"           level="2" father="1" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="EstadoCuentaFin"  formId="162"/>
+        <Item value="mnu_cf_pagosTotales"           level="2" father="1" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="PagosTotales"  formId="168"/>
+        <Item value="mnu_cf_desistimiento"          level="2" father="1" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="Desistimiento"  formId="182"/>
+        <Item value="mnu_cf_aprobacionGiroRechazo"  level="2" father="1" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="AprobacionGiroRechazo"  formId="32561"/>
+        <Item value="mnu_cf_NotaCreditoCartera" level="2" father="1" grantfather="1"  node="document" nodeId="cf" event="OpenForm_clicked" form="NotaCreditoCartera"  formId="184"/>
+      </SubItem>
+      <SubItem value="mnu_cc_ventaCartera"  level="1" father="1"  numOfSubItem="8">
+        <Item value="mnu_cf_preventaCartera"          level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="PreventaCartera"  formId="32566"/>
+        <Item value="mnu_cf_ventaCartera"             level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="VentaCartera"  formId="164"/>
+        <Item value="mnu_cf_endosoLibranzasVendidas"  level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="EndosoLibranzasVendidas"  formId="32567"/>
+        <Item value="mnu_cf_cierreOferta"             level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="CierreOferta"  formId="32568"/>
+        <Item value="-"                               level="2" father="2"  grantfather="1" />
+        <Item value="mnu_cf_pagoFlujo"                level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="PagoFlujos"  formId="169"/>
+        <Item value="mnu_cf_recompraCartera"          level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="RecompraCartera"  formId="165"/>
+        <Item value="mnu_cf_reasignaCompradorFinal"   level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="ReasignaCompradorFinal"  formId="170"/>
+        <Item value="-"                               level="2" father="2"  grantfather="1" />
+        <Item value="mnu_cf_fondeoCartera"            level="2" father="2" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="FondeoCartera"  formId="174"/>
+      </SubItem>
+      <SubItem value="mnu_cc_cobroJuridico"  level="1" father="1"  numOfSubItem="3">
+        <Item value="mnu_cf_cobroJuridico"            level="2" father="3" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="CobroJuridico"  formId="177"/>
+        <Item value="mnu_cf_AbonoCJ"                  level="2" father="3" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="AbonoCJ" />
+        <Item value="mnu_cf_cobroJuridicoPoliza"      level="2" father="3" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="CobroJuridicoPoliza"  formId="32509"/>
+        <Item value="mnu_cf_SentenciaJudicial"        level="2" father="3" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="SentenciaJudicial"  formId="186"/>
+        <Item value="-"                               level="2" father="3" grantfather="1" />
+        <Item value="mnu_cc_registroCJContabilidad"   level="2" father="3" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="CobroJuridicoAuxiliar"  formId="32503"/>
+      </SubItem>
+      <SubItem value="mnu_cf_Polizas"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cf_Registro"           level="2" father="4" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="PolizaRegistro"  formId="32504"/>
+        <Item value="mnu_cf_Pagos"              level="2" father="4" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="PolizaPago"  formId="32505"/>
+        <Item value="mnu_cf_controlGarantias"   level="2" father="4" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="GarantiaControl" formId="2"/>
+        <Item value="mnu_cf_Revocatorias"       level="2" father="4" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="PolizaRevocatoria" formId="185"/>
+        <Item value="mnu_cf_digitacionCreditoPolizas"    level="2" father="4" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="DigitacionCreditoFinanciera" formId="32572"/>
+        <Item value="mnu_cf_aprobacionLibranzas" level="2" father="4" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="AprobacionSolicitudFin" formId="32558"/>
+      </SubItem>
+      <SubItem value="mnu_cc_GestionCobranza"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cf_GestionCobranza"    level="2" father="5" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="GestionCobranza"  formId="32502"/>
+        <Item value="mnu_cf_GestionDiaria"      level="2" father="5" grantfather="1" node="document" nodeId="cf" event="OpenFormModal_clicked" form="GestionDiaria" formId="1154"/>
+      </SubItem>
+      <SubItem value="mnu_cc_ModificaDatos"    level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cf_cambioDatosCredito"       level="2" father="6" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="CambioDatosCredito"  formId="32506"/>
+        <Item value="mnu_cf_ccCambioFechaPlanPagos"   level="2" father="6" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="CambioFechaPlanPagos"  formId="32569"/>
+      </SubItem>
+      <SubItem value="mnu_cc_reintegro"  level="1" father="1"  numOfSubItem="3">
+        <Item value="mnu_cf_pagosespeciales" level="2" father="7" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="PagosEspeciales"  formId="172"/>
+        <Item value="mnu_cf_reintegroClientes" level="2" father="7" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="ReintegroClientes"  formId="172"/>
+        <Item value="mnu_cf_aprobacionReintegroClientes" level="2" father="7" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionReintegroClientes"  formId="32571"/>
+      </SubItem>      
+      <SubItem value="mnu_cc_incorporaciones"  level="1" father="1"  numOfSubItem="5">
+        <Item value="mnu_cf_incorporacion"            level="2" father="8" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="Incorporacion"  formId="163"/>
+        <Item value="mnu_cf_migracionVerif"           level="2" father="8" grantfather="1" node="document" nodeId="cf" event="OpenFormModal_clicked" form="MigracionVerificacion"  formId="1149"/>
+        <Item value="mnu_cf_desIncorporacion"         level="2" father="8" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="DesIncorporacion"  formId="171"/>
+        <Item value="mnu_cf_reIncorporacion"          level="2" father="8" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="Reincorporacion"  formId="173"/>
+        <Item value="mnu_cf_reIncorporacion"          level="2" father="8" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="IncorporaDescuento"  formId="32510"/>
+        <Item value="mnu_cf_archivoIncorporaciones"   level="2" father="8" grantfather="1" node="document" nodeId="cf" event="OpenForm_clicked" form="ArchivoIncorporaciones"  formId="32314"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_cf_ReversionCartera" level="1" father="1"  node="document" nodeId="cf" event="OpenForm_clicked" form="RevertirCartera"  formId="32501"/>
+      <SubItem value="mnu_cc_liquidacionComisiones"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cc_liquidacionComisiones" level="2" father="11" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="LiquidacionComisiones"  formId="176"/>
+        <Item value="mnu_cc_aprobacionLiquidacionComisiones" level="2" father="11" grantfather="1" node="document" nodeId="cc" event="OpenForm_clicked" form="AprobacionLiquidacionComisiones"  formId="32570"/>
+      </SubItem>
+    
+      </MainItem>
+    <MainItem value="mnu_cc_process" numOfSubItem="4" level="0">
+      <SubItem value="mnu_cf_cierreDiaCartera"  level="1" father="2" node="process" nodeId="cf" event="OpenFormModal_clicked" form="CierreDiaCartera"  formId="1143"/>
+      <SubItem value="mnu_cf_cierreCartera"     level="1" father="2" node="process" nodeId="cf" event="OpenFormModal_clicked" form="CierreCarteraFin"  formId="1131"/>
+      <SubItem value="mnu_cf_amortizaDer"       level="1" father="2" node="process" nodeId="cf" event="OpenFormModal_clicked" form="AmortizacionDerechos"  formId="1155"/>
+      <SubItem value="mnu_cf_CarteraAdmon"       level="1" father="2" node="process" nodeId="cf" event="OpenFormModal_clicked" form="CarteraAdministracion"  formId="1156"/>
+      <SubItem value="mnu_cf_RecaudosBancos"    level="1" father="2" node="process" nodeId="cf" event="OpenFormModal_clicked" form="RecaudosMasivosFin"   formId="1123"/>
+      <SubItem value="mnu_cc_GestionFasecolda" level="1" father="2" node="process" nodeId="dr" event="OpenFormModal_clicked" form="GestionFaseColda"  formId="1157"/>
+      <SubItem value="-"                        level="1" father="2"/>
+      <SubItem value="mnu_cf_migracionCartera"  level="1" father="2" node="process" nodeId="cf" event="OpenFormModal_clicked" form="MigracionCartera"  formId="1125"/>
+    </MainItem>
+    <MainItem value="mnu_cc_querys" numOfSubItem="4" level="0">
+      <SubItem value="mnu_cf_querySolicitud"    level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="Solicitudes" formId="32317"/>
+      <SubItem value="mnu_cf_queryLibranza"     level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="QueryLibranza" formId="32311"/>
+      <SubItem value="mnu_cf_queryVentaCartera" level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="QueryVentaCartera" formId="32315"/>
+      <SubItem value="mnu_cf_SaldosLibranza"    level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="SaldosLibranza" formId="32321"/>
+      <SubItem value="mnu_cf_GestionCobranza"   level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="QueryGestionCobranza" formId="32322"/>
+      <SubItem value="-" level="1" father="3"/>
+      <SubItem value="mnu_cf_estadisticasDiarias"   level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="EstadisticasDiariasCartera" formId="32312"/>
+      <SubItem value="mnu_cf_estadisticasMensuales" level="1" father="3" node="query" nodeId="cf" event="OpenForm_clicked" form="EstadisticasMensualesCartera" formId="32313"/>
+    </MainItem>
+    <MainItem value="mnu_cc_reports" numOfSubItem="0" level="0">
+      <SubItem value="mnu_cf_reportesCartera"       level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_Saldos" formId="35068"/>
+      <SubItem value="mnu_cf_reportesAnalisis"      level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_AnalisisPagos" formId="35102"/>
+      <SubItem value="mnu_cf_reportesSolicitudes"   level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_Solicitudes" formId="35096"/> 
+      <SubItem value="mnu_cf_reportesProyecciones"  level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_Proyecciones" formId="35104"/>
+      <SubItem value="mnu_cf_reportesEstadoCesion"  level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_EstadoCesion" formId="35105"/>
+      <SubItem value="mnu_cf_reporteCobroJuridico"  level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_CobroJuridico" formId="35106"/>
+      <SubItem value="mnu_cf_Polizas"               level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_cf_PolizaEstado" level="2" father="6" grantfather="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_PolizaEstado"  formId="35107"/>
+      </SubItem>
+      <SubItem value="mnu_cf_reports_Certificados"  level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked"  form="Reports_Certificados"      formId="35086"/>
+      <SubItem value="mnu_cf_datacredito"           level="1" father="4" node="report" nodeId="cf" event="OpenForm_clicked"       form="Reports_DataCredito"       formId="32319"/> 
+     <SubItem value="mnu_cf_GestionCobranza"        level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_cf_RepEstadisticos"  level="2" father="9" grantfather="4"  node="report" nodeId="cf" event="OpenFormModal_clicked"  form="Reports_GestionEstadisticos"   formId="35152"/> 
+        <Item value="mnu_cf_RepGestion"       level="2" father="9" grantfather="4"  node="report" nodeId="cf" event="OpenFormModal_clicked"  form="Reports_GestionCobranza"   formId="35153"/> 
+      </SubItem>
+      <SubItem value="mnu_cf_reporteVarios"         level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked"  form="Reports_CarteraEspeciales" formId="35115"/>
+      <SubItem value="mnu_cc_Gestion"               level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_cf_GestionComercial" level="2" father="11" grantfather="4" node="report" nodeId="cf" event="OpenFormModal_clicked" form="Reports_GestionComercial"  formId="35141"/>
+      </SubItem>
+      <SubItem value="mnu_cf_reportePagaduria"         level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked"  form="Reports_CarteraPagaduria" formId="35147"/>
+      <SubItem value="mnu_cf_creditos"         level="1" father="4" node="report" nodeId="cf" event="OpenFormModal_clicked"  form="Reports_CarteraCreditos" formId="35149"/>
+    
+    </MainItem>
+    
+    <MainItem value="mnu_cc_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_cc_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_cf_searchDocument"   level="1" father="5"  nodeId="cf" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+      <SubItem value="mnu_cf_envioCorreos"   level="1" father="5"  nodeId="cf" event="OpenForm_clicked" form="EnvioCorreoCliente" formId="1048"/>
+    </MainItem>
+    <MainItem value="mnu_cc_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cc_help" level="1" father="6" event="OpenHelp_clicked" nodeId="cf" />
+    </MainItem>
+    <MainItem value="mnu_cc_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cc_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="co" numOfMenus="8">
+    <MainItem value="mnu_co_parametros" numOfSubItem="1" level="0">
+      <SubItem value="mnu_co_Cuentas"             level="1" father="0"  numOfSubItem="3">
+          <Item value="mnu_co_coPlanCuenta"         level="2" father="0"  grantfather="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coPlanCuenta"     formId="20201"/>
+          <Item value="mnu_co_coControl"            level="2" father="0"  grantfather="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coControl"        formId="20307"/>
+          <Item value="mnu_gl_glConceptoSaldo"      level="2" father="0"  grantfather="0"  node="master" nodeId="co" event="OpenForm_clicked" form="glConceptoSaldo"  formId="11017"/>
+      </SubItem>  
+      <SubItem value="mnu_co_coTercero"            level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coTercero" formId="20200"/>
+      <SubItem value="mnu_co_Proyectos"            level="1" father="0"  numOfSubItem="3">
+        <Item value="mnu_co_coProyecto"                 level="2" father="2"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coProyecto"     formId="20202"/>
+        <Item value="mnu_co_coOperacion"                level="2" father="2"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coOperacion"    formId="20007"/>
+        <Item value="mnu_co_coActividad"                level="2" father="2"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coActividad"    formId="20102"/>
+      </SubItem>
+      <SubItem value="mnu_co_coCentroCosto"        level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coCentroCosto" formId="20100"/>
+      <SubItem value="mnu_co_Cargos"               level="1" father="0"  numOfSubItem="2">
+        <Item value="mnu_co_coConceptoCargo"            level="2" father="4"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coConceptoCargo"     formId="20008"/>
+        <Item value="mnu_co_coCargoCosto"               level="2" father="4"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coCargoCosto"        formId="20303"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_co_coComprobante"        level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coComprobante" formId="20203"/>
+      <SubItem value="mnu_co_coComprobantePrefijo" level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coComprobantePrefijo"  formId="20205"/>
+      <SubItem value="mnu_co_coDocumento"          level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coDocumento" formId="20013"/>
+      <SubItem value="mnu_co_coTasaCierre"         level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coTasaCierre"  formId="20016"/>
+      <SubItem value="mnu_co_Balances"             level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_co_coBalanceTipo"              level="2" father="10"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coBalanceTipo"        formId="20006"/>
+        <Item value="mnu_co_coCuentaGrupo"              level="2" father="10"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coCuentaGrupo"        formId="20004"/>
+        <Item value="mnu_co_coComprBalanceTipo"         level="2" father="10"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coComprBalanceTipo"   formId="20300"/>
+        <Item value="mnu_co_coPlanCorporativo"          level="2" father="10"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coPlanCorporativo"    formId="20022"/>
+      </SubItem>
+      <SubItem value="mnu_co_Impuestos"            level="1" father="0"  numOfSubItem="20">
+        <Item value="mnu_co_coImpuesto"                 level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpuesto"                 formId="20304"/>
+        <Item value="mnu_co_coValIVA"                   level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coValIVA"                   formId="20305"/>
+        <Item value="mnu_co_coIVARetencion"             level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coIvaRetencion"             formId="20306"/>
+        <Item value="mnu_co_coImpuestoTipo"             level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpuestoTipo"             formId="20005"/>
+        <Item value="mnu_co_coImpuestoFormato"          level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpuestoFormato"          formId="20010"/>
+        <Item value="mnu_co_coImpuestoConcepto"         level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpuestoConcepto"         formId="20011"/>
+        <Item value="mnu_co_coImpuestoLocal"            level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpuestoLocal"            formId="20309"/>
+        <Item value="-"                                 level="2" father="11"  grantfather="0"/>
+        <Item value="mnu_co_coRegimenFiscal"            level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coRegimenFiscal"            formId="20001"/>
+        <Item value="mnu_co_coTerceroDocTipo"           level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coTerceroDocTipo"           formId="20002"/>
+        <Item value="mnu_co_coActEconomica"             level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coActEconomica"             formId="20003"/>
+        <Item value="mnu_co_coActividadTercero"         level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coActividadTercero"         formId="20104"/>
+        <Item value="-"                                 level="2" father="11"  grantfather="0"/>
+        <Item value="mnu_co_coImpuestoDeclaracion"      level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpuestoDeclaracion"      formId="20009"/>
+        <Item value="mnu_co_coImpDeclaracionCuenta"     level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpDeclaracionCuenta"     formId="20017"/>
+        <Item value="mnu_co_coImpDeclaracionRenglon"    level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpDeclaracionRenglon"    formId="20018"/>
+        <Item value="mnu_co_coImpDeclaracionCalendario" level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coImpDeclaracionCalendario" formId="20019"/>
+        <Item value="-"                                 level="2" father="11"  grantfather="0"/>
+        <Item value="mnu_co_coBalanceReclasifica"       level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coBalanceReclasifica"       formId="20020"/>
+        <Item value="mnu_co_coGrupoFiscal"              level="2" father="11"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coGrupoFiscal"              formId="20014"/>      
+      </SubItem>
+      <SubItem value="mnu_co_Reportes"             level="1" father="0"  numOfSubItem="3">
+        <Item value="mnu_co_coReporte"                  level="2" father="12" grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coReporte"           formId="20103"/>
+        <Item value="mnu_co_coReporteLinea"             level="2" father="12" grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coReporteLinea"      formId="20301"/>
+        <Item value="mnu_co_coReporteFiltro"            level="2" father="12" grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coReporteFiltro"     formId="20302"/>
+      </SubItem>
+      <SubItem value="mnu_co_coLineaNegocio"       level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="coLineaNegocio"  formId="20312"/>
+      <SubItem value="mnu_co_Presupuesto"          level="1" father="0"  numOfSubItem="3">
+        <Item value="mnu_pl_plLineaPresupuesto"         level="2" father="14"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="plLineaPresupuesto" formId="25001"/>
+        <Item value="mnu_pl_plServicios"                level="2" father="14"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="plServicio"         formId="25017"/>
+        <Item value="mnu_pl_plDistribucion"             level="2" father="14"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="plDistribucion"     formId="25018"/>
+      </SubItem>
+      <SubItem value="mnu_co_IFRS"                 level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_co_coFuenteUso"                level="2" father="15"   grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coFuenteUso"         formId="20021"/>
+        <Item value="mnu_co_coNormasIFRS"               level="2" father="15"   grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coNormasIFRS"        formId="20315"/>
+        <Item value="mnu_co_coReporteNota"              level="2" father="15"   grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coReporteNota"       formId="20024"/>
+        <Item value="mnu_co_coUnidadGenEfectivo"        level="2" father="15"   grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coUnidadGenEfectivo" formId="20313"/>
+      </SubItem>      
+      <SubItem value="-"                            level="1" father="0"/>           
+      <SubItem value="mnu_co_coControlContabilidad" level="1" father="0"  node="master" nodeId="co" event="OpenForm_clicked" form="ControlContabilidad" formId="20000"/>
+    </MainItem>
+    <MainItem value="mnu_co_documents" numOfSubItem="11" level="0">
+      <SubItem value="mnu_co_comprobanteManual"       level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="ComprobanteManual"        formId="11"/>
+      <SubItem value="mnu_co_documentoContable"       level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="DocumentoContable"        formId="12"/>
+      <SubItem value="mnu_co_cruceCuentas"            level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="CruceCuentas"             formId="18"/>
+      <SubItem value="-"                              level="1"  father="1"/>
+      <SubItem value="mnu_co_reclasificacionSaldos"   level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="ReclasificacionSaldos"    formId="20503"/>
+      <SubItem value="mnu_co_ajusteComprobante"       level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="ComprobanteAjuste"        formId="20504"/>
+      <SubItem value="mnu_co_declaracionImpuestos"    level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="DeclaracionImpuestos"     formId="20505"/>
+      <SubItem value="mnu_co_comprobanteDistribucion" level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="ComprobanteDistribucion"  formId="20506"/>
+      <SubItem value="mnu_co_reclasificacionFiscal"   level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="ReclasificacionFiscal"    formId="20507"/>
+      <SubItem value="-"                              level="1" father="1"/>
+      <SubItem value="mnu_co_presupuestoContable"     level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="PresupuestoContable"      formId="20511"/>
+      <SubItem value="mnu_co_aprobacionComprobantes"  level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="AprobacionComprobantes"   formId="20551"/>
+      <SubItem value="mnu_co_aprobacionDocCont"       level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="AprobacionDocCont"        formId="20552"/>
+      <SubItem value="mnu_co_aprobacionAjusteComp"    level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="AprobacionAjusteComp"     formId="20553"/>
+      <SubItem value="-"                              level="1" father="1"/>
+      <SubItem value="mnu_co_revertirContabilidad"    level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="RevertirContabilidad"     formId="20509"/>
+      <SubItem value="mnu_co_anularContabilidad"      level="1" father="1" node="document" nodeId="co" event="OpenForm_clicked" form="AnularContabilidad"       formId="20510"/>
+    </MainItem>
+    <MainItem value="mnu_co_process" numOfSubItem="12" level="0">
+      <SubItem value="mnu_co_mayorizarForm"           level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="MayorizarForm"            formId="1103"/>
+      <SubItem value="mnu_co_abrirMes"                level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="AbrirMes"                 formId="1112"/>
+      <SubItem value="mnu_co_cierreMensual"           level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="CierreMensual"            formId="1105"/>
+      <SubItem value="mnu_co_cierreAnual"             level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="CierreAnual"              formId="1104"/>
+      <SubItem value="-"                              level="1" father="2"/>
+      <SubItem value="mnu_co_ajusteEnCambio"          level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="AjusteEnCambio"           formId="1106"/>
+      <SubItem value="mnu_co_migracionComprobante"    level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="MigracionComprobantes"    formId="1111"/>
+      <SubItem value="mnu_co_comprobanteDistribucion" level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="ProcesarCompDist"         formId="1117"/>
+      <SubItem value="mnu_co_prorrateoIVA"            level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="ProrrateoIVA"             formId="1118"/>
+      <SubItem value="mnu_co_reclasificacionFiscal"   level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="ProcesarReclasificacion"  formId="1119"/>
+      <SubItem value="mnu_co_consolidacionBalances"   level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="ConsolidacionDeBalances"  formId="1120"/>
+      <SubItem value="mnu_co_reclasificacionLibros"   level="1" father="2" node="process" nodeId="co" event="OpenFormModal_clicked" form="ReclasificacionLibros"    formId="1107"/>
+    </MainItem>
+    <MainItem value="mnu_co_querys" numOfSubItem="2"   level="0">
+      <SubItem value="mnu_co_simulador"                           level="1" father="3" node="query" nodeId="co" event="OpenForm_clicked" form="Simulador"                           formId="20310"/>
+      <SubItem value="mnu_co_estadisticasMensualesContabilidad"   level="1" father="3" node="query" nodeId="co" event="OpenForm_clicked" form="EstadisticasMensualesContabilidad"   formId="20311"/>
+      <SubItem value="mnu_co_querySaldosCierre"                   level="1" father="3" node="query" nodeId="co" event="OpenForm_clicked" form="QuerySaldosCierre"                   formId="20316"/>
+      <SubItem value="mnu_co_queryMvtosAuxiliar"                  level="1" father="3" node="query" nodeId="co" event="OpenForm_clicked" form="QueryMvtoAuxiliar"                   formId="20319"/>
+      <SubItem value="mnu_cc_queryIndicadores"                    level="1" father="3" node="query" nodeId="co" event="OpenForm_clicked" form="ConsultaIndicadores" formId="33319"/>
+      <SubItem value="-"                                          level="1" father="3"/>
+      <SubItem value="mnu_co_generalQueries"                      level="1" father="3" node="query" nodeId="co" event="OpenForm_clicked" form="ConsultasGeneralesContabilidad"      formId="20317"/>
+    </MainItem>
+    <MainItem value="mnu_co_reports" numOfSubItem="10"  level="0">
+      <SubItem value="mnu_co_balancePrueba"                       level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="Reporte_Balance"                formId="35003"/>
+      <SubItem value="mnu_co_librosOficiales"                     level="1" father="4"  numOfSubItem="3">
+        <Item value="mnu_co_libroDiario"                               level="2" father="1" grantfather="4" node="report" nodeId="co" event="OpenFormDialog_clicked"                  form="ParametersReporteLibroDiario" formId="35002"/>
+        <Item value="mnu_co_libroMayor"                                level="2" father="1" grantfather="4" node="report" nodeId="co" event="OpenFormDialog_clicked"                  form="ParametersReporteLibroMayor" formId="35001"/>
+        <Item value="mnu_co_inventarioBalance"                         level="2" father="1" grantfather="4" node="report" nodeId="co" event="OpenFormDialog_clicked"                  form="ParametersInventariosBalance" formId="35017"/>
+      </SubItem>
+      <SubItem value="mnu_co_comprobante"                         level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersReportComprobantes"   formId="35006"/>
+      <SubItem value="mnu_co_parametersReporteAuxiliar"           level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersReporteAuxiliar"      formId="35008"/>
+      <SubItem value="mnu_co_parametersReporteSaldos"             level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersReporteSaldos"        formId="35010"/>
+      <SubItem value="mnu_co_parametersFormularios"               level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersFormularios"          formId="35012"/>
+      <SubItem value="mnu_co_parametersSaldosDocumentos"          level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersSaldosDocumentos"     formId="35018"/>
+      <SubItem value="mnu_co_parametersRelacionDocumentos"        level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersRelacionDocumentos" formId="35019"/>
+      <SubItem value="mnu_co_parametersReporteTasasDeCierre"      level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersReporteTasasDeCierre" formId="35036"/>
+      <SubItem value="mnu_co_parametersCertificados"              level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="Reports_CertificadoImp" formId="35043"/>
+      <SubItem value="mnu_co_parametersReporteBalComparativo"     level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="ParametersReporteBalComparativo" formId="35091"/>
+      <SubItem value="mnu_co_Reports_ReportLineaParam"            level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="Reports_ReportLineas" formId="35138"/>
+      <SubItem value="mnu_co_Reports_PResupuestoContable"         level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="Reports_PresupuestoContable" formId="35139"/>
+      <SubItem value="mnu_co_Reports_MediosMagneticos"            level="1" father="4" node="report" nodeId="co" event="OpenFormDialog_clicked" form="Reports_Medios" formId="35146"/>
+      
+    </MainItem>
+    <MainItem value="mnu_co_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_co_updControl"      level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-"                      level="1" father="5"/>
+      <SubItem value="mnu_task"               level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"        level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_co_searchDocument"  level="1" father="5" nodeId="co" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_co_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_co_help"            level="1" father="6" event="OpenHelp_clicked" nodeId="co" />
+    </MainItem>
+    <MainItem value="mnu_co_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_co_salir"           level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="cp" numOfMenus="8">
+    <MainItem value="mnu_cp_parametros" numOfSubItem="8" level="0">
+      <SubItem value="mnu_cp_cpConceptoCXP"      level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpConceptoCXP"       formId="21001"/>
+      <SubItem value="mnu_cp_cpCajaMenor"        level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpCajaMenor"         formId="21002"/>
+      <SubItem value="mnu_cp_cpAnticipoTipo"     level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpAnticipoTipo"      formId="21003"/>
+      <SubItem value="mnu_cp_cpCargoEspecial" level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpCargoEspecial"  formId="21004"/>
+      <SubItem value="mnu_cp_cpCausalesDev"        level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpCausalesDev"         formId="21006"/>
+      <SubItem value="mnu_cp_cpDistribuyeImpLocal" level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpDistribuyeImpLocal"  formId="21007"/>
+      <SubItem value="mnu_cp_cpCargoAnticipoTipo" level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpCargoAnticipoTipo"  formId="21008"/>
+      <SubItem value="mnu_cp_cpTarjetaCredito"    level="1" father="0"  node="master" nodeId="cp" event="OpenForm_clicked" form="cpTarjetaCredito"      formId="21009"/>
+      <SubItem value="mnu_cp_ccReintegroSaldo"    level="1" father="0"  node="master" nodeId="cf" event="OpenForm_clicked" form="ccReintegroSaldo"  formId="32054"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_cp_controlCxP"  level="1" father="0" node="document" nodeId="cp" event="OpenForm_clicked" form="ControlCxP" formId="21000"/>
+    </MainItem>
+    <MainItem value="mnu_cp_documents" numOfSubItem="14" level="0">
+      <SubItem value="mnu_cp_anticipos"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cp_anticipos"            level="2" father="0" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="Anticipos"  formId="22"/>
+        <Item value="mnu_cp_aprobacionAnticipos"  level="2" father="0" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionAnticipos" formId="21552"/>
+      </SubItem>
+      <SubItem value="mnu_cp_causacionCxP"  level="1" father="1"  numOfSubItem="5">
+        <Item value="mnu_cp_radicacionFacturas"   level="2" father="1" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="RadicacionFacturas" formId="21501"/>
+        <Item value="mnu_cp_causacionFactura"     level="2" father="1" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="CausacionFacturas" formId="21"/>
+        <Item value="mnu_cp_NotaCredito"          level="2" father="1" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="NotaCreditoCxP" formId="26"/>
+        <Item value="-" level="2" father="1" grantfather="1"/>
+        <Item value="mnu_cp_aprobacionRadicacionFact" level="2" father="1" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionRadicacionFact" formId="21563"/>
+        <Item value="mnu_cp_aprobacionCausacionFact" level="2" father="1" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionCausacionFact" formId="21551"/>
+        <Item value="mnu_cp_aprobacionNotaCredito" level="2" father="1" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionNotaCreditoCxP" formId="21561"/>
+      </SubItem>
+      <SubItem value="mnu_cp_cajaMenor"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cp_cajaMenor"            level="2" father="2"  grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="CajaMenor" formId="23"/>
+        <Item value="mnu_cp_aprobacionCajaMenor"  level="2" father="2"  grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionCajaMenor" formId="21553"/>
+      </SubItem>
+      <SubItem value="mnu_cp_legalizacionGastos"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cp_legalizacionGastos"   level="2" father="3" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="LegalizacionGastos" formId="24"/>
+        <Item value="mnu_cp_aprobacionLegalizacionGastos"  level="2" father="3" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionLegalizacionGastos" formId="21558"/>
+      </SubItem>
+      <SubItem value="mnu_cp_tarjetasCredito"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_cp_tarjetaPago"          level="2" father="4" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="TarjetaPago" formId="25"/>
+        <Item value="mnu_cp_LegalizaTarjeta"      level="2" father="4" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="LegalizacionTarjetas" formId="27"/>
+        <Item value="mnu_cp_aprobacionTarjetaPago" level="2" father="4" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionTarjetaPago" formId="21560"/>
+        <Item value="mnu_cp_aprobacionLegalizaTarjeta"  level="2" father="4" grantfather="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AprobacionLegalizacionTarjetas" formId="21562"/>
+      </SubItem>
+      <SubItem value="mnu_cp_pagoImpuestos"  level="1" father="1" node="document" nodeId="cp" event="OpenForm_clicked" form="PagoImpuestos" formId="21505"/>
+      <SubItem value="mnu_cp_reclasificaSaldos"  level="1" father="1" node="document" nodeId="cp" event="OpenForm_clicked" form="ReclasificacionSaldosCxP" formId="29"/>
+      <SubItem value="mnu_cf_reintegroClientes" level="1" father="1" node="document" nodeId="cf" event="OpenForm_clicked" form="ReintegroClientes"  formId="172"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_cp_revertirCxP"  level="1" father="1" node="document" nodeId="cp" event="OpenForm_clicked" form="RevertirCxP" formId="21503"/>
+      <SubItem value="mnu_cp_anularCxP"  level="1" father="1" node="document" nodeId="cp" event="OpenForm_clicked" form="AnularCxP" formId="21504"/>
+    </MainItem>
+    <MainItem value="mnu_cp_process" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cp_migracionDocControl"  level="1" father="2" node="process" nodeId="cp" event="OpenFormModal_clicked" form="MigracionCxP" formId="1102"/>
+      <SubItem value="mnu_cp_facturaEquivalente"  level="1" father="2" node="process" nodeId="cp" event="OpenFormModal_clicked" form="FacturaEquivalente" formId="1137"/>
+    </MainItem>
+    <MainItem value="mnu_cp_querys" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cp_consultaDocumentosCxP"  level="1" father="3" node="query" nodeId="cp" event="OpenForm_clicked" form="ConsultaDocumentosCxP" formId="21310"/>
+    </MainItem>
+    <MainItem value="mnu_cp_reports" numOfSubItem="10" level="0">
+      <SubItem value="mnu_cp_parametersFacturaEquivalente"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="ParametersFacturaEquivalente" formId="35021"/>
+      <SubItem value="mnu_cp_reports_Radicaciones"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="Reports_Radicaciones" formId="35075"/>
+      <SubItem value="mnu_cp_reports_FacturasXPagar"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="Reports_FacturasXPagar" formId="35072"/>
+      <SubItem value="mnu_cp_reports_FacturasPagadas"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="Reports_FacturasPagadas" formId="35073"/>
+      <SubItem value="mnu_cp_reports_CxPvsPagos"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="Reports_CxPvsPagos" formId="35117"/>
+      <SubItem value="mnu_cp_reports_Anticipos"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="Reports_Anticipos" formId="35074"/>
+      <SubItem value="mnu_cp_reports_CxPPorEdadesDetallada"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="Reports_CxPPorEdadesDetallada" formId="35081"/>
+      <SubItem value="mnu_cp_parametersLibroDeCompras"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="ParametersLibroDeCompras" formId="35039"/>
+      <SubItem value="mnu_cp_parametersCxPMovimientosxPeriodo"  level="1" father="4" node="report" nodeId="cp" event="OpenFormDialog_clicked" form="ParametersCxPMovimientosxPeriodo" formId="35052"/>
+    </MainItem>
+    <MainItem value="mnu_cp_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_cp_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_cp_searchDocument"   level="1" father="5"  nodeId="cp" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_cp_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cp_help" level="1" father="6" event="OpenHelp_clicked" nodeId="cp" />
+    </MainItem>
+    <MainItem value="mnu_cp_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_cp_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+  
+  <Menu module="fa" numOfMenus="8">
+    <MainItem value="mnu_fa_parametros" numOfSubItem="11" level="0">
+      <SubItem value="mnu_fa_faCliente"    level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faCliente" formId="28001"/>
+      <SubItem value="mnu_fa_faConceptos"  level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faConceptos" formId="28002"/>
+      <SubItem value="mnu_fa_faServicios"  level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faServicios" formId="28003"/>
+      <SubItem value="mnu_fa_faAsesor"     level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faAsesor" formId="28004"/>
+      <SubItem value="mnu_fa_faListaPrecio" level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faListaPrecio" formId="28006"/>
+      <SubItem value="mnu_fa_faFacturaTipo"   level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faFacturaTipo" formId="28009"/>
+      <SubItem value="mnu_fa_faPrecioServicio"   level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="faPrecioServicio" formId="28008"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_fa_controlFacturacion"   level="1" father="0" node="master" nodeId="fa" event="OpenForm_clicked" form="ControlFacturacion" formId="28000"/>
+    </MainItem>
+    <MainItem value="mnu_fa_documents" numOfSubItem="4" level="0">
+      <SubItem value="mnu_fa_facturaVenta" level="1" father="1" node="document" nodeId="fa" event="OpenForm_clicked" form="FacturaVenta" formId="41"/>
+      <SubItem value="mnu_fa_notaCredito" level="1" father="1" node="document" nodeId="fa" event="OpenForm_clicked" form="NotaCredito" formId="42"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_fa_aprobacionFacturaVenta" level="1" father="1" node="document" nodeId="fa" event="OpenForm_clicked" form="AprobacionFacturaVenta" formId="28551"/>
+      <SubItem value="mnu_fa_aprobacionNotaCredito" level="1" father="1" node="document" nodeId="fa" event="OpenForm_clicked" form="AprobacionNotaCredito" formId="28552"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_fa_anulacionFacturacion" level="1" father="1" node="document" nodeId="fa" event="OpenForm_clicked" form="AnularFacturacion" formId="28502"/>
+      <SubItem value="mnu_fa_revertirFacturacion" level="1" father="1" node="document" nodeId="fa" event="OpenForm_clicked" form="RevertirFacturacion" formId="28501"/>
+    </MainItem>
+    <MainItem value="mnu_fa_process" numOfSubItem="3" level="0">
+      <SubItem value="mnu_fa_migracionCxC"  level="1" father="2" node="process" nodeId="fa" event="OpenFormModal_clicked" form="MigracionFactCxC" formId="1130"/>
+      <SubItem value="mnu_fa_procesarFacturaFija"  level="1" father="2" node="process" nodeId="fa" event="OpenFormModal_clicked" form="ProcesarFacturaFija" formId="1133"/>
+      <SubItem value="mnu_fa_migracionFactGlobal"  level="1" father="2" node="process" nodeId="fa" event="OpenFormModal_clicked" form="MigracionNewFact" formId="1135"/>
+    </MainItem>
+    <MainItem value="mnu_fa_querys" numOfSubItem="0" level="0">
+      <SubItem value="mnu_fa_consultaDocumentosFact"  level="1" father="3" node="query" nodeId="fa" event="OpenForm_clicked" form="ConsultaDocumentosFact" formId="28310"/>
+    </MainItem>
+    <MainItem value="mnu_fa_reports" numOfSubItem="2" level="0">
+      <SubItem value="mnu_fa_reports_CxCPorEdades"  level="1" father="4" node="report" nodeId="fa" event="OpenFormDialog_clicked" form="Reports_CxCPorEdades" formId="35022"/>
+      <SubItem value="mnu_fa_reports_LibroVentas"  level="1" father="4" node="report" nodeId="fa" event="OpenFormDialog_clicked" form="Reports_LibroVentas" formId="35099"/>
+      <SubItem value="mnu_fa_reports_CuentasXCobrar"  level="1" father="4" node="report" nodeId="fa" event="OpenFormDialog_clicked" form="Reports_CuentasXCobrar" formId="35007"/>
+      <SubItem value="mnu_fa_reports_FacturasMasivo"  level="1" father="4" node="report" nodeId="fa" event="OpenFormDialog_clicked" form="Reports_FacturaVentaMasivo" formId="35124"/>
+    </MainItem>
+    <MainItem value="mnu_fa_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_fa_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_fa_searchDocument"   level="1" father="5"  nodeId="fa" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_fa_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_fa_help" level="1" father="6" event="OpenHelp_clicked" nodeId="fa" />
+    </MainItem>
+    <MainItem value="mnu_fa_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_fa_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="gl" numOfMenus="8">
+    <MainItem value="mnu_gl_parametros" numOfSubItem="12" level="0">
+      <SubItem value="mnu_gl_EstructuraSistema" level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_gl_glTabla"            level="2" father="0"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glTabla"  formId="11014"/>
+        <Item value="mnu_gl_glEmpresa"          level="2" father="0" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glEmpresa" formId="11008"/>
+        <Item value="mnu_gl_glEmpresaGrupo"     level="2" father="0" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glEmpresaGrupo" formId="11009"/>
+        <Item value="mnu_gl_glEmpresaModulo"    level="2" father="0" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glEmpresaModulo" formId="11039"/>
+      </SubItem>
+      <SubItem value="mnu_gl_Localizaciones"    level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_gl_glPais"             level="2" father="1"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glPais" formId="11012"/>
+        <Item value="mnu_gl_glLugarGeografico"  level="2" father="1"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glLugarGeografico"  formId="11011"/>
+        <Item value="mnu_gl_glLocFisica"        level="2" father="1"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glLocFisica"  formId="11010"/>
+        <Item value="mnu_gl_glAreaFisica"       level="2" father="1"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glAreaFisica"  formId="11037"/>
+      </SubItem>
+      <SubItem value="mnu_gl_documentos" level="1" father="0"  numOfSubItem="6">
+        <Item value="mnu_gl_glDocumentoTipo"              level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDocumentoTipo"  formId="11046"/>
+        <Item value="mnu_gl_glDocumentoClase"             level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDocumentoClase"  formId="11047"/>
+        <Item value="mnu_gl_glDocumentoMovimientoTipo"    level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDocumentoMovimientoTipo"  formId="11048"/>
+        <Item value="mnu_gl_glDocumentoAnexo"             level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDocumentoAnexo" formId="11018"/>
+        <Item value="mnu_gl_glActividadChequeoLista"             level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glActividadChequeoLista" formId="11050"/>        
+        <Item value="mnu_gl_glDocMigracionEstructura"     level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDocMigracionEstructura" formId="11004"/>
+        <Item value="mnu_gl_glDocMigracionCampo"          level="2" father="2" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDocMigracionCampo" formId="11005"/>
+      </SubItem>
+      <SubItem value="mnu_gl_accesDocuments"    level="1" father="0" numOfSubItem="5"> 
+        <Item  value="mnu_gl_glGrupoUsuario"        level="2" father="3" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glGrupoUsuario" formId="11021"/>
+        <Item value="mnu_gl_glUsuarioxGrupo"        level="2" father="3" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glUsuarioxGrupo" formId="11022"/>
+        <Item value="mnu_gl_glSeccionFuncional"     level="2" father="3" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glSeccionFuncional" formId="11041"/>
+        <Item value="mnu_gl_glNivelesAprobacionDoc" level="2" father="3" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glNivelesAprobacionDoc" formId="11043"/>
+        <Item value="mnu_gl_glGrupoAprueba"         level="2" father="3" grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glGrupoApruebaDoc" formId="11042"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_gl_ControlOrganizacional" level="1" father="0"  numOfSubItem="5">
+        <Item value="mnu_gl_glPrefijo"                         level="2" father="5"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glPrefijo" formId="11013"/>
+        <Item value="mnu_gl_glAreaFuncional"                   level="2" father="5"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glAreaFuncional"  formId="11001"/>
+        <Item value="mnu_gl_glAreaFuncionalDocumentoPrefijo"   level="2" father="5"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glAreaFuncionalDocumentoPrefijo"  formId="11002"/>
+        <Item value="mnu_gl_glZona"                            level="2" father="5"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glZona" formId="11038"/>
+        <Item value="mnu_gl_glHorarioTrabajo"                  level="2" father="5"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glHorarioTrabajo" formId="11019"/>
+      </SubItem>
+      <SubItem value="mnu_gl_ControlFuncional"   level="1" father="0"  numOfSubItem="8">
+        <Item value="mnu_gl_glMoneda"            level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glMoneda" formId="11015"/>
+        <Item value="mnu_gl_glTasaCambio"        level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glTasaCambio"  formId="11016"/>        
+        <Item  value="mnu_gl_glDatosAnuales"     level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDatosAnuales" formId="11023"/>        
+        <Item value="mnu_gl_glDatosMensuales"    level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDatosMensuales" formId="11035"/>
+        <Item  value="mnu_gl_glDiasFestivos"     level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glDiasFestivos" formId="11034"/>
+        <Item value="mnu_gl_glBienServicioClase" level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glBienServicioClase" formId="11036"/>
+        <Item value="mnu_gl_inUnidad"            level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="inUnidad" formId="26019"/>
+        <Item value="mnu_gl_glCorreosEspeciales" level="2" father="6"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glCorreosEspeciales" formId="11051"/>
+      </SubItem>
+      <SubItem value="mnu_gl_actividades"         level="1" father="0"  numOfSubItem="11">
+        <Item value="mnu_gl_glProcedimiento"          level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glProcedimiento" formId="11025"/>
+        <Item value="mnu_gl_glActividadFlujo"         level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glActividadFlujo" formId="11026"/>
+        <Item value="mnu_gl_glProcedimientoFlujo"     level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glProcedimientoFlujo" formId="11028"/>
+        <Item value="mnu_gl_glActividadPermiso"       level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glActividadPermiso" formId="11027"/>
+        <Item value="-"                               level="2" father="7"  grantfather="0"/>
+        <Item value="mnu_gl_glActividadChequeoLista"  level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glActividadChequeoLista" formId="11031"/>
+        <Item value="mnu_gl_glLLamadaProposito"       level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glLLamadaProposito" formId="11032"/>
+        <Item value="mnu_gl_glLLamadaPregunta"        level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glLLamadaPregunta" formId="11033"/>
+        <Item value="mnu_gl_glActividadAreaFuncional" level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glActividadAreaFuncional"  formId="11024"/>
+        <Item value="mnu_gl_glLLamadaCodigo"          level="2" father="7"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glLLamadaCodigo" formId="11049"/>
+        <Item value="-"                               level="2" father="7"  grantfather="0"/>
+      </SubItem>
+      <SubItem value="-"                               level="1" father="0"/>
+      <SubItem value="mnu_gl_ControlGlobal"            level="1" father="0" node="master" nodeId="gl" event="OpenForm_clicked" form="ControlGlobal" formId="11000"/>
+    </MainItem>
+    <MainItem value="mnu_gl_documents" numOfSubItem="0" level="0">
+      <SubItem value="mnu_gl_controlGarantias"  level="1" father="1" node="document" nodeId="gl" event="OpenForm_clicked" form="GarantiaControl" formId="2"/>         
+    </MainItem>
+    <MainItem value="mnu_gl_process" numOfSubItem="0" level="0"> </MainItem>
+    <MainItem value="mnu_gl_querys" numOfSubItem="1" level="0">
+      <SubItem value="mnu_gl_queryBitacora"  level="1" father="3" node="query" nodeId="gl" event="OpenForm_clicked" form="ConsultaBitacora"  formId="1008"/>
+    </MainItem>
+    <MainItem value="mnu_gl_reports" numOfSubItem="0" level="0">
+      <SubItem value="mnu_gl_docuPendientes"  level="1" father="4" node="report" nodeId="gl" event="OpenFormDialog_clicked" form="Reports_DocuPendientes"  formId="35031"/>
+      <SubItem value="mnu_gl_dinamicReport" level="1" father="4"  numOfSubItem="1"> </SubItem>
+      <SubItem value="mnu_gl_dinamicReportProveedores" level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_gl_SolicitudProveedor" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35128"/>
+        <Item value="mnu_gl_OrdenCompra" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="72"/>
+        <Item value="mnu_gl_OrdenCompraAnexo" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35114"/>
+        <Item value="mnu_gl_RecibidoProveedor" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35129"/>
+      </SubItem>
+      <SubItem value="mnu_gl_dinamicReportProyectos" level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_gl_PlaneacionCostos" level="2" father="3"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35111"/>
+        <Item value="mnu_gl_PlaneacionCostosCompara" level="2" father="3"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35125"/>
+        <Item value="mnu_gl_PlaneacionCostosDetallado" level="2" father="3"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35126"/>
+      </SubItem>
+      <SubItem value="mnu_gl_dinamicReportCartera" level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_gl_LIquidacionCredito" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35059"/>
+        <Item value="mnu_gl_CertificadoDeuda" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35121"/>
+        <Item value="mnu_gl_CertificadoPazYSalvo" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35122"/>
+        <Item value="mnu_gl_CertificadoPagosAlDia" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35132"/>
+        <Item value="mnu_gl_CertificadoRelacionPagos" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35133"/>
+        <Item value="mnu_gl_Pagare" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35032"/>
+        <Item value="mnu_gl_ContratoMutuo" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35143"/>
+        <Item value="mnu_gl_AutDescuento" level="2" father="4"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35144"/>
+      </SubItem>
+      <SubItem value="mnu_gl_dinamicReportFactura" level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_gl_plantilla" level="2" father="5"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="41"/>
+        <Item value="mnu_gl_plantilla" level="2" father="5"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35007"/>
+       <Item value="mnu_gl_plantilla" level="2" father="5"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35150"/>
+      </SubItem>
+      <SubItem value="mnu_gl_dinamicReportTesoreria" level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_gl_PagoFacturas" level="2" father="6"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35130"/>
+        <Item value="mnu_gl_TransferenciaBancaria" level="2" father="6"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35131"/>
+      </SubItem>
+      <SubItem value="mnu_gl_dinamicReportContabilidad" level="1" father="4"  numOfSubItem="1">
+        <Item value="mnu_gl_BalanceEstFinanciero" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35137"/>
+        <Item value="mnu_gl_IngresosContab" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35136"/>
+        <Item value="mnu_gl_OrdenCompra" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="72"/>
+        <Item value="mnu_gl_OrdenCompraAnexo" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35114"/>
+        <Item value="mnu_gl_RecibidoProveedor" level="2" father="2"  grantfather="4" node="report" nodeId="gl" event="OpenFormReports_clicked" formId="35129"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="4"/>
+      <SubItem value="mnu_gl_dinamicos"  level="1" father="4" node="report" nodeId="gl" event="OpenFormDialog_clicked" form="Reports_Dinamicos"  formId="35155"/>
+    </MainItem>
+    <MainItem value="mnu_gl_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_gl_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_gl_searchDocument"   level="1" father="5"  nodeId="gl" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_gl_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_gl_help" level="1" father="6" event="OpenHelp_clicked" nodeId="gl" />
+    </MainItem>
+    <MainItem value="mnu_gl_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_gl_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="in" numOfMenus="8">
+    <MainItem value="mnu_in_parametros" numOfSubItem="26" level="0">
+      <SubItem value="mnu_in_Bodegas" level="1" father="0"  numOfSubItem="6">
+        <Item value="mnu_in_inBodega"       level="2" father="0"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inBodega" formId="26014"/>
+        <Item value="mnu_in_inBodegaTipo"   level="2" father="0"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inBodegaTipo" formId="26013"/>
+        <Item value="mnu_in_inBodegaUbicacion" level="2" father="0"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inBodegaUbicacion" formId="26016"/>
+        <Item value="mnu_in_inBodegaRefe"   level="2" father="0"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inBodegaRefe" formId="26015"/>
+        <Item value="mnu_in_inBodegaContab" level="2" father="0"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inBodegaContab" formId="26011"/>
+        <Item value="mnu_in_inCosteoGrupo"  level="2" father="0"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inCosteoGrupo" formId="26012"/>
+      </SubItem>
+      <SubItem value="mnu_in_Referencias" level="1" father="0"  numOfSubItem="12">
+        <Item value="mnu_in_inReferencia"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inReferencia" formId="26010"/>
+        <Item value="mnu_in_inReferenciaCod"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inReferenciaCod" formId="26028"/>
+        <Item value="mnu_in_inRefTipo"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inRefTipo" formId="26005"/>
+        <Item value="mnu_in_inRefGrupo"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inRefGrupo" formId="26006"/>
+        <Item value="mnu_in_inRefClase"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inRefClase" formId="26007"/>
+        <Item value="mnu_in_inPartesComponentes"  level="2" father="1" grantfather="0"  node="master" nodeId="in" event="OpenForm_clicked" form="inPartesComponentes" formId="26022"/>
+        <Item value="mnu_in_inRefEquivalentes"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inRefEquivalentes" formId="26023"/>
+        <Item value="-" level="2" father="1"  grantfather="0"/>
+        <Item value="mnu_in_inRefParametro1"  level="2" father="1"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inRefParametro1" formId="26002"/>
+        <Item value="mnu_in_inRefParametro2"  level="2" father="1"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inRefParametro2" formId="26003"/>
+        <Item value="mnu_in_inTipoParametro1"  level="2" father="1"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inTipoParametro1" formId="26025"/>
+        <Item value="mnu_in_inTipoParametro2"  level="2" father="1"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inTipoParametro2" formId="26027"/>
+        <Item value="-" level="2" father="1" grantfather="0"/>
+        <Item value="mnu_in_inMarca"  level="2" father="1"  grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inMarca" formId="26008"/>
+        <Item value="mnu_in_inMaterial"  level="2" father="1" grantfather="0"  node="master" nodeId="in" event="OpenForm_clicked" form="inMaterial" formId="26001"/>
+        <Item value="mnu_in_inSerie"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inSerie" formId="26009"/>
+        <Item value="mnu_in_inPosicionArancel"  level="2" father="1" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inPosicionArancel" formId="26026"/>
+      </SubItem>
+      <SubItem value="mnu_in_Unidades" level="1" father="0"  numOfSubItem="3">
+        <SubItem value="mnu_in_inUnidad"  level="2" father="2" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inUnidad" formId="26019"/>
+        <SubItem value="mnu_in_inConversionUnidad"  level="2"  father="2" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inConversionUnidad" formId="26021"/>
+        <SubItem value="mnu_in_inEmpaque"  level="2" father="2" grantfather="0" node="master" nodeId="in" event="OpenForm_clicked" form="inEmpaque" formId="26020"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_in_inMovimientoTipo"  level="1" father="0" node="master" nodeId="in" event="OpenForm_clicked" form="inMovimientoTipo" formId="26018"/>
+      <SubItem value="mnu_in_inContabiliza"  level="1" father="0" node="master" nodeId="in" event="OpenForm_clicked" form="inContabiliza" formId="26024"/>
+      <SubItem value="mnu_in_inImportacionModalidad"  level="1" father="0" node="master" nodeId="in" event="OpenForm_clicked" form="inImportacionModalidad" formId="26030"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_in_controlInventario"  level="1" father="0" node="master" nodeId="in" event="OpenForm_clicked" form="ControlInventarios" formId="26000"/>
+    </MainItem>
+    <MainItem value="mnu_in_documents" numOfSubItem="4" level="0">
+      <SubItem value="mnu_in_transaccionManual" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="TransaccionManual" formId="51"/>
+      <SubItem value="mnu_in_notaEnvio" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="NotaEnvio" formId="52"/>
+      <SubItem value="mnu_in_recibidoNotaEnvio" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="RecibidoNotaEnvio" formId="50501"/>
+      <SubItem value="mnu_in_inventarioFisico" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="InventarioFisico" formId="53"/>
+      <SubItem value="mnu_in_DistribucionCostos" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="DistribucionCostos" formId="54"/>
+      <SubItem value="mnu_in_ordenLegalizacion" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="OrdenLegalizacion" formId="50502"/>
+      <SubItem value="mnu_in_liquidacionImportacion" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="LiquidacionImportacion" formId="55"/>
+      <SubItem value="mnu_in_deterioroInv" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="DeterioroRevalorizacionInv" formId="57"/>
+      <SubItem value="mnu_in_despacho"  level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_in_ordenSalida" level="2" father="8" grantfather="1" node="master" nodeId="in" event="OpenForm_clicked" form="OrdenSalida"  formId="59"/>
+        <Item value="mnu_in_despacho" level="2" father="8" grantfather="1" node="master" nodeId="in" event="OpenForm_clicked" form="Salida"  formId="50504"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_in_aprobInPosteoComprobantes" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="AprobInPosteoComprobantes" formId="50551"/>
+      <SubItem value="mnu_in_aprobInventarioFisico" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="AprobInventarioFisico" formId="50552"/>
+      <SubItem value="mnu_in_aprobDeterioroReval" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="AprobDeterioroReval" formId="50553"/>
+      <SubItem value="mnu_in_revertirInventario" level="1" father="1" node="document" nodeId="in" event="OpenForm_clicked" form="RevertirInvetarios" formId="50503"/>
+    </MainItem>
+    <MainItem value="mnu_in_process" numOfSubItem="1" level="0">
+      <SubItem value="mnu_in_inPosteoComprobantes"  level="1" father="2" node="process" nodeId="in" event="OpenFormModal_clicked" form="InPosteoComprobantes" formId="1121"/>
+    </MainItem>
+    <MainItem value="mnu_in_querys" numOfSubItem="4" level="0">
+      <SubItem value="mnu_in_queryMovimiento"  level="1" father="3" node="query" nodeId="in" event="OpenForm_clicked" form="ConsultaMovimiento"  formId="26312"/>
+      <SubItem value="mnu_in_queryReferencia"  level="1" father="3" node="query" nodeId="in" event="OpenForm_clicked" form="ConsultaReferencia"  formId="26311"/>
+      <SubItem value="mnu_in_queryBodega"  level="1" father="3" node="query" nodeId="in" event="OpenForm_clicked" form="ConsultaBodega"  formId="26310"/>
+      <SubItem value="mnu_in_querySerial"  level="1" father="3" node="query" nodeId="in" event="OpenFormModal_clicked" form="ConsultaSerial"  formId="26313"/>
+    </MainItem>
+    <MainItem value="mnu_in_reports" numOfSubItem="2" level="0">
+      <SubItem value="mnu_in_parametersReportSaldos"  level="1" father="4" node="report" nodeId="in" event="OpenFormModal_clicked" form="ParametersReportSaldos" formId="35071"/>
+      <SubItem value="mnu_in_parametersReportKardex"  level="1" father="4" node="report" nodeId="in" event="OpenFormModal_clicked" form="ParametersReportKardex" formId="35076"/>
+      <SubItem value="mnu_in_parametersReportSerial"  level="1" father="4" node="report" nodeId="in" event="OpenFormModal_clicked" form="ParametersReportSerial" formId="35080"/>
+      <SubItem value="mnu_in_RElacionPrestamos"  level="1" father="4" node="report" nodeId="in" event="OpenFormModal_clicked" form="Report_RelacionPrestamos" formId="35145"/>
+      <SubItem value="mnu_in_Documentos"  level="1" father="4" node="report" nodeId="in" event="OpenFormModal_clicked" form="Report_Documentos" formId="35148"/>
+    
+    </MainItem>
+    <MainItem value="mnu_in_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_in_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_in_searchDocument"   level="1" father="5"  nodeId="in" event="OpenFormDialog_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_in_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_in_help" level="1" father="6" event="OpenHelp_clicked" nodeId="in" />
+    </MainItem>
+    <MainItem value="mnu_in_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_in_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+
+  </Menu>
+
+  <Menu module="no" numOfMenus="8">
+    <MainItem value="mnu_no_parametros" numOfSubItem="26" level="0">
+      <SubItem value="mnu_no_noEmpleado"        level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noEmpleado"      formId="29001"/>
+      <SubItem value="mnu_no_noOperacion"       level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noOperacion"   formId="29003"/>
+      <SubItem value="mnu_no_noFondo"           level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noFondo"      formId="29004"/>
+      <SubItem value="mnu_no_noCaja"            level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noCaja"        formId="29005"/>
+      <SubItem value="mnu_no_noBrigada"         level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noBrigada"     formId="29006"/>
+      <SubItem value="mnu_no_noRiesgo"          level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noRiesgo"     formId="29007"/>
+      <SubItem value="mnu_no_noConceptoPlaTra"  level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noConceptoPlaTra"     formId="29008"/>
+      <SubItem value="mnu_no_noTurnoCompensatorio"  level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noTurnoCompensatorio"     formId="29009"/>
+      <SubItem value="mnu_no_noRol"             level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noRol"     formId="29010"/>
+      <SubItem value="mnu_no_noConvencion"      level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noConvencion"     formId="29011"/>
+      <SubItem value="mnu_no_noConceptoGrupoNOM" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noConceptoGrupoNOM"     formId="29030"/>
+      <SubItem value="mnu_no_noConceptoNOM"     level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noConceptoNOM"     formId="29032"/>
+      <SubItem value="mnu_no_noContratoNov"     level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noContratoNov"     formId="29033"/>
+      <SubItem value="mnu_no_noCompFlexible"    level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noCompFlexible"     formId="29034"/>
+      <SubItem value="mnu_no_noAportesPorcentaje"  level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noAportesPorcentaje"     formId="29051"/>
+      <SubItem value="mnu_no_noBonificaciones"     level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noBonificaciones"     formId="29052"/>
+      <SubItem value="mnu_no_noDistribuyeNomina"   level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noDistribuyeNomina"     formId="29053"/>
+      <SubItem value="mnu_no_noNovedadesxDia"      level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noNovedadesxDia"     formId="29054"/>
+      <SubItem value="mnu_no_noCertificadoIngresosLinea" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noCertificadoIngresosLinea"     formId="29055"/>
+      <SubItem value="mnu_no_noReteFuenteBasica" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noReteFuenteBasica"     formId="29056"/>
+      <SubItem value="mnu_no_noReteFuenteMinima" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noReteFuenteMinima"     formId="29057"/>
+      <SubItem value="mnu_no_noPrestacionesConvencion" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noPrestacionesConvencion" formId="29060"/>
+      <SubItem value="mnu_no_noEmpleadoFamilia" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noEmpleadoFamilia" formId="29061"/>
+      <SubItem value="mnu_no_noComponenteNomina" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noComponenteNomina" formId="29012"/>
+      <SubItem value="mnu_no_noTipoVinculacion" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noTipoVinculacion" formId="29062"/>
+      <SubItem value="mnu_no_noCondicionEspecial" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noCondicionEspecial" formId="29063"/>
+      <SubItem value="mnu_no_noConceptoMM" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noConceptoMM" formId="29064"/>
+      <SubItem value="mnu_no_noConceptoNominaMM" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noConceptoNominaMM" formId="29065"/>
+      <SubItem value="mnu_no_noPrestacionCod" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="noPrestacionCod" formId="29066"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_no_controlNomina" level="1" father="0"  node="master" nodeId="no" event="OpenForm_clicked" form="ControlNomina" formId="29000"/>
+    </MainItem>
+    <MainItem value="mnu_no_documents" numOfSubItem="19" level="0">
+      <SubItem value="mnu_no_liquidaciones"  level="1" father="1" numOfSubItem="6">
+        <Item value="mnu_no_LiquidacionNomina" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionNomina" formId="81"/>
+        <Item value="mnu_no_LiquidacionVacaciones" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionVacaciones" formId="82"/>
+        <Item value="mnu_no_LiquidacionVacacionesColectivas" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionVacacionesColectivas" formId="82"/>
+        <Item value="mnu_no_liquidacionPrima" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionPrima" formId="83"/>
+        <Item value="mnu_no_liquidacionContrato" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionContrato" formId="84"/>
+        <Item value="mnu_no_liquidacionCesantias" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionCesantias" formId="85"/>
+        <Item value="mnu_no_liquidacionProvisiones" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionProvisiones" formId="86"/>
+        <Item value="mnu_no_planillaAutoAportes" level="2" father="0" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="LiquidacionPlanilla" formId="87"/>
+        <Item value="mnu_no_aprobacionPagoNomina" level="2" father="0" grantfather="1"  node="document" nodeId="no" event="OpenForm_clicked" form="AprobacionPagoNomina" formId="80551"/>
+      </SubItem>
+      <SubItem value="mnu_no_Pagos"  level="1" father="1" numOfSubItem="2">
+        <Item value="mnu_no_pagoNomina" level="2" father="1" grantfather="1" node="document" nodeId="no" event="OpenForm_clicked" form="PagoNomina" formId="29110"/>
+        <Item value="mnu_no_aprobacionPagoOtros" level="2" father="1" grantfather="1"  node="document" nodeId="no" event="OpenForm_clicked" form="AprobacionPagoOtros" formId="80554"/>
+      </SubItem>
+      <SubItem value="mnu_no_novedadesNomina" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="NovedadesNomina" formId="29101"/>
+      <SubItem value="mnu_no_novedadesContrato" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="NovedadesContrato" formId="29102"/>
+      <SubItem value="mnu_no_prestamos" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="Prestamos" formId="29103"/>
+      <SubItem value="mnu_no_traslados" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="Traslados" formId="29104"/>
+      <SubItem value="mnu_no_planillaDiariaTrabajo" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="PlanillaDiariaTrabajo" formId="29105"/>
+      <SubItem value="mnu_no_compensatorios" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="Compensatorios" formId="29106"/>
+      <SubItem value="mnu_no_aumentoSueldo" level="1" father="1" node="document" nodeId="no" event="OpenForm_clicked" form="AumentoSueldo" formId="29108"/>
+      <SubItem value="mnu_no_modalReIncorporaciones" level="1" father="1" node="document" nodeId="no" event="OpenFormModal_clicked" form="ModalReIncorporaciones" formId="29109"/>
+      <SubItem value="mnu_no_modalBeneficiosXEmpleado" level="1" father="1" node="document" nodeId="no" event="OpenFormModal_clicked" form="ModalBeneficiosXEmpleado" formId="1025"/>
+    </MainItem>
+    <MainItem value="mnu_no_process" numOfSubItem="1" level="0">
+      <SubItem value="mnu_no_ContabilizarNomina"  level="1" father="2" node="process" nodeId="no" event="OpenForm_clicked" form="ContabilizarNomina" formId="1127"/>
+      <SubItem value="mnu_no_MigracionNomina"  level="1" father="2" node="process" nodeId="no" event="OpenFormModal_clicked" form="MigracionNominas" formId="1140"/>
+      <SubItem value="mnu_no_MigracionProvisiones"  level="1" father="2" node="process" nodeId="no" event="OpenFormModal_clicked" form="MigracionProvisiones" formId="1141"/>
+      <SubItem value="mnu_no_EnvioBoletas"  level="1" father="2" node="process" nodeId="no" event="OpenForm_clicked" form="EnvioBoletas" formId="1150"/>
+      <SubItem value="mnu_no_MigracionNominaAnt"  level="1" father="2" node="process" nodeId="no" event="OpenFormModal_clicked" form="MigracionNominaAnt" formId="1151"/>
+    </MainItem>
+    <MainItem value="mnu_no_querys" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_no_reports" numOfSubItem="5" level="0">
+      <SubItem value="mnu_no_reportsNominaDetail"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_DetalleNomina" formId="35061"/>
+      <SubItem value="mnu_no_reportsAportesNomina"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_AportesNomina" formId="35063"/>
+      <SubItem value="mnu_no_reportsVacacionesNomina" level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_VacacionesNomina" formId="35064"/>
+      <SubItem value="mnu_no_reportsCesantiasNomina"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_CesantiasNomina" formId="35119"/>
+      <SubItem value="mnu_no_reportsPrestamo"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_Prestamo" formId="35110"/>
+      <SubItem value="mnu_no_noDocumentosYCertificados"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="DocumentosYCertificados" formId="35067"/>
+      <SubItem value="mnu_no_noLiquidaContrato"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_LiquidaContrato" formId="35116"/>
+      <SubItem value="mnu_no_noProvisionesNomina"  level="1" father="4" node="report" nodeId="no" event="OpenFormModal_clicked" form="Reports_ProvisionesNomina" formId="35120"/>
+    </MainItem>
+    <MainItem value="mnu_no_tools" numOfSubItem="4" level="0">
+      <SubItem value="mnu_no_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_no_searchDocument"   level="1" father="5" nodeId="no" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_no_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_no_help" level="1" father="6" event="OpenHelp_clicked" nodeId="no" />
+    </MainItem>
+    <MainItem value="mnu_no_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_no_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="oc" numOfMenus="11">
+    <MainItem value="mnu_oc_parametros" numOfSubItem="7" level="0">
+      <SubItem value="mnu_oc_DatosBasicos" level="1" father="0"  numOfSubItem="3">
+        <Item value="mnu_py_pyContrato" level="2" father="0"   grantfather="0" node="master" nodeId="py" event="OpenForm_clicked" form="pyContrato"  formId="33001"/>
+        <Item value="mnu_oc_ocBloque"  level="2" father="0"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocBloque" formId="30004"/>
+        <Item value="mnu_oc_ocContratoCampo"  level="2" father="0"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocContratoCampo" formId="30006"/>
+      </SubItem>
+      <SubItem value="mnu_oc_Socios" level="1" father="0"  numOfSubItem="6">
+        <Item value="mnu_oc_ocSocio"   level="2" father="1"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocSocio"  formId="30108"/>
+        <Item value="mnu_oc_ocParticionTabla" level="2" father="1" grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocParticionTabla" formId="30102"/>
+        <Item value="mnu_oc_ocParticionTablaFija" level="2" father="1" grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocParticionTablaFija" formId="30007"/>
+        <Item value="mnu_oc_ocRangosOverhead" level="2" father="1"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocRangosOverhead" formId="30103"/>
+        <Item value="mnu_oc_ocProyectoTRM"  level="2" father="1"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocProyectoTRM" formId="30003"/>
+        <Item value="mnu_oc_ocTipoCosteo"  level="2" father="1"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocTipoCosteo" formId="30009"/>
+        <Item value="mnu_oc_ocTipoCosteoSocio"  level="2" father="1"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocTipoCosteoSocio" formId="30008"/>
+      </SubItem>
+      <SubItem value="mnu_oc_OtrosDatos" level="1" father="0"  numOfSubItem="4">
+        <Item value="mnu_oc_ocCuentaGrupo"  level="2" father="2"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocCuentaGrupo" formId="30100"/>
+        <Item value="mnu_oc_ocGrupoCtaSocio"  level="2" father="2"  grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocGrupoCtaSocio" formId="30005"/>
+        <Item value="mnu_oc_ocOtrosConceptos"  level="2" father="2" grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocOtrosConceptos" formId="30001"/>
+        <Item value="mnu_oc_ocConceptoCuenta"  level="2" father="2" grantfather="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ocConceptoCuenta" formId="30002"/>
+      </SubItem>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_oc_controlOperacionesConjuntas"  level="1" father="0" node="master" nodeId="oc" event="OpenForm_clicked" form="ControlOperacionesConjuntas" formId="30000"/>
+    </MainItem>
+    <MainItem value="mnu_oc_documents" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_oc_process" numOfSubItem="1" level="0">
+      <SubItem value="mnu_oc_ProcesosSocios" level="1" father="2"  numOfSubItem="3">
+        <Item value="mnu_oc_particionBilling"  level="2" father="0" grantfather="2" node="process" nodeId="oc" event="OpenFormModal_clicked" form="ParticionBilling" formId="1122"/>
+        <Item value="mnu_oc_cashCall"  level="2" father="0" grantfather="2" node="process" nodeId="oc" event="OpenFormModal_clicked" form="CashCall" formId="1136"/>
+        <Item value="mnu_oc_distribucionLegalizacion"  level="2" father="0" grantfather="2" node="process" nodeId="oc" event="OpenFormModal_clicked" form="DistribucionLegalizacion" formId="1139"/>
+      </SubItem>
+      <SubItem value="mnu_oc_DatosSucursal" level="1" father="2"  numOfSubItem="3">
+        <Item value="mnu_oc_trasmiteDatosSucursal"  level="2" father="1" grantfather="2"/>
+        <Item value="mnu_oc_trasmiteCashCallSucursal"  level="2" father="1" grantfather="2"/>
+        <Item value="mnu_oc_cargaDatosSucursal"  level="2" father="1" grantfather="2"/>
+      </SubItem>
+    </MainItem>
+    <MainItem value="mnu_oc_querys" numOfSubItem="0" level="0">
+      <SubItem value="mnu_oc_informeMensual"  level="1" father="3" node="query" nodeId="oc" event="OpenForm_clicked" form="QueryInformeMensualOC" formId="30310"/>
+      <SubItem value="mnu_oc_detallexCampo"  level="1" father="3"/>
+      <SubItem value="mnu_oc_detallexOrigen"  level="1" father="3" />
+      <SubItem value="mnu_oc_detallexSocio"  level="1" father="3" />
+    </MainItem>
+    <MainItem value="mnu_oc_reports" numOfSubItem="8" level="0">
+      <SubItem value="mnu_oc_Reports_legalizacion"  level="1" father="4" />
+      <SubItem value="mnu_oc_Reports_cashCall"  level="1" father="4" />
+      <SubItem value="mnu_oc_Reports_reporteEstado"  level="1" father="4" />
+      <SubItem value="mnu_oc_Reports_wellFile"  level="1" father="4" />
+      <SubItem value="mnu_oc_Reports_mvtosLegalizacion"  level="1" father="4"/>
+      <SubItem value="mnu_oc_Reports_conceptosCargados"  level="1" father="4"/>
+      <SubItem value="mnu_oc_Reports_ajusteCashCall"  level="1" father="4"/>
+      <SubItem value="mnu_oc_Reports_otrosModulos"  level="1" father="4" />
+    </MainItem>
+    <MainItem value="mnu_oc_tools" numOfSubItem="4" level="0">
+      <SubItem value="mnu_oc_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_oc_searchDocument"   level="1" father="5"  nodeId="oc" event="OpenFormDialog_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_oc_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_oc_help" level="1" father="6" event="OpenHelp_clicked" nodeId="oc" />
+    </MainItem>
+    <MainItem value="mnu_oc_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_oc_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="pl" numOfMenus="8">
+    <MainItem value="mnu_pl_parametros" numOfSubItem="10" level="0">
+      <SubItem value="mnu_pl_Lineas" level="1" father="0"  numOfSubItem="5">
+        <Item value="mnu_pl_plLineaPresupuesto"  level="2" father="0" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plLineaPresupuesto" formId="25001"/>
+        <Item value="mnu_pl_plRecurso"  level="2" father="0" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plRecurso" formId="25013"/>
+        <Item value="mnu_pl_plRecursoGrupo"  level="2" father="0" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plRecursoGrupo" formId="25007"/>
+        <Item value="mnu_pl_plActividadLineaPresupuestal"  level="2" father="0" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plActividadLineaPresupuestal" formId="25101"/>
+        <Item value="mnu_pl_plTasasPresupuesto"  level="2" father="0" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plTasasPresupuesto" formId="25015"/>
+        <Item value="mnu_pl_plLineaGrupo"  level="2" father="0" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plLineaGrupo" formId="25016"/>
+      </SubItem>
+      <SubItem value="mnu_pl_Control" level="1" father="0"  numOfSubItem="6">
+        <Item value="mnu_pl_plGrupoPresupuestal"  level="2" father="1" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plGrupoPresupuestal" formId="25004"/>
+        <Item value="mnu_pl_plAreaPresupuestal"  level="2" father="1" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plAreaPresupuestal" formId="25008"/>
+        <Item value="mnu_pl_plGrupoPresupuestalLinea"  level="2" father="1" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plGrupoPresupuestalLinea" formId="25005"/>
+        <Item value="mnu_pl_plGrupoPresupuestalActividad"  level="2" father="1" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plGrupoPresupuestalActividad" formId="25012"/>
+        <Item value="mnu_pl_plGrupoPresupuestalUsuario"  level="2" father="1" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plGrupoPresupuestalUsuario" formId="25006"/>
+        <Item value="-" level="2" father="1" grantfather="0"/>
+        <Item value="mnu_pl_controlPlaneacion"  level="2" father="1" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="ControlPlaneacion" formId="25000"/>
+      </SubItem>
+      <SubItem value="mnu_pl_Proyectos" level="1" father="0"  numOfSubItem="5">
+        <Item value="mnu_co_coProyecto"   level="2" father="2"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coProyecto"  formId="20202"/>
+        <Item value="mnu_co_coActividad"  level="2" father="2"  grantfather="0" node="master" nodeId="co" event="OpenForm_clicked" form="coActividad" formId="20102"/>
+        <Item value="mnu_gl_glLocFisica"   level="2" father="2"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glLocFisica"  formId="11010"/>
+        <Item value="mnu_gl_glAreaFisica"  level="2" father="2"  grantfather="0" node="master" nodeId="gl" event="OpenForm_clicked" form="glAreaFisica"  formId="11037"/>
+        <Item value="mnu_pl_plDistribucionCampo"  level="2" father="2" grantfather="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plDistribucionCampo" formId="25011"/>
+      </SubItem>
+      <SubItem value="mnu_pl_plIndicadorFinanciero"  level="1" father="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plIndicadorFinanciero" formId="25009"/>
+      <SubItem value="mnu_pl_plRazonFinanciera"  level="1" father="0" node="master" nodeId="pl" event="OpenForm_clicked" form="plRazonFinanciera" formId="25010"/>
+    </MainItem>
+    <MainItem value="mnu_pl_documents" numOfSubItem="2" level="0">
+      <SubItem value="mnu_pl_PresupuestoPxQ" level="1" father="1"  numOfSubItem="10">
+        <Item value="mnu_pl_presupuestoPxQ" level="2" father="0" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="PresupuestoPxQ" formId="206"/>
+        <Item value="mnu_pl_adicionPresupuestoPxQ" level="2" father="0" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="AdicionPresupuestoPxQ"  formId="207"/>
+        <Item value="mnu_pl_reclasifPresupuestoPxQ" level="2" father="0" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="ReclasificPresupuestoPxQ"  formId="208"/>
+        <Item value="mnu_pl_trasladoPresupuestoPxQ" level="2" father="0" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="TrasladoPresupuestoPxQ"  formId="209"/>
+      </SubItem>
+      <SubItem value="mnu_pl_Presupuesto" level="1" father="1"  numOfSubItem="9">
+        <Item value="mnu_pl_generarPresupuesto" level="2" father="1" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="GenerarPresupuesto" formId="200"/>
+        <Item value="mnu_pl_adicionPresupuesto" level="2" father="1" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="AdicionPresupuesto" formId="201"/>
+        <Item value="mnu_pl_reclasifPresupuesto" level="2" father="1" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="ReclasificPresupuesto" formId="202"/>
+        <Item value="mnu_pl_trasladoPresupuesto" level="2" father="1" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="TrasladoPresupuesto" formId="203"/>
+        <Item value="-" level="2" father="1" grantfather="1"/>
+        <Item value="mnu_pl_aprobacionPlaneacionPresupuestos" level="2" father="1" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="GenerarPresupuestoAprob" formId="25551"/>
+        <Item value="mnu_pl_aprobacionAdicionPresupuesto" level="2" father="1"  grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="AdicionPresupuestoAprob" formId="25552"/>
+        <Item value="mnu_pl_aprobacionReclasificPresupuesto" level="2" father="1" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="ReclasificPresupuestoAprob" formId="25553"/>
+        <Item value="mnu_pl_aprobacionTrasladoPresupuesto" level="2" father="1"  grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="TrasladoPresupuestoAprob" formId="25554"/>
+      </SubItem>
+      <SubItem value="mnu_pl_Bloqueos" level="1" father="1"  numOfSubItem="1">
+        <Item value="mnu_pl_aprobacionBloqueos" level="2" father="2" grantfather="1" node="document" nodeId="pl" event="OpenForm_clicked" form="BloqueosAprob" formId="25555"/>
+      </SubItem>
+      <SubItem value="mnu_pl_PlanPagosOrdenCompra" level="1" father="1" node="document" nodeId="pl" event="OpenFormModal_clicked" form="ModalPlanPagos" formId="1040"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_pl_reversionPlaneacion" level="1" father="1" node="document" nodeId="pl" event="OpenForm_clicked" form="RevertirPlaneacion" formId="25501"/>
+    </MainItem>
+    <MainItem value="mnu_pl_process" numOfSubItem="0" level="0">
+      <SubItem value="mnu_pl_CierreLegalizacion"  level="1" father="2" node="process" nodeId="pl" event="OpenFormModal_clicked" form="CierreLegalizacion" formId="1138"/>
+      <SubItem value="mnu_pl_CerrarProyectos"  level="1" father="2" node="process" nodeId="pl" event="OpenFormModal_clicked" />
+    </MainItem>
+    <MainItem value="mnu_pl_querys" numOfSubItem="1" level="0">
+      <SubItem value="mnu_pl_informeMensual"  level="1" father="3" node="query" nodeId="pl" event="OpenForm_clicked" form="QueryInformeMensual" formId="25310"/>
+      <SubItem value="mnu_pl_estadoEjecucion" level="1" father="3" node="query" nodeId="pl" event="OpenForm_clicked" form="QueryEstadoEjecucion" formId="25311"/>
+      <SubItem value="mnu_pl_ejecucionxCampo" level="1" father="3" node="query" nodeId="pl" event="OpenForm_clicked"/>
+      <SubItem value="mnu_pl_ejecucionxOrigen" level="1" father="3" node="query" nodeId="pl" event="OpenForm_clicked"/>
+      <SubItem value="mnu_pl_sobreEjecucion" level="1" father="3" node="query" nodeId="pl" event="OpenForm_clicked" form="QuerySobreEjecucion" formId="25312"/>
+    </MainItem>
+    <MainItem value="mnu_pl_reports" numOfSubItem="0" level="0">
+      <SubItem value="mnu_pl_reportsPresupuesto"  level="1" father="4" node="report" nodeId="pl" event="OpenFormModal_clicked" form="Reports_Presupuesto" formId="35028"/>
+      <SubItem value="mnu_pl_ejecucionPresupuesto"  level="1" father="4" node="report" nodeId="pl" event="OpenFormModal_clicked" form="Reports_EjecucionPresupuesto" formId="35030"/>
+      <SubItem value="mnu_pl_SobreEjecucion"  level="1" father="4" node="report" nodeId="pl" event="OpenFormModal_clicked" form="Reports_SobreEjecucion" formId="35095"/>
+      <SubItem value="mnu_pl_CierreLegalizacion"  level="1" father="4" node="report" nodeId="pl" event="OpenFormModal_clicked" form="Reports_CierreLegalizacion" formId="35097"/>
+    </MainItem>
+    <MainItem value="mnu_pl_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_pl_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_pl_searchDocument"   level="1" father="5"  nodeId="pl" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_pl_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_pl_help" level="1" father="6" event="OpenHelp_clicked" nodeId="pl" />
+    </MainItem>
+    <MainItem value="mnu_pl_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_pl_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="pr" numOfMenus="8">
+    <MainItem value="mnu_pr_parametros" numOfSubItem="6" level="0">
+      <SubItem value="mnu_pr_prBienServicio"          level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prBienServicio" formId="27001"/>
+      <SubItem value="mnu_pr_prProveedor"             level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prProveedor" formId="27002"/>
+      <SubItem value="mnu_pr_prProveedorPrecio"       level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prProveedorPrecio" formId="27012"/>
+      <SubItem value="mnu_pr_prProveedorProductoTipo" level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prProveedorProductoTipo" formId="27006"/>
+      <SubItem value="mnu_pr_prAnexoLista"            level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prAnexoLista" formId="27010"/>
+      <SubItem value="mnu_pr_prAprobacionGrupo"       level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prAprobacionGrupo" formId="27011"/>
+      <SubItem value="mnu_pr_prPolizaCubrimiento"     level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prPolizaCubrimiento" formId="27005"/>
+      <SubItem value="mnu_pr_prJustificaModificacion" level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="prJustificaModificacion" formId="27013"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_pr_prControlProveedores"    level="1" father="0"  node="master" nodeId="pr" event="OpenForm_clicked" form="ControlProveedores" formId="27000"/>
+    </MainItem>
+    <MainItem value="mnu_pr_documents" numOfSubItem="5" level="0">
+      <SubItem value="mnu_pr_solicitud" level="1" father="1"  numOfSubItem="3">
+        <Item value="mnu_pr_solicitud" level="2" father="0" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="Solicitud" formId="71"/>
+        <Item value="mnu_pr_solicitudDirecta" level="2" father="0" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="SolicitudDirecta" formId="79"/>
+        <Item value="-" level="2" father="0" grantfather="1"/>
+        <Item value="mnu_pr_aprobacionSolicitud" level="2" father="0" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionSolicitud" formId="71552"/>
+        <Item value="mnu_pr_aprobacionSolicitudDirecta" level="2" father="0" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionDirectaSolicitud" formId="71554"/>
+        <Item value="mnu_pr_asignacionSolicitud" level="2" father="0" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AsignacionSolicitud" formId="71553"/>
+      </SubItem>
+      <SubItem value="mnu_pr_ordenCompra" level="1" father="1"  numOfSubItem="2">
+        <Item value="mnu_pr_ordenCompra" level="2" father="1" grantfather="1"  node="document" nodeId="pr" event="OpenForm_clicked" form="OrdenCompra" formId="72"/>
+        <Item value="mnu_pr_aprobacionOrdenCompra" level="2" father="1" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionOrdenCompra" formId="71555"/>
+      </SubItem>
+      <SubItem value="mnu_pr_Recibido" level="1" father="1"  numOfSubItem="3">
+        <Item value="mnu_pr_recibidos" level="2" father="2" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="Recibido" formId="73"/>
+        <Item value="mnu_pr_recibidoPlanillaConsumo" level="2" father="2" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="RecibidoConsumo" formId="73503"/>
+        <Item value="mnu_pr_recibidoSolicitudDespacho" level="2" father="2" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="RecibidoSolicitudDespacho" formId="73504"/>
+        <Item value="-" level="2" father="2" grantfather="1"/>
+        <Item value="mnu_pr_aprobacionRecibido" level="2" father="2" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionRecibido" formId="71556"/>
+      </SubItem>
+      <SubItem value="mnu_pr_Contrato" level="1" father="1"  numOfSubItem="6">
+        <Item value="mnu_pr_contrato" level="2" father="3"  grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="Contrato" formId="74"/>
+        <Item value="-" level="2" father="3" grantfather="1"/>
+        <Item value="mnu_pr_aprobacionContrato" level="2" father="3" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionContrato" formId="71557"/>
+      </SubItem>
+      <SubItem value="mnu_pr_Convenio" level="1" father="1"  numOfSubItem="5">
+        <Item value="mnu_pr_solicitudConvenios" level="2" father="4" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="ConvenioSolicitud" formId="76"/>
+        <Item value="mnu_pr_consumoProyectosDirecto" level="2" father="4" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="ConsumoProyectos" formId="75"/>
+        <Item value="-" level="2" father="4" grantfather="1"/>
+        <Item value="mnu_pr_aprobacionConvenioSolicitud" level="2" father="4" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionConvenioSolicitud" formId="71559"/>
+        <Item value="mnu_pr_aprobacionConsumoProyecto" level="2" father="4" grantfather="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AprobacionConsumoProyecto" formId="71558"/>
+      </SubItem>
+      <SubItem value="mnu_pr_radicacionRecibidos" level="1" father="1" node="document" nodeId="pr" event="OpenForm_clicked" form="RadicacionRecibido" formId="73501"/>
+      <SubItem value="mnu_pr_cierreDetalle" level="1" father="1" node="document" nodeId="pr" event="OpenForm_clicked" form="CierreDetalleProv" formId="71500"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_pr_revertirProveedores"  level="1" father="1" node="document" nodeId="pr" event="OpenForm_clicked" form="RevertirProveedores" formId="73502"/>
+      <SubItem value="mnu_pr_anularProveedores"  level="1" father="1" node="document" nodeId="pr" event="OpenForm_clicked" form="AnularProveedores" formId="73505"/>
+    </MainItem>
+    <MainItem value="mnu_pr_process" numOfSubItem="1" level="0">
+      <SubItem value="mnu_pr_cargosRecibidos"  level="1" father="2" node="process" nodeId="pr" event="OpenFormModal_clicked" form="GeneraDetalleCargos" formId="1126"/>
+      <SubItem value="mnu_pr_provisionRecib"  level="1" father="2" node="process" nodeId="pr" event="OpenFormModal_clicked" form="ProvisionRecibidosNoFact" formId="80"/>
+    </MainItem>
+    <MainItem value="mnu_pr_querys" numOfSubItem="0" level="0">
+      <SubItem value="mnu_pr_consultaSolicitud"  level="1" father="3" node="query" nodeId="pr" event="OpenForm_clicked" form="ConsultaSolicitud" formId="27310"/>
+      <SubItem value="mnu_pr_consultaOrdenCompra"  level="1" father="3" node="query" nodeId="pr" event="OpenForm_clicked" form="ConsultaOrdenCompra" formId="27311"/>
+      <SubItem value="mnu_pr_consultaRecibido"  level="1" father="3" node="query" nodeId="pr" event="OpenForm_clicked" form="ConsultaRecibido" formId="27312"/>
+    </MainItem>
+    <MainItem value="mnu_pr_reports" numOfSubItem="2" level="0">
+      <SubItem value="mnu_pr_ParametersReporteProcedimientoCompras"  level="1" father="4" node="report" nodeId="pr" event="OpenFormModal_clicked" form="ParametersReporteProcedimientoCompras" formId="35088"/>
+      <SubItem value="mnu_pr_parametersReporteComproVSFact"  level="1" father="4" node="report" nodeId="pr" event="OpenFormModal_clicked" form="ParametersReporteComproVSFact" formId="35033"/>
+      <SubItem value="mnu_pr_ParametersReporteOrdenCompras"  level="1" father="4" node="report" nodeId="pr" event="OpenFormModal_clicked" form="ParametersReporteOrdenCompras" formId="35092"/>
+    </MainItem>
+    <MainItem value="mnu_pr_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_pr_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_pr_searchDocument"   level="1" father="5" nodeId="ts" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_pr_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_pr_help" level="1" father="6" event="OpenHelp_clicked" nodeId="pr" />
+    </MainItem>
+    <MainItem value="mnu_pr_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_pr_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="rh" numOfMenus="11">
+    <MainItem value="mnu_rh_parametros" numOfSubItem="7" level="0">
+      <SubItem value="mnu_rh_rhCargos"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhCargos" formId="24001"/>
+      <SubItem value="mnu_rh_rhNivelSalarial"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhNivelSalarial" formId="24002"/>
+      <SubItem value="mnu_rh_rhNivelResponsabilidad"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhNivelResponsabilidad" formId="24003"/>
+      <SubItem value="mnu_rh_rhCompetencia"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhCompetencia" formId="24004"/>
+      <SubItem value="mnu_rh_rhEnfermedadProf"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhEnfermedadProf" formId="24005"/>
+      <SubItem value="mnu_rh_rhCargosxAreaFuncional"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhCargosxAreaFuncional" formId="24006"/>
+      <SubItem value="mnu_rh_rhCompetenciasxCargo"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhCompetenciasxCargo" formId="24007"/>
+      <SubItem value="mnu_rh_rhFuncionxCargo"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhFuncionxCargo" formId="24008"/>
+      <SubItem value="mnu_rh_rhExperienciaxCargo"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhExperienciaxCargo" formId="24009"/>
+      <SubItem value="mnu_rh_rhEstudioxCargo"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhEstudioxCargo" formId="24010"/>
+      <SubItem value="mnu_rh_rhPruebasxCargo"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhPruebasxCargo" formId="24011"/>
+      <SubItem value="mnu_rh_rhSeleccionForma"  level="1" father="0" node="master" nodeId="rh" event="OpenForm_clicked" form="rhSeleccionForma" formId="24015"/>
+    </MainItem>
+    <MainItem value="mnu_rh_documents" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_rh_process" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_rh_querys" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_rh_reports" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_rh_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_rh_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_rh_searchDocument"   level="1" father="5"  nodeId="rh" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_rh_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_rh_help" level="1" father="6" event="OpenHelp_clicked" nodeId="rh" />
+    </MainItem>
+    <MainItem value="mnu_rh_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_rh_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="se" numOfMenus="8">
+    <MainItem value="mnu_se_parametros" numOfSubItem="10" level="0">
+      <SubItem value="mnu_se_seUsuario"             level="1" father="0" node="master" nodeId="se" event="OpenForm_clicked" form="seUsuario" formId="12001"/>
+      <SubItem value="mnu_se_seUsuarioGrupo"         level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seUsuarioGrupo" formId="12002"/>
+      <SubItem value="mnu_se_seUsuarioBodega"         level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seUsuarioBodega" formId="12008"/>
+      <SubItem value="mnu_se_seUsuarioPrefijo"         level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seUsuarioPrefijo" formId="12003"/>
+      <SubItem value="mnu_se_seMaquina"              level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seMaquina"  formId="12007"/>
+      <SubItem value="mnu_se_seGrupo"                level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seGrupo" formId="12005"/>
+      <SubItem value="mnu_se_seLAN"                level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seLAN" formId="12010"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_se_seGrupoDocumento"       level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seGrupoDocumento"  formId="12006"/>
+      <SubItem value="mnu_se_seDelegacionTarea"       level="1" father="0"  grantfather="0" node="master" nodeId="se" event="OpenForm_clicked" form="seDelegacionTarea"  formId="12011"/>
+    </MainItem>
+    <MainItem value="mnu_se_documents" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_se_process" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_se_querys" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_se_reports" numOfSubItem="0" level="0"></MainItem>
+    <MainItem value="mnu_se_password" numOfSubItem="1" level="0">
+      <SubItem value="mnu_se_resetPwd"  level="1" father="5" event="ResetPassword_clicked"/>
+    </MainItem>
+    <MainItem value="mnu_se_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_se_updControl"  level="1" father="6" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="6"/>
+      <SubItem value="mnu_task"   level="1" father="6"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="6"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_se_searchDocument"   level="1" father="6" nodeId="se" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_se_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_se_help" level="1" father="7" event="OpenHelp_clicked" nodeId="se" />
+    </MainItem>
+    <MainItem value="mnu_se_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_se_salir"   level="1" father="8"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="ts" numOfMenus="8">
+    <MainItem value="mnu_ts_parametros" numOfSubItem="13" level="0">
+      <SubItem value="mnu_ts_tsBancosCuenta"              level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsBancosCuenta"      formId="22001"/>
+      <SubItem value="mnu_ts_tsCaja"                      level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsCaja"              formId="22003"/>
+      <SubItem value="mnu_ts_tsIngresoConcepto"           level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsIngresoConcepto"   formId="22004"/>
+      <SubItem value="mnu_ts_tsNotaBancaria"              level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsNotaBancaria"      formId="22005"/>
+      <SubItem value="mnu_ts_tsFlujoFondo"                level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsFlujoFondo"        formId="22006"/>
+      <SubItem value="mnu_ts_tsBanco"                     level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsBanco"             formId="22007"/>
+      <SubItem value="mnu_ts_tsConceptoExtracto"          level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsConceptoExtracto"  formId="22002"/>
+      <SubItem value="mnu_ts_tsFormaPago"                 level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsFormaPago"         formId="22008"/>
+      <SubItem value="mnu_ts_tsBancosEncabezadoPE"        level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsBancosEncabezadoPE" formId="22010"/>
+      <SubItem value="mnu_ts_tsBancosDatosPE"             level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsBancosDatosPE"      formId="22011"/>
+      <SubItem value="mnu_ts_tsBancoCierrePE"             level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsBancoCierrePE"      formId="22012"/>
+      <SubItem value="mnu_ts_tsInstrumentoFinanciero"     level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsInstrumentoFinanciero"      formId="22013"/>
+      <SubItem value="mnu_ts_tsInstFinancieroComponente"  level="1" father="0"  node="master" nodeId="ts" event="OpenForm_clicked" form="tsInstFinancieroComponente" formId="22014"/>
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_ts_controlTesoreria"            level="1" father="0" node="document" nodeId="ts" event="OpenForm_clicked" form="ControlTesoreria" formId="22000"/>
+    </MainItem>
+    <MainItem value="mnu_ts_documents" numOfSubItem="9" level="0">
+      <SubItem value="mnu_ts_programacionPagos"           level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="ProgramacionPagos" formId="22501"/>
+      <SubItem value="mnu_ts_pagoFacturas"                level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="PagoFacturas" formId="31"/>
+      <SubItem value="mnu_ts_reciboCaja"                  level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="ReciboCaja" formId="32"/>
+      <SubItem value="mnu_ts_trasladoFondos"              level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="TrasladoFondos" formId="33"/>
+      <SubItem value="mnu_ts_consignaciones"              level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="Consignaciones" formId="34"/>
+      <SubItem value="mnu_ts_transferenciasBancarias"     level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="TransferenciasBancarias" formId="36"/>
+      <SubItem value="mnu_ts_NotasBancarias"              level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="NotasBancarias" formId="35"/>
+      <SubItem value="mnu_ts_rechazoCredito"              level="1" father="1" node="process" nodeId="ts" event="OpenFormModal_clicked" form="RechazoCredito"  formId="181"/>
+      <SubItem value="-" level="1" father="1"/>
+      <SubItem value="mnu_ts_anularCheques"               level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="AnularCheques" formId="22504"/>
+      <SubItem value="mnu_ts_revertirTesoreria"           level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="RevertirTesoreria" formId="22502"/>
+      <SubItem value="mnu_ts_revertirTransferenciaBanc"   level="1" father="1" node="document" nodeId="ts" event="OpenForm_clicked" form="RevertirTransferenciaBanc" formId="22503"/>  
+    </MainItem>
+    <MainItem value="mnu_ts_process" numOfSubItem="3" level="0">
+      <SubItem value="mnu_ts_pagosElectronicos"   level="1" father="2" node="process" nodeId="ts" event="OpenForm_clicked" form="PagosElectronicos" formId="1109"/>
+      <SubItem value="mnu_ts_pagosNoProcesados"   level="1" father="2" node="process" nodeId="ts" event="OpenForm_clicked" form="PagosNoProcesados" formId="1110"/>
+      <SubItem value="mnu_ts_migracionRecibos"    level="1" father="2" node="process" nodeId="ts" event="OpenFormModal_clicked" form="MigracionRecibosCaja" formId="1146"/>
+    </MainItem>
+    <MainItem value="mnu_ts_querys" numOfSubItem="2" level="0">
+      <SubItem value="mnu_ts_chequesGirados"      level="1" father="3" node="query" nodeId="ts" event="OpenForm_clicked" form="ChequesGirados" formId="22310"/>
+      <SubItem value="mnu_ts_queryReciboCaja"     level="1" father="3" node="query" nodeId="ts" event="OpenForm_clicked" form="QueryReciboCaja" formId="22311"/>
+      <SubItem value="mnu_ts_flujoFondo"          level="1" father="3"  numOfSubItem="2">        
+        <Item value="mnu_ts_queryFlujoCaja"         level="2" father="2" grantfather="3" node="query" nodeId="ts" event="OpenForm_clicked" form="ConsultaFlujoCaja" formId="22312"/>
+        <Item value="mnu_ts_queryFlujoMensual"      level="2" father="2" grantfather="3" node="query" nodeId="ts" event="OpenForm_clicked" form="ConsultaFlujoMensual" formId="22313"/>
+      </SubItem>   
+    </MainItem>
+    <MainItem value="mnu_ts_reports" numOfSubItem="8" level="0">
+      <SubItem value="mnu_ts_facturas"                    level="1" father="4"  numOfSubItem="2">
+        <Item value="mnu_ts_facturasPagadas"                  level="2" father="0" grantfather="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="Reports_FacturasPagadas" formId="35073"/>
+      </SubItem>
+      <SubItem value="mnu_ts_chequesGirados"              level="1" father="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="ReportsChequesGirados" formId="35070"/>
+      <SubItem value="mnu_ts_parametersReciboCaja"        level="1" father="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="Reports_ReciboCaja" formId="35077"/>
+      <SubItem value="mnu_ts_reports_OtrosMovBancarios"   level="1" father="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="Reports_OtrosMovBancarios" formId="35078"/>
+      <SubItem value="mnu_ts_reports_RelacionPagos"       level="1" father="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="Reports_RelacionPagos" formId="35084"/>
+      <SubItem value="mnu_ts_reports_Ejecutado"           level="1" father="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="Reports_Ejecutado" formId="35151"/>
+      <SubItem value="mnu_ts_reports_CxPFlujoSemanal"  level="1" father="4" node="report" nodeId="ts" event="OpenFormDialog_clicked" form="Reports_CxPFlujoSemanal" formId="35082"/>
+    </MainItem>
+    <MainItem value="mnu_ts_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_ts_updControl"        level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-"                        level="1" father="5"/>
+      <SubItem value="mnu_task"                 level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"          level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_ts_searchDocument"    level="1" father="5" nodeId="ts" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_ts_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_ts_help"              level="1" father="6" event="OpenHelp_clicked" nodeId="ts" />
+    </MainItem>
+    <MainItem value="mnu_ts_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_ts_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+
+  <Menu module="py" numOfMenus="8">
+    <MainItem value="mnu_py_parametros" numOfSubItem="14" level="0">
+      <SubItem value="mnu_py_pyClaseProyecto" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyClaseProyecto"  formId="33005"/>
+      <SubItem value="mnu_pyTarea" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyTarea"  formId="33017"/>
+      <SubItem value="mnu_py_pyTrabajo" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyTrabajo"  formId="33007"/>
+      <SubItem value="mnu_py_pyRecurso" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyRecurso"  formId="33016"/>
+      <SubItem value="mnu_py_pyRecursoCostoBase" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyRecursoCostoBase"  formId="33014"/>
+      <SubItem value="mnu_py_pyTareaRecurso" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyTareaRecurso"  formId="33013"/>
+      <SubItem value="mnu_py_pyContrato" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyContrato"  formId="33001"/>
+      <SubItem value="mnu_py_pyTareaClase" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyTareaClase"  formId="33008"/>
+      <SubItem value="mnu_py_pyTareaCapitulo" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyTareaCapitulo"  formId="33012"/>
+      <SubItem value="mnu_py_pyCapituloGrupo" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyCapituloGrupo"  formId="33018"/>
+      <SubItem value="mnu_py_pyEntregaClase" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyEntregaClase"  formId="33021"/>
+      <SubItem value="mnu_py_pyTareaCliente" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyTareaCliente"  formId="33022"/>
+      <SubItem value="mnu_py_pyJustificaModificacion" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="pyJustificaModificacion"  formId="33023"/>
+      
+      <SubItem value="-" level="1" father="0"/>
+      <SubItem value="mnu_py_controlProyectos" level="1" father="0"  node="master" nodeId="py" event="OpenForm_clicked" form="ControlProyectos"  formId="33000"/>
+    </MainItem>
+    <MainItem value="mnu_py_documents" numOfSubItem="1" level="0">
+      <SubItem value="mnu_py_solicitudServicio"  level="1" father="1"  numOfSubItem="8">
+        <Item value="mnu_planeacionCostos"   level="2" father="0" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionCostos" formId="110"/>
+        <Item value="mnu_planeacionTiemposEntregas"   level="2" father="0" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionTiempoEntregas" formId="33507"/>
+        <!--<Item value="mnu_planeacionTiempos"   level="2" father="0" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionTiempo" formId="33507"/>-->
+        <Item value="mnu_planeacionCostoAPUCliente"   level="2" father="0" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionCostosAPUCliente" formId="33512"/>
+      </SubItem>
+      <SubItem value="mnu_py_ordenServicio"  level="1" father="1"  numOfSubItem="7">
+        <Item value="mnu_planeacionCostosProyecto"   level="2" father="1" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionCostosProyecto" formId="111"/>
+        <Item value="mnu_planeacionTiemposProy"   level="2" father="1" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionTiempoProy" formId="33507"/>
+        <Item value="mnu_PlaneacionRecursos"   level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="PlaneacionRecursos" formId="33508"/>
+        <Item value="mnu_PlaneacionRecursosSolicita"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="PlaneacionRecursosSolicita" formId="33551"/>
+        <Item value="mnu_ActaTrabajo"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="ActaTrabajo" formId="113"/>
+        <Item value="-" level="2" father="1"  grantfather="1"/>
+        <Item value="mnu_EntregaDetalle"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="Entregables" formId="33509"/>
+        <Item value="mnu_ProgramacionEntrega"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="EntregablesProgramacion" formId="33510"/>
+        <Item value="mnu_ActaEntrega"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="ActaEntrega" formId="114"/>
+        <Item value="mnu_ActaEntregaPreFactVenta"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="ActaEntregaPreFacturaVenta" formId="33511"/>
+        <Item value="mnu_PreFacturaPagoAnticipado"  level="2" father="1" grantfather="1" node="document"  nodeId="py" event="OpenForm_clicked" form="PreFacturaPagoAnticipado" formId="33513"/>       
+        <!--<Item value="-" level="2" father="1"  grantfather="1"/>
+        <Item value="mnu_planeacionTiemposEntregas"   level="2" father="1" grantfather="1" node="document" nodeId="py" event="OpenForm_clicked" form="PlaneacionTiempoEntregas" formId="33507"/>-->
+      </SubItem>
+      <SubItem value="mnu_pr_revertirProyectos"  level="1" father="1" node="document" nodeId="py" event="OpenForm_clicked" form="RevertirProyecto" formId="33506"/>
+    </MainItem>
+    <MainItem value="mnu_py_process" numOfSubItem="2" level="0">
+      <SubItem value="mnu_py_MigrarInsumos" level="1" father="2" node="process" nodeId="py" event="OpenFormModal_clicked" form="MigrarInsumos"  formId="1145"/>
+      <SubItem value="mnu_py_MigrarLocacionEntregas" level="1" father="2" node="process" nodeId="py" event="OpenFormModal_clicked" form="MigrarLocacionEntregas"  formId="1158"/>
+    </MainItem>
+    <MainItem value="mnu_py_querys" numOfSubItem="2" level="0">
+      <SubItem value="mnu_cc_queryTrazabilidad" level="1" father="3" node="query" nodeId="py" event="OpenForm_clicked" form="ConsultaTrazabilidad" formId="33311"/>      
+      <SubItem value="mnu_cc_queryEjecucion" level="1" father="3" node="query" nodeId="py" event="OpenForm_clicked" form="ConsultaEjecucion" formId="33313"/>
+      <SubItem value="mnu_cc_queryComiteTecnico" level="1" father="3" node="query" nodeId="py" event="OpenForm_clicked" form="ConsultaComiteTecnico" formId="33314"/>
+      <SubItem value="mnu_cc_queryComiteCompras" level="1" father="3" node="query" nodeId="py" event="OpenForm_clicked" form="ConsultaComiteCompras" formId="33315"/>
+      <SubItem value="mnu_cc_queryEjecucionPresupuestal" level="1" father="3" node="query" nodeId="py" event="OpenForm_clicked" form="ConsultaEjecucionPresupuestal" formId="33318"/>
+      </MainItem>
+    <MainItem value="mnu_py_reports" numOfSubItem="2" level="0">
+      <SubItem value="mnu_py_Reports_Cumplimiento"  level="1" father="4" node="report" nodeId="py" event="OpenFormDialog_clicked" form="Reports_Cumplimiento"  formId="35042"/>
+      <SubItem value="mnu_py_Reports_EjecucionPresupuesto"  level="1" father="4" node="report" nodeId="py" event="OpenFormDialog_clicked" form="Reports_EjecucionPresupuestal"  formId="35065"/>
+      <SubItem value="mnu_py_Reports_SolicitudTrabajo"  level="1" father="4" node="report" nodeId="py" event="OpenFormDialog_clicked" form="Reports_SolicitudTrabajo"  formId="35111"/>
+    </MainItem>
+    <MainItem value="mnu_py_tools" numOfSubItem="5" level="0">
+      <SubItem value="mnu_ts_updControl"  level="1" father="5" event="UpdateControl_clicked"/>
+      <SubItem value="-" level="1" father="5"/>
+      <SubItem value="mnu_task"   level="1" father="5"  event="OpenForm_clicked" form="TaskForm" formId="1041"/>
+      <SubItem value="mnu_terceroData"   level="1" father="5"  event="OpenForm_clicked" form="TerceroDataForm" formId="1042"/>
+      <SubItem value="mnu_py_searchDocument"   level="1" father="5"  nodeId="py" event="OpenFormModal_clicked" form="ModalQueryDocument" formId="1034"/>
+    </MainItem>
+    <MainItem value="mnu_py_help" numOfSubItem="1" level="0">
+      <SubItem value="mnu_py_help" level="1" father="6" event="OpenHelp_clicked" nodeId="py" />
+    </MainItem>
+    <MainItem value="mnu_py_salir" numOfSubItem="1" level="0">
+      <SubItem value="mnu_py_salir"   level="1" father="7"  event="CloseForm_clicked"/>
+    </MainItem>
+  </Menu>
+</Menus>

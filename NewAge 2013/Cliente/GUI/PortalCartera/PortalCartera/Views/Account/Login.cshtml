@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+@section SEO
+{
+    @{
+        <title>NewAge - Sistema de Cartera Online - Login</title>
+        <meta name="description" content=">NewAge - Sistema de Cartera Online - Login" />
+    }
+}
+
+<div class="col-xs-12">
+    <div class="login-container">
+        <div class="hidden-xs login_align"></div>
+        <div class="top-logo logo-box">
+            <img class="img-responsive" src="~/Images/apoyautos-logo.png" alt="Apoyautos" />
+        </div>
+        @using (Html.BeginForm("JsonLogin", "Account", FormMethod.Post, new { @class = "form-signin", id = "login-form" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <input type="text" name="id" class="form-control" placeholder="Cédula" required="required" autofocus="autofocus" />
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Contraseña" required="required" />
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" name="rememberMe" value="true" />
+                <span>Recordarme</span>
+            </label>
+            <button class="btn btn-lg btn-block" type="submit">Ingresar</button>
+            <div class="forgot-pass">
+                <a id="forgotPassword" href="javascript:void(0);">¿Olvidó su contraseña?</a>
+            </div>
+        }
+        <div class="bottom-logo">
+            <img class="img-responsive" src="~/Images/apoyos-financieros-logo.png" alt="Apoyos financieros" />
+        </div>
+    </div>
+</div>
+
+<div id="login-response-window" style="display: none;">
+    <h3 class="title">Error</h3>
+    <p class="message"></p>
+</div>
+
+<div id="forgot-password-window" style="display: none;">
+    <p class="message">Por favor digite su correo electrónico y su número de cédula.</p>
+    @using (Html.BeginForm("ForgotPassword", "Account", FormMethod.Post, new { @class = "form-signin", id = "forgot-password-form" }))
+    {
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required="required" />
+        </div>
+        <div class="form-group">
+            <input type="text" name="id" class="form-control" placeholder="Cédula" required="required" />
+        </div>
+        <button class="btn btn-lg btn-danger btn-block" type="submit">Enviar</button>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/newage.login")
+}

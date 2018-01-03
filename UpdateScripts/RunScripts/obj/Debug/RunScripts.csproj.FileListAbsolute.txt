@@ -1,0 +1,10 @@
+C:\Projects\UpdateScripts\RunScripts\bin\Debug\RunScripts.exe.config
+C:\Projects\UpdateScripts\RunScripts\bin\Debug\RunScripts.exe.manifest
+C:\Projects\UpdateScripts\RunScripts\bin\Debug\RunScripts.application
+C:\Projects\UpdateScripts\RunScripts\bin\Debug\RunScripts.exe
+C:\Projects\UpdateScripts\RunScripts\bin\Debug\RunScripts.pdb
+C:\Projects\UpdateScripts\RunScripts\obj\Debug\RunScripts.csprojResolveAssemblyReference.cache
+C:\Projects\UpdateScripts\RunScripts\obj\Debug\RunScripts.exe.manifest
+C:\Projects\UpdateScripts\RunScripts\obj\Debug\RunScripts.application
+C:\Projects\UpdateScripts\RunScripts\obj\Debug\RunScripts.exe
+C:\Projects\UpdateScripts\RunScripts\obj\Debug\RunScripts.pdb

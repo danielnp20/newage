@@ -1,0 +1,3 @@
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\bin\Cooermar\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\obj\Cooermar\NewAge.Librerias.Project.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\obj\Cooermar\NewAge.Librerias.Project.dll

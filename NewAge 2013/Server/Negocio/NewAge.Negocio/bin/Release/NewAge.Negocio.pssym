@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[NewAge.Negocio]NewAge.Negocio.PostSharpAspects.BussinessExceptionManager">
+    <Instance Declaration="#2=T:[NewAge.Negocio]NewAge.Negocio.ModuloNomina" Id="ee63604b494a5c53">
+      <Target Target="#3=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::RevertirLiqNomina(System.Int32, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4=Wrapped by advice(s) OnException" Ordinal="3" />
+      </Target>
+      <Target Target="#5=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::#ctor(System.Data.SqlClient.SqlConnection, System.Data.SqlClient.SqlTransaction, NewAge.DTO.Negocio.DTO_glEmpresa, System.Int32, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#6=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AprobarLiquidacion(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noNominaPreliminar}, System.String, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#7=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetLiquidacionOtros(System.Collections.Generic.List{System.Int32}, System.DateTime)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#8=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AprobarPagosTerceros(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_NominaPlanillaContabilizacion}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#9=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_PagoNomina(System.Int32, System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPagoLiquidaciones}, System.String, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#10=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_UpdSalarioEmpleado(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_AumentoSalarial}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#11=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetBeneficioXEmpleado(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#12=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddBeneficioXEmpleado(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noBeneficiosxEmpleado}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#13=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetCompensatorios()">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#14=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_UpdCompensatorio(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noCompensatorios}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#15=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::noLiquidacionesDocu_GetTotal(System.DateTime)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#16=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_noEmpleadoGet(System.Int32, System.DateTime, System.Byte, System.Boolean, System.Byte)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#17=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_SearchEmpleados(System.Boolean, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#18=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_ReinCorporacionEmpleado(NewAge.DTO.Negocio.DTO_noEmpleado, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#19=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_IncorporacionEmpleado(NewAge.DTO.Negocio.DTO_noEmpleado, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#20=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetEstadoLiquidaciones(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#21=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::noEmpleado_CountTerceroID(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#22=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_NominaDefinitivaGet(System.Int32, System.DateTime, NewAge.DTO.Negocio.DTO_noEmpleado)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#23=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetDetallePago(System.Int32, System.DateTime, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#24=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddLiquidacionDocu(NewAge.DTO.Negocio.DTO_noLiquidacionesDocu, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#25=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::noLiquidacionesDocu_Get(System.DateTime, NewAge.DTO.Negocio.DTO_noEmpleado)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#26=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetLiquidacionesDocu(System.Int32, System.DateTime, NewAge.DTO.Negocio.DTO_noEmpleado)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#27=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_NominaPagosGet(System.String, System.DateTime)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#28=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetPeriodoVacaciones(System.String, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#29=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_LiquidacionPreliminarGetAll(System.Int32, System.DateTime, NewAge.DTO.Negocio.DTO_noEmpleado)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#30=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_LiquidacionPreliminarAdd(NewAge.DTO.Negocio.DTO_noLiquidacionPreliminar, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#31=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_NominaPreliminarGet(System.String, System.DateTime, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#32=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetNovedadesContrato(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#33=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddNovedadesContrato(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noNovedadesContrato}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#34=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_noNovedadesContrato_Delete(NewAge.DTO.Negocio.DTO_noNovedadesContrato)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#35=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetNovedades(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#36=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddNovedadNomina(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noNovedadesNomina}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#37=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_DelNovedadesNomina(NewAge.DTO.Negocio.DTO_noNovedadesNomina)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#38=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetPlanillaAportes(System.String, System.DateTime)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#39=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetAllPlanillaAportes(System.DateTime)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#40=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_PlanillaAportesDeta_Upd(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPlanillaAportesDeta}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#41=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetPlanillaDiaria(System.String, System.DateTime, System.String, System.Int16)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#42=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddPlanillaDiaria(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPlanillaDiariaTrabajo}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#43=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetPrestamos(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#44=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddPrestamo(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPrestamo}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#45=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_UpdPrestamo(NewAge.DTO.Negocio.DTO_noPrestamo, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#46=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarNomina(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#47=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarContrato(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.DateTime, System.Int32, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#48=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarCesantias(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.DateTime, System.DateTime, System.DateTime, System.String, NewAge.DTO.Negocio.TipoLiqCesantias, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#49=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::UpdateCesantias(System.Int32, System.Decimal, System.Decimal, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#50=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarVacaciones(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.DateTime, System.DateTime, System.Int32, System.Int32, System.Boolean, System.Boolean, System.String, System.DateTime, System.DateTime, System.DateTime, System.DateTime, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#51=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::CalcularDiasVacaciones(System.String, System.DateTime, System.DateTime, out System.Decimal)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#52=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarPrima(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.DateTime, System.DateTime, System.Boolean, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#53=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarPlanilla(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#54=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::noPlanillaAportesDeta_GetValoreXTercero(System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#55=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarProvisiones(System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noEmpleado}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#56=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::MigracionNomina(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noMigracionNomina}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#57=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::MigracionProvisiones(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noProvisionDeta}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#58=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::LiquidarPrestamos(System.Int32, NewAge.DTO.Negocio.DTO_noEmpleado, System.DateTime, System.DateTime, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#59=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_CierreNomina()">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#60=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Contabilizar_Nomina(System.Int32, System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_NominaContabilizacionDetalle}, NewAge.DTO.Negocio.TipoLiquidacion)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#61=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Contabilizar_Provisiones(System.Int32, System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_NominaContabilizacionDetalle})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#62=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Contabilizar_Planilla(System.Int32, System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_NominaContabilizacionDetalle})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#63=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_ContabilizarNomina(System.Int32, System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_NominaContabilizacionDetalle}, System.Byte, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#64=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_PagoNomina(System.Int32, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPagoLiquidaciones}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#65=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_PagoNominaDetallada(System.Int32, System.DateTime, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPagoLiquidaciones}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#66=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_ContabilizarPlanilla(System.Int32, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPlanillaAportesDeta}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#67=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_ContabilizarProvisiones(System.Int32, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noProvisionDeta}, System.Collections.Generic.Dictionary{[mscorlib]System.Tuple{System.Int32,System.Int32},System.Int32}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#68=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Proceso_noLiquidacionesDocu_GetNominaLiquida(System.Int32, System.DateTime, System.Byte)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#69=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_ProvisionDeta_Get(System.DateTime, System.Int32)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#70=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_GetTraslados(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#71=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Nomina_AddTraslado(System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noTraslado}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#72=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::PrintPrenomina(System.Int32, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_MasterBasic}, System.DateTime, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noLiquidacionPreliminar}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#73=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::PrintVacaciones(System.Int32, NewAge.DTO.Negocio.DTO_noEmpleado, NewAge.DTO.Negocio.DTO_noLiquidacionesDocu, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noLiquidacionPreliminar}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#74=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Dto_PreNomina_Report(System.Int32, System.DateTime, NewAge.DTO.Negocio.DTO_noEmpleado, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noLiquidacionPreliminar}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#75=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Dto_Vacaciones_Report(System.Int32, NewAge.DTO.Negocio.DTO_noLiquidacionesDocu, NewAge.DTO.Negocio.DTO_noEmpleado, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noLiquidacionPreliminar}, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#76=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_Detalle(System.Int32, System.DateTime, System.String, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#77=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_DetailLiquidaciones(System.Int32, System.DateTime, System.String, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#78=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_XConcepto(System.Int32, System.DateTime, System.String, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#79=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_TotalXConcepto(System.Int32, System.DateTime, System.String, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#80=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_VacacionesPagadas(System.DateTime, System.DateTime, System.String, System.Boolean, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#81=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_Prestamo(System.DateTime, System.DateTime, System.Boolean, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#82=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_AportesPension(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#83=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_AportesSalud(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#84=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_AporteVoluntarioPension(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#85=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_AportesARP(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#86=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_BoletaPago(System.DateTime, System.String, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#87=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_GetVacacionesByEmpleado(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#88=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Report_No_GetLiquidaContratoByEmpleado(System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#89=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Reportes_No_NominaToExcel(System.Int32, System.Nullable{System.Byte}, System.Nullable{[mscorlib]System.DateTime}, System.Nullable{[mscorlib]System.DateTime}, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Object, System.Nullable{System.Byte}, System.Nullable{System.Byte})">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#90=M:[NewAge.Negocio]NewAge.Negocio.ModuloNomina::Reportes_No_GenerarArchivoPlanilla(System.String, System.Collections.Generic.List{[NewAge.DTO]NewAge.DTO.Negocio.DTO_noPlanillaAportesDeta})">
+        <JoinPoint Description="#4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#91=T:[NewAge.Negocio]NewAge.Negocio.PostSharpAspects.Transaction">
+    <Instance Declaration="#92=M:[NewAge.Negocio]NewAge.Negocio.noContabilizarNomina::Contabilizar()" Id="ee63604b378140e3">
+      <Target>
+        <JoinPoint Description="#93=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#94=M:[NewAge.Negocio]NewAge.Negocio.noContabilizarPlanilla::Contabilizar()" Id="ee63604b76f0269f">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#95=M:[NewAge.Negocio]NewAge.Negocio.noContabilizarProvisiones::Contabilizar()" Id="ee63604b87797cc3">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#96=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionBase::Aprobar(NewAge.DTO.Negocio.DTO_noNominaPreliminar, System.String)" Id="ee63604be199ddd9">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#97=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionCesantias::Liquidar()" Id="ee63604b52ce11b5">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#98=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionCesantias::UpdateCesantias(System.Int32, System.Decimal, System.Decimal, System.Boolean)" Id="ee63604bcc1ceefc">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#99=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionContrato::Liquidar()" Id="ee63604b4cc7fa40">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#100=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionNomina::Liquidar()" Id="ee63604b84e5c92e">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#101=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionPlanilla::Liquidar()" Id="ee63604b96ebc0e0">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#102=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionPrima::Liquidar()" Id="ee63604ba605fad1">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#103=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionProvisiones::Liquidar()" Id="ee63604b6470d692">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#104=M:[NewAge.Negocio]NewAge.Negocio.noLiquidacionVacaciones::Liquidar()" Id="ee63604b66a5b5b7">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#105=M:[NewAge.Negocio]NewAge.Negocio.noPagoNomina::Pagar()" Id="ee63604b2d089767">
+      <Target>
+        <JoinPoint Description="#93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#3" Id="ee63604b514eae25">
+      <Target>
+        <JoinPoint Description="#93" Ordinal="2" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>

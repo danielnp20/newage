@@ -1,0 +1,1138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8D5F1ED-DBFA-4C6F-99B1-5B6613D1DD37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewAge.DTO</RootNamespace>
+    <AssemblyName>NewAge.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NewAgeKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Cooermar|AnyCPU'">
+    <OutputPath>bin\Cooermar\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Tecnicas-test|AnyCPU'">
+    <OutputPath>bin\Tecnicas-test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TecnicasProd|AnyCPU'">
+    <OutputPath>bin\TecnicasProd\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Apoyos|AnyCPU'">
+    <OutputPath>bin\Apoyos\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Quantum|AnyCPU'">
+    <OutputPath>bin\Quantum\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QuantumTyS|AnyCPU'">
+    <OutputPath>bin\QuantumTyS\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atributos.cs" />
+    <Compile Include="Consultas\Cartera\DTO_VistaQ_ccProduccionSolic.cs" />
+    <Compile Include="Consultas\Cartera\DTO_VistaQ_ccIncorpora.cs" />
+    <Compile Include="Consultas\Cartera\DTO_VistaQ_ccCesiones.cs" />
+    <Compile Include="Consultas\Cartera\DTO_VistaQ_ccRecaudoMasivo.cs" />
+    <Compile Include="Consultas\Cartera\DTO_VistaQ_ccSaldosCartera.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acActivoGarantia.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_ComponenteSaldo.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_MigracionSaldos.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_DeterioroActivo.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acActivoQuerySaldos.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acActivoSaldo.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acQueryActivoControl.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acActivoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acRetiroActivoComponente.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccArchivoIncorporaciones.cs" />
+    <Compile Include="MailModels\DTO_CorreoOnline.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCJReclasificaDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCreditoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_MigrarIncorporacionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSentenciaPlanPagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccHistoricoGestionCobranza.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccNominaExclusiones.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDataCreditoUbica.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDataCreditoQuanto.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDataCreditoScore.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDataCreditoDatos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDatosPersonales.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_CreditoOnline.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_DigitaSolicitudCredito.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_SolicitudGestion.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_QueryGestionCobranza.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_RecaudoPagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_NotaCreditoResumen.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ExportRecaudoMasivo.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccReincorporacionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDevolucion.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDevolucionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSustitucionCreditos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_DataCreditoMes.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCJHistoricoAbonos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCobranzaTareas.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCJHistorico.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCarteraMvto.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_CobroJuridicoAuxiliar.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ExportMovimiento.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_GestionCobranza.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccPolizaEstado.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_EstadoCuenta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCierreDiaCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccEstadoCuentaCuotas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudCtasExtra.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSaldosDiaVenta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCompraDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_MigracionVerificacion.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_MigracionEstadoCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_MigrarVentaCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_PagoFlujos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_Reintegros.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_QueryVentaCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCierreMesCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudPlanPagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDetallePago.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_LiquidacionComisiones.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccComisionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccComisionDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCierreMes.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccReintegroClienteDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCertificadoDeuda..cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_Credito.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCierreDia.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_InfoPagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ReasignaCompradorFinal.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCompradorFinalDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCompradorFinalDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccFlujoCesionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccFlujoCesionDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_VentaCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccVentaDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccVentaDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccRecompraDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_RecompraCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccNominaDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccIncorporacionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccRecompraDeta.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSaldosComponentes.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccEstadoCuentaHistoria.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccEstadoCuentaComponentes.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_InfoCredito.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCreditoPagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccFormasPago.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCreditoPlanPagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccCreditoComponentes.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccRadicacionCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudCompraCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudComponentes.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_DigitacionCredito.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccTareaChequeoLista.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_MigracionCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_PlanDePagos.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_Cuota.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_SolicitudAprobacionCartera.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudAnexo.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_ccSolicitudDocu.cs" />
+    <Compile Include="Negocio\Documentos\Cartera\DTO_SolicitudLibranza.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_PagoImpuesto.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_ExportMvtoAuxiliar.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_QueryMvtoAuxiliar.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_SaldosVista.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_QuerySaldosCierre.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coDocumentoRevelacion.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coCierreMes.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_ComprobanteConsolidacion.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coReclasificaBalExcluye.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coCompDistribuyeExcluye.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coCompDistribuyeTabla.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coImpDeclaracionDetaCuenta.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coImpDeclaracionDetaRenglon.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coImpDeclaracionDocu.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_CruceCuentas.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_BitacoraSaldo.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coDocumentoAjuste.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_DeclaracionImpuesto.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_DetalleRenglon.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_FacturaEquivalente.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_QueryFacturasDetail.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_QueryFacturas.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_cpTarjetaPagos.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_cpTarjetaDocu.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_LegalizacionAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_cpLegalizaHeader.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_AnticipoAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_CausacionAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_CuentaValor.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_ComprobanteAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_ComprobanteFooter.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_ComprobanteHeader.cs" />
+    <Compile Include="Negocio\Documentos\Activos\DTO_acActivoControl.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_AnticipoResumen.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_Legalizacion.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_cpLegalizaFooter.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_CuentaXPagar.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_cpAnticipo.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_cpCuentaXPagar.cs" />
+    <Compile Include="Negocio\Documentos\CuentasXPagar\DTO_ResumenImpustos.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_faConvenio.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_MigrarFacturaVenta.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_QueryDetailFactura.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_QueryHeadFactura.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_faFacturacion.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_faFacturacionAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_faFacturacionFooter.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_faFacturacionResumen.cs" />
+    <Compile Include="Negocio\Documentos\Facturacion\DTO_faFacturaDocu.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_QueryCarteraMvto.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glGarantiaControl.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_InfoTarea.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glGestionDocumentalBitacora.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glIncumpleHistoria.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glIncumpleDocu.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glIncumpleCambioEstado.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glDocAnexoControl.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glLlamadaControl.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glMovimientoDeta.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glActividadEstado.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inDeterioroAprob.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inOrdenSalidaDocu.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inOrdenSalidaDeta.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_LiquidacionImportacion.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inImportacionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inImportacionDocu.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inQuerySeriales.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inDistribucionCosto.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inFisicoInventario.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_InvFisicoAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_MigracionMvtos.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_NotasEnvioResumen.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_MvtoInventarios.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inCostosExistencias.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inSaldosExistencias.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inMovimientoHeader.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inMovimientoFooter.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_inControlSaldosCostos.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_OrdenSalida.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionVacacionesDeta.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noMigracionNomina.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaEnvioBoleta.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaPlanillaContabilizacion.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaContabilizacionProvisionDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaContabilizacionPlanillaDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaContabilizacionDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaContabilizacion.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noEstadoLiquidaciones.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noPagoPlanillaAportesDocu.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noProvisionDeta.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionCompleta.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noPagoLiquidaciones.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noNominaDefinitiva.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_AumentoSalarial.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionOtroDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionOtro.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_NominaAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noBeneficiosxEmpleado.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noNominaPreliminar.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionesBases.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionesDocu.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionPreliminar.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noCompensatorios.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noLiquidacionesDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noPlanillaAportesDeta.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noPlanillaDiariaTrabajo.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noTraslado.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noPrestamo.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noNovedadesContrato.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noNovedadesNomina.cs" />
+    <Compile Include="Negocio\Documentos\Nomina\DTO_noValidaciones.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPresupuestoPxQ.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPresupuestoPxQDeta.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPresupuestoSoporte.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plSobreEjecucion.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPlaneacion_Proveedores.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_QueryEstadoEjecucion.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_QueryInformeMensual.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plCierreLegalizacion.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plCierreCompromisos.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPresupuestoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPresupuestoTotal.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_PresupuestoDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_PresupuestoAprobDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_PresupuestoAprob.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_Presupuesto.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glDocumentoAprueba.cs" />
+    <Compile Include="Negocio\Documentos\Inventarios\DTO_MigrarMvtoInventario.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_ExportTareasTiempo.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoIngDetalleDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoEntregasxMes.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoIngDetalleTarea.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoLocacion.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoModificaFechas.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_QueryComiteTecnico.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyActaTrabajoDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_CapituloPlaneacion.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoPlanEntrega.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyActaEntregaDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_ExportTrazabilidad.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_QueryIndicadores.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_QueryEjecucionPresupuestal.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_TareasFilter.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoTareaCliente.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_QueryTrazabilidad.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoMvto.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyProyectoTarea.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyPreProyectoDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyPreProyectoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyPreProyectoTarea.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_SolicitudTrabajo.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_ConveniosResumen.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prCierreMesCostos.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_SolicitudDespachoFooter.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudDirectaAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudDirectaDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prContratoPolizas.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_ConsultaCompras.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_ConvenioAprob.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_Convenios.cs" />
+    <Compile Include="Negocio\Documentos\Planeacion\DTO_plPresupuestoDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prConvenioConsumoDirecto.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prConvenioSolicitudDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prConvenioSolicitudDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prContratoAprob.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prDetalleCargos.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prContrato.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prConvenio.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prContratoPlanPago.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prContratoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prRecibidoAprob.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prOrdenCompraResumen.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prRecibidoDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prRecibido.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prOrdenCompraAprob.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSaldosDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prOrdenCompraCotiza.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prOrdenCompraFooter.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prOrdenCompra.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prOrdenCompraDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudResumen.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudAsignacion.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prDetalleDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitud.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudAprobacion.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudCargos.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudDocu.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prSolicitudFooter.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_ExportRecursosDeta.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_ExportTareas.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_MigracionAPU.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_MigracionGrupos.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_MigracionProveedor.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_MigracionInsumos.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pySolServicioAprob.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pySolServicio.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyServicio.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyServicioDetaDetalle.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyServicioRecPropio.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyTrabajos.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyCostos.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyLineas.cs" />
+    <Compile Include="Negocio\Documentos\Proyectos\DTO_pyEtapas.cs" />
+    <Compile Include="Negocio\Documentos\Seguridad\DTO_seDelegacionHistoria.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_QueryFlujoFondos.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_QueryFlujoCaja.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_QueryReciboCaja.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_RelacionPagosDeta2.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_RelacionPagosTotales.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_RelacionPagosDeta1.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_LibroBancosDeta.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_LibroBancos.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_RecibosDeCajaTotales.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_RecibosDeCaja.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_ChequesGiradosDetaReport.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_ChequesGiradosDeta.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_ChequesGirados.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_DetalleFactura.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_PagoFacturas.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_PagosElectronicos.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_ProgramacionPagos.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_ReciboCaja.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_RegistroPagoFactura.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_tsBancosDocu.cs" />
+    <Compile Include="Negocio\Documentos\Tesoreria\DTO_tsReciboCajaDocu.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acProduccionxPozoDUP.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acReservasxPozoDUP.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acTipo.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acComponenteActivo.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acDotacion.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acClase.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acContabiliza.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acMovimientoTipo.cs" />
+    <Compile Include="Negocio\Maestras\Activos Fijos\DTO_acGrupo.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coReclasificaBalance.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCobranzaEstado.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccPagaduriaSector.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccSegurosAsesor.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccAseguradora.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccProfesion.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccComisionTabla.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccPagaduriaPrograma.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccEstadoCuentaCesionarioTabla.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccInformeSicoopCuenta.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccAbogado.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccFasecoldaModelo.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccFasecolda.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccConcesionario.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccActividadesCobranza.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccClasificacionxRiesgo.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccClasificacionCredito.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccDevolucionCausal.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccIncorporacionNovedad.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccReintegroSaldo.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccTipoCredito.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccVendedorCartera.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccComponenteEdad.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccTipoNomina.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccEstadoCartera.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccPoliticaIndicesCobranza.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCompradorMonto.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCompradorPortafilio.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCompradorPagaduria.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCompradorAnexos.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccNominaINC.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCentroPagoPAG.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccComponenteCuenta.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCompradorCartera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCompradorGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccLineaComponenteMonto.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccValorAmparado.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccValorAutorizado.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccChequeoLista.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccFinanciera.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccComisionDescAsesor.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccPagaduriaAnexos.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccAsesor.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCarteraComponente.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCliente.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccComisionDescuento.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccLineaComponente.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccLineaComponentePlazo.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccLineaCredito.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccPagaduria.cs" />
+    <Compile Include="Negocio\Maestras\Cartera\DTO_ccCobranzaGestion.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coActividad.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coReporteNota.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coReporteFiltro.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coLineaNegocio.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuestoConcepto.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coUnidadGenEfectivo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coPlanillaConsolidacion.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpCargoAnticipoTipo.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faListaPrecio.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faPrecioServicio.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glActividadChequeoLista.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glCorreosEspeciales.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glDocumentoChequeoLista.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glLLamadaCodigo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glZona.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glGarantia.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDocumentoTipo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glIncumplimientoEtapa.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDocMigracionCampo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDocMigracionEstructura.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glActividadAreaFuncional.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glGrupoAprueba.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glNivelesAprobacionDoc.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glSeccionFuncional.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glTerceroReferencia.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glEmpresaModulo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glAreaFisica.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDatosMensuales.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDiasFestivos.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glLLamadaPregunta.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glProcedimientoFlujo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glActividadPermiso.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glActividadFlujo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glProcedimiento.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inImportacionModalidad.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inReferenciaCod.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inMaterial.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noConceptoNominaMM.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noComponenteNomina.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noConvencion.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noEmpleadoFamilia.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noPrestacionCod.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noPrestacionesConvencion.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocTipoCosteo.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocTipoCosteoSocio.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocCuentaGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocConceptoCuenta.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocContratoCampo.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocGrupoCtaSocio.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocParticionTablaFija.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocProyectoTRM.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocRangosOverhead.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocParticionTabla.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plDistribucion.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plGrupoPresupuestalActividad.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plServicio.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plTasasPresupuesto.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plRecurso.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plDistribucionCampo.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plGrupoPresupuestal.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plRazonFinanciera.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coFuenteUso.cs" />
+    <Compile Include="Negocio\Documentos\Proveedores\DTO_prComprasModificaFechas.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prJustificaModificacion.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prAprobacionGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prProveedorExperiencia.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prProveedorMarca.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prAnexoLista.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prProveedorPrecio.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prProveedorProductoTipo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coBalanceReclasifica.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuestoLocal.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coIvaRetencion.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coActividadTercero.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpDeclaracionCalendario.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpDeclaracionRenglon.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coActEconomica.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coRegimenFiscal.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coReporteLinea.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coReporte.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faFacturaTipo.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faAsesor.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faCliente.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faConceptos.cs" />
+    <Compile Include="Negocio\Maestras\Facturacion\DTO_faServicios.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDatosAnuales.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inTipoParametro2.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inTipoParametro1.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inCosteoGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inUnidad.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inContabiliza.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inPosicionArancel.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inPartesComponentes.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inRefEquivalentes.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inConversionUnidad.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inEmpaque.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inMovimientoTipo.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inBodegaUbicacion.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inBodegaRefe.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inBodega.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inBodegaTipo.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inReferencia.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inRefClase.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inRefGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inRefTipo.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noReteFuenteMinima.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noReteFuenteBasica.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noContratoNov.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noOperacion.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noAportesPorcentaje.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noBonificaciones.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noCaja.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noCompFlexible.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noConceptoNOM.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noConceptoPlaTra.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noDistribuyeNomina.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noEmpleado.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noFondo.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noNovedadesxDia.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noRiesgo.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noRol.cs" />
+    <Compile Include="Negocio\Maestras\Nomina\DTO_noTurnoCompensatorio.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocOtrosConceptos.cs" />
+    <Compile Include="Negocio\Maestras\Inventarios\DTO_inRefMarca.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glBienServicioClase.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prBienServicio.cs" />
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prProveedor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Maestras\Proveedores\DTO_prProveedorAnexos.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyCapituloCliente.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyClaseProyecto.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyJustificaModificacion.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTareaCapitulo.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTareaClase.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTareaCliente.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTareaRecurso.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTrabajoFlujo.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTarea.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyRecurso.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyListaPrecio.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyRecursoCostoBase.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTareaXLineaFlujo.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyLineaFlujo.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyTrabajo.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyEtapa.cs" />
+    <Compile Include="Negocio\Maestras\Proyectos\DTO_pyContrato.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhPruebasxCargo.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhEstudioxCargo.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhExperienciaxCargo.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhFuncionxCargo.cs" />
+    <Compile Include="Negocio\Maestras\Seguridad\DTO_seUsuarioBodega.cs" />
+    <Compile Include="Negocio\Maestras\Seguridad\DTO_seLAN.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsInstFinancieroComponente.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsInstrumentoFinanciero.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsBancoCierrePE.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsBancosDatosPE.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsBancosEncabezadoPE.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsFormaPago.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpTarjetaCredito.cs" />
+    <Compile Include="Negocio\Transacciones\DTO_Alarma.cs" />
+    <Compile Include="Negocio\Documentos\Global\DTO_glDocumentoControl.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpDeclaracionCuenta.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coTasaCierre.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coBalanceTipo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coDocumentoPermiso.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coDocumento.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coComprobantePrefijo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coConceptoCargo.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpCargoEspecial.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpDistribuyeImpLocal.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpCajaMenor.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpAnticipoTipo.cs" />
+    <Compile Include="Negocio\Maestras\CuentasXPagar\DTO_cpConceptoCXP.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glHorarioTrabajo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glAreaFuncional.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glUsuarioxGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDocumentoAnexo.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plGrupoPresupuestalLinea.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plGrupoPresupuestalUsuario.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plActividadLineaPresupuestal.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coControl.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuestoDeclaracion.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuestoFormato.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuestoFiltro.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coOperacion.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coTerceroDocTipo.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_coCuentaSaldo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glConceptoSaldo.cs" />
+    <Compile Include="Negocio\Maestras\Planeacion\DTO_plLineaPresupuesto.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhCompetenciasxCargo.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhCargosxAreaFuncional.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhNivelSalarial.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhCompetencia.cs" />
+    <Compile Include="Negocio\Maestras\RecursosHumanos\DTO_rhCargos.cs" />
+    <Compile Include="Negocio\Maestras\Seguridad\DTO_seUsuarioGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Seguridad\DTO_seUsuarioPrefijo.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsBancosCuenta.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsConceptoExtracto.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsCaja.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsNotaBancaria.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsBanco.cs" />
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsIngresoConcepto.cs" />
+    <Compile Include="Negocio\Transacciones\DTO_glActividadControl.cs" />
+    <Compile Include="Negocio\Transacciones\DTO_SerializedObject.cs" />
+    <Compile Include="Consultas\Cartera\DTO_VistaQ_ccCreditosLiquida.cs" />
+    <Compile Include="Reportes\Activos\DTO_ReportImportacionesTemporales.cs" />
+    <Compile Include="Reportes\Activos\DTO_ReportEquiposArrendados.cs" />
+    <Compile Include="Reportes\Activos\DTO_acComparacionLibros.cs" />
+    <Compile Include="Reportes\Activos\DTO_acCostos.cs" />
+    <Compile Include="Reportes\Activos\DTO_ActivosTotales.cs" />
+    <Compile Include="Reportes\Cartera\DTO_CorreoCliente..cs" />
+    <Compile Include="Reportes\Cartera\DTO_ReporCobroJuridico.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAnalisisPagosReport.cs" />
+    <Compile Include="Reportes\Cartera\DTO_RecaudosMasivos.cs" />
+    <Compile Include="Reportes\Cartera\DTO_SaldosReport.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ReportLibranzasDetalle.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ReportLibranzas.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccPagaduriaIncoporacion.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccReferenciacion.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccVentaCarteraVista.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccVentaCartera.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccSolicitudes.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccLiquidacionCredito.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccSaldosMora.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportComprobanteManual.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportTasas.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportGenericDetalle.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportGenericResumen.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportAnticiposViaje.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportLibroCompras.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxPFlujoSemanalDetallado.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportAnticiposDetallado.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCausacionFacturas.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportBaseCXP.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccArchivoPlanoXPagaduria.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccCartas.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccCesionCartera.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccIncorporaciones.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccEstadoDeCuentaTotales.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccEstadoDeCuenta.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAportesClienteTotales.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAportesCliente.cs" />
+    <Compile Include="Reportes\Cartera\DTO_CarteraTotales.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccSaldos.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAseguradoraTotales.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportBalanceComparativo.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportSaldosTotales.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportSaldos.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportComprobanteControlTotal.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportComprobanteControl.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportComprobanteTotal.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportComprobante.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ContabilidadTotal.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportLibroMayorTotales.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportLibroMayor.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportLibroDiarioTotales.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportLibroDiario.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAportes.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAportesTotales.cs" />
+    <Compile Include="Reportes\Cartera\DTO_ccAseguradoraReport.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportLegalizacionTarjetas.cs" />
+    <Compile Include="Reportes\DTO_ReportBase.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxPFuljoSemanalResumidoTotales.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxPFlujoSemanalResumido.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxPTotales.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxPPorEdades.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportRadicaciones.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxpFacturasPagadasTotales.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportFacturasPagadas.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxpFacturasXPagarTotales.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportFacturasXPagar.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportTarjetaPago.cs" />
+    <Compile Include="Reportes\Facturación\DTO_ReportCuentasPorCobrar.cs" />
+    <Compile Include="Reportes\Facturación\DTO_ReportLibroVentas.cs" />
+    <Compile Include="Reportes\Facturación\DTO_ReportCxCPorEdades.cs" />
+    <Compile Include="Reportes\Facturación\DTO_ReportFacturaVenta.cs" />
+    <Compile Include="Reportes\Facturación\DTO_FacturacionTotales.cs" />
+    <Compile Include="Reportes\Global\DTO_GlobalTotal.cs" />
+    <Compile Include="Reportes\Global\DTO_ReportDocumentoPendientes.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noReportVacacionesDocumento.cs" />
+    <Compile Include="Reportes\Planeacion\DTO_ReportEjecucionPresupuestal.cs" />
+    <Compile Include="Reportes\Planeacion\DTO_PlaneacionTotal.cs" />
+    <Compile Include="Reportes\Planeacion\DTO_ReportPresupuesto.cs" />
+    <Compile Include="Reportes\Proveedores\DTO_ReportProveedoresRecibidos.cs" />
+    <Compile Include="Reportes\Proveedores\DTO_ReportOrdenCompra.cs" />
+    <Compile Include="Reportes\Proveedores\DTO_ReportOrdenCompraDoc.cs" />
+    <Compile Include="Reportes\Proveedores\DTO_ReportCompromisoVSFacturas.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_noReportVacionesPagadasTotal.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_noReportVacionesPagadas.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_NominaDetConceptoTotal.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_FormulariosResumidoDevengosDedTotal.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_FormulariosResumidoEmpleadoConceptoTotal.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_noReportDetalleEmpleadoConcepto.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_noReportResumidoXEmpleadoTotal.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_noReportResumidoXEmpleado.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportNominaInfoEmpleado_Totales.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_noReportDetalleNominaXConcepto.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportNominaInfoEmpleado.cs" />
+    <Compile Include="Reportes\Inventarios\DTO_ReportInventariosSaldosTotal.cs" />
+    <Compile Include="Reportes\Inventarios\DTO_ReportInventariosSaldos.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesARPTotales.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesArp.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesVoluntariosPensionTotales.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesVoluntariosPension.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesSaludTotales.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesSalud.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesPensionTotales.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noAportesPension.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noReportPrestamo.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportVacacionesPagadas.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noReportNominaResumidoXConcepto.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNominaDetalleRC.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNominaDetalleExE.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNominaDetalleCxE.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noReportDetalleNominaDetalle.cs" />
+    <Compile Include="Reportes\Nomina\DTO_noReportDetalleNominaHeader.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNominaDetalle.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportEstadoCuenta.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportLiquidacionCredito.cs" />
+    <Compile Include="Reportes\Inventarios\DTO_ReportInvFisico.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNoVacaciones.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNoPreNomina.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportSolicitud.cs" />
+    <Compile Include="Reportes\Nomina\DTO_ReportNotaEnvio.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportTransaccionManual.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCxPxMovimientosxPeriodo.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_aplReporte.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_Certificates.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_CertificatesDetailedReport.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportCajaMenor.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportAnticipo.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportAnticipoViaje.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportAutorizacionDeGiro.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportBalanceDePruebaComparativo.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportBalanceGeneral.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_Formularios.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_FormulariosCuenta.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_FormulariosDetail.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_repBitacora.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_BasicReport.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportBalanceDePrueba.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportBalanceDePruebaPorMeses.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportBalanceDePruebaPorQ.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportComprobante2.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportDocumentoContable.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportFacturasPorPagar.cs" />
+    <Compile Include="Reportes\Contabilidad\Nuevos\DTO_ReportInventariosBalance.cs" />
+    <Compile Include="Reportes\CuentasXPagar\DTO_ReportLegalizacionGastos.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportPagoFacturas.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportPagoElectr.cs" />
+    <Compile Include="Reportes\ReportesViejos\DTO_ReportProgramacionPagos.cs" />
+    <Compile Include="Reportes\Proveedores\DTO_ReportProveedoresSolicitudes.cs" />
+    <Compile Include="Reportes\Proveedores\DTO_ProveedoresTotal.cs" />
+    <Compile Include="Reportes\Tesoreria\DTO_TesoriraTotales.cs" />
+    <Compile Include="Reportes\Tesoreria\DTO_ReportPagoFactura.cs" />
+    <Compile Include="Reportes\Tesoreria\DTO_tsChequesGiradosTotales.cs" />
+    <Compile Include="Reportes\Tesoreria\DTO_ReportReciboCaja.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportRelacionDocumentos.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportSaldos.cs" />
+    <Compile Include="Reportes\Contabilidad\Viejos\DTO_ReportSaldosDocumentos.cs" />
+    <Compile Include="Reportes\Proveedores\Seguridad\DTO_ReportSeguridad.cs" />
+    <Compile Include="Reportes\ReportesViejos\ReportField.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coComprBalanceTipo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coCargoCosto.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coValIVA.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuesto.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glAreaFuncionalDocumentoPrefijo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glDocumento.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glEmpresaGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coPlanCuenta.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coProyecto.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coTercero.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glLocFisica.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glLugarGeografico.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glTasaCambio.cs" />
+    <Compile Include="Negocio\Documentos\Contabilidad\DTO_Comprobante.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coCentroCosto.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coComprobante.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coCuentaGrupo.cs" />
+    <Compile Include="Negocio\Maestras\Contabilidad\DTO_coImpuestoTipo.cs" />
+    <Compile Include="Negocio\Maestras\Operaciones Conjuntas\DTO_ocSocio.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glPais.cs" />
+    <Compile Include="Negocio\Maestras\DTO_MasterComplex.cs" />
+    <Compile Include="Negocio\Maestras\Aplicacion\DTO_aplMaestraCampo.cs" />
+    <Compile Include="Negocio\Maestras\Aplicacion\DTO_aplMaestraPropiedades.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glEmpresa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Consultas\DTO_glConsultaFiltro.cs" />
+    <Compile Include="Negocio\Consultas\DTO_glConsulta.cs" />
+    <Compile Include="Negocio\Consultas\DTO_glConsultaSeleccion.cs" />
+    <Compile Include="Negocio\Maestras\Seguridad\DTO_seGrupoDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Maestras\Seguridad\DTO_seUsuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negocio\Maestras\Tesoreria\DTO_tsFlujoFondo.cs" />
+    <Compile Include="Negocio\Maestras\DTO_MasterHierarchyBasic.cs" />
+    <Compile Include="Negocio\Maestras\DTO_MasterBasic.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glTabla.cs" />
+    <Compile Include="Negocio\Transacciones\DTO_aplBitacoraAct.cs" />
+    <Compile Include="Negocio\Transacciones\DTO_aplBitacora.cs" />
+    <Compile Include="Negocio\Maestras\DTO_hierarchy.cs" />
+    <Compile Include="Negocio\Maestras\Aplicacion\DTO_aplIdioma.cs" />
+    <Compile Include="Negocio\Maestras\Aplicacion\DTO_aplIdiomaTraduccion.cs" />
+    <Compile Include="Negocio\Maestras\Aplicacion\DTO_aplModulo.cs" />
+    <Compile Include="Negocio\Maestras\Global\DTO_glControl.cs" />
+    <Compile Include="Negocio\Enums.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resultados\DTO_aplConfiguracionLan.cs" />
+    <Compile Include="Resultados\DTO_TxResult.cs" />
+    <Compile Include="Resultados\DTO_TxResultDetail.cs" />
+    <Compile Include="Resultados\DTO_TxResultDetailFields.cs" />
+    <Compile Include="Resultados\DTO_TxResultInconsistencias.cs" />
+    <Compile Include="Resultados\ResultEnum.cs" />
+    <Compile Include="UDT\UDT_AreaFisicaID.cs" />
+    <Compile Include="UDT\UDT_ComponenteNomina.cs" />
+    <Compile Include="UDT\UDT_ConceptoIngresoID.cs" />
+    <Compile Include="UDT\UDT_ConceptoOCID.cs" />
+    <Compile Include="UDT\UDT_DescriptivoUnFormat.cs" />
+    <Compile Include="UDT\UDT_IdentificadorTR.cs" />
+    <Compile Include="UDT\UDT_CubrimientoPolizaID.cs" />
+    <Compile Include="UDT\UDT_DescripUnFormat.cs" />
+    <Compile Include="UDT\UDT_ocGrupoID.cs" />
+    <Compile Include="UDT\UDT_RecursoID.cs" />
+    <Compile Include="UDT\UDT_ContratoID.cs" />
+    <Compile Include="UDT\UDT_CodigoGrl20.cs" />
+    <Compile Include="UDT\UDT_CodigoGrl10.cs" />
+    <Compile Include="UDT\UDT_CodigoGrl2.cs" />
+    <Compile Include="UDT\UDT_CodigoGrl5.cs" />
+    <Compile Include="UDT\UDT_CodigoGrl.cs" />
+    <Compile Include="UDT\UDT_GrupoPresupuestoID.cs" />
+    <Compile Include="UDT\UDT_SeccionFuncional.cs" />
+    <Compile Include="UDT\UDT_GrupoID.cs" />
+    <Compile Include="UDT\UDT_CajaID.cs" />
+    <Compile Include="UDT\UDT_ProfesionID.cs" />
+    <Compile Include="UDT\UDT_ReporteID.cs" />
+    <Compile Include="UDT\UDT_PorcentajeCarteraID.cs" />
+    <Compile Include="UDT\UDT_GestionCobranzaID.cs" />
+    <Compile Include="UDT\UDT_AreaPresupuestalID.cs" />
+    <Compile Include="UDT\UDT_NotaRevelacionID.cs" />
+    <Compile Include="UDT\UDT_ComponenteCarteraID.cs" />
+    <Compile Include="UDT\UDT_AgenciaAduanaID.cs" />
+    <Compile Include="UDT\UDT_FactorID.cs" />
+    <Compile Include="UDT\UDT_FuenteUsoID.cs" />
+    <Compile Include="UDT\UDT_indFinaciero.cs" />
+    <Compile Include="UDT\UDT_PortafolioID.cs" />
+    <Compile Include="UDT\UDT_TarjetaCreditoID.cs" />
+    <Compile Include="UDT\UDT_ImportacionModID.cs" />
+    <Compile Include="UDT\UDT_UnidGenEfectID.cs" />
+    <Compile Include="UDT\UDT_ComponenteActivoID.cs" />
+    <Compile Include="UDT\UDT_CentroPagoID.cs" />
+    <Compile Include="UDT\UDT_InconsistenciaIncID.cs" />
+    <Compile Include="UDT\UDT_LibranzaID.cs" />
+    <Compile Include="UDT\UDT_CuotaID.cs" />
+    <Compile Include="UDT\UDT_LlamadaID.cs" />
+    <Compile Include="UDT\UDT_ActividadFlujoID.cs" />
+    <Compile Include="UDT\UDT_TareaID.cs" />
+    <Compile Include="UDT\UDT_CompradorCarteraID.cs" />
+    <Compile Include="UDT\UDT_EstadoCarteraID.cs" />
+    <Compile Include="UDT\UDT_DocumListaID.cs" />
+    <Compile Include="UDT\UDT_CausalID.cs" />
+    <Compile Include="UDT\UDT_PagaduriaID.cs" />
+    <Compile Include="UDT\UDT_LineaCreditoID.cs" />
+    <Compile Include="UDT\UDT_DocTerceroID.cs" />
+    <Compile Include="UDT\UDT_ComisionDescID.cs" />
+    <Compile Include="UDT\UDT_CompFlexibleID.cs" />
+    <Compile Include="UDT\UDT_ProveedorID.cs" />
+    <Compile Include="UDT\UDT_BaseUVT.cs" />
+    <Compile Include="UDT\UDT_ActEconomicaID.cs" />
+    <Compile Include="UDT\UDT_acComponenteID.cs" />
+    <Compile Include="UDT\UDT_CosteoGrupoInvID.cs" />
+    <Compile Include="UDT\UDT_RolNOID.cs" />
+    <Compile Include="UDT\UDT_ConvencionNOID.cs" />
+    <Compile Include="UDT\UDT_TurnoCompID.cs" />
+    <Compile Include="UDT\UDT_BrigadaNOID.cs" />
+    <Compile Include="UDT\UDT_RiesgoNOID.cs" />
+    <Compile Include="UDT\UDT_CajaNOID.cs" />
+    <Compile Include="UDT\UDT_CargoEmpID.cs" />
+    <Compile Include="UDT\UDT_ContratoNOTipoID.cs" />
+    <Compile Include="UDT\UDT_FondoNOID.cs" />
+    <Compile Include="UDT\UDT_EstadoActID.cs" />
+    <Compile Include="UDT\UDT_TerceroDocTipoID.cs" />
+    <Compile Include="UDT\UDT_ProcesoID.cs" />
+    <Compile Include="UDT\UDT_SocioID.cs" />
+    <Compile Include="UDT\UDT_ActivoTipoID.cs" />
+    <Compile Include="UDT\UDT_ContratoNONovID.cs" />
+    <Compile Include="UDT\UDT_ConceptoNOPlanillaID.cs" />
+    <Compile Include="UDT\UDT_OperacionNOID.cs" />
+    <Compile Include="UDT\UDT_ContratoNOID.cs" />
+    <Compile Include="UDT\UDT_AsesorID.cs" />
+    <Compile Include="UDT\UDT_EmpleadoID.cs" />
+    <Compile Include="UDT\UDT_FacturaTipoID.cs" />
+    <Compile Include="UDT\UDT_ImpuestoTipoID.cs" />
+    <Compile Include="UDT\UDT_inRefeContabID.cs" />
+    <Compile Include="UDT\UDT_Renglon.cs" />
+    <Compile Include="UDT\UDT_ImpuestoDeclID.cs" />
+    <Compile Include="UDT\UDT_ActivoGrupoID.cs" />
+    <Compile Include="UDT\UDT_BancoCuentaID.cs" />
+    <Compile Include="UDT\UDT_BancoID.cs" />
+    <Compile Include="UDT\UDT_BodegaID.cs" />
+    <Compile Include="UDT\UDT_CajaMenorID.cs" />
+    <Compile Include="UDT\UDT_CargoEspecialID.cs" />
+    <Compile Include="UDT\UDT_ClienteID.cs" />
+    <Compile Include="UDT\UDT_CodigoBSID.cs" />
+    <Compile Include="UDT\UDT_ConceptoNOID.cs" />
+    <Compile Include="UDT\UDT_ConceptoNOTipoID.cs" />
+    <Compile Include="UDT\UDT_CuentaAlternaID.cs" />
+    <Compile Include="UDT\UDT_AnticipoTipoID.cs" />
+    <Compile Include="UDT\UDTSQL_decimal.cs" />
+    <Compile Include="UDT\UDTSQL_numeric.cs" />
+    <Compile Include="UDT\UDT_ConceptoCxPID.cs" />
+    <Compile Include="UDT\UDT_EmpaqueInvID.cs" />
+    <Compile Include="UDT\UDT_ListaPrecioID.cs" />
+    <Compile Include="UDT\UDT_MvtoTipoID.cs" />
+    <Compile Include="UDT\UDT_ServicioID.cs" />
+    <Compile Include="UDT\UDT_inReferenciaID.cs" />
+    <Compile Include="UDT\UDT_ParametroInvID.cs" />
+    <Compile Include="UDT\UDT_Ubicacion.cs" />
+    <Compile Include="UDT\UDT_UbicacionID.cs" />
+    <Compile Include="UDT\UDT_Cantidad.cs" />
+    <Compile Include="UDT\UDT_RepLineaID.cs" />
+    <Compile Include="UDT\UDT_coDocumentoID.cs" />
+    <Compile Include="UDT\ExcepcionesFormatos\InvalidFormatExceptions.cs" />
+    <Compile Include="UDT\UDT_TasaID.cs" />
+    <Compile Include="UDT\UDT_PorcentajeID.cs" />
+    <Compile Include="UDT\UDT_ActivoClaseID.cs" />
+    <Compile Include="UDT\UDT_ReferenciaID.cs" />
+    <Compile Include="UDT\UDT_PlaquetaID.cs" />
+    <Compile Include="UDT\UDT_PrefijoID.cs" />
+    <Compile Include="UDT\UDT_BalanceTipoID.cs" />
+    <Compile Include="UDT\UDT_ConceptoSaldoID.cs" />
+    <Compile Include="UDT\UDT_ActividadID.cs" />
+    <Compile Include="UDT\UDT_OperacionID.cs" />
+    <Compile Include="UDT\UDT_seMaquinaID.cs" />
+    <Compile Include="UDT\UDTSQL_varbinary.cs" />
+    <Compile Include="UDT\UDT_Imagen.cs" />
+    <Compile Include="UDT\UDT_ActivoID.cs" />
+    <Compile Include="UDT\UDTSQL_varcharMAX.cs" />
+    <Compile Include="UDT\UDT_ConceptoCargoID.cs" />
+    <Compile Include="UDT\UDT_coSaldoControl.cs" />
+    <Compile Include="UDT\UDT_SerialID.cs" />
+    <Compile Include="UDT\UDT_CentroCostoID.cs" />
+    <Compile Include="UDT\UDT_CuentaID.cs" />
+    <Compile Include="UDT\UDT_ComprobanteID.cs" />
+    <Compile Include="UDT\UDTSQL_smalldatetime.cs" />
+    <Compile Include="UDT\UDT_LineaNegocioID.cs" />
+    <Compile Include="UDT\UDT_LineaPresupuestoID.cs" />
+    <Compile Include="UDT\UDT_LugarGeograficoID.cs" />
+    <Compile Include="UDT\UDT_MonedaID.cs" />
+    <Compile Include="UDT\UDT_ModuloID.cs" />
+    <Compile Include="UDT\UDTSQL_varchar.cs" />
+    <Compile Include="UDT\UDTSQL_bigint.cs" />
+    <Compile Include="UDT\UDTSQL_bool.cs" />
+    <Compile Include="UDT\UDTSQL_char.cs" />
+    <Compile Include="UDT\UDTSQL_datetime.cs" />
+    <Compile Include="UDT\UDTSQL_int.cs" />
+    <Compile Include="UDT\UDTSQL_smallint.cs" />
+    <Compile Include="UDT\UDT_LocFisicaID.cs" />
+    <Compile Include="UDT\UDT_PeriodoCert.cs" />
+    <Compile Include="UDT\UDT_PeriodoID.cs" />
+    <Compile Include="UDT\UDT_ProyectoID.cs" />
+    <Compile Include="UDT\UDT_UnidadInvID.cs" />
+    <Compile Include="UDT\UDT_UsuarioID.cs" />
+    <Compile Include="UDT\UDT_TerceroID.cs" />
+    <Compile Include="UDT\UDT_PaisID.cs" />
+    <Compile Include="UDT\UDT_DescripTExt.cs" />
+    <Compile Include="UDT\UDT_IdiomaID.cs" />
+    <Compile Include="UDT\UDT_DescripTBase.cs" />
+    <Compile Include="UDT\UDT_seGrupoID.cs" />
+    <Compile Include="UDT\UDT_seUsuarioID.cs" />
+    <Compile Include="UDT\UDT_DocumentoID.cs" />
+    <Compile Include="UDT\UDT_Consecutivo.cs" />
+    <Compile Include="UDT\UDT_BitacoraID.cs" />
+    <Compile Include="UDT\UDT_AccionID.cs" />
+    <Compile Include="UDT\UDT_EmpresaGrupoID.cs" />
+    <Compile Include="UDT\UDT.cs" />
+    <Compile Include="UDT\UDT_AreaFuncionalID.cs" />
+    <Compile Include="UDT\UDT_BasicID.cs" />
+    <Compile Include="UDT\UDT_CtrlVersion.cs" />
+    <Compile Include="UDT\UDT_Descriptivo.cs" />
+    <Compile Include="UDT\UDT_EmpresaID.cs" />
+    <Compile Include="UDT\UDT_RegExRules.cs" />
+    <Compile Include="UDT\UDT_ReplicaID.cs" />
+    <Compile Include="UDT\UDT_SiNo.cs" />
+    <Compile Include="UDT\UDTSQL_tinyint.cs" />
+    <Compile Include="UDT\UDT_Valor.cs" />
+    <Compile Include="UDT\UDT_ZonaID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Librerias\ExceptionHandler\ExceptionHandler\ExceptionHandler.csproj">
+      <Project>{D2DAA26B-C3B3-489A-84A4-8354DE7CB7DE}</Project>
+      <Name>ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Librerias\Project\NewAge.Librerias.Project\NewAge.Librerias.Project.csproj">
+      <Project>{5E378E36-29BC-427F-B0C3-2C493CB11A1E}</Project>
+      <Name>NewAge.Librerias.Project</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="NewAgeKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

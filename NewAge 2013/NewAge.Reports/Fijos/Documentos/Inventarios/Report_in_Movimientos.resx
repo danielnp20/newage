@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="QueriesDataSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>--use NewAgeq
+--declare @EmpresaID varchar(15) = 'QUANTUM'
+--declare @UsuarioID varchar(15) = 'AMP'
+--declare @movimientoID varchar(15) = '1'
+--declare @bodegaID varchar(15) = ''
+--declare @tipoReporte varchar(15) = ''
+--declare @fechaIni DATE = ''
+
+
+SELECT DOC.EmpresaID,
+		det.NumeroDoc
+		,doc.PrefijoID,doc.DocumentoNro
+	,doc.PeriodoDoc
+	,usu.Descriptivo as  Usuario
+	,rtrim(doc.PrefijoID) + ' - ' + cast(doc.DocumentoNro as varchar(10)) as Documento
+	,doc.FechaDoc
+	,doc.Observacion
+	,inv.BodegaOrigenID
+	,bor.Descriptivo as DescBodOrigen
+	,(case when inv.BodegaDestinoID is null then '' else inv.BodegaDestinoID end) as BodegaDestinoID
+	,(case when bod.Descriptivo is null then '' else bod.Descriptivo end)  as DescBodDestino
+	,bor.ProyectoID as ProyOrigen
+	,pro.Descriptivo as DescPryOrigen
+	,(case when bod.ProyectoID  is null then '' else bod.ProyectoID end) as ProyDestino
+	,(case when prd.Descriptivo is null then '' else prd.Descriptivo end)  as DescPryDestino
+	,det.MvtoTipoInvID
+	,tip.Descriptivo as DescTiopMvto
+	,tip.TipoMovimiento
+	,rtrim(doc.ComprobanteID) + ' - ' + cast(doc.ComprobanteIDNro as varchar(10)) as Comprobante
+	,det.EntradaSalida
+	,det.inReferenciaID
+	,(case when det.DescripTExt is null then ref.Descriptivo else det.DescripTExt end) as DescReferencia
+	,det.EstadoInv
+	,det.DocSoporte
+	,det.CantidadUNI
+	,det.ValorUNI
+	,det.Valor1LOC
+	,det.Valor1EXT
+FROM glMovimientoDeta det with (nolock)
+	inner join inmovimientoDocu inv  with (nolock) on det.NumeroDoc = inv.NumeroDoc
+	left join glDocumentoControl doc on det.NumeroDoc = doc.NumeroDoc
+	left join  glDocumento		 doM with(nolock) on doc.Documentoid = doM.DocumentoID
+	left join seUsuario usu on doc.seUsuarioID = usu.ReplicaID
+	left join inMovimientoTipo tip  with (nolock)	on det.MvtoTipoInvID = tip.MvtoTipoInvID and det.eg_inMovimientoTipo = tip.EmpresaGrupoID
+	left join inBodega bor		with (nolock)	on inv.BodegaOrigenID = bor.BodegaID and inv.eg_inBodega = bor.EmpresaGrupoID
+	left join inBodega bod		with (nolock)	on inv.BodegadestinoID = bod.BodegaID and inv.eg_inBodega = bod.EmpresaGrupoID
+	left join coProyecto   pro  with (nolock)	on bor.ProyectoID  = pro.ProyectoID and bor.eg_coProyecto = pro.EmpresaGrupoID
+	left join coProyecto   prd  with (nolock)	on bod.ProyectoID  = prd.ProyectoID and bod.eg_coProyecto = prd.EmpresaGrupoID
+	left join inReferencia ref  with (nolock)	on det.inReferenciaID  = ref.inReferenciaID and det.eg_inReferencia = ref.EmpresaGrupoID
+Where doc.EmpresaID = @EmpresaID and doc.Estado in(3,4) and doM.ModuloID = 'in' and (cast(doc.PeriodoDoc as date) = @fechaIni)   
+	and  (tip.TipoMovimiento&lt;&gt;3 or (tip.TipoMovimiento = 3 and det.EntradaSalida = 1))
+	AND ((@proyectoID is null) or @proyectoID='' or (bor.ProyectoID=@proyectoID))
+	AND ((@bodegaID is null) or @bodegaID='' or (inv.BodegaOrigenID=@bodegaID))
+	AND ((@movimientoID is null) or @movimientoID='' or (det.MvtoTipoInvID=@movimientoID))
+order by det.numerodoc desc
+
+
+
+
+</value>
+  </data>
+  <data name="QueriesDataSource.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iUXVlcmllc0RhdGFTb3VyY2UiPjxWaWV3IE5hbWU9IkN1c3RvbVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iRW1wcmVzYUlEIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik51bWVyb0RvYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByZWZpam9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEb2N1bWVudG9Ocm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQZXJpb2RvRG9jIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVXN1YXJpbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEb2N1bWVudG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVjaGFEb2MiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPYnNlcnZhY2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCb2RlZ2FPcmlnZW5JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjQm9kT3JpZ2VuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJvZGVnYURlc3Rpbm9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjQm9kRGVzdGlubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm95T3JpZ2VuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlc2NQcnlPcmlnZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJveURlc3Rpbm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzY1ByeURlc3Rpbm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTXZ0b1RpcG9JbnZJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjVGlvcE12dG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGlwb01vdmltaWVudG8iIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IkNvbXByb2JhbnRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVudHJhZGFTYWxpZGEiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9ImluUmVmZXJlbmNpYUlEIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlc2NSZWZlcmVuY2lhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVzdGFkb0ludiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iRG9jU29wb3J0ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhbnRpZGFkVU5JIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWYWxvclVOSSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmFsb3IxTE9DIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWYWxvcjFFWFQiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+</root>

@@ -1,0 +1,13 @@
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Facade.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Facade.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Model.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Service.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.DAL.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.DTO.Logger.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Model.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Service.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.DAL.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.DTO.Logger.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.csprojResolveAssemblyReference.cache
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.pdb

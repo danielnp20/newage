@@ -1,0 +1,5 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\TecnicasProd\NewAge.Logger.Model.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\TecnicasProd\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\TecnicasProd\NewAge.Logger.DAL.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\TecnicasProd\NewAge.Logger.Model.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\TecnicasProd\NewAge.Logger.Model.dll

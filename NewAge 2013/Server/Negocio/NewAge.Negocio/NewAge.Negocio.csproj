@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76763EB5-A080-4C9C-93ED-761251ED4EDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewAge.Negocio</RootNamespace>
+    <AssemblyName>NewAge.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <DontImportPostSharp>True</DontImportPostSharp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NewAgeKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMP|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\AMP\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QuantumTyS|AnyCPU'">
+    <OutputPath>bin\QuantumTyS\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PostSharp">
+      <HintPath>..\..\..\packages\PostSharp.4.0.41\lib\net35-client\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Documentos\Nomina\noContabilizacionBase.cs" />
+    <Compile Include="Documentos\Nomina\noContabilizarNomina.cs" />
+    <Compile Include="Documentos\Nomina\noContabilizarPlanilla.cs" />
+    <Compile Include="Documentos\Nomina\noContabilizarProvisiones.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionBase.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionCesantias.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionContrato.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionNomina.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionPlanilla.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionPrima.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionProvisiones.cs" />
+    <Compile Include="Documentos\Nomina\noLiquidacionVacaciones.cs" />
+    <Compile Include="Documentos\Nomina\noPagoNomina.cs" />
+    <Compile Include="ModuloCarteraFin.cs" />
+    <Compile Include="ModuloProyectos.cs" />
+    <Compile Include="ModuloImpuestos.cs" />
+    <Compile Include="ModuloActivosFijos.cs" />
+    <Compile Include="ModuloAplicacion.cs" />
+    <Compile Include="ModuloBase.cs" />
+    <Compile Include="ModuloCartera.cs" />
+    <Compile Include="ModuloContabilidad.cs" />
+    <Compile Include="ModuloCuentasXPagar.cs" />
+    <Compile Include="ModuloFachada.cs" />
+    <Compile Include="ModuloFacturacion.cs" />
+    <Compile Include="ModuloGlobal.cs" />
+    <Compile Include="ModuloInventarios.cs" />
+    <Compile Include="ModuloNomina.cs" />
+    <Compile Include="ModuloOpConjuntas.cs" />
+    <Compile Include="ModuloPlaneacion.cs" />
+    <Compile Include="ModuloProveedores.cs" />
+    <Compile Include="ModuloTesoreria.cs" />
+    <Compile Include="PostSharpAspects\BussinessExceptionManager.cs" />
+    <Compile Include="PostSharpAspects\Transaction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DTO\NewAge.DTO\NewAge.DTO.csproj">
+      <Project>{E8D5F1ED-DBFA-4C6F-99B1-5B6613D1DD37}</Project>
+      <Name>NewAge.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Librerias\ExceptionHandler\ExceptionHandler\ExceptionHandler.csproj">
+      <Project>{d2daa26b-c3b3-489a-84a4-8354de7cb7de}</Project>
+      <Name>ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Librerias\Project\NewAge.Librerias.Project\NewAge.Librerias.Project.csproj">
+      <Project>{5E378E36-29BC-427F-B0C3-2C493CB11A1E}</Project>
+      <Name>NewAge.Librerias.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Librerias\SentenceTransformer\SentenceTransformer.csproj">
+      <Project>{6A4CF90D-890F-4FFD-9E37-26C7DDC7AFAE}</Project>
+      <Name>SentenceTransformer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ReportesComunes\NewAge.ReportesComunes.csproj">
+      <Project>{748CB234-DF37-41EC-8302-4EBBC7B867B0}</Project>
+      <Name>NewAge.ReportesComunes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DAL\NewAge.ADO\NewAge.ADO.csproj">
+      <Project>{DCE80482-5D7C-483A-9B27-6C0EE20D637B}</Project>
+      <Name>NewAge.ADO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewAgeKey.snk" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets" Condition="Exists('..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets')" />
+  <Target Name="EnsurePostSharpImported" BeforeTargets="BeforeBuild" Condition="'$(PostSharp30Imported)' == ''">
+    <Error Condition="!Exists('..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://www.postsharp.net/links/nuget-restore." />
+    <Error Condition="Exists('..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://www.postsharp.net/links/nuget-restore." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

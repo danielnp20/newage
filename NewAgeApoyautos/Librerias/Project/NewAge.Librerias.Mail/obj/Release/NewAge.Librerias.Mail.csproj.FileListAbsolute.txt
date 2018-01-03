@@ -1,0 +1,6 @@
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Mail\bin\Release\NewAge.Librerias.Mail.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Mail\bin\Release\NewAge.Librerias.Mail.pdb
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Mail\bin\Release\Xipton.Razor.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Mail\obj\Release\NewAge.Librerias.Mail.csprojResolveAssemblyReference.cache
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Mail\obj\Release\NewAge.Librerias.Mail.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Mail\obj\Release\NewAge.Librerias.Mail.pdb

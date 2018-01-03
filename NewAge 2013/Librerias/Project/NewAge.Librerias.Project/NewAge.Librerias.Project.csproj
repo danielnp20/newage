@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E378E36-29BC-427F-B0C3-2C493CB11A1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewAge.Librerias.Project</RootNamespace>
+    <AssemblyName>NewAge.Librerias.Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NewAgeKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Cooermar|AnyCPU'">
+    <OutputPath>bin\Cooermar\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Tecnicas-test|AnyCPU'">
+    <OutputPath>bin\Tecnicas-test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TecnicasProd|AnyCPU'">
+    <OutputPath>bin\TecnicasProd\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Apoyos|AnyCPU'">
+    <OutputPath>bin\Apoyos\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Quantum|AnyCPU'">
+    <OutputPath>bin\Quantum\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QuantumTyS|AnyCPU'">
+    <OutputPath>bin\QuantumTyS\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Excel">
+      <HintPath>..\..\Externas\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuracion\AppControl.cs" />
+    <Compile Include="Configuracion\AppDocuments.cs" />
+    <Compile Include="Configuracion\AppForms.cs" />
+    <Compile Include="Configuracion\AppMasters.cs" />
+    <Compile Include="Configuracion\AppProcess.cs" />
+    <Compile Include="Configuracion\AppDynamicQueries.cs" />
+    <Compile Include="Configuracion\AppQueries.cs" />
+    <Compile Include="Configuracion\AppReports.cs" />
+    <Compile Include="Configuracion\AppTemplates.cs" />
+    <Compile Include="Recursos\DictionaryMessages.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Recursos\LanguageManager.cs" />
+    <Compile Include="Recursos\MasterMessages.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilidades\AESCrypto.cs" />
+    <Compile Include="Utilidades\CompressedSerializer.cs" />
+    <Compile Include="Utilidades\ComputerInfo.cs" />
+    <Compile Include="Utilidades\ConfigurationManagerHelper .cs" />
+    <Compile Include="Utilidades\CsvExport.cs" />
+    <Compile Include="Utilidades\CurrencyFormater.cs" />
+    <Compile Include="Utilidades\DataTableOperations.cs" />
+    <Compile Include="Utilidades\DateTimeExtension.cs" />
+    <Compile Include="Utilidades\DictionaryFormatter.cs" />
+    <Compile Include="Utilidades\DictionaryProgress.cs" />
+    <Compile Include="Utilidades\DynamicQueries.cs" />
+    <Compile Include="Utilidades\Evaluador.cs" />
+    <Compile Include="Utilidades\FormatString.cs" />
+    <Compile Include="Utilidades\MailUtility.cs" />
+    <Compile Include="Utilidades\ObjectCopier.cs" />
+    <Compile Include="Utilidades\QSCrypto.cs" />
+    <Compile Include="Utilidades\ReportsBytes.cs" />
+    <Compile Include="Utilidades\StringEnum.cs" />
+    <Compile Include="Utilidades\StringExtensions.cs" />
+    <Compile Include="Utilidades\TableFormats.cs" />
+    <Compile Include="Utilidades\TopMessageBox.cs" />
+    <Compile Include="Utilidades\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewAgeKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

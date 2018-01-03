@@ -1,0 +1,13 @@
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.Facade.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.Facade.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.Model.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.Service.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.DAL.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.DTO.Logger.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.Model.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.Service.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.Logger.DAL.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\bin\Release\NewAge.DTO.Logger.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\obj\Release\NewAge.Logger.Facade.csprojResolveAssemblyReference.cache
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\obj\Release\NewAge.Logger.Facade.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Facade\obj\Release\NewAge.Logger.Facade.pdb

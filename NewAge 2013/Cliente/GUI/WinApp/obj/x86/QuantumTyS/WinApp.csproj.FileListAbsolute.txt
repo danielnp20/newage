@@ -1,0 +1,2 @@
+C:\Projects\NewAge 2013\Cliente\GUI\WinApp\bin\x86\QuantumTyS\NewAge-Pruebas.exe.config
+C:\Projects\NewAge 2013\Cliente\GUI\WinApp\bin\x86\QuantumTyS\NewAge-Apoyos.exe.config

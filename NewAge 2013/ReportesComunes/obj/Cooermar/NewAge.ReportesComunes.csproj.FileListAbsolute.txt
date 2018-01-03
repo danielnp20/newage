@@ -1,0 +1,16 @@
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.ReportesComunes.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.DTO.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\SentenceTransformer.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\ExceptionHandler.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.Logger.Facade.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.Logger.Service.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.Logger.Model.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.Logger.DAL.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\ReportesComunes\bin\Cooermar\NewAge.Logger.Service.pdb
+C:\Projects\NewAge 2013\ReportesComunes\obj\Cooermar\NewAge.ReportesComunes.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\ReportesComunes\obj\Cooermar\NewAge.ReportesComunes.BaseCommonReport.resources
+C:\Projects\NewAge 2013\ReportesComunes\obj\Cooermar\NewAge.ReportesComunes.ComprobanteReport.resources
+C:\Projects\NewAge 2013\ReportesComunes\obj\Cooermar\NewAge.ReportesComunes.csproj.GenerateResource.Cache
+C:\Projects\NewAge 2013\ReportesComunes\obj\Cooermar\NewAge.ReportesComunes.dll

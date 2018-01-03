@@ -1,0 +1,4 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\bin\Debug\NewAge.Logger.Data.Entities.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\bin\Debug\NewAge.Logger.Data.Entities.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\obj\Debug\NewAge.Logger.Data.Entities.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\obj\Debug\NewAge.Logger.Data.Entities.pdb

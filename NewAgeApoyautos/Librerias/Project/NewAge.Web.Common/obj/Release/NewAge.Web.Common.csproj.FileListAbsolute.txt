@@ -1,0 +1,6 @@
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Web.Common\bin\Release\NewAge.Web.Common.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Web.Common\bin\Release\NewAge.Web.Common.pdb
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Web.Common\bin\Release\Newtonsoft.Json.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Web.Common\obj\Release\NewAge.Web.Common.csprojResolveAssemblyReference.cache
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Web.Common\obj\Release\NewAge.Web.Common.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Web.Common\obj\Release\NewAge.Web.Common.pdb

@@ -1,0 +1,173 @@
+﻿@using System.Globalization
+@using System.Threading
+@{
+    Thread.CurrentThread.CurrentCulture = new CultureInfo("es-CO");
+    var Url = "http://adminreservas.grupotakami.com/assets/Uploads/";
+    var UrlHost = "http://adminreservas.grupotakami.com/Online";   
+    Layout = null;	
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Grupo Takami - Reservas Activas</title>
+    </head>
+    <body style="font-family:Helvetica, Arial, sans-serif; color:#000000; background-color:#ffffff; font-size:12px;">
+        <table width="638" border="0" cellspacing="0" cellpadding="20" align="center">
+           <tr>
+            <td style="padding:0;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                <td bgcolor="#000000">
+                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td style="padding: 28px;">
+                            <img src="http://adminreservas.grupotakami.com/Assets/MailTemplates/Online/takami-logo.png" alt="Takami" width="100" height="32" style=" display: block; margin: 0; padding: 0; outline: 0; border: none;" />
+                        </td>
+                        <td style="padding: 28px 16px 18px 28px;" valign="bottom">
+                            <p style="color:#fff; font-size:15px; text-align: right; margin: 0;">Reservas activas</p>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+                </tr>
+                <tr>
+                <td height="5">
+                </td>
+                </tr>
+                <tr bgcolor="#EFEFEF">
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="16">
+                      <tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                            <td valign="bottom">
+                                                <p style="font-size:19px; font-weight:bold; margin:22px 0;">Sus próximas reservas en nuestros restaurantes:</p>
+                                            </td>
+                                            <td width="100">
+                                            </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                @foreach (var reservation in Model.OnlineActiveReservations)
+                                {
+                                        <tr>
+                                        <td bgcolor="#FFFFFF">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td style="padding: 20px 0 20px 20px;width: 170px;">
+                                                        <img style="background-color: #ffffff; display: block; margin: 0; padding: 0; outline: 0; border: none; font-size: 40px; font-family: Helvetica,Arial,sans-serif; font-weight: bold" src="@(Url +"RestaurantMail/Original/"+ reservation.RestaurantImageMail)" width="170" height="170" alt="@(reservation.RestaurantName)" title="@(reservation.RestaurantName)">
+                                                    </td>
+                                                    <td align="right" width="287" style="padding-right:17px; text-align:left;">
+                                                        <p style="margin-top: 22px;">
+                                                            <span style="display: block; color:#000000; font-size:11px;">CÓDIGO DE RESERVA:</span>
+                                                            <span style="color: #801811; font-size:27px;">@(reservation.ReservationCode)</span>
+                                                        </p>
+                                                    <p style="margin-top: 20px;"> 
+                                                        <span style="display: block; color:#000000; font-size:11px;">PARA EL DÍA: </span>
+                                                        <span style="color: #666667; font-size:26px;">@(reservation.ReservationDate.ToString(@"dddd, dd \de MMMM")) - @(DateTime.Today.Add(reservation.ReservationInitialTime).ToString("hh tt", System.Globalization.CultureInfo.InvariantCulture))</span>
+                                                    </p>
+                                                    <p style="margin-top: 20px;">
+                                                        <span style="display: block; color:#000000; font-size:11px;">NÚMERO DE PERSONAS:</span> 
+                                                        <span style="color: #666667; font-size:26px;">@(reservation.NumberPeople) Personas</span>
+                                                    </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td bgcolor="#FFFFFF">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="17">
+                                                <tr>
+                                                    <td style="padding-top:0; padding-bottom:30px; width:50%;" width="50%" valign="top">
+													  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+													  <tr>
+                                                      <td style="width:100%;display:block;border: 1px #801811 solid;text-align: center; padding:0;">
+                                                                    <a href="@(UrlHost+"/Reservations/Detail/"+ reservation.ReservationCode +"/true/1")" target="_blank" style="display: block; text-align:center; color:#801811; background-color:#fff; padding:15px 0; width:100%; text-decoration:none; font-size:14px; min-width:150px;">Modificar</a>
+                                                                </td>
+													   </tr>
+													   </table>
+                                                    </td>
+                                                    <td style="padding-top:0; padding-bottom:30px; width:50%;" width="50%" valign="top">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+													  <tr>
+                                                      <td style="width:100%;display:block;border: 1px #801811 solid;text-align: center; padding:0;">
+                                                                        <a href="@(UrlHost + "/Reservations/Detail/"+ reservation.ReservationCode +"/true/2")" target="_blank" style="display: block; text-align:center; color:#801811; background-color:#fff; padding:15px 0; width:100%; text-decoration:none; font-size:14px; min-width:150px;">Cancelar</a>
+                                                                    </td>
+														</tr>
+														</table>
+												    </td>                    
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#FFFFFF" height="3">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="1">
+                                            </td>
+                                        </tr>
+                                }
+
+                            <tr bgcolor="#fff">
+                                <td>
+                                    <p style="margin: 30px auto; max-width:153px;">
+                                        <a href="http://adminreservas.grupotakami.com/Online/home/index" target="_blank" style="display:block; text-decoration:none; background-color:#000; color:#fff; text-align:center; font-size:14px; padding:15px;">Nueva Reserva</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="text-align:center; font-size:13px; color:#3C3C3B; padding:25px 10px 0;">Este correo para confirmar su reserva ha sido enviado bajo su previa autorización.<br/>
+                                        Este es un correo automático y no recibe respuestas. Por favor para cualquier inquietud o queja llámenos al <a href="tel:0316447766" target="_blank" style="color: #4EB2D3;">(031) 6447766</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                      </tr>
+                    </table>
+                </td>
+                </tr>
+                <tr>
+                <td height="5">
+                </td>
+                </tr>
+                <tr bgcolor="#000000">
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="16">
+                        <tr>
+                            <td>
+                                <p style="color: #fff; font-size:13px; margin: 0;"><span style="display:block; font-size:14px; margin-bottom: 9px;">Takami S.A &reg;</span>| <a href="" target="_blank" style="color:#fff; text-decoration:none;">80 Sillas</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Black Bear</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Cacio&Pepe</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Cantina y Punto</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Central Cevichería</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Horacio Barbato</a> | <br/><a href="" target="_blank" style="color:#fff; text-decoration:none;">La Fama</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Osaki</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Sipote</a> | <a href="" target="_blank" style="color:#fff; text-decoration:none;">Ugly American</a> | </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+            <!-- DO NOT REMOVE: Hack for gmail app to not change the original version -->
+            <tr>
+                <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </div>
+            </tr>
+        </table>
+    </body>
+</html>

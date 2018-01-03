@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[NewAge.ADO]NewAge.ADO.ADOExceptionManager">
+    <Instance Declaration="#2=T:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina" Id="d46eefbc62ff8e50">
+      <Target Target="#3=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::#ctor(System.Data.SqlClient.SqlConnection, System.Data.SqlClient.SqlTransaction, NewAge.DTO.Negocio.DTO_glEmpresa, System.Int32, System.String)">
+        <JoinPoint Description="#4=Wrapped by advice(s) OnException" />
+      </Target>
+      <Target Target="#5=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_AportesPension(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#6=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_AportesSalud(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#7=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_AporteVoluntarioPension(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#8=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_AportesARP(System.DateTime, System.DateTime, System.String, System.Boolean, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#9=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_DetalleNominaHeader(System.Int32, System.DateTime, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#10=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_DetailLiquidaciones(System.String, System.Int32, System.Int32, System.DateTime, System.DateTime, System.DateTime, System.Boolean, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#11=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_XConcepto(System.Int32, System.DateTime, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#12=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_TotalXConcepto(System.Int32, System.DateTime, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#13=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_Detalle(System.Int32, System.DateTime, System.DateTime, System.DateTime, System.Boolean, System.Boolean, System.Boolean, System.String, System.String, System.String, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#14=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_VacacionesPagadas(System.DateTime, System.DateTime, System.String, System.Boolean, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#15=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_Prestamo(System.DateTime, System.DateTime, System.Boolean, System.String)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#16=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_ReportesNomina_BoletaPago(System.DateTime, System.String, System.Boolean)">
+        <JoinPoint Description="#4" />
+      </Target>
+      <Target Target="#17=M:[NewAge.ADO]NewAge.ADO.DAL_ReportesNomina::DAL_Reportes_No_NominaToExcel(System.Int32, System.Nullable{System.Byte}, System.Nullable{[mscorlib]System.DateTime}, System.Nullable{[mscorlib]System.DateTime}, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Object, System.Nullable{System.Byte}, System.Nullable{System.Byte})">
+        <JoinPoint Description="#4" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @if (IsSectionDefined("SEO"))
+    {
+        @RenderSection("SEO")
+    }
+    else
+    {
+        <title>NewAge - Sistema de Cartera Online</title>
+        <meta name="description" content="NewAge - Sistema de Cartera Online" />
+    }
+    <meta charset="utf-8" />
+    <meta name="gwt:property" content="locale=es">
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    @Styles.Render("~/Content/bootstrap.css")
+    @Styles.Render("~/Content/kendoui.css")
+    @Styles.Render("~/Content/css.css")
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,600italic,700' rel='stylesheet' type='text/css'>
+    @RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+        var imgPath = '@(Url.Content("~/Images/"))';
+    </script>
+
+</head>
+<body>
+    <!-- Menu -->
+    @Html.Partial("_Menu")
+
+    <!-- Body -->
+    <div class="container main-container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer>
+        <img src="~/Images/apoyos-financieros-logo.png" alt="Apoyos Financieros" width="100" />
+    </footer>
+
+    <!-- Ajax update progress (Loading) -->
+    <div id="AjaxUpdateProgress" style="display: none;">
+        <div class="AjaxUpdateProgressTransparentBG"></div>
+        <div class="AjaxUpdateProgressShow">
+            <img src="~/Images/loading.gif" alt="Cargando" />
+        </div>
+    </div>
+
+    <div id="reset-password-window" style="display: none;">
+        <h3>Cambiar Contraseña</h3>
+        <p class="message">Por favor digite la información de su nueva contraseña</p>
+        @using (Html.BeginForm("ResetPassword", "Account", FormMethod.Post, new { @class = "", id = "forgot-password-form" }))
+        {
+            <span class="email-text">Correo Electrónico:</span>
+            <div class="form-group">
+                <input type="email" name="mail" value="@Html.UserMail()" class="form-control" readonly="readonly" />
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Nueva Contraseña" required="required" />
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirmPassword" class="form-control" placeholder="Confirmación nueva Contraseña" required="required" />
+            </div>
+            <button class="btn btn-lg btn-danger btn-block" type="submit">Guardar</button>
+        }
+    </div>
+
+    @Html.Partial("_Windows")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/underscore")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/placeholder")
+    @Scripts.Render("~/bundles/jqueryform")
+    @Scripts.Render("~/bundles/kendoui")
+    @Scripts.Render("~/bundles/newage.base")
+    @Scripts.Render("~/bundles/newage.general")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

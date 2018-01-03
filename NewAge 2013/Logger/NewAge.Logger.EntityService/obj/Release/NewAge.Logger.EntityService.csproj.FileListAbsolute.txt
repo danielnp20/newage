@@ -1,0 +1,11 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Logger.EntityService.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Logger.EntityService.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Logger.Data.Entities.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Logger.DataContext.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Librerias.Project.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Logger.Data.Entities.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\bin\Release\NewAge.Logger.DataContext.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\obj\Release\NewAge.Logger.EntityService.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\obj\Release\NewAge.Logger.EntityService.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.EntityService\obj\Release\NewAge.Logger.EntityService.pdb

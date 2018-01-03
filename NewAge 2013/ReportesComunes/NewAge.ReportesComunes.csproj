@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{748CB234-DF37-41EC-8302-4EBBC7B867B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewAge.ReportesComunes</RootNamespace>
+    <AssemblyName>NewAge.ReportesComunes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NewAgeKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Cooermar|AnyCPU'">
+    <OutputPath>bin\Cooermar\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Tecnicas-test|AnyCPU'">
+    <OutputPath>bin\Tecnicas-test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TecnicasProd|AnyCPU'">
+    <OutputPath>bin\TecnicasProd\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Apoyos|AnyCPU'">
+    <OutputPath>bin\Apoyos\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Quantum|AnyCPU'">
+    <OutputPath>bin\Quantum\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QuantumTyS|AnyCPU'">
+    <OutputPath>bin\QuantumTyS\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseCommonReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCommonReport.Designer.cs">
+      <DependentUpon>BaseCommonReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartera\LiquidcacionCreditoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartera\EstadoCuentaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColumnsInfo.cs" />
+    <Compile Include="CommonReportDataSupplier.cs" />
+    <Compile Include="Contabilidad\DocumentoContableReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuentasXPagar\AnticipoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuentasXPagar\AnticipoViajeReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuentasXPagar\AnticipoViajeReport.Designer.cs">
+      <DependentUpon>AnticipoViajeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasXPagar\AutorizacionDeGiroReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Contabilidad\ComprobanteReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Contabilidad\ComprobanteReport.Designer.cs">
+      <DependentUpon>ComprobanteReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasXPagar\CajaMenorReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuentasXPagar\LegalizacionGastosReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventarios\InventarioFisicoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventarios\NotaEnvioReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventarios\TransaccionManualReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Nómina\NominaDetailExEReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Nómina\NominaDetailExCReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Nómina\VacacionesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Nómina\PreNominaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores\SolicitudReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteDinamico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteDinamico.Designer.cs">
+      <DependentUpon>ReporteDinamico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tesoreria\PagoFacturasReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tesoreria\ProgramacionPagosReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tesoreria\ReciboCajaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseCommonReport.resx">
+      <DependentUpon>BaseCommonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contabilidad\ComprobanteReport.resx">
+      <DependentUpon>ComprobanteReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\NewAge.DTO\NewAge.DTO.csproj">
+      <Project>{E8D5F1ED-DBFA-4C6F-99B1-5B6613D1DD37}</Project>
+      <Name>NewAge.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Librerias\Project\NewAge.Librerias.Project\NewAge.Librerias.Project.csproj">
+      <Project>{5E378E36-29BC-427F-B0C3-2C493CB11A1E}</Project>
+      <Name>NewAge.Librerias.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Librerias\SentenceTransformer\SentenceTransformer.csproj">
+      <Project>{6A4CF90D-890F-4FFD-9E37-26C7DDC7AFAE}</Project>
+      <Name>SentenceTransformer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewAgeKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

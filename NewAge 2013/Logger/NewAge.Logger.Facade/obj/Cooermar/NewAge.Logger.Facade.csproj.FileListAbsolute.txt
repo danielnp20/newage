@@ -1,0 +1,8 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Cooermar\NewAge.Logger.Facade.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Cooermar\NewAge.Logger.Model.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Cooermar\NewAge.Logger.Service.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Cooermar\NewAge.Logger.DAL.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Cooermar\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Cooermar\NewAge.Logger.Service.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Cooermar\NewAge.Logger.Facade.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Cooermar\NewAge.Logger.Facade.dll

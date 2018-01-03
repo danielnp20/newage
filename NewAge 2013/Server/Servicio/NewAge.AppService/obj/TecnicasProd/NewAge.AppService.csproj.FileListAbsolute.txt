@@ -1,0 +1,1 @@
+C:\Projects\NewAge 2013\Server\Servicio\NewAge.AppService\obj\TecnicasProd\NewAge.AppService.csprojResolveAssemblyReference.cache

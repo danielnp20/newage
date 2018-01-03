@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="formattingRule1.Condition" xml:space="preserve">
+    <value>Iif([ResumenEstCuenta.EC_Proposito] == 1, 'Consulta' , 'NoCon')  or
+Iif([ResumenEstCuenta.EC_Proposito] == 2, 'Prepago', 'NoPre') or
+Iif([ResumenEstCuenta.EC_Proposito] == 6, 'Envio Cobro Jur', 'NoEnvio')</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="QueriesDataSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>
+SELECT	cred.ClienteID,cliente.Descriptivo as Nombre,cred.Libranza,cuota.CuotaID, cuota.FechaCuota as FechaVto, cuota.IndCuotaVencida,
+		(Select Top 1 ctrlPago.FechaDoc from ccCreditoPlanPagos pla
+			INNER JOIN ccCreditoPagos as pag WITH(NOLOCK) on pag.CreditoCuotaNum = pla.Consecutivo
+			INNER JOIN glDocumentoControl ctrlPago WITH(NOLOCK) on ctrlPago.NumeroDoc = pag.PagoDocu 	
+		 where  ctrlPago.DocumentoAnula is null and pla.NumeroDoc = hist.NumDocCredito and pla.CuotaID = cuota.CuotaID and 
+		 cuota.IndCuotaVencida = 1 order by ctrlPago.FechaDoc desc)					as FechaPago,			 
+		(CASE WHEN DATEDIFF(day,cuota.FechaCuota,ctrlEst.FechaDoc) &lt; 0 
+			  THEN 0 ELSE DATEDIFF(day,cuota.FechaCuota,ctrlEst.FechaDoc) end)		as DiasMora,	
+		(CASE WHEN cuota.VlrPRJ is null THEN 0 ELSE cuota.VlrPRJ END)				as HonorariosPrej,	
+		(CASE WHEN cuota.VlrMora is null THEN 0 ELSE cuota.VlrMora END)				as IntMora,
+		(CASE WHEN (cuota.VlrSeguroSDO+cuota.VlrOtro1SDO) is null 
+			  THEN 0 ELSE (cuota.VlrSeguroSDO +cuota.VlrOtro1SDO) END)				as Seguro,			 
+		(CASE WHEN cuota.VlrInteresSDO is null THEN 0 ELSE cuota.VlrInteresSDO END)	as IntCap,
+		(CASE WHEN cuota.VlrCapitalSDO is null THEN 0 ELSE cuota.VlrCapitalSDO END)	as Capital	,
+		(CASE WHEN cuota.VlrOtrosfijosSDO is null THEN 0 ELSE cuota.VlrOtrosfijosSDO END)	as OtrosFijos	
+FROM  ccEstadoCuentaCuotas cuota WITH(NOLOCK) 
+		LEFT JOIN glDocumentoControl ctrlEst WITH(NOLOCK) ON ctrlEst.NumeroDoc = cuota.NumeroDoc 
+		LEFT JOIN ccEstadoCuentaHistoria hist WITH(NOLOCK) ON hist.NumeroDoc = cuota.NumeroDoc
+		LEFT JOIN ccCreditoDocu cred WITH(NOLOCK) ON cred.NumeroDoc = hist.NumDocCredito  
+		LEFT JOIN ccCliente cliente WITH(NOLOCK) ON cliente.ClienteID = cred.ClienteID AND cliente.EmpresaGrupoID = cred.eg_ccCliente
+WHERE	cred.EmpresaID = @EmpresaID and hist.NumeroDoc = @NumeroDoc and  cast(cuota.FechaCuota as date) &lt;= @FechaCorte
+Order by  cred.ClienteID, cuota.CuotaID</value>
+  </data>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>--Declara variables  glcontrol
+DECLARE @EmpresaNumCtrl					AS VARCHAR(10)	-- Trae el numero de control de la empresa
+DECLARE @CodigoCartera					AS VARCHAR(10)	-- Trae el codigo de cartera para la empresa actual	
+DECLARE @componenteNoCausaDeudas		AS VARCHAR(10)	-- Trae el Componente interes no causado deuda
+DECLARE @ComponenteClaseNoCausadoSeguro	AS VARCHAR(10)	-- Trae el Componente interes no causado seguro
+DECLARE @ComponenteNoCausadoSeguro		AS VARCHAR(10)	-- Trae el Componente no causado seguro
+DECLARE @ComponentePolizaEC				AS VARCHAR (10) -- Trae el Componente Revocatoria Polizas
+DECLARE @ComponenteOtros				AS VARCHAR (10) -- Trae el Componente Prepago
+
+--Trae los consecutivos de la empresa
+SELECT @EmpresaNumCtrl = NumeroControl FROM glEmpresa WITH(NOLOCK) WHERE EmpresaID = @EmpresaID
+SET @CodigoCartera = @EmpresaNumCtrl + '16'	-- Modulo	
+
+--Carga los datos de glControl
+SELECT @componenteNoCausaDeudas = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '077' AS INT) 
+SELECT @ComponenteClaseNoCausadoSeguro = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '078' AS INT) 
+SELECT @ComponenteNoCausadoSeguro = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '136' AS INT) 
+SELECT @ComponentePolizaEC = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '088' AS INT) 
+SELECT @ComponenteOtros = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '119' AS INT)  
+
+-- Query 
+SELECT 
+	Isnull(deta.Gastos,0) as Gastos,
+	Isnull(deta.InteresNC,0) as InteresNC,
+	Isnull(tb.TotalSaldoVencido,0) as TotalSaldoVencido ,
+	Isnull(tb.VlCapitalPag,0) as VlCapitalPag,Isnull(HIS.EC_ValorAbono,0) as VlrAbonoCap,
+	Isnull(tb.VlrSeguroPAG,0)  +(CASE WHEN HIS.EC_PolizaMvto = 2 OR HIS.EC_PolizaMvto = 3 THEN deta.ValorPoliza ELSE 0 END) as VlrSeguroPAG,
+	(CASE WHEN HIS.EC_PolizaMvto = 2 OR HIS.EC_PolizaMvto = 3 THEN deta.ValorPoliza ELSE 0 END) AS ValorPoliza,
+	cred.Libranza, cred.ClienteID,cli.Descriptivo as Nombre,
+(CASE WHEN HIS.EC_PolizaMvto = 2 THEN 'PP' ELSE (CASE WHEN HIS.EC_PolizaMvto = 3 THEN 'RV' ELSE (CASE WHEN HIS.EC_PolizaMvto = 1 THEN 'CO' ELSE '' END) END) END) AS Estado,
+(Select isnull(SUM(AbonoValor),0) from ccEstadoCuentaComponentes where NumeroDoc = @numeroDoc and ComponenteCarteraID = @ComponenteOtros) as VlrSancionPrepago
+
+FROM
+	ccEstadoCuentaHistoria AS HIS
+LEFT JOIN 
+	(SELECT  DETA1.NumeroDoc
+			,SUM(deta1.Gastos)		AS Gastos
+			,SUM(deta1.InteresNC)	AS InteresNC
+			,SUM(deta1.ValorPoliza)	AS ValorPoliza
+	 from
+			(SELECT
+				eco.NumeroDoc, 
+				(CASE WHEN com.TipoComponente = 6
+						THEN eco.AbonoValor
+							ELSE 0 END) AS Gastos,
+				(CASE WHEN com.ComponenteCarteraID = @componenteNoCausaDeudas 	OR  com.ComponenteCarteraID = @ComponenteClaseNoCausadoSeguro 
+						THEN eco.AbonoValor
+							ELSE 0  END) AS InteresNC,
+				(CASE WHEN com.ComponenteCarteraID = @ComponentePolizaEC OR  com.ComponenteCarteraID = @ComponenteNoCausadoSeguro
+						THEN eco.AbonoValor
+							ELSE 0  END) AS ValorPoliza
+			FROM 
+				ccEstadoCuentaComponentes      eco WITH (NOLOCK)
+				INNER JOIN ccCarteraComponente com  WITH (NOLOCK) ON eco.ComponenteCarteraID = com.ComponenteCarteraID AND eco.eg_ccCarteraComponente = com.EmpresaGrupoID
+			WHERE 
+				eco.NumeroDoc = @numeroDoc) AS deta1
+			group by deta1.NumeroDoc) as deta ON HIS.NumeroDoc = deta.NumeroDoc
+INNER JOIN 		(SELECT
+		tb.NumeroDoc,
+		SUM(CASE WHEN tb.TotalSaldoVencido IS NULL THEN 0 ELSE tb.TotalSaldoVencido END) AS TotalSaldoVencido,
+		((SUM(tb.VlCapitalPagTotal)) - (sum(tb.VlCapitalPagVencida))) AS VlCapitalPag,
+		((SUM(tb.VlrSeguroPAGTotal)) -(sum(tb.VlrSeguroPAGVencida))) AS VlrSeguroPAG
+		FROM(SELECT 
+				ecu.NumeroDoc,
+				ecu.CuotaID,
+				ecu.IndCuotaVencida,
+				(CASE WHEN ecu.IndCuotaVencida = 1 or  cast(ecu.FechaCuota as date) &lt;= @FechaCorte
+					THEN  ( Isnull(ecu.VlrCapitalPAG,0) + 
+							Isnull(ecu.VlrInteresPAG,0) + 
+							Isnull(ecu.VlrSeguroSDO,0)  + 
+							case when ecu.VlrOtro1PAG  is null then 0 else ecu.VlrOtro1PAG END+ 
+							case when ecu.VlrOtrosfijosPAG  is null then 0 else ecu.VlrOtrosfijosPAG END+ 
+							case when ecu.VlrMora  is null then 0 else ecu.VlrMora END+ 
+							Isnull(ecu.VlrPRJ,0)) 
+						ELSE 0 END) AS TotalSaldoVencido,
+				ecu.VlrCapitalPAG AS VlCapitalPagTotal,
+				(CASE WHEN ecu.IndCuotaVencida = 1 or cast(ecu.FechaCuota as date) &lt;= @FechaCorte
+					THEN (ecu.VlrCapitalPAG)
+						ELSE 0 END) AS VlCapitalPagVencida,
+				CASE WHEN edo.EC_PolizaMvto = 2 THEN ecu.VlrSeguroSDO ELSE 0 END AS VlrSeguroPAGTotal,
+				(CASE WHEN ecu.IndCuotaVencida = 1 or cast(ecu.FechaCuota as date) &lt;= @FechaCorte
+					THEN CASE WHEN edo.EC_PolizaMvto = 2 THEN ecu.VlrSeguroSDO ELSE 0 END
+						ELSE 0 END) AS VlrSeguroPAGVencida
+			FROM 
+				ccEstadoCuentaCuotas ecu  WITH(NOLOCK)
+				LEFT JOIN ccEstadoCuentaHistoria edo  WITH(NOLOCK) ON ecu.NumeroDoc = edo.NumeroDoc 
+			WHERE 
+				ecu.NumeroDoc =@numeroDoc				) AS tb 
+		GROUP BY 
+			tb.NumeroDoc) AS tb ON HIS.NumeroDoc = tb.NumeroDoc
+LEFT JOIN ccEstadoCuentaHistoria edo ON tb.NumeroDoc = edo.NumeroDoc
+LEFT JOIN ccCreditoDocu cred ON cred.NumeroDoc = HIS.NumDocCredito 
+LEFT JOIN ccCliente cli ON cli.ClienteID = cred.ClienteID and cred.eg_ccCliente = cli.EmpresaGrupoID 
+ORDER BY deta.NumeroDoc</value>
+  </data>
+  <data name="QueriesDataSource.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iUXVlcmllc0RhdGFTb3VyY2UiPjxWaWV3IE5hbWU9IkRldGFsbGVFc3RDdWVudGEiPjxGaWVsZCBOYW1lPSJDbGllbnRlSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTm9tYnJlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxpYnJhbnphIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1b3RhSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZWNoYVZ0byIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkluZEN1b3RhVmVuY2lkYSIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iRmVjaGFQYWdvIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRGlhc01vcmEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb25vcmFyaW9zUHJlaiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSW50TW9yYSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iU2VndXJvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJbnRDYXAiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNhcGl0YWwiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik90cm9zRmlqb3MiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IkVzdGFkb0N1ZW50YVRvdGFsZXMiPjxGaWVsZCBOYW1lPSJOdW1lcm9Eb2MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJHYXN0b3MiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkludGVyZXNOQyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVG90YWxTYWxkb1ZlbmNpZG8iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsQ2FwaXRhbFBhZyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyQWJvbm9DYXAiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsclNlZ3Vyb1BBRyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmFsb3JQb2xpemEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkxpYnJhbnphIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsaWVudGVJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb21icmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXN0YWRvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlZsclNhbmNpb25QcmVwYWdvIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+</root>

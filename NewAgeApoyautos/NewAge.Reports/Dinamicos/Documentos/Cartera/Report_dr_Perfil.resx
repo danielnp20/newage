@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="SQL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>--declare @Empresaid varchar(15) = 'APOYOSF'
+--declare @Libranza varchar(15) = '14118'
+--declare @Version int = 18
+
+select DT.ApellidoPri,
+DT.ApellidoSdo,
+DT.NombrePri,
+DT.NombreSdo,
+DT.ActEconomica1,
+DT.ActEconomica2,
+DT.TerceroID,
+DT.FechaExpDoc,
+DT.PF_FincaRaiz,
+DT.PF_MorasActuales,
+DT.PF_MorasUltAno,
+DT.PF_RepNegativos,
+DT.PF_EstadoActual,
+DT.PF_Probabilidad,
+DT.PF_Estabilidad,
+DT.PF_Ubicabilidad,
+DT.PF_PorMaxFinancia,
+DT.IngresosSOP,
+DT.PF_IngresoEstimado,
+DT.PF_RecAguayLuz,
+DT.PF_ConfirmaCel,
+DT.PF_ConfirmaMail,
+DT.PF_VigenciaFMI,
+DT.PF_VigenciaConsData,
+dtcn.ApellidoPri as ApellidoPricn,
+dtcn.ApellidoSdo as ApellidoSdocn,
+dtcn.NombrePri as NombrePricn,
+dtcn.NombreSdo as NombreSdocn,
+dtcn.ActEconomica1 as ActEconomica1cn,
+dtcn.ActEconomica2 as ActEconomica2cn,
+DTcn.TerceroID as TerceroIDcn,
+DTcn.FechaExpDoc as FechaExpDoccn,
+DTCN.PF_FincaRaiz AS PF_FincaRaizCN	,
+DTCN.PF_MorasActuales AS PF_MorasActualesCN	,
+DTCN.PF_MorasUltAno AS PF_MorasUltAnoCN	,
+DTCN.PF_RepNegativos AS PF_RepNegativosCN	,
+DTCN.PF_EstadoActual AS PF_EstadoActualCN	,
+DTCN.PF_Probabilidad AS PF_ProbabilidadCN	,
+DTCN.PF_Estabilidad AS PF_EstabilidadCN	,
+DTCN.PF_Ubicabilidad AS PF_UbicabilidadCN	,
+DTCN.PF_PorMaxFinancia AS PF_PorMaxFinanciaCN	,
+DTCN.IngresosSOP AS IngresosSOPCN	,
+DTCN.PF_IngresoEstimado AS PF_IngresoEstimadoCN	,
+DTCN.PF_RecAguayLuz AS PF_RecAguayLuzCN	,
+DTCN.PF_ConfirmaCel AS PF_ConfirmaCelCN	,
+DTCN.PF_ConfirmaMail AS PF_ConfirmaMailCN	,
+DTCN.PF_VigenciaFMI AS PF_VigenciaFMICN,
+DTCN.PF_VigenciaConsData AS PF_VigenciaConsDataCN,
+dtcod1.NumeroDoc as NumeroDoccn,
+dtcod1.ApellidoPri as ApellidoPriCod1,
+dtcod1.ApellidoSdo as ApellidoSdoCod1,
+dtcod1.NombrePri as NombrePriCod1,
+dtcod1.NombreSdo as NombreSdoCod1,
+dtcod1.ActEconomica1 as ActEconomica1Cod1,
+dtcod1.ActEconomica2 as ActEconomica2Cod1,
+DTCOD1.TerceroID as TerceroIDcod1,
+DTCOD1.FechaExpDoc as FechaExpDoccod1,
+dtcod1.PF_FincaRaiz AS PF_FincaRaizCod1,
+dtcod1.PF_MorasActuales AS PF_MorasActualesCod1,
+dtcod1.PF_MorasUltAno AS PF_MorasUltAnoCod1,
+dtcod1.PF_RepNegativos AS PF_RepNegativosCod1,
+dtcod1.PF_EstadoActual AS PF_EstadoActualCod1,
+dtcod1.PF_Probabilidad AS PF_ProbabilidadCod1,
+dtcod1.PF_Estabilidad AS PF_EstabilidadCod1,
+dtcod1.PF_Ubicabilidad AS PF_UbicabilidadCod1,
+dtcod1.PF_PorMaxFinancia AS PF_PorMaxFinanciaCod1,
+dtcod1.IngresosSOP AS IngresosSOPCod1,
+dtcod1.PF_IngresoEstimado AS PF_IngresoEstimadoCod1,
+dtcod1.PF_RecAguayLuz AS PF_RecAguayLuzCod1,
+dtcod1.PF_ConfirmaCel AS PF_ConfirmaCelCod1,
+dtcod1.PF_ConfirmaMail AS PF_ConfirmaMailCod1,
+dtcod1.PF_VigenciaFMI AS PF_VigenciaFMICod1,
+dtcod1.PF_VigenciaConsData AS PF_VigenciaConsDataCod1,
+dtcod2.ApellidoPri as ApellidoPriCod2,
+dtcod2.ApellidoSdo as ApellidoSdoCod2,
+dtcod2.NombrePri as NombrePriCod2,
+dtcod2.NombreSdo as NombreSdoCod2,
+dtcod2.ActEconomica1 as ActEconomica1Cod2,
+dtcod2.ActEconomica2 as ActEconomica2Cod2,
+dtcod2.NumeroDoc as NumeroDocCod2,
+DTcod2.TerceroID as TerceroIDcod2,
+DTcod2.FechaExpDoc as FechaExpDoccod2,
+dtcod2.PF_FincaRaiz AS PF_FincaRaizcod2,
+dtcod2.PF_MorasActuales AS PF_MorasActualescod2,
+dtcod2.PF_MorasUltAno AS PF_MorasUltAnocod2,
+dtcod2.PF_RepNegativos AS PF_RepNegativoscod2,
+dtcod2.PF_EstadoActual AS PF_EstadoActualcod2,
+dtcod2.PF_Probabilidad AS PF_Probabilidadcod2,
+dtcod2.PF_Estabilidad AS PF_Estabilidadcod2,
+dtcod2.PF_Ubicabilidad AS PF_Ubicabilidadcod2,
+dtcod2.PF_PorMaxFinancia AS PF_PorMaxFinanciacod2,
+dtcod2.IngresosSOP AS IngresosSOPcod2,
+dtcod2.PF_IngresoEstimado AS PF_IngresoEstimadocod2,
+dtcod2.PF_RecAguayLuz AS PF_RecAguayLuzcod2,
+dtcod2.PF_ConfirmaCel AS PF_ConfirmaCelcod2,
+dtcod2.PF_ConfirmaMail AS PF_ConfirmaMailcod2,
+dtcod2.PF_VigenciaFMI AS PF_VigenciaFMIcod2,
+dtcod2.PF_VigenciaConsData AS PF_VigenciaConsDatacod2,
+DO.Alternativa1,
+DO.Alternativa2,
+DO.Alternativa3,
+DO.Alternativa4,
+DO.Alternativa5,
+DO.Alternativa6,
+DO.Alternativa7,
+DO.FactorAlt1,
+DO.FactorAlt2,
+DO.FactorAlt3,
+DO.FactorAlt4,
+DO.FactorAlt5,
+DO.FactorAlt6,
+DO.FactorAlt7,
+DO.MontoAlt1,
+DO.MontoAlt2,
+DO.MontoAlt3,
+DO.MontoAlt4,
+DO.MontoAlt5,
+DO.MontoAlt6,
+DO.MontoAlt7,
+DO.GarantiaAlt1,
+DO.GarantiaAlt2,
+DO.GarantiaAlt3,
+DO.GarantiaAlt4,
+DO.GarantiaAlt5,
+DO.GarantiaAlt6,
+DO.GarantiaAlt7,
+DT.PF_IngresosMin1,
+DT.PF_IngresosMin2,
+DT.PF_IngresosMin3,
+DT.PF_IngresosMin4,
+DT.PF_IngresosMin5,
+DT.PF_IngresosMin6,
+DT.PF_IngresosMin7,
+DTcn.PF_IngresosMin1 as PF_IngresosMin1CN,
+DTcn.PF_IngresosMin2 as PF_IngresosMin2CN,
+DTcn.PF_IngresosMin3 as PF_IngresosMin3CN,
+DTcn.PF_IngresosMin4 as PF_IngresosMin4CN,
+DTcn.PF_IngresosMin5 as PF_IngresosMin5CN,
+DTcn.PF_IngresosMin6 as PF_IngresosMin6CN,
+DTcn.PF_IngresosMin7 as PF_IngresosMin7CN,
+DT.PF_NumHipotecas,
+DT.PF_NumBienes,
+DT.PF_Restricciones,
+DT.PF_AntCompra,
+DT.PF_UltAnotacion,
+DTCN.PF_NumHipotecas as PF_NumHipotecasCN,
+DTCN.PF_NumBienes as PF_NumBienesCN,
+DTCN.PF_Restricciones as PF_RestriccionesCN,
+DTCN.PF_AntCompra as PF_AntCompraCN,
+DTCN.PF_UltAnotacion as PF_UltAnotacionCN,
+DTCOD1.PF_NumHipotecas AS PF_NumHipotecasCod1,
+DTCOD1.PF_NumBienes  AS PF_NumBienesCod1,
+DTCOD1.PF_Restricciones AS PF_RestriccionesCod1,
+DTCOD1.PF_AntCompra as PF_AntCompraCod1,
+DTCOD1.PF_UltAnotacion as PF_UltAnotacionCod1 ,
+DTCOD2.PF_NumHipotecas as PF_NumHipotecasCod2,
+DTCOD2.PF_NumBienes as PF_NumBienesCod2,
+DTCOD2.PF_Restricciones as PF_RestriccionesCod2,
+DTCOD2.PF_AntCompra as PF_AntCompraCod2,
+DTCOD2.PF_UltAnotacion as PF_UltAnotacionCod2,
+DV.Marca,
+DV.Referencia,
+DV.Modelo,
+DV.Carroceria,
+(case when Dv.Servicio = 1  then 'Particular'
+     when Dv.Servicio = 2 then 'Publico'
+end) as servicio,	
+DV.CeroKmInd,
+DV.Chasis,
+DV.PrecioVenta,
+dv.FasecoldaCod,
+DV.VlrFasecolda,
+Sol.VlrSolicitado,
+cast(Sol.VlrSolicitado / DO.VlrGtiaEvaluacion as decimal )as PorcSolicitado,
+DO.MontoMaximo,
+DO.CubriendoInd,
+ase.Descriptivo,
+DO.EstimadoSeguros,
+Sol.VlrPoliza,
+DO.VlrMensualSV,
+cast(Sol.VlrFinanciaSeguro - Sol.VlrPoliza as decimal) as OtrasFinanciacion,
+DO.MaxFinanciacionAut,
+DO.Plazo,
+DO.EstimadoObl,
+DO.CuotaFin,
+DO.CuotaSeg,
+DO.CuotaTotal,
+CU.DireccionDir1,
+CU.DireccionDir2,
+CU.DireccionDir3,
+CU.DireccionOtra,
+CUC.DireccionDir1 as DireccionDir1CN,
+CUC.DireccionDir2 as DireccionDir2CN,
+CUC.DireccionDir3 as DireccionDir3CN,
+CUC.DireccionOtra as DireccionOtraCN,
+--DT.PF_RecAguayLuz as PF_RecAguayLuzCN,
+--DT.PF_VigenciaConsData as PF_VigenciaConsDataCN,
+--DTCN.PF_RecAguayLuz as PF_RecAguayLuzCN,
+--DTCN.PF_VigenciaConsData as PF_VigenciaConsDataCN,
+--DTCOD1.PF_RecAguayLuz as PF_RecAguayLuzCOD1,
+--DTCOD1.PF_VigenciaConsData as PF_VigenciaConsDataCod1,
+--DTCOD2.PF_RecAguayLuz as PF_RecAguayLuzCod2,
+--DTCOD2.PF_VigenciaConsData as PF_VigenciaConsDataCod2,
+DO.Estado,
+DO.Calificacion,
+DO.Revision,	
+DO.CargoResp,
+DO.Firma1Ind,
+DO.Firma2Ind,
+usuresp.Descriptivo as UsuarioResp,
+usu1.Descriptivo as UsuarioFirma1,
+usu2.Descriptivo as UsuarioFirma2,
+DO.FechaFirmaResp,
+DO.FechaFirma1,
+DO.FechaFirma2
+FROM ccSolicitudDocu   SOL with(nolock)
+INNER JOIN ccCliente CLI with(nolock) ON SOL.ClienteRadica = CLI.ClienteID   AND SOL.eg_ccCliente= CLI.EmpresaGrupoID
+INNER JOIN coTercero TER with(nolock) ON SOL.ClienteRadica = TER.TerceroID   AND CLI.eg_coTercero = TER.EmpresaGrupoID
+LEFT JOIN coTercero  Cod1 with(nolock) ON SOL.Codeudor1 = Cod1.TerceroID   
+LEFT JOIN glDocumentoControl CTL with(nolock) ON SOL.NumeroDoc = CTL.NumeroDoc 
+LEFT JOIN drSolicitudDatosPersonales  dt with(nolock) ON SOL.NumeroDoc = dt.NumeroDoc and dt.TipoPersona=1  and sol.VersionNro = dt.version
+LEFT JOIN drSolicitudDatosPersonales  dtcn with(nolock) ON SOL.NumeroDoc = dtcn.NumeroDoc and dtcn.TipoPersona=2  and sol.VersionNro = dtcn.version
+LEFT JOIN drSolicitudDatosPersonales  dtcod1 with(nolock) ON SOL.NumeroDoc = dtcod1.NumeroDoc and dtcod1.TipoPersona=3  and sol.VersionNro = dtcod1.version
+LEFT JOIN drSolicitudDatosPersonales  dtcod2 with(nolock) ON SOL.NumeroDoc = dtcod2.NumeroDoc and dtcod2.TipoPersona=4  and sol.VersionNro = dtcod2.version
+LEFT JOIN drSolicitudDatosPersonales  dtcod3 with(nolock) ON SOL.NumeroDoc = dtcod3.NumeroDoc and dtcod3.TipoPersona=5  and sol.VersionNro = dtcod3.version
+LEFT JOIN drSolicitudDatosOtros  do ON SOL.NumeroDoc = do.NumeroDoc   and sol.VersionNro = do.Version
+LEFT JOIN drSolicitudDatosVehiculo DV ON SOL.NumeroDoc = dV.NumeroDoc   and sol.VersionNro = dV.Version
+LEFT JOIN ccAseguradora Ase ON do.AseguradoraID= Ase.AseguradoraID and sol.VersionNro = dV.Version
+LEFT JOIN ccSolicitudDataCreditoUbica CU ON SOL.NumeroDoc = CU.NumeroDoc   and sol.VersionNro = CU.Version AND CU.NumeroId=DT.TerceroID and sol.VersionNro = cu.Version
+LEFT JOIN ccSolicitudDataCreditoUbica CUC ON SOL.NumeroDoc = CU.NumeroDoc   and sol.VersionNro = CU.Version AND CUC.NumeroId=DTCN.TerceroID and sol.VersionNro = cuc.Version
+LEFT JOIN seUsuario usuresp ON do.UsuarioResp = usuresp.UsuarioID
+LEFT JOIN seUsuario usu1 ON do.UsuarioResp = usu1.UsuarioID
+LEFT JOIN seUsuario usu2 ON do.UsuarioResp = usu2.UsuarioID
+where ctl.EmpresaID=@empresaid  and sol.Libranza=@Libranza 
+order by ctl.FechaDoc desc
+
+
+</value>
+  </data>
+  <data name="SQL.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iU1FMIj48VmlldyBOYW1lPSJDcmVkaXRvIj48RmllbGQgTmFtZT0iQXBlbGxpZG9QcmkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXBlbGxpZG9TZG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTm9tYnJlUHJpIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZVNkbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3RFY29ub21pY2ExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjdEVjb25vbWljYTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGVyY2Vyb0lEIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlY2hhRXhwRG9jIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUEZfRmluY2FSYWl6IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Nb3Jhc0FjdHVhbGVzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Nb3Jhc1VsdEFubyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfUmVwTmVnYXRpdm9zIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Fc3RhZG9BY3R1YWwiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1Byb2JhYmlsaWRhZCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfRXN0YWJpbGlkYWQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1ViaWNhYmlsaWRhZCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfUG9yTWF4RmluYW5jaWEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkluZ3Jlc29zU09QIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb0VzdGltYWRvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9SZWNBZ3VheUx1eiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfQ29uZmlybWFDZWwiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX0NvbmZpcm1hTWFpbCIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfVmlnZW5jaWFGTUkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQRl9WaWdlbmNpYUNvbnNEYXRhIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQXBlbGxpZG9QcmljbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBcGVsbGlkb1Nkb2NuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZVByaWNuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZVNkb2NuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjdEVjb25vbWljYTFjbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3RFY29ub21pY2EyY24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGVyY2Vyb0lEY24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVjaGFFeHBEb2NjbiIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlBGX0ZpbmNhUmFpekNOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Nb3Jhc0FjdHVhbGVzQ04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX01vcmFzVWx0QW5vQ04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1JlcE5lZ2F0aXZvc0NOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Fc3RhZG9BY3R1YWxDTiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfUHJvYmFiaWxpZGFkQ04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0VzdGFiaWxpZGFkQ04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1ViaWNhYmlsaWRhZENOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Qb3JNYXhGaW5hbmNpYUNOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJbmdyZXNvc1NPUENOIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb0VzdGltYWRvQ04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1JlY0FndWF5THV6Q04iIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX0NvbmZpcm1hQ2VsQ04iIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX0NvbmZpcm1hTWFpbENOIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9WaWdlbmNpYUZNSUNOIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEZfVmlnZW5jaWFDb25zRGF0YUNOIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTnVtZXJvRG9jY24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBcGVsbGlkb1ByaUNvZDEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXBlbGxpZG9TZG9Db2QxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZVByaUNvZDEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTm9tYnJlU2RvQ29kMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3RFY29ub21pY2ExQ29kMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3RFY29ub21pY2EyQ29kMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXJjZXJvSURjb2QxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlY2hhRXhwRG9jY29kMSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlBGX0ZpbmNhUmFpekNvZDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX01vcmFzQWN0dWFsZXNDb2QxIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Nb3Jhc1VsdEFub0NvZDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1JlcE5lZ2F0aXZvc0NvZDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0VzdGFkb0FjdHVhbENvZDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1Byb2JhYmlsaWRhZENvZDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0VzdGFiaWxpZGFkQ29kMSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfVWJpY2FiaWxpZGFkQ29kMSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfUG9yTWF4RmluYW5jaWFDb2QxIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJbmdyZXNvc1NPUENvZDEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQRl9JbmdyZXNvRXN0aW1hZG9Db2QxIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9SZWNBZ3VheUx1ekNvZDEiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX0NvbmZpcm1hQ2VsQ29kMSIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfQ29uZmlybWFNYWlsQ29kMSIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfVmlnZW5jaWFGTUlDb2QxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEZfVmlnZW5jaWFDb25zRGF0YUNvZDEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBcGVsbGlkb1ByaUNvZDIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXBlbGxpZG9TZG9Db2QyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZVByaUNvZDIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTm9tYnJlU2RvQ29kMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3RFY29ub21pY2ExQ29kMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBY3RFY29ub21pY2EyQ29kMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOdW1lcm9Eb2NDb2QyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVGVyY2Vyb0lEY29kMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGZWNoYUV4cERvY2NvZDIiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJQRl9GaW5jYVJhaXpjb2QyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Nb3Jhc0FjdHVhbGVzY29kMiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfTW9yYXNVbHRBbm9jb2QyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9SZXBOZWdhdGl2b3Njb2QyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Fc3RhZG9BY3R1YWxjb2QyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Qcm9iYWJpbGlkYWRjb2QyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9Fc3RhYmlsaWRhZGNvZDIiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1ViaWNhYmlsaWRhZGNvZDIiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX1Bvck1heEZpbmFuY2lhY29kMiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSW5ncmVzb3NTT1Bjb2QyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb0VzdGltYWRvY29kMiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfUmVjQWd1YXlMdXpjb2QyIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9Db25maXJtYUNlbGNvZDIiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX0NvbmZpcm1hTWFpbGNvZDIiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX1ZpZ2VuY2lhRk1JY29kMiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBGX1ZpZ2VuY2lhQ29uc0RhdGFjb2QyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWx0ZXJuYXRpdmExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFsdGVybmF0aXZhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbHRlcm5hdGl2YTMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWx0ZXJuYXRpdmE0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFsdGVybmF0aXZhNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbHRlcm5hdGl2YTYiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWx0ZXJuYXRpdmE3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDIiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDUiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDYiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZhY3RvckFsdDciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik1vbnRvQWx0MSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iTW9udG9BbHQyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJNb250b0FsdDMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik1vbnRvQWx0NCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iTW9udG9BbHQ1IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJNb250b0FsdDYiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik1vbnRvQWx0NyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iR2FyYW50aWFBbHQxIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJHYXJhbnRpYUFsdDIiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkdhcmFudGlhQWx0MyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iR2FyYW50aWFBbHQ0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJHYXJhbnRpYUFsdDUiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkdhcmFudGlhQWx0NiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iR2FyYW50aWFBbHQ3IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9JbmdyZXNvc01pbjEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0luZ3Jlc29zTWluMiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb3NNaW4zIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9JbmdyZXNvc01pbjQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0luZ3Jlc29zTWluNSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb3NNaW42IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9JbmdyZXNvc01pbjciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0luZ3Jlc29zTWluMUNOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9JbmdyZXNvc01pbjJDTiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb3NNaW4zQ04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0luZ3Jlc29zTWluNENOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9JbmdyZXNvc01pbjVDTiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUEZfSW5ncmVzb3NNaW42Q04iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBGX0luZ3Jlc29zTWluN0NOIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRl9OdW1IaXBvdGVjYXMiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX051bUJpZW5lcyIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfUmVzdHJpY2Npb25lcyIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfQW50Q29tcHJhIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9VbHRBbm90YWNpb24iIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX051bUhpcG90ZWNhc0NOIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9OdW1CaWVuZXNDTiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfUmVzdHJpY2Npb25lc0NOIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9BbnRDb21wcmFDTiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfVWx0QW5vdGFjaW9uQ04iIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX051bUhpcG90ZWNhc0NvZDEiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX051bUJpZW5lc0NvZDEiIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IlBGX1Jlc3RyaWNjaW9uZXNDb2QxIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9BbnRDb21wcmFDb2QxIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9VbHRBbm90YWNpb25Db2QxIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9OdW1IaXBvdGVjYXNDb2QyIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9OdW1CaWVuZXNDb2QyIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJQRl9SZXN0cmljY2lvbmVzQ29kMiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfQW50Q29tcHJhQ29kMiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iUEZfVWx0QW5vdGFjaW9uQ29kMiIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iTWFyY2EiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVmZXJlbmNpYSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNb2RlbG8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDYXJyb2NlcmlhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNlcnZpY2lvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNlcm9LbUluZCIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iQ2hhc2lzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByZWNpb1ZlbnRhIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJGYXNlY29sZGFDb2QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmxyRmFzZWNvbGRhIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJTb2xpY2l0YWRvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQb3JjU29saWNpdGFkbyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iTW9udG9NYXhpbW8iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkN1YnJpZW5kb0luZCIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpdm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXN0aW1hZG9TZWd1cm9zIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJQb2xpemEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsck1lbnN1YWxTViIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iT3RyYXNGaW5hbmNpYWNpb24iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik1heEZpbmFuY2lhY2lvbkF1dCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUGxhem8iIFR5cGU9IkJ5dGUiIC8+PEZpZWxkIE5hbWU9IkVzdGltYWRvT2JsIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJDdW90YUZpbiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQ3VvdGFTZWciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkN1b3RhVG90YWwiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRpcmVjY2lvbkRpcjEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGlyZWNjaW9uRGlyMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEaXJlY2Npb25EaXIzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRpcmVjY2lvbk90cmEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGlyZWNjaW9uRGlyMUNOIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRpcmVjY2lvbkRpcjJDTiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEaXJlY2Npb25EaXIzQ04iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGlyZWNjaW9uT3RyYUNOIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVzdGFkbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDYWxpZmljYWNpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmV2aXNpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2FyZ29SZXNwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZpcm1hMUluZCIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iRmlybWEySW5kIiBUeXBlPSJCeXRlIiAvPjxGaWVsZCBOYW1lPSJVc3VhcmlvUmVzcCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVc3VhcmlvRmlybWExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVzdWFyaW9GaXJtYTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVjaGFGaXJtYVJlc3AiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJGZWNoYUZpcm1hMSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkZlY2hhRmlybWEyIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

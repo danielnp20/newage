@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCE80482-5D7C-483A-9B27-6C0EE20D637B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewAge.ADO</RootNamespace>
+    <AssemblyName>NewAge.ADO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <DontImportPostSharp>True</DontImportPostSharp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NewAgeKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMP|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\AMP\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QuantumTyS|AnyCPU'">
+    <OutputPath>bin\QuantumTyS\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp">
+      <HintPath>..\..\..\packages\PostSharp.4.0.41\lib\net35-client\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\DAL_ConsultasGenerales.cs" />
+    <Compile Include="Documentos\Activos Fijos\DAL_acActivoGarantia.cs" />
+    <Compile Include="Documentos\Activos Fijos\DAL_acActivoDocu.cs" />
+    <Compile Include="Documentos\Activos Fijos\DAL_ActivosFijos.cs" />
+    <Compile Include="Documentos\Cartera\DAL_CarteraFin.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccHistoricoGestionCobranza.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCobranzaTareas.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCJHistorico.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCJHistoricoAbonos.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCarteraMvto.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccReincorporacionDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccPolizaEstado.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccEstadoCuentaCuotas.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudCtasExtra.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCompraDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDataCreditoDatos.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDataCreditoQuanto.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDataCreditoScore.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDataCreditoUbica.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDevolucionDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDevolucion.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudPlanPagos.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDetallePago.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccComisionDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccComisionDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccReintegroClienteDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCierreMes.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCierreDia.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCompradorFinalDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCompradorFinalDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccFlujoCesionDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccFlujoCesionDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccVentaDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccVentaDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccRecompraDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccNominaPreliminar.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccNominaDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_Cartera.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccEstadoCuentaHistoria.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccEstadoCuentaComponentes.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCreditoPagos.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCreditoPlanPagos.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCreditoCompraCartera.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCreditoComponentes.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccCreditoDocu.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccIncorporacionDeta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documentos\Cartera\DAL_ccRecompraDeta.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudCompraCartera.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudComponentes.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccTareaChequeoLista.cs" />
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudAnexo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documentos\Cartera\DAL_ccSolicitudDocu.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coAuxiliarAjustaDeta.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coCierreMes.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coDocumentoRevelacion.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coReclasificaBalExcluye.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coReclasificaBalance.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coImpDeclaracionDocu.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coDocumentoAjuste.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coImpDeclaracionDetaCuenta.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coImpDeclaracionDetaRenglon.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_Impuesto.cs" />
+    <Compile Include="Documentos\CuentasXPagar\DAL_cpTarjetaDocu.cs" />
+    <Compile Include="Documentos\CuentasXPagar\DAL_cpAnticipos.cs" />
+    <Compile Include="Documentos\CuentasXPagar\DAL_cpTarjetaPagos.cs" />
+    <Compile Include="Documentos\CuentasXPagar\DAL_Legalizacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documentos\CuentasXPagar\DAL_CuentasXPagar.cs" />
+    <Compile Include="Documentos\DecisorRiesgo\DAL_drSolicitudDatosChequeados.cs" />
+    <Compile Include="Documentos\DecisorRiesgo\DAL_Perfil.cs" />
+    <Compile Include="Documentos\DecisorRiesgo\DAL_Decisor.cs" />
+    <Compile Include="Documentos\DecisorRiesgo\DAL_drSolicitudDatosPersonales.cs" />
+    <Compile Include="Documentos\DecisorRiesgo\DAL_drSolicitudDatosOtros.cs" />
+    <Compile Include="Documentos\DecisorRiesgo\DAL_drSolicitudDatosVehiculo.cs" />
+    <Compile Include="Documentos\Facturacion\DAL_faFacturaDocu.cs" />
+    <Compile Include="Documentos\Global\DAL_glDocAnexoControl.cs" />
+    <Compile Include="Documentos\Global\DAL_glDocumentoChequeoLista.cs" />
+    <Compile Include="Documentos\Global\DAL_glIncumpleCambioEstado.cs" />
+    <Compile Include="Documentos\Global\DAL_glGarantiaControl.cs" />
+    <Compile Include="Documentos\Global\DAL_glGestionDocumentalBitacora.cs" />
+    <Compile Include="Documentos\Global\DAL_glActividadEstado.cs" />
+    <Compile Include="Documentos\Global\DAL_glDocumentoControl.cs" />
+    <Compile Include="Documentos\Activos Fijos\DAL_acActivoControl.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_Mayorizacion.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_Contabilidad.cs" />
+    <Compile Include="Documentos\Global\DAL_glLlamadasControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documentos\Global\DAL_glMovimientoDeta.cs" />
+    <Compile Include="Documentos\Global\DAL_glDocumentoAprueba.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inOrdenSalidaDocu.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inOrdenSalidaDeta.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inImportacionDeta.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inImportacionDocu.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inDistribucionCosto.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inFisicoInventario.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_inMovimientoDocu.cs" />
+    <Compile Include="Documentos\Inventarios\DAL_MvtoSaldosCostos.cs" />
+    <Compile Include="Documentos\Operaciones Conjuntas\DAL_CashCall.cs" />
+    <Compile Include="Documentos\Operaciones Conjuntas\DAL_Billing.cs" />
+    <Compile Include="Documentos\Operaciones Conjuntas\DAL_ocDetalleLegalizacion.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plCierreCompromisos.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPresupuestoPxQDeta.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPresupuestoPxQ.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPresupuestoSoporte.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plSobreEjecucion.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plCierreLegalizacion.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPresupuestoDocu.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPresupuestoTotal.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPresupuestoDeta.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plPlaneacion_Proveedores.cs" />
+    <Compile Include="Documentos\Planeacion\DAL_plCierres.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prCierreMesCostos.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prCierres.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prSolicitudDirectaDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prContratoPolizas.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyActaEntregaDeta.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyActaTrabajoDeta.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyPreProyectoDeta.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyPreProyectoDetaCLI.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyPreProyectoDocu.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyPreProyectoTarea.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoDeta.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoDetaCLI.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoDetaHistoria.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoDocu.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoMvto.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoPlanEntrega.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoTarea.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prConvenioConsumoDirecto.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prConvenioSolicitudDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prDetalleCargos.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prContratoDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prContratoPlanPago.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prConvenio.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prRecibidoDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prSaldosDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prOrdenCompraCotiza.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prOrdenCompraDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prDetalleDocu.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prSolicitudCargos.cs" />
+    <Compile Include="Documentos\Proveedores\DAL_prSolicitudDocu.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoTareaCliente.cs" />
+    <Compile Include="Documentos\Proyectos\DAL_pyProyectoTareaHistoria.cs" />
+    <Compile Include="Documentos\Seguridad\DAL_seDelegacionHistoria.cs" />
+    <Compile Include="Documentos\Tesoreria\DAL_Tesoreria.cs" />
+    <Compile Include="Documentos\Tesoreria\DAL_tsBancosDocu.cs" />
+    <Compile Include="Documentos\Tesoreria\DAL_tsReciboCajaDocu.cs" />
+    <Compile Include="Maestras\Activos\DAL_acSaldos.cs" />
+    <Compile Include="Maestras\Aplicacion\Consultas\DAL_aplMaestraCampo.cs" />
+    <Compile Include="Maestras\Aplicacion\DAL_aplReporte.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coCompDistribuyeExcluye.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_coCompDistribuyeTabla.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccClasificacionxRiesgo.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccComponenteEdad.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccValorAmparado.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccChequeoLista.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccCliente.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccValorAutorizado.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccLineaComponentePlazo.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccCarteraComponente.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccAnexosLista.cs" />
+    <Compile Include="Maestras\Cartera\DAL_ccLineaComponenteMonto.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coImpuestoLocal.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coImpuesto.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coTercero.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coPlanCuenta.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coPlanillaConsolidacion.cs" />
+    <Compile Include="Maestras\Decisor\DAL_drActividadChequeoLista.cs" />
+    <Compile Include="Maestras\Global\DAL_glActividadChequeoLista.cs" />
+    <Compile Include="Maestras\Global\DAL_glActividadFlujo.cs" />
+    <Compile Include="Maestras\Global\DAL_glEmpresaGrupo.cs" />
+    <Compile Include="Maestras\Global\DAL_glActividadPermiso.cs" />
+    <Compile Include="Maestras\Nomina\DAL_noEmpleado.cs" />
+    <Compile Include="Maestras\Tesoreria\DAL_tsBancosCuenta.cs" />
+    <Compile Include="PostSharpAspects\ADOExceptionManager.cs" />
+    <Compile Include="Reportes\DAL_ReportesOperacionesConjuntas.cs" />
+    <Compile Include="Reportes\DAL_ReportesProyectos.cs" />
+    <Compile Include="Reportes\DAL_ReportesGlobal.cs" />
+    <Compile Include="Reportes\DAL_ReportesPlaneacion.cs" />
+    <Compile Include="Reportes\DAL_ReportesFacturacion.cs" />
+    <Compile Include="Reportes\DAL_ReportesActivos.cs" />
+    <Compile Include="Reportes\DAL_ReportesProveedores.cs" />
+    <Compile Include="Reportes\DAL_ReportesCuentasXPagar.cs" />
+    <Compile Include="Reportes\DAL_ReportesInventarios.cs" />
+    <Compile Include="Reportes\DAL_ReportesCartera.cs" />
+    <Compile Include="Reportes\DAL_ReportesNomina.cs" />
+    <Compile Include="Reportes\DAL_ReportesContabilidad.cs" />
+    <Compile Include="Reportes\DAL_ReportesTesoreria.cs" />
+    <Compile Include="Transacciones\DAL_Alarmas.cs" />
+    <Compile Include="DTO_Validations.cs" />
+    <Compile Include="Documentos\DAL_Temporales.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coDocumento.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coComprobantePrefijo.cs" />
+    <Compile Include="Maestras\Contabilidad\DAL_coCargoCosto.cs" />
+    <Compile Include="Maestras\Global\DAL_glTasaDeCambio.cs" />
+    <Compile Include="Documentos\Contabilidad\DAL_Comprobante.cs" />
+    <Compile Include="Documentos\DAL_OperacionesDocumentos.cs" />
+    <Compile Include="Maestras\Seguridad\DAL_seMaquina.cs" />
+    <Compile Include="Maestras\DAL_MasterComplex.cs" />
+    <Compile Include="Maestras\Aplicacion\DAL_aplMaestraPropiedad.cs" />
+    <Compile Include="Maestras\Global\DAL_glEmpresa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Maestras\Aplicacion\Consultas\DAL_glConsultaFiltro.cs" />
+    <Compile Include="Maestras\Aplicacion\Consultas\DAL_glConsulta.cs" />
+    <Compile Include="Maestras\Aplicacion\Consultas\DAL_glConsultaSeleccion.cs" />
+    <Compile Include="Maestras\DAL_MasterSimple.cs" />
+    <Compile Include="Maestras\DAL_MasterHierarchy.cs" />
+    <Compile Include="DAL_Base.cs" />
+    <Compile Include="Maestras\Global\DAL_glTabla.cs" />
+    <Compile Include="Maestras\Global\DAL_glControl.cs" />
+    <Compile Include="Maestras\Aplicacion\DAL_aplModulo.cs" />
+    <Compile Include="Maestras\Aplicacion\DAL_aplIdiomaTraduccion.cs" />
+    <Compile Include="Maestras\Aplicacion\DAL_aplIdioma.cs" />
+    <Compile Include="Reportes\DAL_ReportDataSupplier.cs" />
+    <Compile Include="Reportes\DAL_Reportes.cs" />
+    <Compile Include="Transacciones\DAL_aplBitacora.cs" />
+    <Compile Include="Transacciones\DAL_aplBitacoraAct.cs" />
+    <Compile Include="Maestras\Seguridad\DAL_seGrupoDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Maestras\Seguridad\DAL_seUsuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StaticMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transacciones\DAL_glActividadControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DTO\NewAge.DTO\NewAge.DTO.csproj">
+      <Project>{E8D5F1ED-DBFA-4C6F-99B1-5B6613D1DD37}</Project>
+      <Name>NewAge.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Librerias\ExceptionHandler\ExceptionHandler\ExceptionHandler.csproj">
+      <Project>{d2daa26b-c3b3-489a-84a4-8354de7cb7de}</Project>
+      <Name>ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Librerias\Project\NewAge.Librerias.Project\NewAge.Librerias.Project.csproj">
+      <Project>{5E378E36-29BC-427F-B0C3-2C493CB11A1E}</Project>
+      <Name>NewAge.Librerias.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Librerias\SentenceTransformer\SentenceTransformer.csproj">
+      <Project>{6A4CF90D-890F-4FFD-9E37-26C7DDC7AFAE}</Project>
+      <Name>SentenceTransformer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ReportesComunes\NewAge.ReportesComunes.csproj">
+      <Project>{748CB234-DF37-41EC-8302-4EBBC7B867B0}</Project>
+      <Name>NewAge.ReportesComunes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentos\Impuestos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewAgeKey.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets" Condition="Exists('..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets')" />
+  <Target Name="EnsurePostSharpImported" BeforeTargets="BeforeBuild" Condition="'$(PostSharp30Imported)' == ''">
+    <Error Condition="!Exists('..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://www.postsharp.net/links/nuget-restore." />
+    <Error Condition="Exists('..\..\..\packages\PostSharp.4.0.41\tools\PostSharp.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://www.postsharp.net/links/nuget-restore." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\NewAge\Uploads\InstallerApoyos\|C:\NewAge\Uploads\Installer\</PublishUrlHistory>
+    <InstallUrlHistory>http://192.168.0.145:2552/Installer/|http://192.168.0.24:2551/Installer/|http://192.168.0.20:2551/Installer/|http://192.168.0.145:2551/Installer/|http://190.147.82.204:2551/Installer/</InstallUrlHistory>
+    <SupportUrlHistory>http://www.amp-tg.com</SupportUrlHistory>
+    <UpdateUrlHistory>http://192.168.0.145:2552/Installer/|http://192.168.0.24:2551/Installer/|http://192.168.0.20:2551/Installer/|http://192.168.0.145:2551/Installer/|http://190.147.82.204:2551/Installer/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

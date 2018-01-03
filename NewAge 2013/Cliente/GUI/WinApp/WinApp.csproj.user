@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <PublishUrlHistory>C:\NewAge\Uploads\Installer\</PublishUrlHistory>
+    <InstallUrlHistory>http://192.168.0.145:2551/Installer/|http://192.168.16.116:2551/Installer/|http://190.147.82.204:2551/Installer/|http://192.168.20.4:2551/Installer/|http://192.168.0.24:2551/Installer/</InstallUrlHistory>
+    <SupportUrlHistory>http://www.amp-tg.com</SupportUrlHistory>
+    <UpdateUrlHistory>http://192.168.0.145:2551/Installer/|http://192.168.16.116:2551/Installer/|http://190.147.82.204:2551/Installer/|http://192.168.20.4:2551/Installer/|http://192.168.0.24:2551/Installer/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMP|x86'">
+    <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
+  </PropertyGroup>
+</Project>

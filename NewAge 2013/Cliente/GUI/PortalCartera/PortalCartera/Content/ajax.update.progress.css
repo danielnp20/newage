@@ -1,0 +1,24 @@
+﻿.AjaxUpdateProgressHide { display: none; }
+
+.AjaxUpdateProgressShow {
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: 99999;
+}
+
+.AjaxUpdateProgressTransparentBG {
+background-color: #000;
+filter: alpha(opacity=60);
+height: 100%;
+left: 0px;
+min-height: 100%;
+min-width: 100%;
+opacity: 0.6;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 99999;
+}

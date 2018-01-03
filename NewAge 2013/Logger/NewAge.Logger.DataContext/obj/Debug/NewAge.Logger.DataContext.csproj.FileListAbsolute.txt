@@ -1,0 +1,8 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\bin\Debug\NewAge.Logger.DataContext.dll.config
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\bin\Debug\NewAge.Logger.DataContext.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\bin\Debug\NewAge.Logger.DataContext.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\bin\Debug\NewAge.Logger.Data.Entities.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\bin\Debug\NewAge.Logger.Data.Entities.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\obj\Debug\NewAge.Logger.DataContext.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\obj\Debug\NewAge.Logger.DataContext.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DataContext\obj\Debug\NewAge.Logger.DataContext.pdb

@@ -1,0 +1,17 @@
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\ExceptionHandler.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\ExceptionHandler.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.Facade.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.Service.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.Model.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.DAL.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.DTO.Logger.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.Facade.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Librerias.Project.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.Service.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.Model.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Release\NewAge.Logger.DAL.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\obj\Release\ExceptionHandler.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\obj\Release\ExceptionHandler.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\obj\Release\ExceptionHandler.pdb

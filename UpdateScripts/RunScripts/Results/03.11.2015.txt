@@ -1,0 +1,130 @@
+Servidor 1: 
+	Connection: Error - The ConnectionString property has not been initialized.
+
+
+Servidor 2:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Apoyos;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+
+Servidor 3:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Apoyos_Test;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+
+Servidor 4:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Cooermar;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+
+Servidor 5:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Tecnicas;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+
+Servidor 6:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Vacia;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+
+Servidor 7:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Quantum;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+
+Servidor 8:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_QuantumTyS;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+		 1) noLiquidacionVacacionesDeta (1).sql: Ok
+		 2)TR_InsertRegistroInicialVacaciones (2).sql: Ok
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CierrePeriodo.sql: Ok
+		 Nomina_IngresarPeriodosPendientesVacaciones.sql: Ok
+		 Nomina_LiquidarContrato.sql: Ok
+		 Nomina_LiquidarPlanilla.sql: Ok
+		 Nomina_LiquidarProvisiones.sql: Ok
+		 Nomina_LiquidarVacaciones.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ProcesoDiasVacaciones.sql: Ok
+		 Nomina_ProcesoDiasVacacionesDinero.sql: Ok
+
+

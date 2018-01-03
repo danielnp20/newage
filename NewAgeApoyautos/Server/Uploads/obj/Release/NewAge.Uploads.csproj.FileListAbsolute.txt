@@ -1,0 +1,6 @@
+C:\Projects\NewAgeApoyautos\Server\Uploads\bin\NewAge.Server.Uploads.dll.config
+C:\Projects\NewAgeApoyautos\Server\Uploads\bin\NewAge.Server.Uploads.dll
+C:\Projects\NewAgeApoyautos\Server\Uploads\bin\NewAge.Server.Uploads.pdb
+C:\Projects\NewAgeApoyautos\Server\Uploads\obj\Release\NewAge.Uploads.csprojResolveAssemblyReference.cache
+C:\Projects\NewAgeApoyautos\Server\Uploads\obj\Release\NewAge.Server.Uploads.dll
+C:\Projects\NewAgeApoyautos\Server\Uploads\obj\Release\NewAge.Server.Uploads.pdb

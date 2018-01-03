@@ -1,0 +1,120 @@
+Servidor 1:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 2:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Apoyos;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 3:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Apoyos_Test;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 4:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Cooermar;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 5:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Tecnicas;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 6:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Vacia;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 7:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_Quantum;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+
+Servidor 8:  Server=192.168.0.20\SQLEXPRESS;Database=NewAge_QuantumTyS;User Id=sa;Password=Mentor!2012
+	Connection: Ok
+	BackUp: OK
+	Directorio: 1.4.2.12: 
+		 CambioVersion.sql: Ok
+		 Nomina_AprobarNomina.sql: Ok
+		 Nomina_CalcularRedondeosMaximos.sql: Ok
+		 Nomina_CalcularRedondeosMinimos.sql: Ok
+		 Nomina_LiquidarAportesObligatorios.sql: Ok
+		 Nomina_ObtenerPlanillaAportes.sql: Ok
+		 Nomina_ValoresContabilizacionPlanilla.sql: Ok
+		 TR_noLiquidacionesPreliminar.sql: Ok
+		 TR_noPlanillaAportesDeta.sql: Ok
+
+

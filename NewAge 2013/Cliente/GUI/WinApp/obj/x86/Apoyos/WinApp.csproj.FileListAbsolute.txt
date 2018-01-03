@@ -1,0 +1,3 @@
+C:\Projects\NewAge 2013\Cliente\GUI\WinApp\bin\x86\Apoyos\NewAge-Pruebas.exe.config
+C:\Projects\NewAge 2013\Cliente\GUI\WinApp\bin\x86\Apoyos\NewAge-Apoyos.exe.config
+C:\Projects\NewAge 2013\Cliente\GUI\WinApp\bin\x86\Apoyos\NewAge-AvalTitulos.exe.config

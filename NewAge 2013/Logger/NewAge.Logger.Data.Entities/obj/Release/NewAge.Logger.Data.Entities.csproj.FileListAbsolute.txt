@@ -1,0 +1,5 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\bin\Release\NewAge.Logger.Data.Entities.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\bin\Release\NewAge.Logger.Data.Entities.pdb
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\obj\Release\NewAge.Logger.Data.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\obj\Release\NewAge.Logger.Data.Entities.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.Data.Entities\obj\Release\NewAge.Logger.Data.Entities.pdb

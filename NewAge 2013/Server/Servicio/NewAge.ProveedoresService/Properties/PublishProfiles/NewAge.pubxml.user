@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\NewAge\Servicios\ProveedoresService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ExceptionHandler.dll">
+      <publishTime>01/02/2015 15:46:05</publishTime>
+    </File>
+    <File Include="bin/NewAge.ADO.dll">
+      <publishTime>01/02/2015 15:46:19</publishTime>
+    </File>
+    <File Include="bin/NewAge.DTO.dll">
+      <publishTime>01/02/2015 15:46:09</publishTime>
+    </File>
+    <File Include="bin/NewAge.DTO.Logger.dll">
+      <publishTime>01/02/2015 15:46:02</publishTime>
+    </File>
+    <File Include="bin/NewAge.Librerias.Project.dll">
+      <publishTime>01/02/2015 15:46:02</publishTime>
+    </File>
+    <File Include="bin/NewAge.Logger.DAL.dll">
+      <publishTime>01/02/2015 15:46:02</publishTime>
+    </File>
+    <File Include="bin/NewAge.Logger.Facade.dll">
+      <publishTime>01/02/2015 15:46:04</publishTime>
+    </File>
+    <File Include="bin/NewAge.Logger.Model.dll">
+      <publishTime>01/02/2015 15:46:03</publishTime>
+    </File>
+    <File Include="bin/NewAge.Logger.Service.dll">
+      <publishTime>01/02/2015 15:46:04</publishTime>
+    </File>
+    <File Include="bin/NewAge.Negocio.dll">
+      <publishTime>01/02/2015 15:46:23</publishTime>
+    </File>
+    <File Include="bin/NewAge.ReportesComunes.dll">
+      <publishTime>01/02/2015 15:46:15</publishTime>
+    </File>
+    <File Include="bin/NewAge.Server.ProveedoresService.dll">
+      <publishTime>01/02/2015 15:46:26</publishTime>
+    </File>
+    <File Include="bin/SentenceTransformer.dll">
+      <publishTime>01/02/2015 15:46:11</publishTime>
+    </File>
+    <File Include="ProveedoresService.svc">
+      <publishTime>10/27/2014 11:51:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/27/2014 23:15:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

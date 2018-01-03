@@ -1,0 +1,4 @@
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Cooermar\NewAge.Logger.DAL.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Cooermar\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Cooermar\NewAge.Logger.DAL.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Cooermar\NewAge.Logger.DAL.dll

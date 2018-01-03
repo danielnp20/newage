@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="BDBalance.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>
+select	
+	NEGRITA,
+	CuentaID, 
+	CuentaDesc, 
+	MaxLengthInd, 
+	Signo, 
+	titulo, 
+	Moneda, 
+	Codigo1, 
+	Codigo1Desc,
+	Codigo2, 
+	Codigo2Desc, 
+	sum(SaldoIni) as SaldoIni,
+	sum(VlrMes01) as VlrMes01,
+	sum(VlrMes02) as VlrMes02,
+	sum(VlrMes03) as VlrMes03,
+	sum(VlrMes04) as VlrMes04,
+	sum(VlrMes05) as VlrMes05,
+	sum(VlrMes06) as VlrMes06,
+	sum(VlrMes07) as VlrMes07,
+	sum(VlrMes08) as VlrMes08,
+	sum(VlrMes09) as VlrMes09,
+	sum(VlrMes10) as VlrMes10,
+	sum(VlrMes11) as VlrMes11,
+	sum(VlrMes12) as VlrMes12
+from 	
+	(SELECT
+		(CASE WHEN LEN(b.CuentaID)&gt;6 THEN '1' ELSE '0' END) AS NEGRITA,
+		(case when @Moneda = 'Local' then 'BALANCE - PESOS' else 'BALANCE DOLARES' end) as Titulo,
+		b.CuentaID,
+		c.Descriptivo CuentaDesc , 
+		c.Naturaleza, 
+		@Moneda as Moneda,
+		case when  (c.MascaraCta&lt;=@CuentaLength) then (case when LEN(b.CuentaID)=c.MascaraCta then 1 else 0 end) else (case when LEN(b.CuentaID)=@CuentaLength then 1 else 0 end) end MaxLengthInd ,
+		case when  (c.Naturaleza=1) then 1 else (-1) end Signo,
+		case when	@Combo1 = 'Proyecto' then b.ProyectoID else
+					(case when @Combo1 = 'Centro Costo' then b.CentroCostoID else 
+							(case when @Combo1 = 'Linea Presupuesto' then b.LineaPresupuestoID else '' end) end ) end Codigo1,
+		 case when  @Combo1 = 'Proyecto' then proyecto.Descriptivo else
+					(case when @Combo1 = 'Centro Costo' then ccosto.Descriptivo else 
+							(case when @Combo1 = 'Linea Presupuesto' then lp.Descriptivo else '' end) end ) end Codigo1Desc,
+		 case when	@Combo2 = 'Proyecto' then b.ProyectoID else
+					(case when @Combo2= 'Centro Costo' then b.CentroCostoID else 
+							(case when @Combo2 = 'Linea Presupuesto' then b.LineaPresupuestoID else '' end) end ) end Codigo2,
+		 case when  @Combo2 = 'Proyecto' then proyecto.Descriptivo else
+					(case when @Combo2 = 'Centro Costo' then ccosto.Descriptivo else 
+							(case when @Combo2 = 'Linea Presupuesto' then lp.Descriptivo else '' end) end ) end Codigo2Desc,
+		 b.SaldoIni, b.VlrMes01, b.VlrMes02, b.VlrMes03, b.VlrMes04, b.VlrMes05, b.VlrMes06,
+					 b.VlrMes07, b.VlrMes08, b.VlrMes09, b.VlrMes10, b.VlrMes11, b.VlrMes12	 
+	from
+		(SELECT b.cuentaID, b.CentroCostoID, b.ProyectoID, b.LineaPresupuestoID, 
+				 b.eg_coPlanCuenta, b.eg_coProyecto, b.eg_coCentroCosto, b.eg_plLineaPresupuesto,
+			 sum(case when month(b.PeriodoID) = 1
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbSaldoIniLocML+b.DbSaldoIniExtML+b.CrSaldoIniLocML+b.CrSaldoIniExtML)*@SaldoInicialInd
+						else
+							(b.DbSaldoIniLocME+b.DbSaldoIniExtME+b.CrSaldoIniLocME+b.CrSaldoIniExtME)*@SaldoInicialInd
+						end
+					else 0 end) SaldoIni,
+			 sum(case when month(b.PeriodoID) = 1
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes01,
+			 sum(case when month(b.PeriodoID) = 2
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes02,
+			 sum(case when month(b.PeriodoID) = 3
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes03,
+			 sum(case when month(b.PeriodoID) = 4
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes04,
+			 sum(case when month(b.PeriodoID) = 5
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes05,
+			 sum(case when month(b.PeriodoID) = 6
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes06,
+			 sum(case when month(b.PeriodoID) = 7
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes07,
+			 sum(case when month(b.PeriodoID) = 8
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes08,
+			 sum(case when month(b.PeriodoID) = 9
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes09,
+			 sum(case when month(b.PeriodoID) = 10
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes10,
+			 sum(case when month(b.PeriodoID) = 11
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes11,
+			 sum(case when month(b.PeriodoID) = 12
+					then 
+						case when @Moneda = 'Local' 
+						then 
+							(b.DbOrigenLocML+b.DbOrigenExtML+b.CrOrigenLocML+b.CrOrigenExtML)
+						else
+							(b.DbOrigenLocME+b.DbOrigenExtME+b.CrOrigenLocME+b.CrOrigenExtME)
+						end
+					else 0 end) VlrMes12
+		FROM coBalance b 
+				inner join coPlanCuenta c with(nolock)		  on (b.CuentaID=c.CuentaID and b.eg_coPlanCuenta=c.EmpresaGrupoID)
+		WHERE 	b.EmpresaID = @EmpresaID and LEN(b.CuentaID)&lt;=case when c.MascaraCta&lt;=@CuentaLength then c.MascaraCta else @CuentaLength end
+					and Year(b.PeriodoID) = @Año
+					and ( b.BalanceTipoID = '01' or b.BalanceTipoID = 'test' ) 
+					and b.CuentaID BETWEEN @cuentaIni and @cuentaFin  
+		group by b.cuentaID, b.CentroCostoID, b.ProyectoID, b.LineaPresupuestoID, 
+				 b.eg_coPlanCuenta, b.eg_coProyecto, b.eg_coCentroCosto, b.eg_plLineaPresupuesto
+			) b
+			inner join coPlanCuenta c with(nolock)		  on (b.CuentaID=c.CuentaID and b.eg_coPlanCuenta=c.EmpresaGrupoID)
+			inner join coProyecto proyecto with(nolock)   on (b.ProyectoID=proyecto.ProyectoID and b.eg_coProyecto=proyecto.EmpresaGrupoID) 
+			inner join coCentroCosto ccosto with(nolock)  on (b.CentroCostoID=ccosto.CentroCostoID and b.eg_coCentroCosto=ccosto.EmpresaGrupoID ) 
+			inner join plLineaPresupuesto lp with(nolock) on (b.LineaPresupuestoID=lp.LineaPresupuestoID and b.eg_plLineaPresupuesto=lp.EmpresaGrupoID)
+	) temp
+group by CuentaID, CuentaDesc, MaxLengthInd, Signo, Titulo, Moneda,
+		Codigo1, Codigo1Desc,Codigo2, Codigo2Desc,NEGRITA
+ORDER BY CuentaID
+
+</value>
+  </data>
+  <data name="BDBalance.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iQkRCYWxhbmNlIj48VmlldyBOYW1lPSJRdWVyeUJhbGFuY2V4TWVzZXMiPjxGaWVsZCBOYW1lPSJORUdSSVRBIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1ZW50YUlEIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1ZW50YURlc2MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWF4TGVuZ3RoSW5kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2lnbm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJ0aXR1bG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTW9uZWRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvZGlnbzEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29kaWdvMURlc2MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29kaWdvMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2RpZ28yRGVzYyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTYWxkb0luaSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyTWVzMDEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsck1lczAyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJNZXMwMyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyTWVzMDQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsck1lczA1IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJNZXMwNiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyTWVzMDciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsck1lczA4IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJNZXMwOSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyTWVzMTAiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsck1lczExIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJNZXMxMiIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

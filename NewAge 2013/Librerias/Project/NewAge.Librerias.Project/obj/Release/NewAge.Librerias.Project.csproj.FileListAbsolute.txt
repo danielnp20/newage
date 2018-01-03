@@ -1,0 +1,5 @@
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\bin\Release\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\bin\Release\NewAge.Librerias.Project.pdb
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\obj\Release\NewAge.Librerias.Project.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\obj\Release\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\Librerias\Project\NewAge.Librerias.Project\obj\Release\NewAge.Librerias.Project.pdb

@@ -1,0 +1,12 @@
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.Service.dll.config
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.Service.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.Service.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.Model.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.DAL.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.DTO.Logger.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.Model.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.Logger.DAL.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\bin\NewAge.DTO.Logger.pdb
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\obj\Release\NewAge.Logger.Service.csprojResolveAssemblyReference.cache
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\obj\Release\NewAge.Logger.Service.dll
+C:\Projects\NewAgeApoyautos\Logger\NewAge.Logger.Service\obj\Release\NewAge.Logger.Service.pdb

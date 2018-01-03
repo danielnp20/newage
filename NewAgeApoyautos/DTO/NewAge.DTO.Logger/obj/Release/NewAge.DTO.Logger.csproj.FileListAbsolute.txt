@@ -1,0 +1,5 @@
+C:\Projects\NewAgeApoyautos\DTO\NewAge.DTO.Logger\bin\Release\NewAge.DTO.Logger.dll
+C:\Projects\NewAgeApoyautos\DTO\NewAge.DTO.Logger\bin\Release\NewAge.DTO.Logger.pdb
+C:\Projects\NewAgeApoyautos\DTO\NewAge.DTO.Logger\obj\Release\NewAge.DTO.Logger.dll
+C:\Projects\NewAgeApoyautos\DTO\NewAge.DTO.Logger\obj\Release\NewAge.DTO.Logger.pdb
+C:\Projects\NewAgeApoyautos\DTO\NewAge.DTO.Logger\obj\Release\NewAge.DTO.Logger.csprojResolveAssemblyReference.cache

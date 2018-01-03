@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @if (IsSectionDefined("SEO"))
+    {
+        @RenderSection("SEO")
+    }
+    else
+    {
+        <title>NewAge - Sistema de Cartera Online</title>
+        <meta name="description" content="NewAge - Sistema de Cartera Online" />
+    }
+    <meta charset="utf-8" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,600italic,700' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/bootstrap.css")
+    @Styles.Render("~/Content/kendoui.css")
+    @Styles.Render("~/Content/css.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+        var imgPath = '@(Url.Content("~/Images/"))';
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Ajax update progress (Loading) -->
+    <div id="AjaxUpdateProgress" style="display: none;">
+        <div class="AjaxUpdateProgressTransparentBG"></div>
+        <div class="AjaxUpdateProgressShow">
+            <img src="~/Images/loading.gif" alt="Cargando" />
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/placeholder")
+    @Scripts.Render("~/bundles/jqueryform")
+    @Scripts.Render("~/bundles/kendoui")
+    @Scripts.Render("~/bundles/newage.base")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

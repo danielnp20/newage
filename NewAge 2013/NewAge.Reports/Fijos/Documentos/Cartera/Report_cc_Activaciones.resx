@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="QueriesDatasource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>
+--DECLARE @Empresa		varchar(15)	= 'APOYOSF'
+--DECLARE	@PeriodoANT		date		= '20170101'
+DECLARE	@NivelRiesgo	tinyint		= 5
+
+select * from 
+(
+SELECT crd.ClienteID, cli.Descriptivo as Nombre, pag.Credito, pag.UltimoPago, pag.FormaPago, 
+		DATEDIFF(year,cli.FechaNacimiento,getdate()) as Edad,
+		(case when gar.TerceroID is null then '' else 'X' end) as GarantiasVIG, gar.TotGarantia, gar.FechaSuscrGarantia
+from 
+	(
+	Select ClienteID, eg_ccCliente
+	from ccCreditoDocu 
+	group by ClienteID, eg_ccCliente
+	) crd
+		left join ccCliente	cli with (nolock) on crd.ClienteID = cli.ClienteID and crd.eg_ccCliente=cli.EmpresaGrupoID
+		left join 
+			(
+			select ClienteID, SUM(SaldoCapital) as TotCapital
+			from ccCierreDiaCartera
+			where EmpresaID = @EmpresaID and Fecha = @FechaCorte 
+			group by ClienteID
+			) sdo on crd.ClienteID = sdo.ClienteID
+		left join 
+			(
+			select TerceroID, SUM(vlrfuente) as TotGarantia, MIN(fechaIni) as FechaSuscrGarantia
+			from glGarantiaControl
+			where EmpresaID = @EmpresaID
+			group by terceroID			
+			) gar on crd.ClienteID = gar.TerceroID
+		left join 
+			(
+			select ult.TerceroID, crd.Libranza as Credito, doc.FechaDoc as UltimoPago, ult.FormaPago
+			from 
+				(
+				select  ult.terceroID, ult.pagodocu, pag.numeroDoc, 
+						(case when doc.DocumentoID = '168' then 'PTO'
+							  when doc.DocumentoID = '183' then 'REO'
+							  else 'ULT' end) as FormaPago
+				from 
+					(				
+					select doc.TerceroID, max(pag.pagodocu) as PagoDocu
+					from ccCreditoPagos pag
+						left join glDocumentoControl doc on pag.PagoDocu = doc.NumeroDoc
+					where doc.EmpresaID = @EmpresaID
+					group by doc.TerceroID
+					) ult
+					left join glDocumentoControl doc on ult.PagoDocu = doc.NumeroDoc
+					left join ccCreditoPagos	 pag on ult.PagoDocu = pag.PagoDocu
+				group by ult.terceroID, ult.pagodocu, pag.numeroDoc, doc.DocumentoID
+				) ult
+				left join ccCreditoDocu crd		 on ult.NumeroDoc = crd.NumeroDoc
+				left join glDocumentoControl doc on ult.PagoDocu  = doc.NumeroDoc
+			) pag on crd.ClienteID = pag.TerceroID
+		left join 
+			(
+			select doc.terceroid
+			from ccCJHistorico cju
+				left join glDocumentoControl doc on cju.numerodoc = doc.NumeroDoc
+			where doc.EmpresaID = @EmpresaID 
+			group by doc.terceroid
+			) cju on crd.ClienteID = cju.terceroID
+		left join 
+			(
+			select doc.terceroid, max(eta.NivelRiesgo) as NivelRiesgo
+			from ccHistoricoGestionCobranza his
+				left join glDocumentoControl	doc with (nolock) on his.NumeroDoc = doc.NumeroDoc
+				left join ccCobranzaGestion		ges with (nolock) on his.CobranzaGestionID = ges.CobranzaGestionID and his.eg_ccCobranzaGestion = ges.EmpresaGrupoID
+				left join glIncumplimientoEtapa eta with (nolock) on ges.EtapaIncumplimiento = eta.EtapaIncumplimiento and ges.eg_glIncumplimientoEtapa = eta.EmpresaGrupoID
+			group by doc.terceroid
+			) ges on crd.ClienteID = ges.terceroID
+where sdo.ClienteID is null and cju.TerceroID is null and ges.NivelRiesgo &lt; 5 and DATEDIFF(day,pag.UltimoPago, GETDATE()) &lt;= 365
+) ttt
+order by GarantiasVIG, UltimoPago desc, Nombre</value>
+  </data>
+  <data name="QueriesDatasource.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iUXVlcmllc0RhdGFzb3VyY2UiPjxWaWV3IE5hbWU9InF1ZXJ5Ij48RmllbGQgTmFtZT0iQ2xpZW50ZUlEIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcmVkaXRvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVsdGltb1BhZ28iIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJGb3JtYVBhZ28iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRWRhZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkdhcmFudGlhc1ZJRyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RHYXJhbnRpYSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRmVjaGFTdXNjckdhcmFudGlhIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

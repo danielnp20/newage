@@ -1,0 +1,5 @@
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Project\bin\Release\NewAge.Librerias.Project.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Project\bin\Release\NewAge.Librerias.Project.pdb
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Project\obj\Release\NewAge.Librerias.Project.dll
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Project\obj\Release\NewAge.Librerias.Project.pdb
+C:\Projects\NewAgeApoyautos\Librerias\Project\NewAge.Librerias.Project\obj\Release\NewAge.Librerias.Project.csprojResolveAssemblyReference.cache

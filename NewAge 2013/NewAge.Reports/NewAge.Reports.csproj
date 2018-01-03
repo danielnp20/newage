@@ -1,0 +1,2442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDD0729D-0863-42BA-8759-F5F027BF1DFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewAge.Reports</RootNamespace>
+    <AssemblyName>NewAge.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Cooermar|AnyCPU'">
+    <OutputPath>bin\Cooermar\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Tecnicas-test|AnyCPU'">
+    <OutputPath>bin\Tecnicas-test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TecnicasProd|AnyCPU'">
+    <OutputPath>bin\TecnicasProd\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Apoyos|AnyCPU'">
+    <OutputPath>bin\Apoyos\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Quantum|AnyCPU'">
+    <OutputPath>bin\Quantum\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QuantumTyS|AnyCPU'">
+    <OutputPath>bin\QuantumTyS\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.2.Reporting, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_AutorizacionDescuento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_AutorizacionDescuento.Designer.cs">
+      <DependentUpon>Report_Cc_AutorizacionDescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoPagosAlDia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoPagosAlDia.Designer.cs">
+      <DependentUpon>Report_Cc_CertificadoPagosAlDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoRelacionPagos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoRelacionPagos.Designer.cs">
+      <DependentUpon>Report_Cc_CertificadoRelacionPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoDeuda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoDeuda.Designer.cs">
+      <DependentUpon>Report_Cc_CertificadoDeuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CartaCierreDiario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CartaCierreDiario.Designer.cs">
+      <DependentUpon>Report_Cc_CartaCierreDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_ContratoMutuo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_ContratoMutuo.Designer.cs">
+      <DependentUpon>Report_Cc_ContratoMutuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_PazYSalvo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_PazYSalvo.Designer.cs">
+      <DependentUpon>Report_Cc_PazYSalvo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_Recaudo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_Recaudo.Designer.cs">
+      <DependentUpon>Report_Cc_Recaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\ReportComprobateManual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\ReportComprobateManual.Designer.cs">
+      <DependentUpon>ReportComprobateManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\Report_Co_DocumentoContable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\Report_Co_DocumentoContable.Designer.cs">
+      <DependentUpon>Report_Co_DocumentoContable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_VentaCartera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_VentaCartera.Designer.cs">
+      <DependentUpon>Report_Cc_VentaCartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\Report_Co_ReporteLineasH.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\Report_Co_ReporteLineasH.Designer.cs">
+      <DependentUpon>Report_Co_ReporteLineasH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_AnticiposViajes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_AnticiposViajes.Designer.cs">
+      <DependentUpon>Report_CxP_AnticiposViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_Anticipos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_Anticipos.Designer.cs">
+      <DependentUpon>Report_CxP_Anticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_CausacionFacturas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_CausacionFacturas.Designer.cs">
+      <DependentUpon>Report_CxP_CausacionFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Nomina\Report_No_CertificadoIngresos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Nomina\Report_No_CertificadoIngresos.Designer.cs">
+      <DependentUpon>Report_No_CertificadoIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proveedores\Report_Pr_SolicitudRecibido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proveedores\Report_Pr_SolicitudRecibido.Designer.cs">
+      <DependentUpon>Report_Pr_SolicitudRecibido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proveedores\Report_Pr_OrdenCompraQuantum.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proveedores\Report_Pr_OrdenCompraQuantum.Designer.cs">
+      <DependentUpon>Report_Pr_OrdenCompraQuantum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proveedores\Report_Pr_OrdenCompra.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proveedores\Report_Pr_OrdenCompra.Designer.cs">
+      <DependentUpon>Report_Pr_OrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_ActaEntrega.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_ActaEntrega.Designer.cs">
+      <DependentUpon>Report_py_ActaEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_ActaTrabajo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_ActaTrabajo.Designer.cs">
+      <DependentUpon>Report_py_ActaTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosDetallado.Designer.cs">
+      <DependentUpon>Report_py_PlaneacionCostosDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionTiempos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionTiempos.Designer.cs">
+      <DependentUpon>Report_py_PlaneacionTiempos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Tesoreria\Report_Ts_TrasaccionBancaria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Tesoreria\Report_Ts_TrasaccionBancaria.Designer.cs">
+      <DependentUpon>Report_Ts_TrasaccionBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Tesoreria\Report_Ts_PagoFacturas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Tesoreria\Report_Ts_PagoFacturas.Designer.cs">
+      <DependentUpon>Report_Ts_PagoFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_ImportacionesTemporales.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_ImportacionesTemporales.Designer.cs">
+      <DependentUpon>Report_Ac_ImportacionesTemporales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_EquiposArrendados.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_EquiposArrendados.Designer.cs">
+      <DependentUpon>Report_Ac_EquiposArrendados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_ExtractoCliente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_ExtractoCliente.Designer.cs">
+      <DependentUpon>Report_cc_ExtractoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_PagaduriaNomina.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_PagaduriaNomina.Designer.cs">
+      <DependentUpon>Report_cc_PagaduriaNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ResumenSaldo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ResumenSaldo.Designer.cs">
+      <DependentUpon>Report_Cc_ResumenSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_PolizasRenovar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_PolizasRenovar.Designer.cs">
+      <DependentUpon>Report_Cc_PolizasRenovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_LibranzaNuevas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_LibranzaNuevas.Designer.cs">
+      <DependentUpon>Report_Cc_LibranzaNuevas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Pagare.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Pagare.Designer.cs">
+      <DependentUpon>Report_Cc_Pagare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Reestructuracion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Reestructuracion.Designer.cs">
+      <DependentUpon>Report_cc_Reestructuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Reoperaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Reoperaciones.Designer.cs">
+      <DependentUpon>Report_cc_Reoperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AmortizaDerechoDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AmortizaDerechoDetalle.Designer.cs">
+      <DependentUpon>Report_Cc_AmortizaDerechoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AmortizaDerechoResumen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AmortizaDerechoResumen.Designer.cs">
+      <DependentUpon>Report_Cc_AmortizaDerechoResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Amortizacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Amortizacion.Designer.cs">
+      <DependentUpon>Report_Cc_Amortizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\Report_Co_ReporteLineasV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Contabilidad\Report_Co_ReporteLineasV.Designer.cs">
+      <DependentUpon>Report_Co_ReporteLineasV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AnalisisPagosXCuota.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AnalisisPagosXCuota.Designer.cs">
+      <DependentUpon>Report_Cc_AnalisisPagosXCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadisticoGestResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadisticoGestResumido.Designer.cs">
+      <DependentUpon>Report_Cc_EstadisticoGestResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadisticoGestDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadisticoGestDetallado.Designer.cs">
+      <DependentUpon>Report_Cc_EstadisticoGestDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadoClientes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadoClientes.Designer.cs">
+      <DependentUpon>Report_Cc_EstadoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Activaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Activaciones.Designer.cs">
+      <DependentUpon>Report_cc_Activaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_LibranzaCanceladas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_LibranzaCanceladas.Designer.cs">
+      <DependentUpon>Report_Cc_LibranzaCanceladas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CobroJurHistorico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CobroJurHistorico.Designer.cs">
+      <DependentUpon>Report_Cc_CobroJurHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_DeudoresDemanda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_DeudoresDemanda.Designer.cs">
+      <DependentUpon>Report_Cc_DeudoresDemanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_DetalleSaldo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_DetalleSaldo.Designer.cs">
+      <DependentUpon>Report_Cc_DetalleSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ResumenRentab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ResumenRentab.Designer.cs">
+      <DependentUpon>Report_Cc_ResumenRentab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_AnalisisPagosHistoria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_AnalisisPagosHistoria.Designer.cs">
+      <DependentUpon>Report_cc_AnalisisPagosHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Prejuridico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_Prejuridico.Designer.cs">
+      <DependentUpon>Report_cc_Prejuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Aportes_a_Clientes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Aportes_a_Clientes.Designer.cs">
+      <DependentUpon>Report_Cc_Aportes_a_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_DevolucionSolicitud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_cc_DevolucionSolicitud.Designer.cs">
+      <DependentUpon>Report_cc_DevolucionSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_FormularioISS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_FormularioISS.Designer.cs">
+      <DependentUpon>Report_Cc_FormularioISS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldoCapital.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldoCapital.Designer.cs">
+      <DependentUpon>Report_Cc_SaldoCapital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_PolizaEstado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_PolizaEstado.Designer.cs">
+      <DependentUpon>Report_Cc_PolizaEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CobroJuridico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CobroJuridico.Designer.cs">
+      <DependentUpon>Report_Cc_CobroJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadoCuentaFinan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadoCuentaFinan.Designer.cs">
+      <DependentUpon>Report_Cc_EstadoCuentaFinan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CesionRecompraMes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CesionRecompraMes.Designer.cs">
+      <DependentUpon>Report_Cc_CesionRecompraMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstCuentaCesionDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstCuentaCesionDetalle.Designer.cs">
+      <DependentUpon>Report_Cc_EstCuentaCesionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstCuentaCesionResumen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstCuentaCesionResumen.Designer.cs">
+      <DependentUpon>Report_Cc_EstCuentaCesionResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_RecaudosMasivos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_RecaudosMasivos.Designer.cs">
+      <DependentUpon>Report_Cc_RecaudosMasivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Libranza.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Libranza.Designer.cs">
+      <DependentUpon>Report_Cc_Libranza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CarteraMora.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_CarteraMora.Designer.cs">
+      <DependentUpon>Report_Cc_CarteraMora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_DetalladoCarteraVendida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_DetalladoCarteraVendida.Designer.cs">
+      <DependentUpon>Report_Cc_DetalladoCarteraVendida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_PagaduriaIncoporaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_PagaduriaIncoporaciones.Designer.cs">
+      <DependentUpon>Report_Cc_PagaduriaIncoporaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ProyeccionPagos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ProyeccionPagos.Designer.cs">
+      <DependentUpon>Report_Cc_ProyeccionPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Referenciacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Referenciacion.Designer.cs">
+      <DependentUpon>Report_Cc_Referenciacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ResumidoCarteraVendida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ResumidoCarteraVendida.Designer.cs">
+      <DependentUpon>Report_Cc_ResumidoCarteraVendida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AnalisisPagos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AnalisisPagos.Designer.cs">
+      <DependentUpon>Report_Cc_AnalisisPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ReintegroAjusteGiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_ReintegroAjusteGiro.Designer.cs">
+      <DependentUpon>Report_Cc_ReintegroAjusteGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosCuota.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosCuota.Designer.cs">
+      <DependentUpon>Report_Cc_SaldosCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosFinan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosFinan.Designer.cs">
+      <DependentUpon>Report_Cc_SaldosFinan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_RecaudosNominaDeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_RecaudosNominaDeta.Designer.cs">
+      <DependentUpon>Report_Cc_RecaudosNominaDeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Solicitudes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Solicitudes.Designer.cs">
+      <DependentUpon>Report_Cc_Solicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Vencimiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Vencimiento.Designer.cs">
+      <DependentUpon>Report_Cc_Vencimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_GestionCobranzaDia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_GestionCobranzaDia.Designer.cs">
+      <DependentUpon>Report_Cc_GestionCobranzaDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceEstadoResultadosMes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceEstadoResultadosMes.Designer.cs">
+      <DependentUpon>Report_Co_BalanceEstadoResultadosMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceEstadoResultados.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceEstadoResultados.Designer.cs">
+      <DependentUpon>Report_Co_BalanceEstadoResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalancePorMeses.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalancePorMeses.Designer.cs">
+      <DependentUpon>Report_Co_BalancePorMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_CertificadoIngresoRetencion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_CertificadoIngresoRetencion.Designer.cs">
+      <DependentUpon>Report_Co_CertificadoIngresoRetencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_CertificadoImpuesto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_CertificadoImpuesto.Designer.cs">
+      <DependentUpon>Report_Co_CertificadoImpuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_EjecucionPresupuestal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_EjecucionPresupuestal.Designer.cs">
+      <DependentUpon>Report_Co_EjecucionPresupuestal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_CajaMenor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_CajaMenor.Designer.cs">
+      <DependentUpon>Report_Cp_CajaMenor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_CxPvsPagos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_CxPvsPagos.Designer.cs">
+      <DependentUpon>Report_Cp_CxPvsPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PagosVsCxP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PagosVsCxP.Designer.cs">
+      <DependentUpon>Report_Cp_PagosVsCxP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_InventarioFisicoDiferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_InventarioFisicoDiferencia.Designer.cs">
+      <DependentUpon>Report_In_InventarioFisicoDiferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_in_MovimientosConsolidado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_in_MovimientosConsolidado.Designer.cs">
+      <DependentUpon>Report_in_MovimientosConsolidado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_in_MovimientosDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_in_MovimientosDetallado.Designer.cs">
+      <DependentUpon>Report_in_MovimientosDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_MvtoInventario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_MvtoInventario.Designer.cs">
+      <DependentUpon>Report_In_MvtoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_InventarioFisico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_InventarioFisico.Designer.cs">
+      <DependentUpon>Report_In_InventarioFisico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_Saldos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_Saldos.Designer.cs">
+      <DependentUpon>Report_In_Saldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosxReferenciaResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosxReferenciaResumido.Designer.cs">
+      <DependentUpon>Report_In_SaldosxReferenciaResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosResumido.Designer.cs">
+      <DependentUpon>Report_In_SaldosResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_in_Movimientos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_in_Movimientos.Designer.cs">
+      <DependentUpon>Report_in_Movimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_ProvisionesDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_ProvisionesDetalle.Designer.cs">
+      <DependentUpon>Report_No_ProvisionesDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_ProvisionesSaldos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_ProvisionesSaldos.Designer.cs">
+      <DependentUpon>Report_No_ProvisionesSaldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_CesantiasDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_CesantiasDetalle.Designer.cs">
+      <DependentUpon>Report_No_CesantiasDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_GastosEmpresa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_GastosEmpresa.Designer.cs">
+      <DependentUpon>Report_No_GastosEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesCajaCompensacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesCajaCompensacion.Designer.cs">
+      <DependentUpon>Report_No_AportesCajaCompensacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Reports_no_LiquidacionContrato.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Reports_no_LiquidacionContrato.Designer.cs">
+      <DependentUpon>Reports_no_LiquidacionContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_CesantiasDocumento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_CesantiasDocumento.Designer.cs">
+      <DependentUpon>Report_No_CesantiasDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_VacacionesDocumento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_VacacionesDocumento.Designer.cs">
+      <DependentUpon>Report_No_VacacionesDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_VacacionesPendientes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_VacacionesPendientes.Designer.cs">
+      <DependentUpon>Report_No_VacacionesPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_ProveedoresTrazabilizadResum.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_ProveedoresTrazabilizadResum.Designer.cs">
+      <DependentUpon>Report_ProveedoresTrazabilizadResum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_ProveedoresTrazabilizad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_ProveedoresTrazabilizad.Designer.cs">
+      <DependentUpon>Report_ProveedoresTrazabilizad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_RelacionPrestamos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_RelacionPrestamos.Designer.cs">
+      <DependentUpon>Report_py_RelacionPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_Indicadores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_Indicadores.Designer.cs">
+      <DependentUpon>Report_py_Indicadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_ResumenDocsCotizacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_ResumenDocsCotizacion.Designer.cs">
+      <DependentUpon>Report_py_ResumenDocsCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_PlanCostosResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_PlanCostosResumido.Designer.cs">
+      <DependentUpon>Report_py_PlanCostosResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Balance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Balance.Designer.cs">
+      <DependentUpon>Report_Co_Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_TasasDiarias.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_TasasDiarias.Designer.cs">
+      <DependentUpon>Report_Co_TasasDiarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Generic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Generic.Designer.cs">
+      <DependentUpon>Report_Co_Generic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_TasasCierre.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_TasasCierre.Designer.cs">
+      <DependentUpon>Report_Co_TasasCierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_AnticiposResumen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_AnticiposResumen.Designer.cs">
+      <DependentUpon>Report_Cp_AnticiposResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_Anticipos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_Anticipos.Designer.cs">
+      <DependentUpon>Report_Cp_Anticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasXPagarMulti.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasXPagarMulti.Designer.cs">
+      <DependentUpon>Report_Cp_FacturasXPagarMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturaEquivalente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturaEquivalente.Designer.cs">
+      <DependentUpon>Report_Cp_FacturaEquivalente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_LibroCompras.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_LibroCompras.Designer.cs">
+      <DependentUpon>Report_Cp_LibroCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_Cp_CuentasXCobrar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_Cp_CuentasXCobrar.Designer.cs">
+      <DependentUpon>Report_Cp_CuentasXCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_Cp_CuentasXCobrarMulti.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_Cp_CuentasXCobrarMulti.Designer.cs">
+      <DependentUpon>Report_Cp_CuentasXCobrarMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_CxC_PorEdadesDetallada.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_CxC_PorEdadesDetallada.Designer.cs">
+      <DependentUpon>Report_CxC_PorEdadesDetallada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_CxC_PorEdadesResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_CxC_PorEdadesResumido.Designer.cs">
+      <DependentUpon>Report_CxC_PorEdadesResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_Fa_LibroVentas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Facturacion\Report_Fa_LibroVentas.Designer.cs">
+      <DependentUpon>Report_Fa_LibroVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Global\Report_Gl_DocumentosPendientes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Global\Report_Gl_DocumentosPendientes.Designer.cs">
+      <DependentUpon>Report_Gl_DocumentosPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\DetalleBoletaPago.cs">
+      <DependentUpon>DetalleBoletaPago.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\DetalleBoletaPago.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalleBoletaPago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_BoletaPago.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_BoletaPago.Designer.cs">
+      <DependentUpon>Report_No_BoletaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalRecursoXActiviME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalRecursoXActiviME.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalRecursoXActiviME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalRecursoXActiviML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalRecursoXActiviML.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalRecursoXActiviML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXRecursoME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXRecursoME.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXRecursoME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXRecursoML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXRecursoML.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXRecursoML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXCentroCtoME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXCentroCtoME.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXCentroCtoME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXCentroCtoML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXCentroCtoML.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXCentroCtoML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalProyectXActiviME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalProyectXActiviME.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalProyectXActiviME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalProyectXActiviML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalProyectXActiviML.Designer.cs">
+      <DependentUpon>Report_Pl_EjePresupuestalProyectXActiviML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_RecibidoDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_RecibidoDetallado.Designer.cs">
+      <DependentUpon>Report_Pr_RecibidoDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_RecibidoResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_RecibidoResumido.Designer.cs">
+      <DependentUpon>Report_Pr_RecibidoResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_OrdenCompraDetallada.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_OrdenCompraDetallada.Designer.cs">
+      <DependentUpon>Report_Pr_OrdenCompraDetallada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_OrdenCompraResumida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_OrdenCompraResumida.Designer.cs">
+      <DependentUpon>Report_Pr_OrdenCompraResumida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_ComprVSFact.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_ComprVSFact.Designer.cs">
+      <DependentUpon>Report_Pr_ComprVSFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_PlanCostosAPUResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_PlanCostosAPUResumido.Designer.cs">
+      <DependentUpon>Report_py_PlanCostosAPUResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosCliente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosCliente.Designer.cs">
+      <DependentUpon>Report_py_PlaneacionCostosCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_PlaneacionCostosAPU.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_PlaneacionCostosAPU.Designer.cs">
+      <DependentUpon>Report_py_PlaneacionCostosAPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosCompar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosCompar.Designer.cs">
+      <DependentUpon>Report_py_PlaneacionCostosCompar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostos.Designer.cs">
+      <DependentUpon>Report_py_PlaneacionCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_EjecucionPresupuesto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proyectos\Report_py_EjecucionPresupuesto.Designer.cs">
+      <DependentUpon>Report_py_EjecucionPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_Ejecutado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_Ejecutado.Designer.cs">
+      <DependentUpon>Report_Ts_Ejecutado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ReciboCajaDoc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ReciboCajaDoc.Designer.cs">
+      <DependentUpon>Report_Ts_ReciboCajaDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_Ejecutado_Resumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_Ejecutado_Resumido.Designer.cs">
+      <DependentUpon>Report_Ts_Ejecutado_Resumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBaseLandScape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportBaseLandScape.Designer.cs">
+      <DependentUpon>ReportBaseLandScape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CierreOferta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_CierreOferta.Designer.cs">
+      <DependentUpon>Report_Cc_CierreOferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_Incorporacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_Incorporacion.Designer.cs">
+      <DependentUpon>Report_Cc_Incorporacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_OfertaCerrada.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_OfertaCerrada.Designer.cs">
+      <DependentUpon>Report_Cc_OfertaCerrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_RespuestaOferta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_RespuestaOferta.Designer.cs">
+      <DependentUpon>Report_Cc_RespuestaOferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_VentaCartera2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_VentaCartera2.Designer.cs">
+      <DependentUpon>Report_Cc_VentaCartera2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_LegalizaTarjetas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_LegalizaTarjetas.Designer.cs">
+      <DependentUpon>Report_CxP_LegalizaTarjetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_TarjetasPagas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_TarjetasPagas.Designer.cs">
+      <DependentUpon>Report_CxP_TarjetasPagas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Facturacion\Report_Fa_FacturaVenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Facturacion\Report_Fa_FacturaVenta.Designer.cs">
+      <DependentUpon>Report_Fa_FacturaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_ComparacionLibros.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_ComparacionLibros.Designer.cs">
+      <DependentUpon>Report_Ac_ComparacionLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_SaldosML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_SaldosML.Designer.cs">
+      <DependentUpon>Report_Ac_SaldosML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_SaldosME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_SaldosME.Designer.cs">
+      <DependentUpon>Report_Ac_SaldosME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_Saldos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Activos\Report_Ac_Saldos.Designer.cs">
+      <DependentUpon>Report_Ac_Saldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_VentaCartera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_VentaCartera.Designer.cs">
+      <DependentUpon>Report_Cc_VentaCartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_LiquidacionCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dinamicos\Documentos\Cartera\Report_Cc_LiquidacionCredito.Designer.cs">
+      <DependentUpon>Report_Cc_LiquidacionCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Saldos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Saldos.Designer.cs">
+      <DependentUpon>Report_Cc_Saldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosMora.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosMora.Designer.cs">
+      <DependentUpon>Report_Cc_SaldosMora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AportesCliente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_AportesCliente.Designer.cs">
+      <DependentUpon>Report_Cc_AportesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosAM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosAM.Designer.cs">
+      <DependentUpon>Report_Co_BalanceComparativoSaldosAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosML.Designer.cs">
+      <DependentUpon>Report_Co_BalanceComparativoSaldosML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosME.Designer.cs">
+      <DependentUpon>Report_Co_BalanceComparativoSaldosME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoMtvosME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoMtvosME.Designer.cs">
+      <DependentUpon>Report_Co_BalanceComparativoMtvosME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroME.Designer.cs">
+      <DependentUpon>Report_Co_AuxiliarxTerceroME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroML.Designer.cs">
+      <DependentUpon>Report_Co_AuxiliarxTerceroML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroMultimoneda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroMultimoneda.Designer.cs">
+      <DependentUpon>Report_Co_AuxiliarxTerceroMultimoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarME.Designer.cs">
+      <DependentUpon>Report_Co_AuxiliarME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarMultimoneda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarMultimoneda.Designer.cs">
+      <DependentUpon>Report_Co_AuxiliarMultimoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarML.Designer.cs">
+      <DependentUpon>Report_Co_AuxiliarML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoMtvosML.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoMtvosML.Designer.cs">
+      <DependentUpon>Report_Co_BalanceComparativoMtvosML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoTerceroCentroCosto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoTerceroCentroCosto.Designer.cs">
+      <DependentUpon>Report_Co_SaldoTerceroCentroCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoTerceroCuenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoTerceroCuenta.Designer.cs">
+      <DependentUpon>Report_Co_SaldoTerceroCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaLineaPresupuesto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaLineaPresupuesto.Designer.cs">
+      <DependentUpon>Report_Co_SaldoCuentaLineaPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaProyecto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaProyecto.Designer.cs">
+      <DependentUpon>Report_Co_SaldoCuentaProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminarMultimoneda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminarMultimoneda.Designer.cs">
+      <DependentUpon>Report_Co_ComprobantePreliminarMultimoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminarME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminarME.Designer.cs">
+      <DependentUpon>Report_Co_ComprobantePreliminarME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteMultimoneda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteMultimoneda.Designer.cs">
+      <DependentUpon>Report_Co_ComprobanteMultimoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteME.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteME.Designer.cs">
+      <DependentUpon>Report_Co_ComprobanteME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadoDeCuenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_EstadoDeCuenta.Designer.cs">
+      <DependentUpon>Report_Cc_EstadoDeCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteControl.Designer.cs">
+      <DependentUpon>Report_Co_ComprobanteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminar.Designer.cs">
+      <DependentUpon>Report_Co_ComprobantePreliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Comprobante.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Comprobante.Designer.cs">
+      <DependentUpon>Report_Co_Comprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_InventariosBalanceSinSaldo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_InventariosBalanceSinSaldo.Designer.cs">
+      <DependentUpon>Report_Co_InventariosBalanceSinSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosAFavor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_SaldosAFavor.Designer.cs">
+      <DependentUpon>Report_Cc_SaldosAFavor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_InventariosBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_InventariosBalance.Designer.cs">
+      <DependentUpon>Report_Co_InventariosBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_LibroDiarioComprobante.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_LibroDiarioComprobante.Designer.cs">
+      <DependentUpon>Report_Co_LibroDiarioComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_LibroDiario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_LibroDiario.Designer.cs">
+      <DependentUpon>Report_Co_LibroDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Aportes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Aportes.Designer.cs">
+      <DependentUpon>Report_Cc_Aportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Aseguradora.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cartera\Report_Cc_Aseguradora.Designer.cs">
+      <DependentUpon>Report_Cc_Aseguradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_LibroMayor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_LibroMayor.Designer.cs">
+      <DependentUpon>Report_Co_LibroMayor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Saldo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_Saldo.Designer.cs">
+      <DependentUpon>Report_Co_Saldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaCentroCosto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaCentroCosto.Designer.cs">
+      <DependentUpon>Report_Co_SaldoCuentaCentroCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FlujoSemanalDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FlujoSemanalDetallado.Designer.cs">
+      <DependentUpon>Report_Cp_FlujoSemanalDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FlujoSemanalResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FlujoSemanalResumido.Designer.cs">
+      <DependentUpon>Report_Cp_FlujoSemanalResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PorEdadesDetallada.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PorEdadesDetallada.Designer.cs">
+      <DependentUpon>Report_Cp_PorEdadesDetallada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PorEdadesResumido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PorEdadesResumido.Designer.cs">
+      <DependentUpon>Report_Cp_PorEdadesResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialConCostoxReferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialConCostoxReferencia.Designer.cs">
+      <DependentUpon>Report_In_SerialConCostoxReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialConCostoxBodega.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialConCostoxBodega.Designer.cs">
+      <DependentUpon>Report_In_SerialConCostoxBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialSinCostoxReferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialSinCostoxReferencia.Designer.cs">
+      <DependentUpon>Report_In_SerialSinCostoxReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialSinCostoxBodega.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SerialSinCostoxBodega.Designer.cs">
+      <DependentUpon>Report_In_SerialSinCostoxBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexSinParametrosxReferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexSinParametrosxReferencia.Designer.cs">
+      <DependentUpon>Report_In_KardexSinParametrosxReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexxReferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexxReferencia.Designer.cs">
+      <DependentUpon>Report_In_KardexxReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexSinParametros.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexSinParametros.Designer.cs">
+      <DependentUpon>Report_In_KardexSinParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasPagadas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasPagadas.Designer.cs">
+      <DependentUpon>Report_Cp_FacturasPagadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_Radicaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_Radicaciones.Designer.cs">
+      <DependentUpon>Report_Cp_Radicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosxReferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosxReferencia.Designer.cs">
+      <DependentUpon>Report_In_SaldosxReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosSinParametrosxReferencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosSinParametrosxReferencia.Designer.cs">
+      <DependentUpon>Report_In_SaldosSinParametrosxReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosSinParametros.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_SaldosSinParametros.Designer.cs">
+      <DependentUpon>Report_In_SaldosSinParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Inventarios\Report_In_KardexDetallado.Designer.cs">
+      <DependentUpon>Report_In_KardexDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasXPagar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasXPagar.Designer.cs">
+      <DependentUpon>Report_Cp_FacturasXPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesARP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesARP.Designer.cs">
+      <DependentUpon>Report_No_AportesARP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AporteVoluntarioPension.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AporteVoluntarioPension.Designer.cs">
+      <DependentUpon>Report_No_AporteVoluntarioPension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesPension.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesPension.Designer.cs">
+      <DependentUpon>Report_No_AportesPension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesSalud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_AportesSalud.Designer.cs">
+      <DependentUpon>Report_No_AportesSalud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_DetailLiquidaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_DetailLiquidaciones.Designer.cs">
+      <DependentUpon>Report_No_DetailLiquidaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_Detalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_Detalle.Designer.cs">
+      <DependentUpon>Report_No_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_Prestamo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_Prestamo.Designer.cs">
+      <DependentUpon>Report_No_Prestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_TotalXConcepto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_TotalXConcepto.Designer.cs">
+      <DependentUpon>Report_No_TotalXConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_VacacionesPagadas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_VacacionesPagadas.Designer.cs">
+      <DependentUpon>Report_No_VacacionesPagadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_XConcepto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Nomina\Report_No_XConcepto.Designer.cs">
+      <DependentUpon>Report_No_XConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\PlantillaReportPrueba.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\PlantillaReportPrueba.Designer.cs">
+      <DependentUpon>PlantillaReportPrueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_EstadoSolicitudes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Proveedores\Report_Pr_EstadoSolicitudes.Designer.cs">
+      <DependentUpon>Report_Pr_EstadoSolicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Query_Ts_ChequesGirados.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Query_Ts_ChequesGirados.Designer.cs">
+      <DependentUpon>Query_Ts_ChequesGirados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGirados.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGirados.Designer.cs">
+      <DependentUpon>Report_Ts_ChequesGirados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGiradosoDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGiradosoDetalle.Designer.cs">
+      <DependentUpon>Report_Ts_ChequesGiradosoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGiradosTercero.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGiradosTercero.Designer.cs">
+      <DependentUpon>Report_Ts_ChequesGiradosTercero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_LibroDeBancos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_LibroDeBancos.Designer.cs">
+      <DependentUpon>Report_Ts_LibroDeBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_RecibosDeCaja.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_RecibosDeCaja.Designer.cs">
+      <DependentUpon>Report_Ts_RecibosDeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_RelacionPagos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_RelacionPagos.Designer.cs">
+      <DependentUpon>Report_Ts_RelacionPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_RelacionPagosXBanco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fijos\Documentos\Tesoreria\Report_Ts_RelacionPagosXBanco.Designer.cs">
+      <DependentUpon>Report_Ts_RelacionPagosXBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generales\Global_Report_TxResultDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generales\Global_Report_TxResultDetails.Designer.cs">
+      <DependentUpon>Global_Report_TxResultDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generales\Global_Report_TxResult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Generales\Global_Report_TxResult.Designer.cs">
+      <DependentUpon>Global_Report_TxResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportBase.Designer.cs">
+      <DependentUpon>ReportBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportProvider.cs" />
+    <Compile Include="ReportSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_AutorizacionDescuento.resx">
+      <DependentUpon>Report_Cc_AutorizacionDescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoPagosAlDia.resx">
+      <DependentUpon>Report_Cc_CertificadoPagosAlDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoRelacionPagos.resx">
+      <DependentUpon>Report_Cc_CertificadoRelacionPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_CertificadoDeuda.resx">
+      <DependentUpon>Report_Cc_CertificadoDeuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_CartaCierreDiario.resx">
+      <DependentUpon>Report_Cc_CartaCierreDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_ContratoMutuo.resx">
+      <DependentUpon>Report_Cc_ContratoMutuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_PazYSalvo.resx">
+      <DependentUpon>Report_Cc_PazYSalvo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_Recaudo.resx">
+      <DependentUpon>Report_Cc_Recaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Contabilidad\ReportComprobateManual.resx">
+      <DependentUpon>ReportComprobateManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Contabilidad\Report_Co_DocumentoContable.resx">
+      <DependentUpon>Report_Co_DocumentoContable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_VentaCartera.resx">
+      <DependentUpon>Report_Cc_VentaCartera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Contabilidad\Report_Co_ReporteLineasH.resx">
+      <DependentUpon>Report_Co_ReporteLineasH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_AnticiposViajes.resx">
+      <DependentUpon>Report_CxP_AnticiposViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_Anticipos.resx">
+      <DependentUpon>Report_CxP_Anticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_CausacionFacturas.resx">
+      <DependentUpon>Report_CxP_CausacionFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Nomina\Report_No_CertificadoIngresos.resx">
+      <DependentUpon>Report_No_CertificadoIngresos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proveedores\Report_Pr_SolicitudRecibido.resx">
+      <DependentUpon>Report_Pr_SolicitudRecibido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proveedores\Report_Pr_OrdenCompraQuantum.resx">
+      <DependentUpon>Report_Pr_OrdenCompraQuantum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proveedores\Report_Pr_OrdenCompra.resx">
+      <DependentUpon>Report_Pr_OrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_ActaEntrega.resx">
+      <DependentUpon>Report_py_ActaEntrega.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_ActaTrabajo.resx">
+      <DependentUpon>Report_py_ActaTrabajo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosDetallado.resx">
+      <DependentUpon>Report_py_PlaneacionCostosDetallado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionTiempos.resx">
+      <DependentUpon>Report_py_PlaneacionTiempos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Tesoreria\Report_Ts_TrasaccionBancaria.resx">
+      <DependentUpon>Report_Ts_TrasaccionBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Tesoreria\Report_Ts_PagoFacturas.resx">
+      <DependentUpon>Report_Ts_PagoFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Activos\Report_Ac_ImportacionesTemporales.resx">
+      <DependentUpon>Report_Ac_ImportacionesTemporales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Activos\Report_Ac_EquiposArrendados.resx">
+      <DependentUpon>Report_Ac_EquiposArrendados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_ExtractoCliente.resx">
+      <DependentUpon>Report_cc_ExtractoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_PagaduriaNomina.resx">
+      <DependentUpon>Report_cc_PagaduriaNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_ResumenSaldo.resx">
+      <DependentUpon>Report_Cc_ResumenSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_PolizasRenovar.resx">
+      <DependentUpon>Report_Cc_PolizasRenovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_LibranzaNuevas.resx">
+      <DependentUpon>Report_Cc_LibranzaNuevas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Pagare.resx">
+      <DependentUpon>Report_Cc_Pagare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_Reestructuracion.resx">
+      <DependentUpon>Report_cc_Reestructuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_Reoperaciones.resx">
+      <DependentUpon>Report_cc_Reoperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_AmortizaDerechoDetalle.resx">
+      <DependentUpon>Report_Cc_AmortizaDerechoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_AmortizaDerechoResumen.resx">
+      <DependentUpon>Report_Cc_AmortizaDerechoResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Amortizacion.resx">
+      <DependentUpon>Report_Cc_Amortizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Contabilidad\Report_Co_ReporteLineasV.resx">
+      <DependentUpon>Report_Co_ReporteLineasV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_AnalisisPagosXCuota.resx">
+      <DependentUpon>Report_Cc_AnalisisPagosXCuota.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstadisticoGestResumido.resx">
+      <DependentUpon>Report_Cc_EstadisticoGestResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstadisticoGestDetallado.resx">
+      <DependentUpon>Report_Cc_EstadisticoGestDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstadoClientes.resx">
+      <DependentUpon>Report_Cc_EstadoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_Activaciones.resx">
+      <DependentUpon>Report_cc_Activaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_LibranzaCanceladas.resx">
+      <DependentUpon>Report_Cc_LibranzaCanceladas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_CobroJurHistorico.resx">
+      <DependentUpon>Report_Cc_CobroJurHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_DeudoresDemanda.resx">
+      <DependentUpon>Report_Cc_DeudoresDemanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_DetalleSaldo.resx">
+      <DependentUpon>Report_Cc_DetalleSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_ResumenRentab.resx">
+      <DependentUpon>Report_Cc_ResumenRentab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_AnalisisPagosHistoria.resx">
+      <DependentUpon>Report_cc_AnalisisPagosHistoria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_Prejuridico.resx">
+      <DependentUpon>Report_cc_Prejuridico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Aportes_a_Clientes.resx">
+      <DependentUpon>Report_Cc_Aportes_a_Clientes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_cc_DevolucionSolicitud.resx">
+      <DependentUpon>Report_cc_DevolucionSolicitud.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_FormularioISS.resx">
+      <DependentUpon>Report_Cc_FormularioISS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_SaldoCapital.resx">
+      <DependentUpon>Report_Cc_SaldoCapital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_PolizaEstado.resx">
+      <DependentUpon>Report_Cc_PolizaEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_CobroJuridico.resx">
+      <DependentUpon>Report_Cc_CobroJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstadoCuentaFinan.resx">
+      <DependentUpon>Report_Cc_EstadoCuentaFinan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_CesionRecompraMes.resx">
+      <DependentUpon>Report_Cc_CesionRecompraMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstCuentaCesionDetalle.resx">
+      <DependentUpon>Report_Cc_EstCuentaCesionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstCuentaCesionResumen.resx">
+      <DependentUpon>Report_Cc_EstCuentaCesionResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_RecaudosMasivos.resx">
+      <DependentUpon>Report_Cc_RecaudosMasivos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Libranza.resx">
+      <DependentUpon>Report_Cc_Libranza.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_CarteraMora.resx">
+      <DependentUpon>Report_Cc_CarteraMora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_DetalladoCarteraVendida.resx">
+      <DependentUpon>Report_Cc_DetalladoCarteraVendida.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_PagaduriaIncoporaciones.resx">
+      <DependentUpon>Report_Cc_PagaduriaIncoporaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_ProyeccionPagos.resx">
+      <DependentUpon>Report_Cc_ProyeccionPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Referenciacion.resx">
+      <DependentUpon>Report_Cc_Referenciacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_ResumidoCarteraVendida.resx">
+      <DependentUpon>Report_Cc_ResumidoCarteraVendida.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_AnalisisPagos.resx">
+      <DependentUpon>Report_Cc_AnalisisPagos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_ReintegroAjusteGiro.resx">
+      <DependentUpon>Report_Cc_ReintegroAjusteGiro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_SaldosCuota.resx">
+      <DependentUpon>Report_Cc_SaldosCuota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_SaldosFinan.resx">
+      <DependentUpon>Report_Cc_SaldosFinan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_RecaudosNominaDeta.resx">
+      <DependentUpon>Report_Cc_RecaudosNominaDeta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Solicitudes.resx">
+      <DependentUpon>Report_Cc_Solicitudes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Vencimiento.resx">
+      <DependentUpon>Report_Cc_Vencimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_GestionCobranzaDia.resx">
+      <DependentUpon>Report_Cc_GestionCobranzaDia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceEstadoResultadosMes.resx">
+      <DependentUpon>Report_Co_BalanceEstadoResultadosMes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceEstadoResultados.resx">
+      <DependentUpon>Report_Co_BalanceEstadoResultados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalancePorMeses.resx">
+      <DependentUpon>Report_Co_BalancePorMeses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_CertificadoIngresoRetencion.resx">
+      <DependentUpon>Report_Co_CertificadoIngresoRetencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_CertificadoImpuesto.resx">
+      <DependentUpon>Report_Co_CertificadoImpuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_EjecucionPresupuestal.resx">
+      <DependentUpon>Report_Co_EjecucionPresupuestal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_CajaMenor.resx">
+      <DependentUpon>Report_Cp_CajaMenor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_CxPvsPagos.resx">
+      <DependentUpon>Report_Cp_CxPvsPagos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PagosVsCxP.resx">
+      <DependentUpon>Report_Cp_PagosVsCxP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_InventarioFisicoDiferencia.resx">
+      <DependentUpon>Report_In_InventarioFisicoDiferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_in_MovimientosConsolidado.resx">
+      <DependentUpon>Report_in_MovimientosConsolidado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_in_MovimientosDetallado.resx">
+      <DependentUpon>Report_in_MovimientosDetallado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_MvtoInventario.resx">
+      <DependentUpon>Report_In_MvtoInventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_InventarioFisico.resx">
+      <DependentUpon>Report_In_InventarioFisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_Saldos.resx">
+      <DependentUpon>Report_In_Saldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SaldosxReferenciaResumido.resx">
+      <DependentUpon>Report_In_SaldosxReferenciaResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SaldosResumido.resx">
+      <DependentUpon>Report_In_SaldosResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_in_Movimientos.resx">
+      <DependentUpon>Report_in_Movimientos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_ProvisionesDetalle.resx">
+      <DependentUpon>Report_No_ProvisionesDetalle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_ProvisionesSaldos.resx">
+      <DependentUpon>Report_No_ProvisionesSaldos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_CesantiasDetalle.resx">
+      <DependentUpon>Report_No_CesantiasDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_GastosEmpresa.resx">
+      <DependentUpon>Report_No_GastosEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_AportesCajaCompensacion.resx">
+      <DependentUpon>Report_No_AportesCajaCompensacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Reports_no_LiquidacionContrato.resx">
+      <DependentUpon>Reports_no_LiquidacionContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_CesantiasDocumento.resx">
+      <DependentUpon>Report_No_CesantiasDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_VacacionesDocumento.resx">
+      <DependentUpon>Report_No_VacacionesDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_VacacionesPendientes.resx">
+      <DependentUpon>Report_No_VacacionesPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_ProveedoresTrazabilizadResum.resx">
+      <DependentUpon>Report_ProveedoresTrazabilizadResum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_ProveedoresTrazabilizad.resx">
+      <DependentUpon>Report_ProveedoresTrazabilizad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_RelacionPrestamos.resx">
+      <DependentUpon>Report_py_RelacionPrestamos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_Indicadores.resx">
+      <DependentUpon>Report_py_Indicadores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_ResumenDocsCotizacion.resx">
+      <DependentUpon>Report_py_ResumenDocsCotizacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_PlanCostosResumido.resx">
+      <DependentUpon>Report_py_PlanCostosResumido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_Balance.resx">
+      <DependentUpon>Report_Co_Balance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_TasasDiarias.resx">
+      <DependentUpon>Report_Co_TasasDiarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_Generic.resx">
+      <DependentUpon>Report_Co_Generic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_TasasCierre.resx">
+      <DependentUpon>Report_Co_TasasCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_AnticiposResumen.resx">
+      <DependentUpon>Report_Cp_AnticiposResumen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_Anticipos.resx">
+      <DependentUpon>Report_Cp_Anticipos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasXPagarMulti.resx">
+      <DependentUpon>Report_Cp_FacturasXPagarMulti.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturaEquivalente.resx">
+      <DependentUpon>Report_Cp_FacturaEquivalente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_LibroCompras.resx">
+      <DependentUpon>Report_Cp_LibroCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Facturacion\Report_Cp_CuentasXCobrar.resx">
+      <DependentUpon>Report_Cp_CuentasXCobrar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Facturacion\Report_Cp_CuentasXCobrarMulti.resx">
+      <DependentUpon>Report_Cp_CuentasXCobrarMulti.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Facturacion\Report_CxC_PorEdadesDetallada.resx">
+      <DependentUpon>Report_CxC_PorEdadesDetallada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Facturacion\Report_CxC_PorEdadesResumido.resx">
+      <DependentUpon>Report_CxC_PorEdadesResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Facturacion\Report_Fa_LibroVentas.resx">
+      <DependentUpon>Report_Fa_LibroVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Global\Report_Gl_DocumentosPendientes.resx">
+      <DependentUpon>Report_Gl_DocumentosPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_BoletaPago.resx">
+      <DependentUpon>Report_No_BoletaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalRecursoXActiviME.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalRecursoXActiviME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalRecursoXActiviML.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalRecursoXActiviML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXRecursoME.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXRecursoME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXRecursoML.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXRecursoML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXCentroCtoME.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXCentroCtoME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalLineaXCentroCtoML.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalLineaXCentroCtoML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalProyectXActiviME.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalProyectXActiviME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Planeacion\Report_Pl_EjePresupuestalProyectXActiviML.resx">
+      <DependentUpon>Report_Pl_EjePresupuestalProyectXActiviML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_Pr_RecibidoDetallado.resx">
+      <DependentUpon>Report_Pr_RecibidoDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_Pr_RecibidoResumido.resx">
+      <DependentUpon>Report_Pr_RecibidoResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_Pr_OrdenCompraDetallada.resx">
+      <DependentUpon>Report_Pr_OrdenCompraDetallada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_Pr_OrdenCompraResumida.resx">
+      <DependentUpon>Report_Pr_OrdenCompraResumida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_Pr_ComprVSFact.resx">
+      <DependentUpon>Report_Pr_ComprVSFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_PlanCostosAPUResumido.resx">
+      <DependentUpon>Report_py_PlanCostosAPUResumido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosCliente.resx">
+      <DependentUpon>Report_py_PlaneacionCostosCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_PlaneacionCostosAPU.resx">
+      <DependentUpon>Report_py_PlaneacionCostosAPU.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostosCompar.resx">
+      <DependentUpon>Report_py_PlaneacionCostosCompar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Proyectos\Report_py_PlaneacionCostos.resx">
+      <DependentUpon>Report_py_PlaneacionCostos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proyectos\Report_py_EjecucionPresupuesto.resx">
+      <DependentUpon>Report_py_EjecucionPresupuesto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_Ejecutado.resx">
+      <DependentUpon>Report_Ts_Ejecutado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_ReciboCajaDoc.resx">
+      <DependentUpon>Report_Ts_ReciboCajaDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_Ejecutado_Resumido.resx">
+      <DependentUpon>Report_Ts_Ejecutado_Resumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBaseLandScape.resx">
+      <DependentUpon>ReportBaseLandScape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_CierreOferta.resx">
+      <DependentUpon>Report_Cc_CierreOferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_Incorporacion.resx">
+      <DependentUpon>Report_Cc_Incorporacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_OfertaCerrada.resx">
+      <DependentUpon>Report_Cc_OfertaCerrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_RespuestaOferta.resx">
+      <DependentUpon>Report_Cc_RespuestaOferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_VentaCartera2.resx">
+      <DependentUpon>Report_Cc_VentaCartera2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_LegalizaTarjetas.resx">
+      <DependentUpon>Report_CxP_LegalizaTarjetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\CuentasXPagar\Report_CxP_TarjetasPagas.resx">
+      <DependentUpon>Report_CxP_TarjetasPagas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Facturacion\Report_Fa_FacturaVenta.resx">
+      <DependentUpon>Report_Fa_FacturaVenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Activos\Report_Ac_ComparacionLibros.resx">
+      <DependentUpon>Report_Ac_ComparacionLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Activos\Report_Ac_SaldosML.resx">
+      <DependentUpon>Report_Ac_SaldosML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Activos\Report_Ac_SaldosME.resx">
+      <DependentUpon>Report_Ac_SaldosME.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Activos\Report_Ac_Saldos.resx">
+      <DependentUpon>Report_Ac_Saldos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_VentaCartera.resx">
+      <DependentUpon>Report_Cc_VentaCartera.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dinamicos\Documentos\Cartera\Report_Cc_LiquidacionCredito.resx">
+      <DependentUpon>Report_Cc_LiquidacionCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Saldos.resx">
+      <DependentUpon>Report_Cc_Saldos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_SaldosMora.resx">
+      <DependentUpon>Report_Cc_SaldosMora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosAM.resx">
+      <DependentUpon>Report_Co_BalanceComparativoSaldosAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosML.resx">
+      <DependentUpon>Report_Co_BalanceComparativoSaldosML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoSaldosME.resx">
+      <DependentUpon>Report_Co_BalanceComparativoSaldosME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoMtvosME.resx">
+      <DependentUpon>Report_Co_BalanceComparativoMtvosME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroME.resx">
+      <DependentUpon>Report_Co_AuxiliarxTerceroME.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroML.resx">
+      <DependentUpon>Report_Co_AuxiliarxTerceroML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarxTerceroMultimoneda.resx">
+      <DependentUpon>Report_Co_AuxiliarxTerceroMultimoneda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarME.resx">
+      <DependentUpon>Report_Co_AuxiliarME.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarMultimoneda.resx">
+      <DependentUpon>Report_Co_AuxiliarMultimoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_AuxiliarML.resx">
+      <DependentUpon>Report_Co_AuxiliarML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_BalanceComparativoMtvosML.resx">
+      <DependentUpon>Report_Co_BalanceComparativoMtvosML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoTerceroCentroCosto.resx">
+      <DependentUpon>Report_Co_SaldoTerceroCentroCosto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoTerceroCuenta.resx">
+      <DependentUpon>Report_Co_SaldoTerceroCuenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaLineaPresupuesto.resx">
+      <DependentUpon>Report_Co_SaldoCuentaLineaPresupuesto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaProyecto.resx">
+      <DependentUpon>Report_Co_SaldoCuentaProyecto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminarMultimoneda.resx">
+      <DependentUpon>Report_Co_ComprobantePreliminarMultimoneda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminarME.resx">
+      <DependentUpon>Report_Co_ComprobantePreliminarME.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteMultimoneda.resx">
+      <DependentUpon>Report_Co_ComprobanteMultimoneda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteME.resx">
+      <DependentUpon>Report_Co_ComprobanteME.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobanteControl.resx">
+      <DependentUpon>Report_Co_ComprobanteControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_ComprobantePreliminar.resx">
+      <DependentUpon>Report_Co_ComprobantePreliminar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_Comprobante.resx">
+      <DependentUpon>Report_Co_Comprobante.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_AportesCliente.resx">
+      <DependentUpon>Report_Cc_AportesCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_EstadoDeCuenta.resx">
+      <DependentUpon>Report_Cc_EstadoDeCuenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_InventariosBalanceSinSaldo.resx">
+      <DependentUpon>Report_Co_InventariosBalanceSinSaldo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_SaldosAFavor.resx">
+      <DependentUpon>Report_Cc_SaldosAFavor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_InventariosBalance.resx">
+      <DependentUpon>Report_Co_InventariosBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_LibroDiarioComprobante.resx">
+      <DependentUpon>Report_Co_LibroDiarioComprobante.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_LibroDiario.resx">
+      <DependentUpon>Report_Co_LibroDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Aportes.resx">
+      <DependentUpon>Report_Cc_Aportes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cartera\Report_Cc_Aseguradora.resx">
+      <DependentUpon>Report_Cc_Aseguradora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_LibroMayor.resx">
+      <DependentUpon>Report_Co_LibroMayor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_Saldo.resx">
+      <DependentUpon>Report_Co_Saldo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Contabilidad\Report_Co_SaldoCuentaCentroCosto.resx">
+      <DependentUpon>Report_Co_SaldoCuentaCentroCosto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FlujoSemanalDetallado.resx">
+      <DependentUpon>Report_Cp_FlujoSemanalDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FlujoSemanalResumido.resx">
+      <DependentUpon>Report_Cp_FlujoSemanalResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PorEdadesDetallada.resx">
+      <DependentUpon>Report_Cp_PorEdadesDetallada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_PorEdadesResumido.resx">
+      <DependentUpon>Report_Cp_PorEdadesResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SerialConCostoxReferencia.resx">
+      <DependentUpon>Report_In_SerialConCostoxReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SerialConCostoxBodega.resx">
+      <DependentUpon>Report_In_SerialConCostoxBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SerialSinCostoxReferencia.resx">
+      <DependentUpon>Report_In_SerialSinCostoxReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SerialSinCostoxBodega.resx">
+      <DependentUpon>Report_In_SerialSinCostoxBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_KardexSinParametrosxReferencia.resx">
+      <DependentUpon>Report_In_KardexSinParametrosxReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_KardexxReferencia.resx">
+      <DependentUpon>Report_In_KardexxReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_KardexSinParametros.resx">
+      <DependentUpon>Report_In_KardexSinParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasPagadas.resx">
+      <DependentUpon>Report_Cp_FacturasPagadas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_Radicaciones.resx">
+      <DependentUpon>Report_Cp_Radicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SaldosxReferencia.resx">
+      <DependentUpon>Report_In_SaldosxReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SaldosSinParametrosxReferencia.resx">
+      <DependentUpon>Report_In_SaldosSinParametrosxReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_SaldosSinParametros.resx">
+      <DependentUpon>Report_In_SaldosSinParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Inventarios\Report_In_KardexDetallado.resx">
+      <DependentUpon>Report_In_KardexDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Cuentas X Pagar\Report_Cp_FacturasXPagar.resx">
+      <DependentUpon>Report_Cp_FacturasXPagar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_AportesARP.resx">
+      <DependentUpon>Report_No_AportesARP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_AporteVoluntarioPension.resx">
+      <DependentUpon>Report_No_AporteVoluntarioPension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_AportesPension.resx">
+      <DependentUpon>Report_No_AportesPension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_AportesSalud.resx">
+      <DependentUpon>Report_No_AportesSalud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_DetailLiquidaciones.resx">
+      <DependentUpon>Report_No_DetailLiquidaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_Detalle.resx">
+      <DependentUpon>Report_No_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_Prestamo.resx">
+      <DependentUpon>Report_No_Prestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_TotalXConcepto.resx">
+      <DependentUpon>Report_No_TotalXConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_VacacionesPagadas.resx">
+      <DependentUpon>Report_No_VacacionesPagadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Nomina\Report_No_XConcepto.resx">
+      <DependentUpon>Report_No_XConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\PlantillaReportPrueba.resx">
+      <DependentUpon>PlantillaReportPrueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Proveedores\Report_Pr_EstadoSolicitudes.resx">
+      <DependentUpon>Report_Pr_EstadoSolicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Query_Ts_ChequesGirados.resx">
+      <DependentUpon>Query_Ts_ChequesGirados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGirados.resx">
+      <DependentUpon>Report_Ts_ChequesGirados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGiradosoDetalle.resx">
+      <DependentUpon>Report_Ts_ChequesGiradosoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_ChequesGiradosTercero.resx">
+      <DependentUpon>Report_Ts_ChequesGiradosTercero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_LibroDeBancos.resx">
+      <DependentUpon>Report_Ts_LibroDeBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_RecibosDeCaja.resx">
+      <DependentUpon>Report_Ts_RecibosDeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_RelacionPagos.resx">
+      <DependentUpon>Report_Ts_RelacionPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fijos\Documentos\Tesoreria\Report_Ts_RelacionPagosXBanco.resx">
+      <DependentUpon>Report_Ts_RelacionPagosXBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generales\Global_Report_TxResultDetails.resx">
+      <DependentUpon>Global_Report_TxResultDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generales\Global_Report_TxResult.resx">
+      <DependentUpon>Global_Report_TxResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBase.resx">
+      <DependentUpon>ReportBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fijos\General\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\NewAge.DTO\NewAge.DTO.csproj">
+      <Project>{E8D5F1ED-DBFA-4C6F-99B1-5B6613D1DD37}</Project>
+      <Name>NewAge.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Librerias\ExceptionHandler\ExceptionHandler\ExceptionHandler.csproj">
+      <Project>{d2daa26b-c3b3-489a-84a4-8354de7cb7de}</Project>
+      <Name>ExceptionHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Librerias\Project\NewAge.Librerias.Project\NewAge.Librerias.Project.csproj">
+      <Project>{5E378E36-29BC-427F-B0C3-2C493CB11A1E}</Project>
+      <Name>NewAge.Librerias.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server\DAL\NewAge.ADO\NewAge.ADO.csproj">
+      <Project>{DCE80482-5D7C-483A-9B27-6C0EE20D637B}</Project>
+      <Name>NewAge.ADO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server\Negocio\NewAge.Negocio\NewAge.Negocio.csproj">
+      <Project>{76763EB5-A080-4C9C-93ED-761251ED4EDC}</Project>
+      <Name>NewAge.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fijos\Documentos\Nomina\DetalleBoletaPago.xsc">
+      <DependentUpon>DetalleBoletaPago.xsd</DependentUpon>
+    </None>
+    <None Include="Fijos\Documentos\Nomina\DetalleBoletaPago.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalleBoletaPago.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Fijos\Documentos\Nomina\DetalleBoletaPago.xss">
+      <DependentUpon>DetalleBoletaPago.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\NewAge.DTO.Negocio.DTO_noAportesARPTotales.datasource" />
+    <None Include="Properties\DataSources\NewAge.DTO.Negocio.DTO_RecaudosMasivos.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

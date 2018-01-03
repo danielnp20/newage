@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="QueriesDataSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>Select final.*,(CantPrestamo-CantDev) as CantPendDev,(ValorPrestamo-ValorDev) as ValorPendDev  from (
+   select RTrim(ctrl.PrefijoID)+'-'+Convert(Varchar, ctrl.DocumentoNro) as PrefDoc,
+	RTrim(d.ProyectoID) + '-' +pry.Descriptivo as ProyectoDesc,prest.ProyOrigen,ctrl.FechaDoc,d.inReferenciaID,refer.Descriptivo as ReferenciaDesc,
+    prest.CantidadUNI as CantPrestamo ,d.ValorUNI as ValorUnitPrest,d.Valor1LOC as ValorPrestamo, 	
+
+	 (select Isnull(sum(det.CantidadUNI),0) from glmovimientoDEta det
+	  inner join inMovimientoDocu docu on docu.NumeroDoc = det.NumeroDoc
+	 where d.Consecutivo = det.ConsecutivoPrestamo and EntradaSalida = 2 and docu.TipoTraslado = 3) as CantDev,
+
+	(select Isnull( Case When sum(det.CantidadUNI) != 0 Then (sum(det.Valor1LOC)/sum(det.CantidadUNI)) Else 0 End,0) from glmovimientoDEta det
+	  inner join inMovimientoDocu docu on docu.NumeroDoc = det.NumeroDoc
+	   where d.Consecutivo = det.ConsecutivoPrestamo and EntradaSalida = 2 and docu.TipoTraslado = 3) as ValorUniDev,
+
+	   (select Isnull(sum(det.Valor1LOC),0) from glmovimientoDEta det
+	  inner join inMovimientoDocu docu on docu.NumeroDoc = det.NumeroDoc
+	   where d.Consecutivo = det.ConsecutivoPrestamo and EntradaSalida = 2 and docu.TipoTraslado = 3) as ValorDev
+
+	from glmovimientoDeta d
+   inner join    ( select d.inReferenciaID, d.CantidadUNI,d.NumeroDoc, d.ProyectoID as ProyOrigen from glmovimientoDEta d
+				inner join inMovimientoDocu docu on docu.NumeroDoc = d.NumeroDoc
+				where ((@ProyectoOrigen is null) or (ProyectoID=@ProyectoOrigen))  and EntradaSalida = 2 and tipotraslado = 2 
+				) prest on prest.NumeroDoc = d.NumeroDoc and prest.inReferenciaID = d.inReferenciaID
+inner join glDocumentoControl ctrl on ctrl.NumeroDoc = d.NumeroDoc
+inner join coProyecto pry on pry.ProyectoID = d.ProyectoID and pry.EmpresaGrupoID = d.eg_coProyecto
+inner join inReferencia refer on refer.inReferenciaID = d.inReferenciaID and refer.EmpresaGrupoID = d.eg_inReferencia
+ where  d.EntradaSalida = 1 
+ ) final             group by  PrefDoc,ProyectoDesc,ProyOrigen,FechaDoc,inReferenciaID,ReferenciaDesc,CantPrestamo,ValorUnitPrest,ValorPrestamo,CantDev,ValorUniDev,ValorDev
+ having (CantPrestamo-CantDev) &gt; 0                
+order by ProyectoDesc desc,PrefDoc desc</value>
+  </data>
+  <data name="QueriesDataSource.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iUXVlcmllc0RhdGFTb3VyY2UiPjxWaWV3IE5hbWU9IkN1c3RvbVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iUHJlZkRvYyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm95ZWN0b0Rlc2MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJveU9yaWdlbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGZWNoYURvYyIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImluUmVmZXJlbmNpYUlEIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZmVyZW5jaWFEZXNjIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNhbnRQcmVzdGFtbyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmFsb3JVbml0UHJlc3QiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZhbG9yUHJlc3RhbW8iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNhbnREZXYiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZhbG9yVW5pRGV2IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWYWxvckRldiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQ2FudFBlbmREZXYiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZhbG9yUGVuZERldiIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

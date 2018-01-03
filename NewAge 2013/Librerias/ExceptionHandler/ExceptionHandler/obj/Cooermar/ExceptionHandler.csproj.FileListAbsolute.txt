@@ -1,0 +1,10 @@
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\ExceptionHandler.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.Librerias.Project.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.Logger.Facade.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.Logger.Service.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.Logger.Model.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.Logger.DAL.dll
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\bin\Cooermar\NewAge.Logger.Service.pdb
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\obj\Cooermar\ExceptionHandler.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Librerias\ExceptionHandler\ExceptionHandler\obj\Cooermar\ExceptionHandler.dll

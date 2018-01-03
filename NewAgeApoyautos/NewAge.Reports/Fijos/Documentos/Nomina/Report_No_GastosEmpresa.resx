@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="DataSourceTotales.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>DECLARE @EmpresaNumCtrl			VARCHAR(4)	-- Trae el numero de control de la empresa
+DECLARE @CodigoNomina			VARCHAR(6)	-- Trae el codigo de cartera para la empresa actual	
+DECLARE @ComponenteSueldo		VARCHAR(5)	-- Trae el comp de Cueldo de cartera para la empresa actual
+DECLARE @ComponenteAuxTras		VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+DECLARE @CESANTIAS			VARCHAR(5)	-- Trae el comp de Cueldo de cartera para la empresa actual
+DECLARE @INTCESANTIAS			VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+DECLARE @PRIMA				VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+DECLARE @VACACIONES			VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+
+--Trae los consecutivos de la empresa
+SELECT @EmpresaNumCtrl = NumeroControl FROM glEmpresa WITH(NOLOCK) WHERE EmpresaID = @EmpresaID
+SET @CodigoNomina = @EmpresaNumCtrl + '11'  --Nomina
+
+--Carga los datos de glControl
+SELECT @ComponenteSueldo	= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '500' AS INT)  -- Concepto de Sueldo
+SELECT @ComponenteAuxTras	= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '506' AS INT) -- Concepto de Aux Trasporte
+SELECT @CESANTIAS			= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '406' AS INT)  -- Concepto de Cesantias
+SELECT @INTCESANTIAS		= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '408' AS INT) -- Concepto de Interes de Cesantias
+SELECT @PRIMA				= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '401' AS INT) -- Concepto de Prima
+SELECT @VACACIONES			= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '404' AS INT) -- Concepto de vacaciones
+
+SELECT	
+	NOM.Nombre,
+	NOM.TerceroID,
+	NOM.Sueldo,
+	NOM.Aux_Transporte,
+	NOM.H_Extras,		
+	(NOM.Ingresos - NOM.Sueldo - NOM.H_Extras) AS OTROS_ING ,
+	(NOM.Sueldo + NOM.Aux_Transporte + NOM.H_Extras + (NOM.Ingresos - NOM.Sueldo - NOM.H_Extras)) AS TotalNomina,
+	NOM.VlrPen,
+	NOM.VlrSLD,
+	NOM.VlrARL,
+	NOM.VLrCCF,
+	NOM.VlrICBF,
+	NOM.vlrSENA,
+	(NOM.VlrPen+NOM.VlrSLD+NOM.VlrARL+NOM.VLrCCF+NOM.VlrICBF+NOM.vlrSENA) AS TotalAportes,
+	NOM.CESANTIAS,
+	NOM.INT_CESANTIAS,
+	NOM.PRIMA,
+	NOM.VACACIONES,
+	(NOM.CESANTIAS+NOM.INT_CESANTIAS+NOM.PRIMA+NOM.VACACIONES) AS TotalProvision,
+	(NOM.Sueldo + NOM.Aux_Transporte + NOM.H_Extras + (NOM.Ingresos - NOM.Sueldo - NOM.H_Extras)+(NOM.VlrPen+NOM.VlrSLD+NOM.VlrARL+NOM.VLrCCF+NOM.VlrICBF+NOM.vlrSENA)+(NOM.CESANTIAS+NOM.INT_CESANTIAS+NOM.PRIMA+NOM.VACACIONES)) AS TotalGastos
+FROM
+	(SELECT	EMP.Descriptivo AS Nombre,
+			CTL.TerceroID,
+			SUM (CASE WHEN DET.ConceptoNOID = @ComponenteSueldo THEN DET.Valor ELSE 0 END) AS Sueldo ,
+			SUM (CASE WHEN DET.ConceptoNOID = @ComponenteAuxTras THEN DET.Valor ELSE 0 END) AS Aux_Transporte,
+			SUM (CASE WHEN NOM.Ind_16 = 1 THEN DET.Valor ELSE 0 END) H_Extras,
+			SUM (CASE WHEN NOM.Ind_01 = 1 THEN DET.Valor ELSE 0 END) Ingresos,
+			APORTE.VlrPen,
+			APORTE.VlrSLD,
+			APORTE.VlrARL,
+			APORTE.VLrCCF,
+			APORTE.VlrICBF,
+			APORTE.vlrSENA,
+			SUM (CASE WHEN NOM.ConceptoNOID = @CESANTIAS THEN DET.Valor ELSE 0 END) AS CESANTIAS,
+			SUM	(CASE WHEN NOM.ConceptoNOID = @INTCESANTIAS THEN DET.Valor ELSE 0 END) AS INT_CESANTIAS,
+			SUM	(CASE WHEN NOM.ConceptoNOID = @PRIMA THEN DET.Valor ELSE 0 END) AS PRIMA,
+			SUM	(CASE WHEN NOM.ConceptoNOID = @VACACIONES THEN DET.Valor ELSE 0 END) AS VACACIONES		
+	FROM		noLiquidacionesDetalle	DET
+	INNER JOIN noLiquidacionesDocu		DOC ON DOC.NumeroDoc = DET.NumeroDoc 
+	INNER JOIN glDocumentoControl		CTL ON CTL.NumeroDoc = DOC.NumeroDoc 	 
+	INNER JOIN noConceptoNOM			NOM ON NOM.ConceptoNOID = DET.ConceptoNOID 
+											AND NOM.EmpresaGrupoID = DET.eg_noConceptoNOM 
+	INNER JOIN noEmpleado				EMP ON DOC.ContratoNOID = EMP.ContratoNOID
+	INNER JOIN		(SELECT
+						CTL.TerceroID,  
+						SUM (DET.VlrEmpresaPEN) AS VlrPen,
+						SUM (DET.VlrEmpresaSLD) AS VlrSLD,
+						SUM (DET.VlrARP) AS VlrARL,
+						SUM (DET.VlrCCF) AS VLrCCF,
+						SUM (DET.VlrIBF) AS VlrICBF,
+						SUM (DET.VlrSEN) AS vlrSENA
+					 FROM	
+						noPlanillaAportesDeta			DET	with(nolock)   
+						INNER JOIN noLiquidacionesDocu	DOC ON DET.NumeroDoc = DOC.NumeroDoc     
+						INNER JOIN glDocumentoControl	CTL ON CTL.NumeroDoc = DOC.NumeroDoc 
+					 WHERE 
+						CTL.EmpresaID = @EmpresaID   	
+						AND CTL.PeriodoDoc BETWEEN @fechaIni AND @fechaFin   
+						AND CTL.TerceroID = CASE WHEN @TerceroID = '' THEN CTL.TerceroID ELSE @TerceroID END
+					 GROUP BY	CTL.TerceroID) AS APORTE ON CTL.TerceroID = APORTE.TerceroID
+	WHERE	CTL.EmpresaID = @EmpresaID
+			AND CTL.PeriodoDoc BETWEEN @fechaIni AND @fechaFin   
+			AND CTL.TerceroID = CASE WHEN @TerceroID = '' THEN CTL.TerceroID ELSE @TerceroID END
+	GROUP BY
+			EMP.Descriptivo, 
+			CTL.TerceroID,
+			APORTE.VlrPen,
+			APORTE.VlrSLD,
+			APORTE.VlrARL,
+			APORTE.VLrCCF,
+			APORTE.VlrICBF,
+			APORTE.vlrSENA
+	) AS NOM
+ORDER BY NOM.TerceroID</value>
+  </data>
+  <data name="DataSourceTotales.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iRGF0YVNvdXJjZVRvdGFsZXMiPjxWaWV3IE5hbWU9IkN1c3RvbVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iTm9tYnJlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlcmNlcm9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdWVsZG8iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkF1eF9UcmFuc3BvcnRlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJIX0V4dHJhcyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iT1RST1NfSU5HIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUb3RhbE5vbWluYSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyUGVuIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJTTEQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsckFSTCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVkxyQ0NGIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWbHJJQ0JGIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ2bHJTRU5BIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEFwb3J0ZXMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNFU0FOVElBUyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSU5UX0NFU0FOVElBUyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUFJJTUEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZBQ0FDSU9ORVMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlRvdGFsUHJvdmlzaW9uIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEdhc3RvcyIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <metadata name="DataSourceAportes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>SELECT	
+	APORTE.Nombre,
+	APORTE.TerceroID,
+	APORTE.VlrPen,
+	APORTE.VlrSLD,
+	APORTE.VlrARL,
+	APORTE.VLrCCF,
+	APORTE.VlrICBF,
+	APORTE.vlrSENA,
+	(APORTE.VlrPen + APORTE.VlrSLD + APORTE.VlrARL + APORTE.VLrCCF + APORTE.VlrICBF + vlrSENA) AS TOTAL
+FROM
+(SELECT
+	EMP.Descriptivo AS Nombre,
+	CTL.TerceroID,  
+	SUM (DET.VlrEmpresaPEN) AS VlrPen,
+	SUM (DET.VlrEmpresaSLD) AS VlrSLD,
+	SUM (DET.VlrARP) AS VlrARL,
+	SUM (DET.VlrCCF) AS VLrCCF,
+	SUM (DET.VlrIBF) AS VlrICBF,
+	SUM (DET.VlrSEN) AS vlrSENA
+FROM	
+	noPlanillaAportesDeta			DET	with(nolock)   
+	INNER JOIN noLiquidacionesDocu	DOC ON DET.NumeroDoc = DOC.NumeroDoc     
+	INNER JOIN glDocumentoControl	CTL ON CTL.NumeroDoc = DOC.NumeroDoc 
+	INNER JOIN noEmpleado			EMP ON DOC.ContratoNOID = EMP.ContratoNOID
+WHERE 
+	CTL.EmpresaID = @EmpresaID   	
+	AND CTL.PeriodoDoc BETWEEN @fechaIni AND @fechaFin   
+	AND CTL.TerceroID = CASE WHEN @TerceroID = '' THEN CTL.TerceroID ELSE @TerceroID END
+GROUP BY	
+	EMP.Descriptivo,
+	CTL.TerceroID) AS APORTE
+ORDER BY APORTE.TerceroID</value>
+  </data>
+  <data name="DataSourceAportes.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iRGF0YVNvdXJjZUFwb3J0ZXMiPjxWaWV3IE5hbWU9IkN1c3RvbVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iTm9tYnJlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlcmNlcm9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJWbHJQZW4iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZsclNMRCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVmxyQVJMIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJWTHJDQ0YiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZscklDQkYiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InZsclNFTkEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlRPVEFMIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="DataSourceProvisiones.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <data name="customSqlQuery3.Sql" xml:space="preserve">
+    <value>DECLARE @EmpresaNumCtrl	VARCHAR(4)	-- Trae el numero de control de la empresa
+DECLARE @CodigoNomina	VARCHAR(6)	-- Trae el codigo de cartera para la empresa actual	
+DECLARE @CESANTIAS	VARCHAR(5)	-- Trae el comp de Cueldo de cartera para la empresa actual
+DECLARE @INTCESANTIAS	VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+DECLARE @PRIMA		VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+DECLARE @VACACIONES	VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+
+--Trae los consecutivos de la empresa
+SELECT @EmpresaNumCtrl = NumeroControl FROM glEmpresa WITH(NOLOCK) WHERE EmpresaID = @EmpresaID
+SET @CodigoNomina = @EmpresaNumCtrl + '11'  --Nomina
+
+--Carga los datos de glControl
+SELECT @CESANTIAS		= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '406' AS INT)  -- Concepto de Cesantias
+SELECT @INTCESANTIAS	= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '408' AS INT) -- Concepto de Interes de Cesantias
+SELECT @PRIMA		= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '401' AS INT) -- Concepto de Prima
+SELECT @VACACIONES	= Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '404' AS INT) -- Concepto de vacaciones
+
+-- Query
+SELECT	
+	PROVISIONES.Nombre,
+	PROVISIONES.TerceroID,
+	PROVISIONES.CESANTIAS,
+	PROVISIONES.INT_CESANTIAS,
+	PROVISIONES.PRIMA,
+	PROVISIONES.VACACIONES,
+	(PROVISIONES.CESANTIAS + PROVISIONES.INT_CESANTIAS + PROVISIONES.PRIMA + PROVISIONES.VACACIONES) AS TOTALPROVISION
+FROM
+(SELECT	
+	EMP.Descriptivo AS Nombre,
+	CTL.NumeroDoc,
+	CTL.TerceroID,
+	SUM (CASE WHEN NOM.ConceptoNOID = @CESANTIAS THEN DET.Valor ELSE 0 END) AS CESANTIAS,
+	SUM	(CASE WHEN NOM.ConceptoNOID = @INTCESANTIAS THEN DET.Valor ELSE 0 END) AS INT_CESANTIAS,
+	SUM	(CASE WHEN NOM.ConceptoNOID = @PRIMA THEN DET.Valor ELSE 0 END) AS PRIMA,
+	SUM	(CASE WHEN NOM.ConceptoNOID = @VACACIONES THEN DET.Valor ELSE 0 END) AS VACACIONES
+FROM		noLiquidacionesDetalle	DET
+INNER JOIN noLiquidacionesDocu		DOC ON DOC.NumeroDoc = DET.NumeroDoc 
+INNER JOIN glDocumentoControl		CTL ON CTL.NumeroDoc = DOC.NumeroDoc 	
+INNER JOIN noConceptoNOM			NOM ON NOM.ConceptoNOID = DET.ConceptoNOID 
+										AND NOM.EmpresaGrupoID = DET.eg_noConceptoNOM 
+INNER JOIN noEmpleado				EMP ON DOC.ContratoNOID = EMP.ContratoNOID
+WHERE	CTL.EmpresaID = @EmpresaID
+		AND CTL.PeriodoDoc BETWEEN @fechaIni AND @fechaFin   
+		AND CTL.TerceroID = CASE WHEN @TerceroID = '' THEN CTL.TerceroID ELSE @TerceroID END 
+GROUP BY	
+	EMP.Descriptivo,
+	CTL.NumeroDoc,
+	CTL.TerceroID	) AS PROVISIONES</value>
+  </data>
+  <data name="DataSourceProvisiones.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iRGF0YVNvdXJjZVByb3Zpc2lvbmVzIj48VmlldyBOYW1lPSJDdXN0b21TcWxRdWVyeSI+PEZpZWxkIE5hbWU9Ik5vbWJyZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXJjZXJvSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0VTQU5USUFTIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJTlRfQ0VTQU5USUFTIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQUklNQSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVkFDQUNJT05FUyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVE9UQUxQUk9WSVNJT04iIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="DataSourceNomina.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery4.Sql" xml:space="preserve">
+    <value>DECLARE @EmpresaNumCtrl			VARCHAR(4)	-- Trae el numero de control de la empresa
+DECLARE @CodigoNomina			VARCHAR(6)	-- Trae el codigo de cartera para la empresa actual	
+DECLARE @ComponenteSueldo		VARCHAR(5)	-- Trae el comp de Cueldo de cartera para la empresa actual
+DECLARE @ComponenteAuxTras		VARCHAR(5)	-- Trae el comp de Aux. Trasporte de cartera para la empresa actual
+
+--Trae los consecutivos de la empresa
+SELECT @EmpresaNumCtrl = NumeroControl FROM glEmpresa WITH(NOLOCK) WHERE EmpresaID = @EmpresaID
+SET @CodigoNomina = @EmpresaNumCtrl + '11'  --Nomina
+
+--Carga los datos de glControl
+SELECT @ComponenteSueldo  = Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '500' AS INT)  -- Concepto de Sueldo
+SELECT @ComponenteAuxTras = Data FROM glControl WHERE glControlId = CAST(@CodigoNomina + '506' AS INT) -- Concepto de Aux Trasporte
+
+SELECT	
+	NOM.Nombre,
+	NOM.TerceroID,
+	NOM.Sueldo,
+	NOM.Aux_Transporte,
+	NOM.H_Extras,		
+	(NOM.Ingresos - NOM.Sueldo - NOM.H_Extras) AS OTROS_ING ,
+	(NOM.Sueldo + NOM.Aux_Transporte + NOM.H_Extras + (NOM.Ingresos - NOM.Sueldo - NOM.H_Extras)) AS TOTAL
+FROM
+(SELECT	EMP.Descriptivo AS Nombre,
+		CTL.TerceroID,
+		SUM (CASE WHEN DET.ConceptoNOID = @ComponenteSueldo THEN DET.Valor ELSE 0 END) AS Sueldo ,
+		SUM (CASE WHEN DET.ConceptoNOID = @ComponenteAuxTras THEN DET.Valor ELSE 0 END) AS Aux_Transporte,
+		SUM (CASE WHEN NOM.Ind_16 = 1 THEN DET.Valor ELSE 0 END) H_Extras,
+		SUM (CASE WHEN NOM.Ind_01 = 1 THEN DET.Valor ELSE 0 END) Ingresos
+FROM		noLiquidacionesDetalle	DET
+INNER JOIN noLiquidacionesDocu		DOC ON DOC.NumeroDoc = DET.NumeroDoc 
+INNER JOIN glDocumentoControl		CTL ON CTL.NumeroDoc = DOC.NumeroDoc 	 
+INNER JOIN noConceptoNOM			NOM ON NOM.ConceptoNOID = DET.ConceptoNOID 
+										AND NOM.EmpresaGrupoID = DET.eg_noConceptoNOM 
+INNER JOIN noEmpleado				EMP ON DOC.ContratoNOID = EMP.ContratoNOID
+WHERE	CTL.EmpresaID = @EmpresaID
+		AND CTL.PeriodoDoc BETWEEN @fechaIni AND @fechaFin   
+		AND CTL.TerceroID = CASE WHEN @TerceroID = '' THEN CTL.TerceroID ELSE @TerceroID END
+GROUP BY
+		EMP.Descriptivo, 
+		CTL.TerceroID) AS NOM
+ORDER BY NOM.TerceroID
+</value>
+  </data>
+  <data name="DataSourceNomina.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iRGF0YVNvdXJjZU5vbWluYSI+PFZpZXcgTmFtZT0iTm9taW5hIj48RmllbGQgTmFtZT0iTm9tYnJlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlcmNlcm9JRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdWVsZG8iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkF1eF9UcmFuc3BvcnRlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJIX0V4dHJhcyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iT1RST1NfSU5HIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUT1RBTCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

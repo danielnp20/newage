@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="NewAgeLogger" />
+  <Alias Key="Target" Value="NewAgeLogger.Store" />
+  <EntityContainerMapping CdmEntityContainer="NewAgeLoggerContainer" StorageEntityContainer="NewAgeLoggerStoreContainer">
+    <EntitySetMapping Name="LogErrors">
+      <EntityTypeMapping TypeName="NewAge.Logger.Model.LogError">
+        <MappingFragment StoreEntitySet="LogErrors">
+          <ScalarProperty Name="Context" ColumnName="Context" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogPerformances">
+      <EntityTypeMapping TypeName="NewAge.Logger.Model.LogPerformance">
+        <MappingFragment StoreEntitySet="LogPerformances">
+          <ScalarProperty Name="Context" ColumnName="Context" />
+          <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="RunningTime" ColumnName="RunningTime" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

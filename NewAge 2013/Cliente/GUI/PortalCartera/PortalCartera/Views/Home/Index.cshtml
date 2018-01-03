@@ -1,0 +1,55 @@
+﻿@using System.Configuration
+@{
+    var gmt = Convert.ToInt32(ConfigurationManager.AppSettings["GMT"]);
+}
+
+<div class="col-xs-12">
+    <div id="credits-container" class="credits-container">
+        <h3 class="calendar-title">Seleccione en el calendario la fecha en que va a pagar.</h3>
+        <div class="date-to-pay">
+            <label>Fecha en que va a pagar:</label>
+            <input type="text" name="date" placeholder="dd/mm/yyyy" tabindex="0" />
+        </div>
+        <br />
+        <div>
+            <span><b>El saldo(s) de la(s) obligación(es) debe(n) ser cancelado(s) en la fecha proyectada antes del cierre bancario.</b></span>
+        </div>
+        <a class="search-credits" href="javascript:void(0);">Consultar</a>
+        <div id="grid-container" class="tk-grid grid-container" style="display:none;">
+            @*<div id="data-grid"></div>*@
+            <div data-name="gridData" data-role="grid"
+                 data-sortable="false"
+                 data-editable="false"
+                 data-columns='[
+                        { "field": "Libranza", "title": "Obligación Nro" },
+                        { "field": "FechaPago", "title": "Vencido Desde", "template": kendo.template($("#grid-date-template").html()) },
+                        { "field": "Valor", "title": "Valor a Pagar", "template": kendo.template($("#grid-amount-template").html()) }
+                    ]'
+                 data-bind="source: gridData">
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        var urlGetData = '@(Url.Action("GetCredits", "Home"))';
+        var infoMessage = 'El usuario no tiene créditos disponibles';
+        var gmt = parseInt('@(gmt)');
+    </script>
+    <script id="grid-date-template" type="text/x-kendo-template">
+        #
+        var date = convertDateToUTC(parseDate(FechaPago));
+        #
+        #= kendo.toString(date, 'd') #
+    </script>
+    <script id="grid-amount-template" type="text/x-kendo-template">
+        #= kendo.toString(Valor, 'c0') #
+    </script>
+    @Scripts.Render("~/bundles/newage.searchcredits")
+}
+
+
+

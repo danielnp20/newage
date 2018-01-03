@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="DataSourceLibranza.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>
+
+SELECT SOL.VlrLibranza,
+ day(GetDate()) as diaRadica,
+ case 
+  when month(GetDate())=1
+   then 'ENERO'
+  when month(GetDate())=2
+   then 'FEBRERO'
+  when month(GetDate())=3
+   then 'MARZO'
+  when month(GetDate())=4
+   then 'ABRIL' 
+  when month(GetDate())=5
+   then 'MAYO'
+  when month(GetDate())=6
+   then 'JUNIO'
+  when month(GetDate())=7
+   then 'JULIO'
+  when month(GetDate())=8
+   then 'AGOSTO'
+  when month(GetDate())=9
+   then 'SEPTIEMBRE'
+  when month(GetDate())=10
+   then 'OCTUBRE'
+  when month(GetDate())=11
+   then 'NOVIEMBRE'
+  when month(GetDate())=12
+   then 'DICIEMBRE'
+  else 'OTRO'
+ END as mesRadica, CTL.NumeroDoc,
+ year(GetDate()) as periodoRadica,  
+ SOL.NumeroDoc AS Solicitud, 
+ RTRIM(SOL.NombrePri)+' '+isnull(RTRIM(SOL.NombreSdo),'')+' '+RTRIM(SOL.ApellidoPri)+' ' +RTRIM(SOL.ApellidoSdo) AS Nombre, 
+ CiuExpDeu.Descriptivo  as CiudadExp,
+ SOL.Codeudor1 as CedulaCod1,
+ RTRIM(Cod1.NombrePri)+' '+isnull(RTRIM(Cod1.NombreSdo),'')+' '+RTRIM(Cod1.ApellidoPri)+' ' +RTRIM(Cod1.ApellidoSdo) as NombreCod1,
+ CiuExpCod1.Descriptivo  as CiudadExpCod1,
+ CTL.FechaDoc AS Fecha, 
+ CIU.Descriptivo as CiudadRes, 
+ SOL.ClienteRadica AS Cedula, 
+  sol.Plazo, sol.VlrCuota, 
+ case
+  when fechacuota1 IS NULL THEN 0 ELSE day(fechacuota1) 
+ END as dia,
+ CIU3.Descriptivo  as ciudadObli,
+  cli.ResidenciaDir, cli.Telefono,sol.Libranza,
+ SOL.EmpresaID, sol.fechacuota1,
+ case
+  when cli.PensionadoInd=1 THEN 'Pensionado' ELSE 'Funcionario'
+ END as Descripcion,
+ pag.Descriptivo as Pagaduria
+FROM ccSolicitudDocu  SOL
+INNER JOIN ccCliente CLI ON SOL.ClienteRadica = CLI.ClienteID   AND SOL.eg_ccCliente= CLI.EmpresaGrupoID
+INNER JOIN coTercero TER ON SOL.ClienteRadica = TER.TerceroID   AND CLI.eg_coTercero = TER.EmpresaGrupoID
+LEFT JOIN coTercero  Cod1 ON SOL.Codeudor1 = Cod1.TerceroID   
+LEFT JOIN glDocumentoControl CTL ON SOL.NumeroDoc = CTL.NumeroDoc 
+LEFT JOIN ccsolicitudDatosPersonales datosDeu ON SOL.NumeroDoc = datosDeu.NumeroDoc and SOL.ClienteRadica = datosDeu.TerceroID  and sol.VersionNro = datosDeu.version
+LEFT JOIN ccsolicitudDatosPersonales datoscod1 ON SOL.NumeroDoc = datoscod1.NumeroDoc and SOL.Codeudor1 = datoscod1.TerceroID  and sol.VersionNro = datoscod1.version
+LEFT JOIN glLugarGeografico CIU ON cli.ResidenciaCiudad= ciu.LugarGeograficoID
+LEFT JOIN glLugarGeografico CIU3 ON sol.Ciudad= ciu3.LugarGeograficoID
+LEFT JOIN glLugarGeografico CiuExpDeu ON datosDeu.CiudadExpDoc= CiuExpDeu.LugarGeograficoID
+LEFT JOIN glLugarGeografico CiuExpCod1 ON datoscod1.CiudadExpDoc= CiuExpCod1.LugarGeograficoID
+left join ccPagaduria PAG on sol.PagaduriaID=pag.PagaduriaID
+WHERE  SOL.EmpresaID  = @Empresa AND SOL.Libranza=  @Libranza
+ORDER BY SOL.NumeroDoc</value>
+  </data>
+  <data name="DataSourceLibranza.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iRGF0YVNvdXJjZUxpYnJhbnphIj48VmlldyBOYW1lPSJDdXN0b21TcWxRdWVyeSI+PEZpZWxkIE5hbWU9IlZsclByZXN0YW1vIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkaWFSYWRpY2EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJtZXNSYWRpY2EiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTnVtZXJvRG9jIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icGVyaW9kb1JhZGljYSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGljaXR1ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik5vbWJyZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDaXVkYWRFeHAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2VkdWxhQ29kMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb21icmVDb2QxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNpdWRhZEV4cENvZDEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVjaGEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJDaXVkYWRSZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2VkdWxhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBsYXpvIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iVmxyQ3VvdGEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9ImRpYSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImNpdWRhZE9ibGkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVzaWRlbmNpYURpciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZWxlZm9ubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMaWJyYW56YSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFbXByZXNhSUQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZmVjaGFjdW90YTEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwY2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYWdhZHVyaWEiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

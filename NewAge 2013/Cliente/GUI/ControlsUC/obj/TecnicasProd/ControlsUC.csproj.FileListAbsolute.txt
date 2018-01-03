@@ -1,0 +1,10 @@
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\ControlsUC.csprojResolveAssemblyReference.cache
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.ExtraPeriodsForm.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.PeriodControl.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.Properties.Resources.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.uc_Hierarchy.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.uc_MasterFind.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.uc_Pagging.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.uc_PeriodoEdit.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\NewAge.Cliente.GUI.WinApp.ControlsUC.uc_Revelaciones.resources
+C:\Projects\NewAge 2013\Cliente\GUI\ControlsUC\obj\TecnicasProd\ControlsUC.csproj.GenerateResource.Cache

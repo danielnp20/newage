@@ -1,0 +1,5 @@
+C:\Projects\NewAge 2013\Server\Uploads\bin\NewAge.Server.Uploads.dll.config
+C:\Projects\NewAge 2013\Server\Uploads\bin\NewAge.Server.Uploads.dll
+C:\Projects\NewAge 2013\Server\Uploads\bin\NewAge.Server.Uploads.pdb
+C:\Projects\NewAge 2013\Server\Uploads\obj\Debug\NewAge.Server.Uploads.dll
+C:\Projects\NewAge 2013\Server\Uploads\obj\Debug\NewAge.Server.Uploads.pdb

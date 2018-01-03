@@ -1,0 +1,4 @@
+C:\Projects\NewAge 2013\DTO\NewAge.DTO.Logger\bin\Debug\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\DTO\NewAge.DTO.Logger\bin\Debug\NewAge.DTO.Logger.pdb
+C:\Projects\NewAge 2013\DTO\NewAge.DTO.Logger\obj\Debug\NewAge.DTO.Logger.dll
+C:\Projects\NewAge 2013\DTO\NewAge.DTO.Logger\obj\Debug\NewAge.DTO.Logger.pdb
