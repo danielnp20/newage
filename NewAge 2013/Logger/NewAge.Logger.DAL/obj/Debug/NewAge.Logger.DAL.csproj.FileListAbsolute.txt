@@ -5,3 +5,10 @@ C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Debug\NewAge.DTO.Logger.pdb
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Debug\NewAge.Logger.DAL.csprojResolveAssemblyReference.cache
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Debug\NewAge.Logger.DAL.dll
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Debug\NewAge.Logger.DAL.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Debug\NewAge.Logger.DAL.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Debug\NewAge.Logger.DAL.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Debug\NewAge.DTO.Logger.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\bin\Debug\NewAge.DTO.Logger.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Debug\NewAge.Logger.DAL.csprojResolveAssemblyReference.cache
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Debug\NewAge.Logger.DAL.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.DAL\obj\Debug\NewAge.Logger.DAL.pdb

@@ -11,3 +11,16 @@ C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.DTO.Logger.
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.csprojResolveAssemblyReference.cache
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.dll
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Facade.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Facade.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Model.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Service.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.DAL.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.DTO.Logger.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Model.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.Service.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.Logger.DAL.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\bin\Debug\NewAge.DTO.Logger.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.csprojResolveAssemblyReference.cache
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Facade\obj\Debug\NewAge.Logger.Facade.pdb

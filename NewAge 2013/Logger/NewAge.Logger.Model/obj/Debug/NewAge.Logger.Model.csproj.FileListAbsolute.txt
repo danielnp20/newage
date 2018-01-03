@@ -7,3 +7,12 @@ C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.Logger.DAL.p
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\Debug\NewAge.Logger.Model.csprojResolveAssemblyReference.cache
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\Debug\NewAge.Logger.Model.dll
 C:\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\Debug\NewAge.Logger.Model.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.Logger.Model.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.Logger.Model.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.DTO.Logger.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.Logger.DAL.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.DTO.Logger.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\bin\Debug\NewAge.Logger.DAL.pdb
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\Debug\NewAge.Logger.Model.csprojResolveAssemblyReference.cache
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\Debug\NewAge.Logger.Model.dll
+C:\NewAge\Projects\NewAge 2013\Logger\NewAge.Logger.Model\obj\Debug\NewAge.Logger.Model.pdb
