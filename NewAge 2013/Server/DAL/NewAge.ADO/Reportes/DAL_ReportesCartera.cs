@@ -3062,39 +3062,55 @@ namespace NewAge.ADO
                         #endregion
                         #region CommanText
                         mySqlCommandSel.CommandText =
-                        "    DECLARE @EmpresaNumCtrl AS VARCHAR(4)	" +
-                        "    DECLARE @CodigoCartera AS VARCHAR(6)		" +
-                        "    DECLARE @PorcSeguroDeudor AS numeric(10,4)	" +
-                        "    DECLARE @PorcSeguroConyuge AS numeric(10,4)	" +
-                        "    SELECT @EmpresaNumCtrl = NumeroControl FROM glEmpresa WITH(NOLOCK) WHERE EmpresaID =  @EmpresaID	" +
-                        "    SET @CodigoCartera = @EmpresaNumCtrl + '16' 	" +
-
-                        "    SELECT @PorcSeguroDeudor = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '095' AS INT)	" +
-                        "    SELECT @PorcSeguroConyuge = Data FROM glControl WHERE glControlId = CAST(@CodigoCartera + '096' AS INT)	" +
-
-                        "   SELECT q.*, Round((CapitalSDO*PorSeguro/100),0) as VlrSeguro,Round(((CapitalSDO*PorSeguro/100)*PorcExtra/100),0) as VlrSeguroExtra,"+
-                        "       Round((CapitalSDO*PorSeguro/100)+((CapitalSDO*PorSeguro/100)*PorcExtra/100),0) as VlrTotal FROM  " +
-                        "        (	" +
+                        "    DECLARE @Fecha1					AS DATE  " +
+                        "    DECLARE @Fecha2					AS DATE  " +
+                        "    SET @Fecha1                        = '20171101'	" +
+                        "    SET @Fecha2                        = '20171201' 	" +
+                        "    DECLARE @TasaC1					as numeric(10,4)	" +
+                        "    DECLARE @TasaC2					AS numeric(10,4)	" +
+                        "    DECLARE @TasaD1					as numeric(10,4)	" +
+                        "    DECLARE @TasaD2					AS numeric(10,4)	" +
+                        "    SELECT	@TasaD1 = Tasa4, @TasaC1 = Tasa5 FROM	glDatosMensuales WHERE   cast(Periodo as date) = @Fecha1	" +
+                        "    SELECT	@TasaD2 = Tasa4, @TasaC2 = Tasa5 FROM	glDatosMensuales WHERE   cast(Periodo as date) = @Fecha2	" +
+                        " SELECT	tipo, Mes, Cliente, CedConyugue, Nombre, FechaNacimiento, (PorSeguro1+PorSeguro2) as PorSeguro, PorcExtra, CapitalSdo,	" +
+                        "		Round((CapitalSDO * (PorSeguro1+PorSeguro2)/100),0) as VlrSeguro,	" +
+                        "		Round(((CapitalSDO* (PorSeguro1+PorSeguro2)/100)*PorcExtra/100),0) as VlrSeguroExtra,	" +
+                        "		Round((CapitalSDO * (PorSeguro1+PorSeguro2)/100)+((CapitalSDO*(PorSeguro1+PorSeguro2)/100)*PorcExtra/100),0) as VlrTotal	" +
+                        "FROM	" +
+                        "(	" +
+                        "	(	" +
+                        "         Select 'D' as Tipo, Cast(year(doc.PeriodoDoc) as varchar(4)) + '-' + Cast(month(doc.PeriodoDoc) as varchar(4)) as Mes,	" +
+                        "				CAST(cli.ClienteID as bigint) as Cliente, cli.ClienteID as CedConyugue, cli.Descriptivo as Nombre,cli.FechaNacimiento,	" +
+                        "				(case when cast(doc.PeriodoDoc as date) <= @Fecha1 then @TasaD1 else 0 end) as PorSeguro1,	" +
+                        "				(case when cast(doc.PeriodoDoc as date) >= @Fecha2 then @TasaD2 else 0 end) as PorSeguro2,	" +
+                        "				ISNULL(cli.ExtraPrimaCliente,0) as PorcExtra,	" +
+                        "				SUM(cie.CapitalSDO) as CapitalSDO	" +
+                        "         From ccCierremescartera cie	" +
+                        "                inner join ccCreditoDocu	crd on cie.numerodoc = crd.NumeroDoc	" +
+                        "                left join glDocumentoControl doc on crd.Numerodoc = doc.NumeroDoc	" +
+                        "                inner join ccCliente cli on crd.ClienteID = cli.ClienteID and cli.EmpresaGrupoID = crd.eg_ccCliente	" +
+                        "          Where CAST(cie.Periodo as DATE) = @Periodo and crd.TipoEstado <= 2	" +
+                        "          Group  by doc.PeriodoDoc, cli.ClienteID,cli.Descriptivo,cli.FechaNacimiento,cli.ExtraPrimaCliente	" +
+                        "    )		" +
+                        "    Union	" +
                         "    (	" +
-                        "             Select 'D' as Tipo,CAST(cli.ClienteID as bigint)as ClienteID, cli.ClienteID as CedConyuge, cli.Descriptivo as Nombre,cli.FechaNacimiento, 	" +
-                        "                    @PorcSeguroDeudor as PorSeguro,ISNULL(cli.ExtraPrimaCliente,0) as PorcExtra,SUM(cierre.CapitalSDO) as CapitalSDO	" +
-                        "             From ccCierremescartera cierre 	" +
-                        "                    inner join ccCreditoDocu crd on cierre.numerodoc = crd.NumeroDoc 	" +
-                        "                    inner join ccCliente cli on crd.ClienteID = cli.ClienteID and cli.EmpresaGrupoID = crd.eg_ccCliente	" +
-                        "              Where CAST(Periodo as DATE) = @Periodo and crd.TipoEstado <= 2	" + filtros +
-                        "              Group  by cli.ClienteID,cli.Descriptivo,cli.FechaNacimiento,cli.ExtraPrimaCliente	" +
-                        "        )	" +
-                        "        Union	" +
-                        "        (	" +
-                        "             Select 'C' as Tipo,CAST(cli.ClienteID as bigint) as ClienteID, cli.CedEsposa as CedConyuge, cli.NomEsposa as Nombre,cli.FechEsposa as FechaNacimiento, 	" +
-                        "                     @PorcSeguroConyuge as PorSeguro, ISNULL(cli.ExtraPrimaConyugue,0) as PorcExtra,SUM(cierre.CapitalSDO) as CapitalSDO	" +
-                        "              From ccCierremescartera cierre 	" +
-                        "                    inner join ccCreditoDocu crd on cierre.numerodoc = crd.NumeroDoc 	" +
-                        "                    inner join ccCliente cli on crd.ClienteID = cli.ClienteID and cli.EmpresaGrupoID = crd.eg_ccCliente and cli.CedEsposa is not null	" +
-                        "              Where CAST(Periodo as DATE) = @Periodo and crd.TipoEstado <= 2	 and (DATEDIFF(year,cli.FechEsposa,GETDATE()) <= 55 or cli.FechEsposa is null)	" + filtros +
-                        "              Group  by cli.ClienteID,cli.CedEsposa,cli.NomEsposa,cli.FechEsposa,cli.ExtraPrimaConyugue    " +
-                        "       )	" +
-                        "    )q where CapitalSDO > 0  order by  q.CLienteID asc, q.Tipo desc";
+                        "         Select 'C' as Tipo, Cast(year(doc.PeriodoDoc) as varchar(4)) + '-' + Cast(month(doc.PeriodoDoc) as varchar(4)) as Mes,	" +
+                        "				 CAST(cli.ClienteID as bigint) as ClienteID, cli.CedEsposa as CedConyugue, cli.NomEsposa as Nombre,cli.FechEsposa as FechaNacimiento,	" +
+                        "				(case when doc.PeriodoDoc <= @Fecha1 then @TasaC1 else 0 end) as PorSeguro1,	" +
+                        "				(case when doc.PeriodoDoc >= @Fecha2 then @TasaC2 else 0 end) as PorSeguro2,	" +
+                        "				ISNULL(cli.ExtraPrimaConyugue,0) as PorcExtra,	" +
+                        "                SUM(cie.CapitalSDO) as CapitalSDO	" +
+                        "	       From ccCierremescartera cie 	" +
+                        "                inner join ccCreditoDocu crd on cie.numerodoc = crd.NumeroDoc	" +
+                        "                left join glDocumentoControl doc on crd.Numerodoc = doc.NumeroDoc	" +
+                        "                inner join ccCliente cli on crd.ClienteID = cli.ClienteID and cli.EmpresaGrupoID = crd.eg_ccCliente and	" +
+                        "											cli.CedEsposa is not null	" +
+                        "          Where CAST(cie.Periodo as DATE) = @Periodo and crd.TipoEstado <= 2 and 	" +
+                        "				(DATEDIFF(year,cli.FechEsposa,GETDATE()) <= 55 or cli.FechEsposa is null)	" +
+                        "          Group  by doc.PeriodoDoc, cli.ClienteID,cli.CedEsposa,cli.NomEsposa,cli.FechEsposa,cli.ExtraPrimaConyugue	" +
+                        "  )	" +
+                        ")q where CapitalSDO > 0  order by  CLiente asc, Tipo desc	";
+              
                         #endregion 
                     }
                     #endregion

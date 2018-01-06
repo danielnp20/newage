@@ -28,8 +28,8 @@ namespace NewAge.ADO
         /// <summary>
         /// Agrega unr registro en la tabla noLiquidacionesDocu 
         /// </summary>
-        /// <param name="doc">documento</param>
-        /// <returns>true si la operacion es exitosa</returns>
+        /// <param name="doc">documento</param>   
+        /// <returns>true si la operacion es exitosa</returns>      
         public void DAL_noLiquidacionesDocu_Add(DTO_noLiquidacionesDocu doc)
         {
             try
